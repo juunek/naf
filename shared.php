@@ -23,8 +23,8 @@ $htmlNav= "<!doctype html>
 $sharedNav="<div class=\"container\">
       <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 
-         <a class=\"navbar-brand\" href=\"#\">
-          <img src=\"img/logo.png\" alt=\"\" height=\"40rem\">
+         <a class=\"navbar-brand\" href=\"index.php\">
+          <img src=\"img/logo.png\" alt=\"Neuro Assistance Foundation Logo\" height=\"40rem\">
         </a>
 
         <button class=\"btn btn-primary ms-auto\" id=\"btn-donate-tablet\" href=\"#\">DONATE</button>
