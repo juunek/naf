@@ -18,9 +18,9 @@ $htmlNav= "<!doctype html>
 
 
   </head>
-<body>";
+<body>
 
-$sharedNav="<div class=\"container\">
+<div class=\"container\">
       <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 
          <a class=\"navbar-brand\" href=\"index.php\">
@@ -36,26 +36,26 @@ $sharedNav="<div class=\"container\">
 
           <ul class=\"navbar-nav mb-2 mb-lg-0 text-center\">
             <li class=\"nav-item dropdown\">
-                <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">About</a>
+                <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"about.php\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">About</a>
                   <div class=\"dropdown-menu bg-light text-lg-left text-md-center text-sm-center border-0\">
-                    <a class=\"dropdown-item\" href=\"#\">Contact</a>
-                    <a class=\"dropdown-item\" href=\"#\">Join Email List</a>
+                    <a class=\"dropdown-item\" href=\"contact.php\">Contact</a>
+                    <a class=\"dropdown-item\" href=\"email-list.php\">Join Email List</a>
             </li>
             <li class=\"nav-item dropdown\">
-                <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Community</a>
+                <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"community.php\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Community</a>
                   <div class=\"dropdown-menu bg-light text-lg-left text-md-center text-sm-center border-0\">
-                    <a class=\"dropdown-item\" href=\"#\">Testimonials</a>
-                    <a class=\"dropdown-item\" href=\"#\">Giving Thanks</a>
-                    <a class=\"dropdown-item\" href=\"#\">Newsletter</a>
+                    <a class=\"dropdown-item\" href=\"testimonials.php\">Testimonials</a>
+                    <a class=\"dropdown-item\" href=\"giving-thanks\">Giving Thanks</a>
+                    <a class=\"dropdown-item\" href=\"newsletter.php\">Newsletter</a>
             </li>
             <li class=\"nav-item\">
-              <a class=\"nav-link\" href=\"#\">Events</a>
+              <a class=\"nav-link\" href=\"events.php\">Events</a>
             </li>
             <li class=\"nav-item\">
-              <a class=\"nav-link\" href=\"#\">Resources</a>
+              <a class=\"nav-link\" href=\"resources.php\">Resources</a>
             </li>
             <li class=\"nav-item\">
-              <a class=\"nav-link\" href=\"#\">Get Involved</a>
+              <a class=\"nav-link\" href=\"\">Get Involved</a>
             </li>
              <li class=\"nav-item\">
               <button class=\"btn btn-primary\" id=\"btn-donate-collapsemenu\" href=\"#\">DONATE</button>
@@ -65,7 +65,7 @@ $sharedNav="<div class=\"container\">
       </div>
     </div>
   </nav>
-</div>"
+</div>";
 
 
 $htmlFooter="<footer>
