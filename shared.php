@@ -20,6 +20,53 @@ $htmlNav= "<!doctype html>
   </head>
 <body>";
 
+$sharedNav="<div class=\"container\">
+      <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+
+         <a class=\"navbar-brand\" href=\"#\">
+          <img src=\"img/logo.png\" alt=\"\" height=\"40rem\">
+        </a>
+
+        <button class=\"btn btn-primary ms-auto\" id=\"btn-donate-tablet\" href=\"#\">DONATE</button>
+        <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+        <span class=\"navbar-toggler-icon\"></span>
+        </button>
+
+        <div class=\"collapse navbar-collapse d-flex-lg justify-content-end\" id=\"navbarSupportedContent\">
+
+          <ul class=\"navbar-nav mb-2 mb-lg-0 text-center\">
+            <li class=\"nav-item dropdown\">
+                <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">About</a>
+                  <div class=\"dropdown-menu bg-light text-lg-left text-md-center text-sm-center border-0\">
+                    <a class=\"dropdown-item\" href=\"#\">Contact</a>
+                    <a class=\"dropdown-item\" href=\"#\">Join Email List</a>
+            </li>
+            <li class=\"nav-item dropdown\">
+                <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Community</a>
+                  <div class=\"dropdown-menu bg-light text-lg-left text-md-center text-sm-center border-0\">
+                    <a class=\"dropdown-item\" href=\"#\">Testimonials</a>
+                    <a class=\"dropdown-item\" href=\"#\">Giving Thanks</a>
+                    <a class=\"dropdown-item\" href=\"#\">Newsletter</a>
+            </li>
+            <li class=\"nav-item\">
+              <a class=\"nav-link\" href=\"#\">Events</a>
+            </li>
+            <li class=\"nav-item\">
+              <a class=\"nav-link\" href=\"#\">Resources</a>
+            </li>
+            <li class=\"nav-item\">
+              <a class=\"nav-link\" href=\"#\">Get Involved</a>
+            </li>
+             <li class=\"nav-item\">
+              <button class=\"btn btn-primary\" id=\"btn-donate-collapsemenu\" href=\"#\">DONATE</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>"
+
 
 $htmlFooter="<footer>
 <div class =\"row bg-primary p-5\">
