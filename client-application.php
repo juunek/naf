@@ -74,45 +74,45 @@
     <p>Thank you for your interest in NAF. To request assistance, please complete the application below. Applications must be completed by a physician, therapist, or hospital case manager, and clients must not have alternative means to receive assistance. We will contact you after the application is received.</p>
 </div>
 
-<div class="mb-5">
+<div class="col-md-10 mx-auto mb-5">
   <form action="" method="post">
     <h3>Patient/Client Info</h3>
-    <div class="row">
-      <div class="d-flex flex-column col-6">
+    <div class="from-group row">
+      <div class="d-flex flex-column col-sm-6">
         <label>First Name</label>
-        <input type="text" id="client_firstname">
+        <input type="text" class="form-control" id="client_firstname">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Last Name</label>
-        <input type="text" id="client_lastname">
+        <input type="text" class="form-control" id="client_lastname">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Birthdate (mm/dd/yyyy)</label>
-        <input type="date" id="client_birthday">
+        <input type="date" class="form-control" id="client_birthday">
       </div>
 
-      <div class="d-flex flex-column col-12">
+      <div class="d-flex flex-column col-sm-12">
         <label>Street Address</label>
-        <input type="text" id="client_address">
+        <input type="text" class="form-control" id="client_address">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>City</label>
-        <input type="text" id="client_city">
+        <input type="text" class="form-control" id="client_city">
       </div>
 
-      <div class="d-flex flex-column col-3">
+      <div class="d-flex flex-column col-sm-3">
         <label>State</label>
-        <input type="text" id="client_state">
+        <input type="text" class="form-control" id="client_state">
       </div>
 
-      <div class="d-flex flex-column col-3">
+      <div class="d-flex flex-column col-sm-3">
         <label>Zip Code</label>
-        <input type="text" id="client_zip">
+        <input type="text" class="form-control" id="client_zip">
       </div>
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Patient has children at home</label>
           <div class="d-flex flex-row">
             <div class="pe-5">
@@ -126,49 +126,49 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Ages of Children</label>
-        <input type="text" id="client_childrenAge">
+        <input type="text" class="form-control" id="client_childrenAge">
       </div>
 
-      <div class="d-flex flex-column col-12">
+      <div class="d-flex flex-column col-sm-12">
         <label>Describe spinal cord injury (level and cause, i.e., MVA, Fall, etc.). If not a traumatic injury, please explain</label>
-        <textarea name="client_explaination" id="client_explaination"></textarea>
+        <textarea name="client_explaination" class="form-control" id="client_explaination"></textarea>
       </div>
 
-      <div class="d-flex flex-column col-12">
+      <div class="d-flex flex-column col-sm-12">
+        <div class= "row">
         <label>Type of assistance requested</label>
-          <div class="d-flex flex-row">
-            <div class="col-3">
+            <div class="col-sm-6">
               <input type="checkbox" name="client_assistType" value="client_assistType_home" id="client_assistType_home">
               <label for="client_assistType_home">Home Modifications</label>
             </div>
-            <div class="col-3">
+            <div class="col-sm-6">
               <input type="checkbox" name="client_assistType" value="client_assistType_mobility" id="client_assistType_mobility">
               <label for="client_assistType_mobility">Mobility Equipment</label>
           </div>
-          <div class="col-3">
+          <div class="col-sm-6">
             <input type="checkbox" name="client_assistType" value="client_assistType_catheters" id="client_assistType_catheters">
             <label for="client_assistType_catheters">Catheters</label>
           </div>
-          <div class="col-3">
+          <div class="col-sm-6">
             <input type="checkbox" name="client_assistType" value="client_assistType_other" id="client_assistType_other">
             <label for="client_assistType_other">Other</label>
         </div>
-        </div>
       </div>
+    </div>
 
-      <div class="d-flex flex-column col-12">
+      <div class="d-flex flex-column col-sm-12">
         <label>Describe patient's needs in order of importance</label>
-        <textarea name="client_needs" id="client_needs"></textarea>
+        <textarea name="client_needs" class="form-control" id="client_needs"></textarea>
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Patient discharge date (mm/dd/yyyy)</label>
-        <input type="date" id="client_discharge">
+        <input type="date" class="form-control" id="client_discharge">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Will patient be using catheters</label>
             <div class="d-flex flex-row">
               <div class="pe-5">
@@ -182,7 +182,7 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column col-4">
+      <div class="d-flex flex-column col-sm-4">
         <label>Is patient insured?</label>
           <div class="d-flex flex-row">
             <div class="pe-5">
@@ -196,7 +196,7 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column col-4">
+      <div class="d-flex flex-column col-sm-4">
         <label>Does patient have Medicare/Medicaid</label>
           <div class="d-flex flex-row">
               <div class="pe-5">
@@ -214,7 +214,7 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column col-4">
+      <div class="d-flex flex-column col-sm-4">
         <label>Is patient a veteran?</label>
           <div class="d-flex flex-row">
             <div class="pe-5">
@@ -228,82 +228,82 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column col-12">
+      <div class="d-flex flex-column col-sm-12">
         <label>Describe other program eligibility</label>
-        <textarea name="client_eligibility" id="client_eligibility"></textarea>
+        <textarea name="client_eligibility" class="form-control" id="client_eligibility"></textarea>
       </div>
     </div>
 
     <h3>Social Worker Contact Info</h3>
     <div class="row">
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>First Name</label>
-        <input type="text" id="client_social_firstname">
+        <input type="text" class="form-control" id="client_social_firstname">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Last Name</label>
-        <input type="text" id="client_social_lastname">
+        <input type="text" class="form-control" id="client_social_lastname">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Email Address</label>
-        <input type="email" id="client_social_email">
+        <input type="email" class="form-control" id="client_social_email">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Phone Number</label>
-        <input type="tel" id="client_social_phone">
+        <input type="tel" class="form-control" id="client_social_phone">
       </div>
     </div>
 
     <h3>Person Submitting Contact Info</h3>
     <div class="row">
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>First Name</label>
-        <input type="text" id="client_contact_firstname">
+        <input type="text" class="form-control" id="client_contact_firstname">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Last Name</label>
-        <input type="text" id="client_contact_lastname">
+        <input type="text" class="form-control" id="client_contact_lastname">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Email Address</label>
-        <input type="email" id="client_contact_email">
+        <input type="email" class="form-control" id="client_contact_email">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Phone Number</label>
-        <input type="tel" id="client_contact_phone">
+        <input type="tel" class="form-control" id="client_contact_phone">
       </div>
     </div>
 
     <h3>Primary Contact Info</h3>
     <div class="row">
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>First Name</label>
-        <input type="text" id="client_primary_firstname">
+        <input type="text" class="form-control" id="client_primary_firstname">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Last Name</label>
-        <input type="text" id="client_primary_lastname">
+        <input type="text" class="form-control" id="client_primary_lastname">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Email Address</label>
-        <input type="email" id="client_primary_email">
+        <input type="email" class="form-control" id="client_primary_email">
       </div>
 
-      <div class="d-flex flex-column col-6">
+      <div class="d-flex flex-column col-sm-6">
         <label>Phone Number</label>
-        <input type="tel" id="client_primary_phone">
+        <input type="tel" class="form-control" id="client_primary_phone">
       </div>
     </div>
 
-    <div class="col-12">
+    <div class="col-sm-12">
 		<input type="submit" value="Submit Query" name="client_submit" id="client_submit">
 	</div>
 
