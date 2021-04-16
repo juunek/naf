@@ -74,7 +74,7 @@
     <p>Thank you for your interest in NAF. To request assistance, please complete the application below. Applications must be completed by a physician, therapist, or hospital case manager, and clients must not have alternative means to receive assistance. We will contact you after the application is received.</p>
 </div>
 
-<div>
+<div class="mb-5">
   <form action="" method="post">
     <h3>Patient/Client Info</h3>
     <div class="row">
