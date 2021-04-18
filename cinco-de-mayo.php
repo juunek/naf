@@ -9,7 +9,7 @@
 if (isset($_GET['EID'])){
     $EID = intval($_GET['EID']);
 
-	$sql = "SELECT EID, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks FROM Events Where EID=?";
+	$sql = "SELECT EID, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks, RegisterEvtBtn, DetailsHeader1, Details1, DetailsHeader2, Details2 FROM Events Where EID=?";
 
 /* create a prepared statement */
 $stmt = $conn->stmt_init();
@@ -31,7 +31,7 @@ if ($stmt->prepare($sql)) {
 $stmt->store_result();
 
 	/* bind result variables */
-	$stmt->bind_result($EID, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $ELinks);
+	$stmt->bind_result($EID, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $ELinks, $RegisterEvtBtn, $DetailsHeader1, $Details1, $DetailsHeader2, $Details2);
   if ($stmt->num_rows > 0){
 
     print("<div class='container'>");
@@ -45,13 +45,14 @@ $stmt->store_result();
     print("<h2 class='resources-heading'>$EName</h2>
     <br>");
 		print ("<div class='col-md-10 mx-auto row py-4'>
-    <div class='col-md-6'>
+    <div class='col-md-4'>
     <p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $EDate<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $EStart - $EEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p>
-    <a class='mt-auto' href='$ELinks'><button>View Event</button></a>
+    <a class='mt-auto' href='$RegisterEvtBtn'><button>EVENT DETAILS/ REGISTER</button></a>
     </div>
-     <div class='d-flex align-items-start flex-column col-md-6'>
-     <h3>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $EDate<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $EStart - $EEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
-     <a class='mt-auto' href='$ELinks'><button>View Event</button></a>
+     <div class='d-flex align-items-start flex-column col-md-8'>
+     <p>$EDescriptionPreview</p>
+     <h3>$DetailsHeader1</h3><p>$Details1</p>
+     <h3>$DetailsHeader2</h3><p>$Details2</p>
      </div>
      </div>");
 }
