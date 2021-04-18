@@ -116,3 +116,8 @@
 .cover{
   width: 100%;
 }
+
+.event-icon{
+  width: 5%;
+  text-align: center;
+}

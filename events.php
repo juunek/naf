@@ -1,48 +1,59 @@
 <?php
+  include("dbconn.inc.php");
   include("shared.php");
+  $conn = dbConnect();
   print($htmlNav);
 ?>
-<div class="container">
-  <h1 class="my-5 text-center">Events</h1>
+<main>
+<?php
+print("<div class='container'>");
 
-  <!--Local Resources -->
 
-  <h2 class="resources-heading">Upcoming Events</h2>
-  <br>
-  <div>
-    <div class="col-md-10 mx-auto row py-4">
+	print("<h1 class='my-5 text-center'>Events</h1>
 
-        <div class="col-md-6">
-          <img class="cover" src="img/events-cinco-de-mayo.jpg">
-        </div>
-        <div class="d-flex align-items-start flex-column col-md-6">
-          <h3>Cinco de Mayo Run, Walk, &amp Roll</h3>
-          <p>Saturday, May 1, 2021</p>
-          <p>6:15 AM–10:15 AM</p>
-          <p>McKinney, Texas</p>
-          <p>Run, Walk or Roll with us to help raise money for people in our community living with spinal cord injuries and disabilities.</p>
-          <button class="mt-auto">View Event</button>
-        </div>
+  <h2 class='resources-heading'>Upcoming Events</h2>
+  <br>");
 
+	$sql = "SELECT EID, EImage, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks FROM Events";
+
+/* create a prepared statement */
+$stmt = $conn->stmt_init();
+
+if ($stmt->prepare($sql)) {
+
+	/* execute statement */
+	$stmt->execute();
+
+	/* bind result variables */
+	$stmt->bind_result($EID, $EImage, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $ELinks);
+
+	print ("<div>");
+	/* fetch values */
+	while ($stmt->fetch()) {
+		print ("<div class='col-md-10 mx-auto row py-4'>
+    <div class='col-md-6'>
+      <img class='cover' src='img/$EImage'  alt='Image of $EName Event' title= 'Image of $EName Event'>
     </div>
+     <div class='d-flex align-items-start flex-column col-md-6'>
+     <h3>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $EDate<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $EStart - $EEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
+     <a class='mt-auto' href='$ELinks?EID=$EID'><button>View Event</button></a>
+     </div>
+     </div>");
+}
+print ("</div>");
 
-    <div class="col-md-10 mx-auto row py-4">
+/* close statement */
+$stmt->close();
 
-        <div class="col-md-6">
-          <img class="cover" src="img/events-topgolf-charity-event.jpg">
-        </div>
-        <div class="d-flex align-items-start flex-column col-md-6">
-          <h3>Cinco de Mayo Run, Walk, &amp Roll</h3>
-          <p>Saturday, May 1, 2021</p>
-          <p>6:15 AM–10:15 AM</p>
-          <p>McKinney, Texas</p>
-          <p>Run, Walk or Roll with us to help raise money for people in our community living with spinal cord injuries and disabilities.</p>
-          <button class="mt-auto">View Event</button>
-        </div>
+} else {
+print ("query failed");
+}
 
-    </div>
-  </div>
-</div>
+print("</div>");
+
+$conn->close();
+?>
+</main>
 <?php
   print($htmlFooter);
 ?>
