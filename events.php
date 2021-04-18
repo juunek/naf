@@ -14,7 +14,7 @@ print("<div class='container'>");
   <h2 class='resources-heading'>Upcoming Events</h2>
   <br>");
 
-	$sql = "SELECT EID, EImage, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks FROM Events";
+	$sql = "SELECT EID, EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks FROM Events";
 
 /* create a prepared statement */
 $stmt = $conn->stmt_init();
@@ -25,14 +25,14 @@ if ($stmt->prepare($sql)) {
 	$stmt->execute();
 
 	/* bind result variables */
-	$stmt->bind_result($EID, $EImage, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $ELinks);
+	$stmt->bind_result($EID, $EImagePreview, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $ELinks);
 
 	print ("<div>");
 	/* fetch values */
 	while ($stmt->fetch()) {
 		print ("<div class='col-md-10 mx-auto row py-4'>
     <div class='col-md-6'>
-      <img class='cover' src='img/$EImage'  alt='Image of $EName Event' title= 'Image of $EName Event'>
+      <img class='cover' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'>
     </div>
      <div class='d-flex align-items-start flex-column col-md-6'>
      <h3>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $EDate<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $EStart - $EEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>

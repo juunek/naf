@@ -1,52 +1,106 @@
-.home-jumbotron-img {
-      background-image: url(img/home-jumbotron-img.jpg);
+/*----------------------Typography------------------------------------*/
+
+html, body {
+	font-family: 'Inter', sans-serif!important;
 }
+
+
+p {
+	font-weight: 400!important;
+	color: #707070!important;
+}
+
+h4 {
+	font-weight: 400!important;
+}
+
+h1,h2,h3 {
+	font-weight: 800!important;
+}
+
+
+
+.fw-800 {
+	font-weight: 800!important;
+}
+
+.fw-600 {
+	font-weight: 600!important;
+}
+
+.fs-x2 {
+	font-size: 2rem;
+}
+
+a.dropdown-item {
+	color: #0B5BAB!important;
+}
+
+
+.text-naf-blue {
+	color: #0B5BAB!important;
+	font-weight: 800!important;
+}
+
+.text-naf-white {
+	color: white!important;
+}
+
+/*-------------------------- End Typography----------------------------*/
+
+/*-------------------------- Button ----------------------------*/
 
 .clear-bg {
-	background-color:rgba(255, 255, 255, 0.2);
-	border: solid 2px white;
+	background-color:rgba(255, 255, 255,0);
+	border: solid 1px white;
 	color: white;
+	border-radius: 5px;
+	padding: 0.5rem;
+	font-weight: 700;
 }
 
-.block {
-
-    text-align: center;
-    vertical-align: middle;
-}
-.circle {
-    background: white;
-    border-radius: 50%;
-    height: 10rem;
-    width: 10rem;
-    display: table;
-    margin: 1rem auto;
-}
-.circle p, .circle h3 {
-    vertical-align: middle;
-    display: table-cell;
+.btn-naf-blue {
+	background-color: #0B5BAB!important;
+	color: white!important;
+	border: none;
+	letter-spacing: 0.7px;
+	font-weight:  800!important;
 }
 
-.pv-5 {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+.btn-same-size {
+	width: 18rem;
+	height: 4rem;
 }
 
-.pv-2 {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+.bg-naf-blue {
+
+	background-color: #0B5BAB!important;
+	color: white!important;
+	font-weight:  800!important;
 }
 
-.textwhite a {
-	color: white;
+
+.btn-naf-blue-squareCorner {
+	background-color: #0B5BAB!important;
+	color: white!important;
+	text-transform: uppercase;
+	padding: 0.5rem;
+	border: none;
+	font-weight: 700;
 }
 
-#btn-donate-tablet {
-	margin-right: 1rem;
-}
-#btn-donate-collapsemenu {
-		display:none!important;
+.btn-naf-white-squareCorner {
+	background-color: white!important;
+	color: #0B5BAB!important;
+	text-transform: uppercase;
+	padding: 0.5rem;
+	border: none;
+	font-weight: 700;
 }
 
+
+/*-------------------------- End Button----------------------------*/
+/*--------------------------Media Query----------------------------*/
 @media (min-width: 992px) {
 	#btn-donate-tablet {
 		display:none!important;
@@ -58,11 +112,26 @@
 		text-align: left!important;
 	}
 
-}
 
-@media (min-width: 768px) {
 
 }
+
+@media (max-width: 992px) {
+	.nav-link.dropdown-toggle, .nav-item.nav-link {
+	 	border-bottom:  #707070 1px solid;
+	 }
+	 .dropdown-menu.show{
+		border: none;
+		background-color: none;
+
+	}
+	#group-connect-join{
+		padding:0;
+	}
+
+
+}
+
 
 
 @media (max-width: 768px) {
@@ -71,14 +140,83 @@
 
 		}
 
+
+	#footer-links div {
+		text-align: center;
+	}
+
+
+	#footer-links{
+
+	}
+
+	#footer-dropdown {
+		display: block;
+		cursor: pointer;
+	}
+
+	[data-toggle="collapse"] .fa:before {
+	  content: "\f139";
+	}
+
+	[data-toggle="collapse"].collapsed .fa:before {
+	  content: "\f13a";
+	}
+
+	.home-hero-wheelchair-img div {
+		text-align: center!important;
+	}
+
+
 }
 
-@media (max-width: 576px) {
-.resources-brands{
-			display: none;
+
+@media (max-width: 992px) {
+	.resources-brands{
+				display: none;
+
+			}
+	#about-youtube {
+		height: 400px;
+	}
+
+	#footer-joiningemaillist-div{
+			background-color: white!important;
+			width: 100%;
+			text-align: center;
+			padding-top: 1.5rem;
+			padding-bottom: 2rem;
 
 		}
 
+	#footer-joiningemaillist-h4{
+		color: #0B5BAB!important;
+	}
+
+	#footer-joiningemaillist-button{
+		background-color: #0B5BAB!important;
+		color: white!important;
+	}
+
+	#footer-connect {
+		display: flex;
+		margin-right: auto;
+		margin-left: auto;
+
+	}
+
+	.social-media {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+		margin-left: 2rem;
+	}
+
+
+
+}
+
+
+@media (max-width: 576px) {
     /*Client Application Counties Order*/
     #sm-client-app-counties-first{
       order: 1;
@@ -101,16 +239,128 @@
 
 }
 
+/*--------------------------End Media Quey----------------------------*/
+/*--------------------------General----------------------------*/
 
-.test{
-  margin:0 2em;
+.home-hero-wheelchair-img {
+    background-image: url(img/home-hero-wheelchair.jpg);
+    background-size: cover;
+
+
 }
+
+.home-inspiring-independence-img {
+	background-image: url(img/home-inspiring-independence.jpg);
+	background-size: cover;
+}
+
+.home-stats-img {
+	background-image: url(img/home-stats-image.jpg);
+	background-size: cover;
+}
+
+
+
+.home-100vh {
+	height: 100vh;
+}
+
+
+
+
+.opacity-50 {
+	background-color:rgba(0,0,0,0.2)!important;
+
+}
+
+
+.errMsg {display: block; background-color: white; color: #ff6600; font-size: 0.8em; padding: 2px; position: relative; left: 0px;}
+
+
+
+
+/*--------------------------End General----------------------------*/
+
+
+/*-------------------------- Circles in Homepage----------------------------*/
+.block {
+
+    text-align: center;
+    vertical-align: middle;
+}
+.circle {
+    background: white;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    display: table;
+    margin: 1rem auto;
+    text-align: center;
+}
+.circle p, .circle h3 {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.pv-5 {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.pv-2 {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+/*--------------------------End Circles in Homepage----------------------------*/
+
+
+
+/*--------------------------Nav bar + Footer----------------------------*/
+
+.footer-col a {
+	color: white;
+	text-decoration: none;
+	font-weight: 400!important;
+}
+
+#btn-donate-tablet {
+	margin-right: 1rem;
+}
+#btn-donate-collapsemenu {
+	display:none!important;
+}
+
+
+.navbar {
+	background-color: white;
+}
+
+
+.navbar a {
+	color: grey;
+}
+
+#footer-dropdown {
+		display: none;
+	}
+
+
+.nav-link.dropdown-toggle, .nav-item.nav-link {
+
+ 	color: #0B5BAB!important;
+ 	font-weight: bold;
+ }
 
 .resources-heading {
 	background-color: blue;
-	padding: 1rem;
+	padding: 0.5rem;
 	color: white;
-	padding-left: 2rem;
+	padding-left: 5rem;
+}
+
+.test{
+  margin:0 2em;
 }
 
 .cover{
@@ -121,3 +371,28 @@
   width: 5%;
   text-align: center;
 }
+
+/*--------------------------End Nav bar + Footer----------------------------*/
+
+
+
+
+
+
+/*------------Carousel------------------------*/
+
+
+
+
+.carousel-control-prev-icon {
+	color: #0B5BAB!important;
+	font-size: 3rem;
+
+}
+
+
+
+
+
+
+/*------------End Carousel------------------------*/

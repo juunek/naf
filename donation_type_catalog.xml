@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DonationType>
+	<DTC>
+		<Type>vehicle</Type>
+		<Description>This is description of vehicle</Description>
+		<Example>This is Example of vehicle</Example>
+	</DTC>
+	<DTC>
+		<Type>equipment</Type>
+		<Description>This is description of equipment</Description>
+		<Example>This is Example of equipment</Example>
+	</DTC>
+	<DTC>
+		<Type>other</Type>
+		<Description>This is description of other</Description>
+		<Example>This is Example of other</Example>
+	</DTC>
+</DonationType>
