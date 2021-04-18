@@ -24,7 +24,7 @@ $htmlNav= "<!doctype html>
       <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
 
          <a class=\"navbar-brand\" href=\"index.php\">
-          <img src=\"img/logo.png\" alt=\"Neuro Assistance Foundation Logo\" height=\"40rem\">
+          <img src=\"img/naf-logo.png\" alt=\"Neuro Assistance Foundation Logo\" height=\"40rem\">
         </a>
 
         <button class=\"btn btn-primary ms-auto\" id=\"btn-donate-tablet\" href=\"#\">DONATE</button>
