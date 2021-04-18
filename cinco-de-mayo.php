@@ -51,6 +51,43 @@ $stmt->store_result();
     </div>
      <div class='d-flex align-items-start flex-column col-md-8'>
      <p>$EDescriptionPreview</p>
+     <table class='table'>
+      <tr>
+        <th>Run</th>
+        <th>Registered by April 8</th>
+        <th>Registered after April 8</th>
+      </tr>
+
+      <tr>
+        <td>5K</td>
+        <td>$30</td>
+        <td>$35</td>
+      </tr>
+
+      <tr>
+        <td>10K</td>
+        <td>$35</td>
+        <td>$40</td>
+      </tr>
+
+      <tr>
+        <td>Youth 5K & 1Mile (12 and under)</td>
+        <td>$15</td>
+        <td>$20</td>
+      </tr>
+
+      <tr>
+        <td>Handcycle 5K & 10K*</td>
+        <td>FREE</td>
+        <td>FREE</td>
+      </tr>
+
+      <tr>
+        <td>Virtual Run</td>
+        <td>$30</td>
+        <td>$35</td>
+      </tr>
+     </table>
      <h3>$DetailsHeader1</h3><p>$Details1</p>
      <h3>$DetailsHeader2</h3><p>$Details2</p>
      </div>
