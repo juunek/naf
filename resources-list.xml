@@ -122,10 +122,82 @@
     </resource>
     <resource>
         <type>National Resources</type>
-        <img>resources-social-security.gif</img>
-        <title>Social Security and Disability Resource Center</title>
+        <img>resources-paralysis-resource-guide.jpg</img>
+        <title>The Christopher & Dana Reeve Foundation</title>
+        <lead>Financial Help, Lifestyle</lead>
+        <description>The Christopher and Dana Reeve Foundation is dedicated to curing spinal cord injury by funding innovative research, and improving the quality of life for people living with paralysis through grants, information and advocacy. This foundation offers a Paralysis Resource Guide which is extremely useful as a tool to help you find what you need to stay as healthy, as active and as independent as possible. The guide is available on their website or at 1-800-539-7309</description>
+        <link>http://www.christopherreeve.org/</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>resources-kennedy-krieger.png</img>
+        <title>Kennedy Krieger International Center for Spinal Cord Injury</title>
+        <lead>Lifestyle, Caregiver</lead>
+        <description>The Center works with children with paralysis to improve health and optimize recovery of function.</description>
+        <link>http://www.kennedykrieger.org/</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>#</img>
+        <title>The National Spinal Cord Injury Association (NSCIA)</title>
+        <lead>Lifestyle, Caregiver</lead>
+        <description>The mission of The National Spinal Cord Injury Association (NSCIA) is to enable people with spinal cord injury and disease (SCI/D) to achieve their highest level of independence, health, and personal fulfillment by providing resources, services, and peer support.</description>
+        <link>#</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>resources-paralyzed-veterans.png</img>
+        <title>Paralyzed Veterans of America (PVA)</title>
+        <lead>Lifestyle</lead>
+        <description>PVA works toward quality health care, rehabilitation and civil rights for veterans and all citizens with spinal cord injuries and diseases. PVA, 801 Eighteenth Street, NW, Washington, DC 20006-3517; toll-free 1-800-424-8200</description>
+        <link>http://www.pva.org/</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>resources-united-spinal.jpg</img>
+        <title>United Spinal Association</title>
+        <lead>Lifestyle</lead>
+        <description>The association promotes full access and inclusion to persons with disabilities, including access to health care, assistive technology, recreation and housing.</description>
+        <link>http://www.unitedspinal.org/</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>resources-carecure.png</img>
+        <title>CareCure Forum</title>
+        <lead>Lifestyle</lead>
+        <description>For caregivers. Active and helpful message board for loved ones and caregivers of people with paralysis. Click on the "Caregiving" section when you are on the website.</description>
+        <link>http://sci.rutgers.edu/</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>#</img>
+        <title>Hiring and Management of Personal Care Assistants</title>
+        <lead>Lifestyle, Caregivers</lead>
+        <description>Visit this website for a downloadable, 26-page booklet in PDF format from the SCI Project at Santa Clara Valley Medical Center. Covers everything from locating and hiring, to training and paying personal assistants. Includes forms, checklists and resources.</description>
+        <link>http://www.tbi-sci.org/pdf/pas.pdf</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>#</img>
+        <title>Spinal Cord Injury Caregivers</title>
+        <lead>Caregivers</lead>
+        <description>This is a Yahoo Internet forum, a place to share information and to support other caregivers who are caring for people with SCI.</description>
+        <link>http://groups.yahoo.com/group/scic</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>resources-newsome-melton.jpg</img>
+        <title>BrainandSpinalCord.org</title>
         <lead>Legal Help</lead>
-        <description>The Social Security and Disability Resource Center ( SSDRC.com ) is an informational website that provides answers to questions about how to apply for disability, how to appeal a claim in the event of a denial, how to navigate the federal system, and how to avoid certain mistakes that are commonly made by applicants. The site’s author is a former disability examiner for the social security administration.</description>
-        <link>http://www.ssdrc.com/</link>
+        <description>The mission of brainandspinalcord.org is to be the most reliable, timely and complete resource on the internet for brain injury and spinal cord injury survivors. These injuries can be devastating, causing physical and emotional distress, as well as loss of wages.</description>
+        <link>http://brainandspinalcord.org/</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>resources-nurse-groups.png</img>
+        <title>Nurse Groups Information about Special Olympics & Other Recreation Programs</title>
+        <lead>Caregivers</lead>
+        <description>This website gives information about the special olympics, similar opportunities for children with disabilities, wheelchair sports and wheelchair safety.</description>
+        <link>http://www.nursegroups.com/special-olympics-and-other-recreation-programs</link>
     </resource>
 </resources>
