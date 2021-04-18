@@ -3,10 +3,10 @@
     <resource>
         <type>Local Resources</type>
         <img>img/resource-brand-1.png</img>
-        <title>Disabled Crime Victims Assistance, Inc.</title>
-        <lead>Legal Help</lead>
-        <description>Disabled Crime Victims Assistance, Inc. is committed to assisting the disabled crime victim and their families and promoting awareness of their specialized needs to those who serve victims and the community.</description>
-        <link>#</link>
+        <title>Dallas Wheelchair Mavericks</title>
+        <lead>Lifestyle</lead>
+        <description>The Dallas Wheelchair Mavericks endeavor to: Use our resources to maintain a competitive wheelchair basketball team, use our resources to help improve the condition of the lives of individuals with disabilities, and use our resources to support agencies working to help improve the condition of the lives of individuals with disabilities. Our Motto is: Ability, not disability, counts.</description>
+        <link>http://www.wheelmav.org/</link>
     </resource>
     <resource>
         <type>Local Resources</type>
@@ -14,14 +14,118 @@
         <title>Disabled Crime Victims Assistance, Inc.</title>
         <lead>Legal Help</lead>
         <description>Disabled Crime Victims Assistance, Inc. is committed to assisting the disabled crime victim and their families and promoting awareness of their specialized needs to those who serve victims and the community.</description>
-        <link>#</link>
+        <link>http://www.dcvainc.org/aboutus.aspx</link>
     </resource>
     <resource>
         <type>Local Resources</type>
-        <img>img/resource-brand-1.png</img>
-        <title>Disabled Crime Victims Assistance, Inc.</title>
+        <img>img/resources-helping-restore-ability.png</img>
+        <title>Helping Restore Ability</title>
+        <lead>Lifestyle, Caregiver</lead>
+        <description>Helping Restore Ability is a licensed and certified nonprofit agency whose mission is, “to promote independence and enrich the lives of those we serve”. HRA provides in-home personal attendant care and homemaker services, as well as home health care, to people of all ages with any type of disability.  Our goal is to help people remain in their own homes as long as possible with dignity, respect, and with choice. We are here to serve you.</description>
+        <link>http://www.hratexas.org/</link>
+    </resource>
+    <resource>
+        <type>Local Resources</type>
+        <img>img/resources-helping-restore-ability.png</img>
+        <title>Neuro Fitness Foundation</title>
+        <lead>Lifestyle</lead>
+        <description>Our mission is to establish and maintain a facility that promotes strengthening the mind and body through exercise and education for the neurologically impaired individual.</description>
+        <link>http://www.neurofitnessfoundation.com/</link>
+    </resource>
+    <resource>
+        <type>Local Resources</type>
+        <img>img/resources-reach.png</img>
+        <title>REACH of Dallas</title>
+        <lead>Lifestyle</lead>
+        <description>REACH Inc is a nonprofit organization with the goal of advocating for and empowering people with disabilities to take charge of their lives and participate actively in community life. REACH stands for Rehabilitation, Education, and Advocacy for Citizens with Handicaps.</description>
+        <link>http://www.reachcils.org/locations/dallas</link>
+    </resource>
+    <resource>
+        <type>Local Resources</type>
+        <img>img/resources-reach.png</img>
+        <title>REACT</title>
+        <lead>Lifestyle</lead>
+        <description>REACT is a community-based fitness and paralysis recovery center bridging sport and science. Our team of certified strength coaches, physical therapist, researchers, students and volunteers work together to apply advances in neuroscience and strength training, offering elite level training and recovery opportunities for individuals with spinal cord injuries and other neurological conditions.</description>
+        <link>http://www.neuroreaction.org/</link>
+    </resource>
+    <resource>
+        <type>Media Resources</type>
+        <img>img/resources-ability-magazine.png</img>
+        <title>Ability Magazine</title>
+        <lead>Media</lead>
+        <description>Ability Magazine is a publication crossing celebrity journalism with disability awareness.</description>
+        <link>http://www.abilitymagazine.com/</link>
+    </resource>
+    <resource>
+        <type>Media Resources</type>
+        <img>resource-brand-1</img>
+        <title>Kids on Wheels</title>
+        <lead>Media</lead>
+        <description>Kids On Wheels is a full-color quarterly magazine that enables children with disabilities and their parents to live active, independent lives. One version is for kids, the other for parents.</description>
+        <link>http://www.kidsonwheels.us</link>
+    </resource>
+    <resource>
+        <type>Media Resources</type>
+        <img>resources-mouth-mag.gif</img>
+        <title>Mouth Mag</title>
+        <lead>Media</lead>
+        <description>Mouth is a bi-monthly magazine about disability rights and empowerment that says this about itself: "This rude little magazine demands answers from the people in charge, laughs at the lying answers and occasionaly bites down, hard, somewhere near the throbbing jugular."</description>
+        <link>http://www.mouthmag.com</link>
+    </resource>
+    <resource>
+        <type>Media Resources</type>
+        <img>resources-new-mobility.jpg</img>
+        <title>New Mobility</title>
+        <lead>Media</lead>
+        <description>New Mobility is a monthly lifestyle magazine for the wheelchair community. Features and news about active living, medical issues, current affairs, personalities, products and more.</description>
+        <link>http://www.newmobility.com</link>
+    </resource>
+    <resource>
+        <type>Media Resources</type>
+        <img>resources-paralysis-resource-guide.jpg</img>
+        <title>Paralysis Resource Guide</title>
+        <lead>Media</lead>
+        <description>Paralysis Resource Guide is a 336 page book compiling paralysis info and can be ordered through the Christopher and Dana Reeve Foundation Paralysis Resource Center (PRC). The goal of the PRC is to help people navigate the chaos of paralysis with reliable information, and with a message of hope. This book is a tool to help you find what you need to stay as healthy, as active and as independent as possible. </description>
+        <link> https://www.christopherreeve.org/living-with-paralysis/free-resources-and-downloads/paralysis-resource-guide?gclid=Cj0KCQjwse-DBhC7ARIsAI8YcWLtZtD3LcooBpnXO3jdPsO0BfKoJo_5HB_mQ6HMyp3qNKZa9v3I1-oaAjK0EALw_wcB</link>
+    </resource>
+    <resource>
+        <type>Media Resources</type>
+        <img>resources-paraplegia-news.png</img>
+        <title>Paraplegia News</title>
+        <lead>Media</lead>
+        <description>PN (Paraplegia News) is a magazine for service veterans with disabilities, and for anyone who uses a wheelchair. Covers healthcare, issues, news and events, sports and recreation, and much more.</description>
+        <link>https://pnonline.com/</link>
+    </resource>
+    <resource>
+        <type>Media Resources</type>
+        <img>resources-sports-n-spokes.jpg</img>
+        <title>Sports 'N Spokes</title>
+        <lead>Media</lead>
+        <description>Sports 'N Spokes is a colorful bi-monthly magazine about wheelchair athletics, competitive sports and recreation.</description>
+        <link>http://www.sportsnspokes.com</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>resources-chairdex.png</img>
+        <title>Chairdex</title>
+        <lead>Accessories</lead>
+        <description>Chairdex is a website about wheelchairs. They describe the types of chairs, the history of wheelchairs, and common accessories</description>
+        <link>http://chairdex.com/</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>resources-social-security.gif</img>
+        <title>Social Security and Disability Resource Center</title>
         <lead>Legal Help</lead>
-        <description>Disabled Crime Victims Assistance, Inc. is committed to assisting the disabled crime victim and their families and promoting awareness of their specialized needs to those who serve victims and the community.</description>
-        <link>#</link>
+        <description>The Social Security and Disability Resource Center ( SSDRC.com ) is an informational website that provides answers to questions about how to apply for disability, how to appeal a claim in the event of a denial, how to navigate the federal system, and how to avoid certain mistakes that are commonly made by applicants. The site’s author is a former disability examiner for the social security administration.</description>
+        <link>http://www.ssdrc.com/</link>
+    </resource>
+    <resource>
+        <type>National Resources</type>
+        <img>resources-social-security.gif</img>
+        <title>Social Security and Disability Resource Center</title>
+        <lead>Legal Help</lead>
+        <description>The Social Security and Disability Resource Center ( SSDRC.com ) is an informational website that provides answers to questions about how to apply for disability, how to appeal a claim in the event of a denial, how to navigate the federal system, and how to avoid certain mistakes that are commonly made by applicants. The site’s author is a former disability examiner for the social security administration.</description>
+        <link>http://www.ssdrc.com/</link>
     </resource>
 </resources>
