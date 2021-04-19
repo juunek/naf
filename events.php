@@ -4,7 +4,6 @@
   $conn = dbConnect();
   print($htmlNav);
 ?>
-<main>
 <?php
 print("<div class='container'>");
 
@@ -62,7 +61,6 @@ print("</div>");
 
 $conn->close();
 ?>
-</main>
 <?php
   print($htmlFooter);
 ?>
