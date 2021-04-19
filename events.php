@@ -8,7 +8,7 @@
 print("<div class='container'>");
 
 
-	print("<h1 class='my-5 text-center'>Events</h1>
+	print("<h1 class='my-5 text-center header-blue'>Events</h1>
 
   <h2 class='resources-heading'>Upcoming Events</h2>
   <br>");
@@ -37,7 +37,7 @@ if ($stmt->prepare($sql)) {
       <img class='cover' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'>
     </div>
      <div class='d-flex align-items-start flex-column col-md-6'>
-     <h3 class='events-mobile-spacing'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
+     <h3 class='events-mobile-spacing header-blue'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
 
      <div class='flex-xl-row flex-lg-column w-100'>
       <a class='events-btn-padding-right' href='$ELinks?EID=$EID'>

@@ -45,12 +45,12 @@ $stmt->store_result();
     $timeEnd=date('g:i A', strtotime($EEnd));
     print("<h2 class='resources-heading'>$EName</h2>
     <br>");
-		print ("<div class='col-md-10 mx-auto row py-4'>
-    <div class='col-md-4'>
+		print ("<div class='col-md-12 mx-auto row py-4'>
+    <div class='col-md-4 h-100 pt-4 pb-1 px-4 me-3 mb-4 gray-bg'>
     <p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart -   $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p>
     <a class='mt-auto' href='$RegisterEvtBtn' target='_blank'><button type='button' class='btn cover btn-naf-blue mb-4'>EVENT DETAILS/ REGISTER</button></a>
     </div>
-     <div class='d-flex align-items-start flex-column col-md-8'>
+     <div class='d-flex align-items-start flex-column col-md-7'>
      <p>$EDescriptionPreview</p>
      <table class='table my-4'>
       <tr>

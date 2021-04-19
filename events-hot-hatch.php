@@ -36,7 +36,7 @@ $stmt->store_result();
     print("<div class='container'>");
 
 
-    	print("<h1 class='my-5 text-center'>Events</h1>");
+    	print("<h1 class='my-5 text-center header-blue'>Events</h1>");
 	print ("<div>");
 	/* fetch values */
 	while ($stmt->fetch()) {
@@ -46,18 +46,18 @@ $stmt->store_result();
     print("<h2 class='resources-heading'>$EName</h2>
     <br>");
 		print ("<div class='col-md-10 mx-auto row py-4'>
-    <div class='col-md-4'>
+    <div class='col-md-4 h-100 pt-4 pb-1 px-4 me-3 mb-4 gray-bg'>
     <p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart -   $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p>
     <a class='mt-auto' href='$RegisterEvtBtn' target='_blank'><button type='button' class='btn cover btn-naf-blue mb-4'>EVENT DETAILS/ REGISTER</button></a>
     </div>
-     <div class='d-flex align-items-start flex-column col-md-8'>
+     <div class='d-flex align-items-start flex-column col-md-7'>
      <p>$EDescriptionPreview</p>
-     <table class='table'>
+     <table class='table my-4'>
       <tr>
-        <th>Run</th>
-        <th>Registered by July 25</th>
-        <th>Registered from July 26 - August 18</th>
-        <th>Registered after August 18</th>
+        <th class='header-blue'>Run</th>
+        <th class='header-blue'>Registered by July 25</th>
+        <th class='header-blue'>Registered from July 26 - August 18</th>
+        <th class='header-blue'>Registered after August 18</th>
       </tr>
 
       <tr>
@@ -95,8 +95,8 @@ $stmt->store_result();
         <td>$40</td>
       </tr>
      </table>
-     <h3>$DetailsHeader1</h3><p>$Details1</p>
-     <h3>$DetailsHeader2</h3><p>$Details2</p>
+     <h3 class='mt-3 header-blue'>$DetailsHeader1</h3><p>$Details1</p>
+     <h3 class='mt-3 header-blue'>$DetailsHeader2</h3><p>$Details2</p>
      </div>
      </div>");
 }
