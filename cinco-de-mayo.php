@@ -48,7 +48,7 @@ $stmt->store_result();
 		print ("<div class='col-md-10 mx-auto row py-4'>
     <div class='col-md-4'>
     <p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart -   $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p>
-    <a class='mt-auto' href='$RegisterEvtBtn'><button>EVENT DETAILS/ REGISTER</button></a>
+    <a class='mt-auto' href='$RegisterEvtBtn' target='_blank'><button type='button' class='btn cover btn-naf-blue mb-4'>EVENT DETAILS/ REGISTER</button></a>
     </div>
      <div class='d-flex align-items-start flex-column col-md-8'>
      <p>$EDescriptionPreview</p>
@@ -96,8 +96,117 @@ $stmt->store_result();
 }
 print ("</div>");
 
+print("<h2 class='resources-heading'>Photo Gallery</h2><br>
+
+<div class='row text-center text-lg-left'>
+
+<div class='col-lg-3 col-md-4 col-6 thumb-post'>
+ <div class='d-block mb-4 h-100'>
+       <img class='img-fluid' id='myImg' src='img/events/cinco-de-mayo-gallery-01.jpg' alt=''>
+     </div>
+
+</div>
+<div class='col-lg-3 col-md-4 col-6 thumb-post'>
+ <div class='d-block mb-4 h-100'>
+       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-02.jpg' alt=''>
+     </div>
+</div>
+<div class='col-lg-3 col-md-4 col-6 thumb-post'>
+ <div class='d-block mb-4 h-100'>
+       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-03.jpg' alt=''>
+     </div>
+</div>
+<div class='col-lg-3 col-md-4 col-6 thumb-post'>
+ <div class='d-block mb-4 h-100'>
+       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-04.jpg' alt=''>
+     </div>
+</div>
+<div class='col-lg-3 col-md-4 col-6 thumb-post'>
+ <div class='d-block mb-4 h-100'>
+       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-05.jpg' alt=''>
+     </div>
+</div>
+<div class='col-lg-3 col-md-4 col-6 thumb-post'>
+ <div class='d-block mb-4 h-100'>
+       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-06.jpg' alt=''>
+     </div>
+</div>
+<div class='col-lg-3 col-md-4 col-6 thumb-post'>
+ <div class='d-block mb-4 h-100'>
+       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-07.jpg' alt=''>
+     </div>
+</div>
+<div class='col-lg-3 col-md-4 col-6 thumb-post'>
+ <div class='d-block mb-4 h-100'>
+       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-08.jpg' alt=''>
+     </div>
+</div>
+</div>");
+
+print("<h2 class='resources-heading'>Sponsors</h2><br>
+
+<div class='row text-center text-lg-left'>
+
+<div class='col-lg-3 col-md-4 col-6'>
+ <a href='https://www.bswrehab.com/' target='_blank' class='d-block mb-4 h-100'>
+       <img class='mw-100 sponsors-img-height' id='myImg' src='img/events/sponsors-bsw.png' alt=''>
+     </a>
+
+</div>
+<div class='col-lg-3 col-md-4 col-6'>
+ <a href='https://candrmedical.net' target='_blank' class='d-block mb-4 h-100'>
+       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-candr-medical-supplies.png' alt=''>
+     </a>
+</div>
+<div class='col-lg-3 col-md-4 col-6'>
+ <a href='https://craigranchfitness.com/' target='_blank' class='d-block mb-4 h-100'>
+       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-craig-ranch.png' alt=''>
+     </a>
+</div>
+<div class='col-lg-3 col-md-4 col-6'>
+ <a href='https://jeremiahsice.com/' target='_blank' class='d-block mb-4 h-100'>
+       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-jeremiahsice.png' alt=''>
+     </a>
+</div>
+<div class='col-lg-3 col-md-4 col-6'>
+ <a href='https://www.facebook.com/NickiNielsenLM/' target='_blank' class='d-block mb-4 h-100'>
+       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-liberty-mutual.png' alt=''>
+     </a>
+</div>
+<div class='col-lg-3 col-md-4 col-6'>
+ <a href='https://www.mobilityworks.com/locations/wheelchair-vans-for-sale-in-fort-worth-texas/' target='_blank' class='d-block mb-4 h-100'>
+       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-mobility-works.png' alt=''>
+     </a>
+</div>
+<div class='col-lg-3 col-md-4 col-6'>
+ <a href='https://movin-pictures.com/' target='_blank' class='d-block mb-4 h-100'>
+       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-movin-pictures.jpg' alt=''>
+     </a>
+</div>
+<div class='col-lg-3 col-md-4 col-6'>
+ <a href='https://www.nsm-seating.com/' target='_blank' class='d-block mb-4 h-100'>
+       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-nsm.svg' alt=''>
+     </a>
+</div>
+<div class='col-lg-3 col-md-4 col-6'>
+ <a href='https://www.playtri.com/' target='_blank' class='d-block mb-4 h-100'>
+       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-playtri.png' alt=''>
+     </a>
+</div>
+<div class='col-lg-3 col-md-4 col-6'>
+ <a href='https://www.runwithstride.com/' target='_blank' class='d-block mb-4 h-100'>
+       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-stride.png' alt=''>
+     </a>
+</div>
+<div class='col-lg-3 col-md-4 col-6'>
+ <a href='https://www.unitedaccess.com/' target='_blank' class='d-block mb-4 h-100'>
+       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-unitedaccess.png' alt=''>
+     </a>
+</div>
+</div>");
+
 } else {
-  print ("<div class='error'>Currently, no record is found for this category.  Please check back at a later time.</div>");
+  print ("<div class='error'>Currently, no event is found for this category.  Please check back at a later time.</div>");
 }
 /* close statement */
 $stmt->close();
@@ -110,7 +219,7 @@ print("</div>");
 
 $conn->close();
 }else{
-    print ("<div class='error'>You did not select an image to view. Go back to the <a href=books.php>Books Page</a> or the <a href='index.php'>Home Page</a> to view a book.</div>");
+    print ("<div class='error'>You did not select an event to view. Go back to the <a href=events.php>Events Page</a> or the <a href='index.php'>Home Page</a> to view an event.</div>");
   }
 ?>
 </main>

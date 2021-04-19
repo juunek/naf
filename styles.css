@@ -98,6 +98,14 @@ a.dropdown-item {
 }
 
 .btn-naf-secondary-btn{
+	background-color: #0B5BAB!important;
+	color: white!important;
+	border: 3px solid #0B5BAB!important;
+	letter-spacing: 0.7px;
+	font-weight:  800!important;
+}
+
+.btn-naf-secondary-btn{
 	background-color: transparent!important;
 	color: #0B5BAB!important;
 	border: 3px solid #0B5BAB!important;
@@ -119,6 +127,17 @@ a.dropdown-item {
 		text-align: left!important;
 	}
 
+	.events-btn-width{
+		width: 45%;
+	}
+
+	.events-btn-padding-right{
+		padding-right: 1rem;
+	}
+
+	.events-btn-padding-left{
+		padding-left: 1rem;
+	}
 
 
 }
@@ -172,6 +191,10 @@ a.dropdown-item {
 
 	.home-hero-wheelchair-img div {
 		text-align: center!important;
+	}
+
+	.events-btn-width{
+		width: 100%;
 	}
 
 
@@ -284,7 +307,13 @@ a.dropdown-item {
 .errMsg {display: block; background-color: white; color: #ff6600; font-size: 0.8em; padding: 2px; position: relative; left: 0px;}
 
 
+.sponsors-img-height{
+	height: 5rem;
+}
 
+.gray-bg{
+	background-color: #EAEAEA;
+}
 
 /*--------------------------End General----------------------------*/
 
@@ -360,7 +389,7 @@ a.dropdown-item {
  }
 
 .resources-heading {
-	background-color: blue;
+	background-color: #0B5BAB;
 	padding: 0.5rem;
 	color: white;
 	padding-left: 5rem;
@@ -377,6 +406,13 @@ a.dropdown-item {
 .event-icon{
   width: 5%;
   text-align: center;
+}
+
+.thumb-post img {
+  object-fit: cover; /* Do not scale the image */
+  width: 100%;
+  height: 90%;
+  margin-bottom: 1rem;
 }
 
 /*--------------------------End Nav bar + Footer----------------------------*/

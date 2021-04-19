@@ -39,7 +39,7 @@ if ($stmt->prepare($sql)) {
     </div>
      <div class='d-flex align-items-start flex-column col-md-6'>
      <h3>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
-     <div class='mt-auto col-md-12 col-6'><a href='$ELinks?EID=$EID'><button type='button' class='btn btn-naf-secondary-btn'>View Event</button></a><a href='$RegisterEvtBtn'><button type='button' class='btn btn-naf-blue'>REGISTER</button></a></div>
+     <div class='mt-autod-flex flex-xl-row flex-lg-column w-100'><a class='events-btn-padding-right' href='$ELinks?EID=$EID'><button type='button' class='btn btn-naf-secondary-btn events-btn-width'>View Event</button></a><a class='events-btn-padding-left' href='$RegisterEvtBtn' target='_blank'><button type='button' class='btn btn-naf-primary-btn events-btn-width'>REGISTER</button></a></div>
      </div>
      </div>");
 }
