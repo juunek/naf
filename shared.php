@@ -5,14 +5,22 @@ $htmlNav= "<!doctype html>
     <!-- Required meta tags -->
     <meta charset=\"utf-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"css/styles.css\">
-    <!-- Bootstrap CSS -->
+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">
+    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap\" rel=\"stylesheet\">
+
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">
+
+    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">
     <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6\" crossorigin=\"anonymous\">
-    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">
+     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css\">
 
-    <script type=\"text/javascript\">
+    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>
+    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>
 
-    </script>
+    <script src=\"https://kit.fontawesome.com/5d3977cc74.js\" crossorigin=\"anonymous\"></script>
+
+    <script type=\"text/javascript\" src=\"js/javascript.js\"></script>
 
     <title>Neuro Assitance Foundation</title>
 
@@ -72,18 +80,18 @@ $htmlFooter="<footer>
 <div class='container-fluid'>
 
     <div class ='row bg-naf-blue p-lg-5'>
-       
+
 
       <div class='col-lg-3 col-md-12 mb-4 footer-col d-flex flex-column order-lg-last' id='group-connect-join'>
-              
+
               <div class='' id='footer-connect'>
-               
+
                   <h4 class ='text-white my-4 fw-800'>Connect with us</h4>
-                    
+
                   <div class ='social-media text-white'>
                         <i class='fa fa-facebook-square fs-x2 mr-3'></i>
                         <i class='fa fa-linkedin fs-x2'></i>
-                
+
                 </div>
              </div>
 
@@ -122,9 +130,9 @@ $htmlFooter="<footer>
               <h4 class ='text-white my-4 fw-800'>Community</h4>
               <a class='mb-2' href='#'>Community</a>
               <a  class='mb-2' href='#'>Get Involved</a>
-              <a class='mb-2' href='#'>Events</a>  
-              <a class='mb-2' href='#'>Volunteer</a> 
-              <a class='mb-2' href='#'>Donate</a>  
+              <a class='mb-2' href='#'>Events</a>
+              <a class='mb-2' href='#'>Volunteer</a>
+              <a class='mb-2' href='#'>Donate</a>
             </div>
             </div>
 
@@ -133,8 +141,8 @@ $htmlFooter="<footer>
                   <h4 class ='text-white my-4 fw-800'>Resources</h4>
                   <a class='mb-2' href='#'>Resources</a>
                   <a  class='mb-2' href='#'>Spinal Cord Injuries</a>
-                  <a class='mb-2' href='#'>Request Assistance</a>  
-                  <a class='mb-2' href='#'>Sitemap</a> 
+                  <a class='mb-2' href='#'>Request Assistance</a>
+                  <a class='mb-2' href='#'>Sitemap</a>
                 </div>
             </div>
         </div>
@@ -144,13 +152,11 @@ $htmlFooter="<footer>
     <div class='row bg-naf-blue '>
          <p class='text-center text-white m-0 pb-5'> © Neuro Assistance Foundation is a a 501(c)(3) Public Charity</p>
     </div>
- 
+
 </div>
 
 </footer>
-
-
-
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js\"></script>
     <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf\" crossorigin=\"anonymous\"></script>
     <script src=\"https://code.jquery.com/jquery-3.5.1.min.js\"></script>
     <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js\"></script>
