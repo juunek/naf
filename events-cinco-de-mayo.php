@@ -148,7 +148,7 @@ print("<h2 class='resources-heading'>Photo Gallery</h2><br>
                   <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-08.jpg'>
                  </a>
            </div>
-    </div>   
+    </div>
 </div>");
 
 print("<h2 class='resources-heading'>Sponsors</h2><br>
