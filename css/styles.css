@@ -1,7 +1,3 @@
-
-
-
-
 /*----------------------Typography------------------------------------*/
 
 html, body {
@@ -102,6 +98,22 @@ a.dropdown-item {
 	font-weight: 700;
 }
 
+.btn-naf-primary-btn{
+	background-color: #0B5BAB!important;
+	color: white!important;
+	border: 3px solid #0B5BAB!important;
+	letter-spacing: 0.7px;
+	font-weight:  800!important;
+}
+
+.btn-naf-secondary-btn{
+	background-color: transparent!important;
+	color: #0B5BAB!important;
+	border: 3px solid #0B5BAB!important;
+	letter-spacing: 0.7px;
+	font-weight:  800!important;
+}
+
 
 /*-------------------------- End Button----------------------------*/
 
@@ -118,7 +130,17 @@ a.dropdown-item {
 		text-align: left!important;
 	}
 
-	
+	.events-btn-width{
+		width: 45%;
+	}
+
+	.events-btn-padding-right{
+		padding-right: 0.75rem;
+	}
+
+	.events-btn-padding-left{
+		padding-left: 0.75rem;
+	}
 
 }
 
@@ -137,6 +159,14 @@ a.dropdown-item {
 
 	#btn-donate-collapsemenu {
 		display: none!important;
+	}
+
+	.btn-naf-primary-btn{
+		margin-top: 1rem;
+	}
+
+	.events-btn-width{
+		width: 100%;
 	}
 
 
@@ -181,6 +211,10 @@ a.dropdown-item {
 
 	.home-hero-wheelchair-img div {
 		text-align: center!important;
+	}
+
+	.events-mobile-spacing{
+		margin-top: 1rem;
 	}
 
 	
@@ -231,6 +265,29 @@ a.dropdown-item {
 
 }
 
+@media (max-width: 576px) {
+    /*Client Application Counties Order*/
+    #sm-client-app-counties-first{
+      order: 1;
+    }
+
+    #sm-client-app-counties-second{
+      order: 2;
+    }
+
+    #sm-client-app-counties-third{
+      order: 3;
+    }
+
+    #sm-client-app-counties-fourth{
+      order: 4;
+    }
+    #sm-client-app-counties-third, #sm-client-app-counties-fourth{
+      margin-top: -1rem;
+    }
+
+}
+
 
 
 
@@ -274,6 +331,13 @@ a.dropdown-item {
 
 .errMsg {display: block; background-color: white; color: #ff6600; font-size: 0.8em; padding: 2px; position: relative; left: 0px;}
 
+.sponsors-img-height{
+	height: 5rem;
+}
+
+.gray-bg{
+	background-color: #EAEAEA;
+}
 
 
 
@@ -354,6 +418,26 @@ a.dropdown-item {
 	padding-left: 5rem;
 }
 
+.test{
+	margin:0 2em;
+  }
+  
+  .cover{
+	width: 100%;
+  }
+  
+  .event-icon{
+	width: 5%;
+	text-align: center;
+  }
+  
+  .thumb-post img {
+	object-fit: cover; /* Do not scale the image */
+	width: 100%;
+	height: 90%;
+	margin-bottom: 1rem;
+  }
+
 /*--------------------------End Nav bar + Footer----------------------------*/
 
 .item{
@@ -384,7 +468,6 @@ a.dropdown-item {
 }
 
 
-
 /*------------Carousel------------------------*/
 
 
@@ -394,9 +477,14 @@ a.dropdown-item {
 	color: #0B5BAB!important;
 	font-size: 3rem;
 
-
-
 }
+
+
+
+
+
+
+/*------------End Carousel------------------------*/
 
 
 
