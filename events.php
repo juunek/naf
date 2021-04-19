@@ -38,8 +38,14 @@ if ($stmt->prepare($sql)) {
       <img class='cover' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'>
     </div>
      <div class='d-flex align-items-start flex-column col-md-6'>
-     <h3>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
-     <div class='mt-autod-flex flex-xl-row flex-lg-column w-100'><a class='events-btn-padding-right' href='$ELinks?EID=$EID'><button type='button' class='btn btn-naf-secondary-btn events-btn-width'>View Event</button></a><a class='events-btn-padding-left' href='$RegisterEvtBtn' target='_blank'><button type='button' class='btn btn-naf-primary-btn events-btn-width'>REGISTER</button></a></div>
+     <h3 class='events-mobile-spacing'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
+
+     <div class='flex-xl-row flex-lg-column w-100'>
+      <a class='events-btn-padding-right' href='$ELinks?EID=$EID'>
+      <button type='button' class='btn btn-naf-secondary-btn events-btn-width'>VIEW EVENT</button></a>
+
+      <a class='events-btn-padding-left' href='$RegisterEvtBtn' target='_blank'>
+      <button type='button' class='btn btn-naf-primary-btn events-btn-width'>REGISTER</button></a></div>
      </div>
      </div>");
 }
