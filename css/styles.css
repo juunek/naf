@@ -18,7 +18,9 @@ h1,h2,h3 {
 	font-weight: 800!important;
 }
 
-
+.header-blue{
+	color: #0B5BAB!important;
+}
 
 .fw-800 {
 	font-weight: 800!important;
@@ -52,7 +54,7 @@ a.dropdown-item {
 
 .clear-bg {
 	background-color:rgba(255, 255, 255,0);
-	border: solid 1px white; 
+	border: solid 1px white;
 	color: white;
 	border-radius: 5px;
 	padding: 0.5rem;
@@ -73,7 +75,7 @@ a.dropdown-item {
 }
 
 .bg-naf-blue {
-	
+
 	background-color: #0B5BAB!important;
 	color: white!important;
 	font-weight:  800!important;
@@ -119,10 +121,10 @@ a.dropdown-item {
 
 
 /*--------------------------Media Query----------------------------*/
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 	#btn-donate-tablet {
 		display:none!important;
-		
+
 	}
 	#btn-donate-collapsemenu {
 		display: block!important;
@@ -142,9 +144,14 @@ a.dropdown-item {
 		padding-left: 0.75rem;
 	}
 
+	.resources-heading {
+		padding: 0.5rem;
+		padding-left: 1.5rem;
+	}
+
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
 	.nav-link.dropdown-toggle, .nav-item.nav-link {
 	 	border-bottom:  #707070 1px solid;
 	 }
@@ -169,62 +176,9 @@ a.dropdown-item {
 		width: 100%;
 	}
 
-
-
-}
-@media (min-width: 768px) { 
-	#footer-dropdown {
-		display: none!important;
-	}
-
-}
-
-
-@media (max-width: 768px) { 
-	.resources-brands{	
-			display: block;
-			
-		}
-
-
-	#footer-links div {
-		text-align: center;
-	}
-
-
-	#footer-links{
-
-	}
-
-	#footer-dropdown {
-		display: block!important;
-		cursor: pointer;
-	}
-
-	[data-toggle="collapse"] .fa:before {  
-	  content: "\f139";
-	}
-
-	[data-toggle="collapse"].collapsed .fa:before {
-	  content: "\f13a";
-	}
-
-	.home-hero-wheelchair-img div {
-		text-align: center!important;
-	}
-
-	.events-mobile-spacing{
-		margin-top: 1rem;
-	}
-
-	
-}
-	
-
-@media (max-width: 992px) { 
-	.resources-brands{	
+	.resources-brands{
 				display: none;
-				
+
 			}
 	#about-youtube {
 		height: 400px;
@@ -261,9 +215,62 @@ a.dropdown-item {
 		margin-left: 2rem;
 	}
 
+	.resources-heading {
+		text-align: center;
+		padding: 0.5rem;
+	}
+
 
 
 }
+@media (min-width: 768px) {
+	#footer-dropdown {
+		display: none!important;
+	}
+
+}
+
+
+@media (max-width: 768px) {
+	.resources-brands{
+			display: block;
+
+		}
+
+
+	#footer-links div {
+		text-align: center;
+	}
+
+
+	#footer-links{
+
+	}
+
+	#footer-dropdown {
+		display: block!important;
+		cursor: pointer;
+	}
+
+	[data-toggle="collapse"] .fa:before {
+	  content: "\f139";
+	}
+
+	[data-toggle="collapse"].collapsed .fa:before {
+	  content: "\f13a";
+	}
+
+	.home-hero-wheelchair-img div {
+		text-align: center!important;
+	}
+
+	.events-mobile-spacing{
+		margin-top: 1rem;
+	}
+
+
+}
+
 
 @media (max-width: 576px) {
     /*Client Application Counties Order*/
@@ -339,14 +346,16 @@ a.dropdown-item {
 	background-color: #EAEAEA;
 }
 
-
+.events-donate-spacing{
+	padding-top: 2rem;
+}
 
 /*--------------------------End General----------------------------*/
 
 
 /*-------------------------- Circles in Homepage----------------------------*/
 .block {
-   
+
     text-align: center;
     vertical-align: middle;
 }
@@ -383,7 +392,7 @@ a.dropdown-item {
 .footer-col a {
 	color: white;
 	text-decoration: none;
-	font-weight: 400!important; 
+	font-weight: 400!important;
 }
 
 #btn-donate-tablet {
@@ -407,30 +416,28 @@ a.dropdown-item {
 
 
 .nav-link.dropdown-toggle, .nav-item.nav-link {
- 	
+
  	color: #0B5BAB!important;
  	font-weight: bold;
  }
 .resources-heading {
-	background-color: blue;
-	padding: 0.5rem;
+	background-color: #0B5BAB;
 	color: white;
-	padding-left: 5rem;
 }
 
 .test{
 	margin:0 2em;
   }
-  
+
   .cover{
 	width: 100%;
   }
-  
+
   .event-icon{
 	width: 5%;
 	text-align: center;
   }
-  
+
   .thumb-post img {
 	object-fit: cover; /* Do not scale the image */
 	width: 100%;
@@ -492,4 +499,3 @@ a.dropdown-item {
 
 
 /*------------End Carousel------------------------*/
-
