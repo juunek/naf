@@ -69,66 +69,83 @@ $htmlNav= "<!doctype html>
 
 
 $htmlFooter="<footer>
-<div class =\"row bg-primary p-5\">
-  <div class=\"col-lg-4\">
-    <h4 class =\"text-white\">Connect with us</h4>
-    <div class =\"social-media text-white\">
-      <i class=\"fa fa-facebook-square\"></i>
-      <i class=\"fa fa-linkedin\"></i>
-    </div>
-  </div>
-  <div class=\"col-lg-4\">
-    <h4 class =\"text-white\">Sitemap</h4>
-      <div class=\"row\">
-        <div class=\"col-lg-2\">
-            <div class=\"textwhite\">
-              <a href=\"#\">Home</a>
-              <a href=\"#\">Home</a>
-              <a href=\"#\">Home</a>
-              <a href=\"#\">Home</a>
-              <a href=\"#\">Home</a>
-              <a href=\"#\">Home</a>
-              <a href=\"#\">Home</a>
-              <a href=\"#\">Home</a>
+<div class='container-fluid'>
+
+    <div class ='row bg-naf-blue p-lg-5'>
+       
+
+      <div class='col-lg-3 col-md-12 mb-4 footer-col d-flex flex-column order-lg-last' id='group-connect-join'>
+              
+              <div class='' id='footer-connect'>
+               
+                  <h4 class ='text-white my-4 fw-800'>Connect with us</h4>
+                    
+                  <div class ='social-media text-white'>
+                        <i class='fa fa-facebook-square fs-x2 mr-3'></i>
+                        <i class='fa fa-linkedin fs-x2'></i>
+                
+                </div>
+             </div>
+
+             <div class='order-md-last' id='footer-joiningemaillist-div'>
+
+              <h4 class ='text-white my-4 fw-800' id='footer-joiningemaillist-h4'>Join our email list</h4>
+
+              <button type='button' class='btn-naf-white-squareCorner' id='footer-joiningemaillist-button'>JOIN EMAIL LIST</button>
+
+            </div>
+      </div>
+
+
+      <div>
+        <a class ='text-white my-4 fw-800 text-center fs-3' data-toggle='collapse' data-target='#footer-links' aria-expanded='true' aria-controls='footer-links' id='footer-dropdown'>
+
+        Sitemap <i class='fa' aria-hidden='true'></i>
+
+      </a>
+      </div>
+      <div class='col-lg-9 col-md-12 footer-links collapse show' id='footer-links'>
+        <div class='row p-md-4 p-lg-0'>
+            <div class='col-md-4 mb-4 footer-col'>
+              <div class='d-flex flex-column'>
+                <h4 class ='text-white my-4 fw-800'>About</h4>
+                <a class='mb-2' href='#'>About</a>
+                <a class ='mb-2' href='#'>Contact Us</a>
+                <a class='mb-2' href='#'>Testimonials</a>
+                <a class='mb-2' href='#'>Giving Thanks</a>
+                <a class='mb-2' href='#'>Newsletter</a>
+              </div>
+            </div>
+
+            <div class='col-md-4 mb-4 footer-col d-flex flex-column'>
+              <div class='d-flex flex-column'>
+              <h4 class ='text-white my-4 fw-800'>Community</h4>
+              <a class='mb-2' href='#'>Community</a>
+              <a  class='mb-2' href='#'>Get Involved</a>
+              <a class='mb-2' href='#'>Events</a>  
+              <a class='mb-2' href='#'>Volunteer</a> 
+              <a class='mb-2' href='#'>Donate</a>  
+            </div>
+            </div>
+
+            <div class='col-md-4 mb-4 footer-col d-flex flex-column'>
+              <div class='d-flex flex-column'>
+                  <h4 class ='text-white my-4 fw-800'>Resources</h4>
+                  <a class='mb-2' href='#'>Resources</a>
+                  <a  class='mb-2' href='#'>Spinal Cord Injuries</a>
+                  <a class='mb-2' href='#'>Request Assistance</a>  
+                  <a class='mb-2' href='#'>Sitemap</a> 
+                </div>
             </div>
         </div>
-        <div class=\"col-lg-2\">
-          <div class=\"textwhite\">
-            <a href=\"#\">Home</a>
-            <a href=\"#\">Home</a>
-            <a href=\"#\">Home</a>
-            <a href=\"#\">Home</a>
-            <a href=\"#\">Home</a>
-            <a href=\"#\">Home</a>
-            <a href=\"#\">Home</a>
-          </div>
       </div>
     </div>
-  </div>
-      <div class=\"col-lg-4\">
-        <h4 class =\"text-white\">Join our email list</h4>
-        <form>
-            <div class=\"mb-3\">
-              <label for=\"email-newsletter\" class=\"form-label text-white\">Email Address</label>
-              <input type=\"email\" class=\"form-control\" id=\"email-newsletter\" aria-describedby=\"emailHelp\">
-            </div>
-            <div class=\"mb-3\">
-              <label for=\"firstname-newsletter\" class=\"form-label text-white\">First Name:</label>
-              <input type=\"text\" class=\"form-control\" id=\"firstname-newsletter\">
-            </div>
-            <div class=\"mb-3\">
-              <label for=\"lastname-newsletter\" class=\"form-label text-white\">Last Name:</label>
-              <input type=\"text\" class=\"form-control\" id=\"lastname-newsletter\">
-            </div>
-            <button type=\"submit\" class=\"clear-bg\">SIGN UP</button>
-        </form>
-      </div>
-      <div class=\"text-center text-white mt-5\">
-          © Neuro Assistance Foundation is a a 501(c)(3) Public Charity
-      </div>
-</div>
 
- </div>
+    <div class='row bg-naf-blue '>
+         <p class='text-center text-white m-0 pb-5'> © Neuro Assistance Foundation is a a 501(c)(3) Public Charity</p>
+    </div>
+ 
+</div>
 
 </footer>
 
