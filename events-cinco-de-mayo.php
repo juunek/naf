@@ -9,7 +9,7 @@
 if (isset($_GET['EID'])){
     $EID = intval($_GET['EID']);
 
-	$sql = "SELECT EID, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks, RegisterEvtBtn, DetailsHeader1, Details1, DetailsHeader2, Details2, DonateBtn FROM Events Where EID=?";
+	$sql = "SELECT EID, EName, EDate, EStart, EEnd, ELocation, FullDescription, ELinks, RegisterEvtBtn, DetailsHeader1, Details1, DetailsHeader2, Details2, DonateBtn FROM Events Where EID=?";
 /* create a prepared statement */
 $stmt = $conn->stmt_init();
 
@@ -30,7 +30,7 @@ if ($stmt->prepare($sql)) {
 $stmt->store_result();
 
 	/* bind result variables */
-	$stmt->bind_result($EID, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $ELinks, $RegisterEvtBtn, $DetailsHeader1, $Details1, $DetailsHeader2, $Details2, $DonateBtn);
+	$stmt->bind_result($EID, $EName, $EDate, $EStart, $EEnd, $ELocation, $FullDescription, $ELinks, $RegisterEvtBtn, $DetailsHeader1, $Details1, $DetailsHeader2, $Details2, $DonateBtn);
   if ($stmt->num_rows > 0){
 
     print("<div class='container'>");
@@ -51,7 +51,7 @@ $stmt->store_result();
     <a class='mt-auto' href='$RegisterEvtBtn' target='_blank'><button type='button' class='btn cover btn-naf-blue mb-4'>EVENT DETAILS/ REGISTER</button></a>
     </div>
      <div class='d-flex align-items-start flex-column col-md-7'>
-     <p>$EDescriptionPreview</p>
+     <p>$FullDescription</p>
      <table class='table my-4'>
       <tr>
         <th class='header-blue'>Run</th>
