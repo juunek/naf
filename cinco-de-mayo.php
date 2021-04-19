@@ -98,49 +98,57 @@ print ("</div>");
 
 print("<h2 class='resources-heading'>Photo Gallery</h2><br>
 
-<div class='row text-center text-lg-left'>
+<div class='photo-gallery'>
+        <div class='row text-center text-lg-left photos'>
 
-<div class='col-lg-3 col-md-4 col-6 thumb-post'>
- <div class='d-block mb-4 h-100'>
-       <img class='img-fluid' id='myImg' src='img/events/cinco-de-mayo-gallery-01.jpg' alt=''>
-     </div>
+            <div class='col-sm-6 col-md-4 col-lg-3 item'>
+                  <a href='img/events/cinco-de-mayo-gallery-01.jpg' data-lightbox='photos'>
+                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-01.jpg'>
+                 </a>
+           </div>
 
-</div>
-<div class='col-lg-3 col-md-4 col-6 thumb-post'>
- <div class='d-block mb-4 h-100'>
-       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-02.jpg' alt=''>
-     </div>
-</div>
-<div class='col-lg-3 col-md-4 col-6 thumb-post'>
- <div class='d-block mb-4 h-100'>
-       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-03.jpg' alt=''>
-     </div>
-</div>
-<div class='col-lg-3 col-md-4 col-6 thumb-post'>
- <div class='d-block mb-4 h-100'>
-       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-04.jpg' alt=''>
-     </div>
-</div>
-<div class='col-lg-3 col-md-4 col-6 thumb-post'>
- <div class='d-block mb-4 h-100'>
-       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-05.jpg' alt=''>
-     </div>
-</div>
-<div class='col-lg-3 col-md-4 col-6 thumb-post'>
- <div class='d-block mb-4 h-100'>
-       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-06.jpg' alt=''>
-     </div>
-</div>
-<div class='col-lg-3 col-md-4 col-6 thumb-post'>
- <div class='d-block mb-4 h-100'>
-       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-07.jpg' alt=''>
-     </div>
-</div>
-<div class='col-lg-3 col-md-4 col-6 thumb-post'>
- <div class='d-block mb-4 h-100'>
-       <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-08.jpg' alt=''>
-     </div>
-</div>
+            <div class='col-sm-6 col-md-4 col-lg-3 item'>
+                  <a href='img/events/cinco-de-mayo-gallery-02.jpg' data-lightbox='photos'>
+                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-02.jpg'>
+                 </a>
+           </div>
+
+            <div class='col-sm-6 col-md-4 col-lg-3 item'>
+                  <a href='img/events/cinco-de-mayo-gallery-03.jpg' data-lightbox='photos'>
+                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-03.jpg'>
+                 </a>
+           </div>
+
+            <div class='col-sm-6 col-md-4 col-lg-3 item'>
+                  <a href='img/events/cinco-de-mayo-gallery-04.jpg' data-lightbox='photos'>
+                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-04.jpg'>
+                 </a>
+           </div>
+
+            <div class='col-sm-6 col-md-4 col-lg-3 item'>
+                  <a href='img/events/cinco-de-mayo-gallery-05.jpg' data-lightbox='photos'>
+                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-05.jpg'>
+                 </a>
+           </div>
+
+            <div class='col-sm-6 col-md-4 col-lg-3 item'>
+                  <a href='img/events/cinco-de-mayo-gallery-06.jpg' data-lightbox='photos'>
+                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-06.jpg'>
+                 </a>
+           </div>
+
+            <div class='col-sm-6 col-md-4 col-lg-3 item'>
+                  <a href='img/events/cinco-de-mayo-gallery-07.jpg' data-lightbox='photos'>
+                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-07.jpg'>
+                 </a>
+           </div>
+
+            <div class='col-sm-6 col-md-4 col-lg-3 item'>
+                  <a href='img/events/cinco-de-mayo-gallery-08.jpg' data-lightbox='photos'>
+                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-08.jpg'>
+                 </a>
+           </div>
+    </div>   
 </div>");
 
 print("<h2 class='resources-heading'>Sponsors</h2><br>
