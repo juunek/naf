@@ -1,7 +1,7 @@
 <?php
 
 include("dbconn.inc.php"); // database connection 
-include("shared.php"); // stored shared contents, such as HTML header and page title, page footer, etc. in variables
+include("shared_admin.php"); // stored shared contents, such as HTML header and page title, page footer, etc. in variables
 
 // make database connection
 $conn = dbConnect();
