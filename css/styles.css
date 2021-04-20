@@ -275,7 +275,7 @@ a.dropdown-item {
 }
 
 @media (min-width: 576px) {
- 
+
 }
 
 @media (max-width: 576px) {
@@ -447,7 +447,10 @@ a.dropdown-item {
 	text-align: center;
   }
 
-
+footer a:hover{
+	color: #B2CCE6;
+	text-decoration: none;
+}
 /*--------------------------End Nav bar + Footer----------------------------*/
 
 .item{
