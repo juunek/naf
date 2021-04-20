@@ -34,7 +34,7 @@ if ($stmt->prepare($sql)) {
     $timeEnd=date('g:i A', strtotime($EEnd));
 		print ("<div class='col-md-10 mx-auto row py-4'>
     <div class='col-md-6'>
-      <img class='cover' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'>
+      <a href='$ELinks?EID=$EID'><img class='cover' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
     </div>
      <div class='d-flex align-items-start flex-column col-md-6'>
      <h3 class='events-mobile-spacing header-blue'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>

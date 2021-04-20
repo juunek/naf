@@ -37,7 +37,7 @@
                 <img src="img/avatar.png" width="100%" class="mb-2">
                 <h4>Cindi Cooperman</h4>
                 <p>Executive Director</p>
-                <button class="btn btn-naf-blue">CONTACT</button>
+                <a href="contact.php"><button class="btn btn-naf-blue w-100">CONTACT</button></a>
             </div>
 
             <div class="col-lg-9">

@@ -16,11 +16,14 @@
       <div class="col-md-10 mx-auto">
         <div>
           <p>Thank you in advance for your generous support!</p>
-          <p>Make a difference by making a monetary or equipment donation today. Your monetary donation is tax deductible to the full extent allowed by the law. Neuro Assistance is a registered 501(c)(3 organization. A receipt for your gift will be mailed to you within 10 days.</p>
+          <p>Make a difference by making a monetary or equipment donation today. Your monetary donation is tax deductible to the full extent allowed by the law. Neuro Assistance is a registered 501(c)(3) organization. A receipt for your gift will be mailed to you within 10 days.</p>
 
           <h4 class="text-naf-blue">Donation by Check</h4>
 
-          <p>Please make your check payable to: <span class="text-naf-blue"> Neuro Assistance Foundation</span></p>
+          <p>Please make your check payable to: <span class="text-naf-blue"> Neuro Assistance Foundation</span><br><br>Mail to:<br>
+          Neuro Assistance Foundation<br>
+          2320 Bridgewood Drive<br>
+          Keller, TX 76262</p>
 
           <h4 class="text-naf-blue">Donate via Credit Card and Pledge</h4>
 

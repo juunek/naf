@@ -98,7 +98,7 @@
       </div>
      </div>
     </div>
-    
+
   </div>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa fa-chevron-right"></i></span>
@@ -120,7 +120,7 @@
   <div class="row m-4">
 
     <div class="col-md-6">
-        <img src="img/giving-thanks-chernosky-van.jpg" width="90%" class="m-4">
+        <a href="giving-thanks.php"><img src="img/giving-thanks-chernosky-van.jpg" width="90%" class="m-4"></a>
     </div>
 
     <div class='d-flex align-items-start flex-column col-md-6'>

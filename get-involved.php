@@ -34,7 +34,7 @@ if ($stmt->prepare($sql)) {
     $timeEnd=date('g:i A', strtotime($EEnd));
 		print ("<div class='w-100'>
     <div class='col-12'>
-      <img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'>
+      <a href='$ELinks?EID=$EID'><img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
     </div>
      <div class='d-flex align-items-start flex-column col-12'>
      <h3 class='events-mobile-spacing header-blue'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
@@ -53,7 +53,7 @@ print ("</div></div>
 <br>
 <div class='col-md-10 mx-auto row py-4'>
 <div class='col-md-6'>
-  <img class='cover' src='img/become-a-volunteer.jpg'  alt='Image of volunteers at an event' title= 'Image of volunteers at an event'>
+  <a href='volunteer.php'><img class='cover' src='img/become-a-volunteer.jpg'  alt='Image of volunteers at an event' title= 'Image of volunteers at an event'></a>
 </div>
  <div class='d-flex align-items-start flex-column col-md-6'>
  <h3 class='events-mobile-spacing header-blue'>You CAN Make A Difference</h3><p class='cover'>Volunteers are vital to our mission. Whether you would like to assist with a special NAF event, spread the word about NAF, or help us raise valuable financial support - we need your help!</p>
@@ -70,7 +70,7 @@ print ("</div></div>
  <br>
  <div class='col-md-10 mx-auto row py-4'>
  <div class='col-md-6'>
-   <img class='cover' src='img/make-a-donation.jpg'  alt='Image of volunteers at an event' title= 'Image of volunteers at an event'>
+   <a href='donate.php'><img class='cover' src='img/make-a-donation.jpg'  alt='Image of person helped by donations' title= 'Image of person helped by donations'></a>
  </div>
   <div class='d-flex align-items-start flex-column col-md-6'>
   <h3 class='events-mobile-spacing header-blue'>Give Today</h3><p class='cover'>Whether it is a cash donation or donation of equipment, we humbly appreciate anything you can give to help make a positive impact.</p>

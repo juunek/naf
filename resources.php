@@ -4,7 +4,7 @@
 ?>
 <div class="container">
 
-      <h1 class="my-5 text-center">Resources</h1>
+      <h1 class="my-5 text-center text-naf-blue">Resources</h1>
 
       <!--Local Resources -->
 
