@@ -66,7 +66,7 @@ $htmlNav= "<!doctype html>
           <div class='nav-item dropdown'>
               <a href='events.php' class='nav-link dropdown-toggle' data-toggle='dropdown'>Events</a>
               <div class='dropdown-menu'>
-                  <a href='events-cinco-de-mayo.php.php' class='dropdown-item'>Cinco De Mayo</a>
+                  <a href='events-cinco-de-mayo.php' class='dropdown-item'>Cinco De Mayo</a>
                   <a href='events-hot-hatch.php' class='dropdown-item'>Annual Hot Hatch</a>
                   <a href='events-naf-topgolf.php' class='dropdown-item'>NAF Top Golf</a>
                   <a href='events-golf-a-thon.php' class='dropdown-item'>Golf-A-Thon</a>
