@@ -22,32 +22,32 @@
       <div class="row">
 
         <div class="col-md-6 mx-auto">
-            <form id="contactForm" action="" method="post" class="p-3 shadow">
+            <form id="joinlistForm" action="" method="post" class="p-3 shadow">
 
                 <div class="form-group row">
                   <div class="col-sm-12">
-                        <label for="inputFirstnameContact" id="inputFirstnameContactLabel">First name*</label>
-                        <input type="text" class="form-control" name="firstname" id="inputFirstnameContact" placeholder="First name">
+                        <label for="inputFirstnameJoinlist" id="inputFirstnameJoinlistLabel">First name*</label>
+                        <input type="text" class="form-control" name="firstname" id="inputFirstnameJoinlist" placeholder="First name">
                     </div>
                     </div>
 
                     <div class="form-group row">
                     <div class="col-sm-12">
-                        <label for="inputLastnameContact" id="inputLastnameContactLabel">Last name*</label>
-                        <input type="text" class="form-control" name="lastname" id="inputLastnameContact" placeholder="Last name">
+                        <label for="inputLastnameJoinlist" id="inputLastnameJoinlistLabel">Last name*</label>
+                        <input type="text" class="form-control" name="lastname" id="inputLastnameJoinlist" placeholder="Last name">
                       </div>
                     </div>
 
                 <div class="form-group row">
                     <div class="col-sm-12">
-                        <label for="inputEmailContact" id="inputEmailContactLabel">Email Address*</label>
-                        <input type="text" class="form-control" id="inputEmailContact" placeholder="abc@xyz.com">
+                        <label for="inputEmailJoinlist" id="inputEmailJoinlistLabel">Email Address*</label>
+                        <input type="text" class="form-control" id="inputEmailJoinlist" placeholder="abc@xyz.com">
                     </div>
                 </div>
 
               <div class="row">
                 <div class="col-sm-12">
-                  <button type="submit" name="submit" value="Submit" id="submitContact" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue btn-block py-2 fs-5">SEND MESSAGE</button>
+                  <button type="submit" name="submit" value="Submit" id="submitJoinlist" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue btn-block py-2 fs-5">SEND MESSAGE</button>
                   <br>
                 </div>
               </div>
