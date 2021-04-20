@@ -63,7 +63,7 @@ $htmlNav= "<!doctype html>
               <a class=\"nav-link\" href=\"resources.php\">Resources</a>
             </li>
             <li class=\"nav-item\">
-              <a class=\"nav-link\" href=\"\">Get Involved</a>
+              <a class=\"nav-link\" href=\"get-involved.php\">Get Involved</a>
             </li>
              <li class=\"nav-item\">
               <button class=\"btn btn-primary\" id=\"btn-donate-collapsemenu\" href=\"#\">DONATE</button>
@@ -117,32 +117,32 @@ $htmlFooter="<footer>
             <div class='col-md-4 mb-4 footer-col'>
               <div class='d-flex flex-column'>
                 <h4 class ='text-white my-4 fw-800'>About</h4>
-                <a class='mb-2' href='#'>About</a>
-                <a class ='mb-2' href='#'>Contact Us</a>
-                <a class='mb-2' href='#'>Testimonials</a>
-                <a class='mb-2' href='#'>Giving Thanks</a>
-                <a class='mb-2' href='#'>Newsletter</a>
+                <a class='mb-2' href='about.php'>About</a>
+                <a class ='mb-2' href='contact.php'>Contact Us</a>
+                <a class='mb-2' href='testimonials.php'>Testimonials</a>
+                <a class='mb-2' href='giving-thanks.php'>Giving Thanks</a>
+                <a class='mb-2' href='newsletter.php'>Newsletter</a>
               </div>
             </div>
 
             <div class='col-md-4 mb-4 footer-col d-flex flex-column'>
               <div class='d-flex flex-column'>
               <h4 class ='text-white my-4 fw-800'>Community</h4>
-              <a class='mb-2' href='#'>Community</a>
-              <a  class='mb-2' href='#'>Get Involved</a>
-              <a class='mb-2' href='#'>Events</a>
-              <a class='mb-2' href='#'>Volunteer</a>
-              <a class='mb-2' href='#'>Donate</a>
+              <a class='mb-2' href='community.php'>Community</a>
+              <a  class='mb-2' href='get-involved.php'>Get Involved</a>
+              <a class='mb-2' href='events.php'>Events</a>
+              <a class='mb-2' href='volunteer.php'>Volunteer</a>
+              <a class='mb-2' href='donate.php'>Donate</a>
             </div>
             </div>
 
             <div class='col-md-4 mb-4 footer-col d-flex flex-column'>
               <div class='d-flex flex-column'>
                   <h4 class ='text-white my-4 fw-800'>Resources</h4>
-                  <a class='mb-2' href='#'>Resources</a>
-                  <a  class='mb-2' href='#'>Spinal Cord Injuries</a>
-                  <a class='mb-2' href='#'>Request Assistance</a>
-                  <a class='mb-2' href='#'>Sitemap</a>
+                  <a class='mb-2' href='resources.php'>Resources</a>
+                  <a  class='mb-2' href='spinal-cord-injury.php'>Spinal Cord Injuries</a>
+                  <a class='mb-2' href='client-application.php'>Request Assistance</a>
+                  <a class='mb-2' href='sitemap.php'>Sitemap</a>
                 </div>
             </div>
         </div>
