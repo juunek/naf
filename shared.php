@@ -32,8 +32,8 @@ $htmlNav= "<!doctype html>
 <img height='86px'>
 <nav class='navbar navbar-expand-lg navbar-light fixed-top' id='navbar'>
     
-    <a href='#' class='navbar-brand'>
-      <img src='img/logo.png' alt='' height='70rem'>
+    <a href='index.php' class='navbar-brand'>
+      <img src='img/naf-logo.png' alt='' height='70rem'>
     </a>
     <div class='d-flex flex-row'>
     <button class='btn btn-naf-blue ml-5' id='btn-donate-tablet' href='#'><strong>DONATE</strong></button>
@@ -47,16 +47,18 @@ $htmlNav= "<!doctype html>
         <div class='navbar-nav'>
            
              <div class='nav-item dropdown'>
-                <a href='about.php' class='nav-link dropdown-toggle' data-toggle='dropdown'>About</a>
+                <a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown'>About</a>
                 <div class='dropdown-menu'>
+                    <a href='about.php' class='dropdown-item'>About</a>
                     <a href='contact.php' class='dropdown-item'>Contact</a>
                     <a href='join-email.php' class='dropdown-item'>Join Email List</a>
                 </div>
             </div>
 
             <div class='nav-item dropdown'>
-                <a href='community.php' class='nav-link dropdown-toggle' data-toggle='dropdown'>Community</a>
+                <a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown'>Community</a>
                 <div class='dropdown-menu'>
+                    <a href='community.php' class='dropdown-item'>Community</a>
                     <a href='testimonials.php' class='dropdown-item'>Testimonials</a>
                     <a href='giving-thanks.php' class='dropdown-item'>Giving Thanks</a>
                     <a href='newsletter.php' class='dropdown-item'>Newsletter</a>
@@ -64,26 +66,29 @@ $htmlNav= "<!doctype html>
             </div>
 
           <div class='nav-item dropdown'>
-              <a href='events.php' class='nav-link dropdown-toggle' data-toggle='dropdown'>Events</a>
+              <a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown'>Events</a>
               <div class='dropdown-menu'>
-                  <a href='events-cinco-de-mayo.php' class='dropdown-item'>Cinco De Mayo</a>
-                  <a href='events-hot-hatch.php' class='dropdown-item'>Annual Hot Hatch</a>
-                  <a href='events-naf-topgolf.php' class='dropdown-item'>NAF Top Golf</a>
-                  <a href='events-golf-a-thon.php' class='dropdown-item'>Golf-A-Thon</a>
+                  <a href='events.php' class='dropdown-item'>Events</a>
+                  <a href='events-cinco-de-mayo.php?EID=1' class='dropdown-item'>Cinco De Mayo</a>
+                  <a href='events-hot-hatch.php?EID=2' class='dropdown-item'>Annual Hot Hatch</a>
+                  <a href='events-naf-topgolf.php?EID=3' class='dropdown-item'>NAF Top Golf</a>
+                  <a href='events-golf-a-thon.php?EID=4' class='dropdown-item'>Golf-A-Thon</a>
               </div>
           </div>
 
           <div class='nav-item dropdown'>
-              <a href='resources.php' class='nav-link dropdown-toggle' data-toggle='dropdown'>Resources</a>
+              <a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown'>Resources</a>
               <div class='dropdown-menu'>
+                  <a href='resources.php' class='dropdown-item'>Resources</a>
                   <a href='spinal-cord-injury.php' class='dropdown-item'>Spinal Cord Injury</a>
                   <a href='client-application.php' class='dropdown-item'>Request Assistance</a>
               </div>
           </div>
 
           <div class='nav-item dropdown'>
-              <a href='get-involved.php' class='nav-link dropdown-toggle' data-toggle='dropdown'>Get Involved</a>
+              <a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown'>Get Involved</a>
               <div class='dropdown-menu'>
+                  <a href='get-involved.php' class='dropdown-item'>Get Involved</a>
                   <a href='volunteer.php' class='dropdown-item'>Volunteer</a>
               </div>
           </div>
