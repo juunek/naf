@@ -34,7 +34,7 @@
       <div class="row m-4">
 
             <div class="col-lg-3 d-flex flex-column text-center">
-                <img src="img/staff-1.jpg" width="100%" class="mb-2">
+                <img src="img/avatar.png" width="100%" class="mb-2">
                 <h4>Joy Hetrick</h4>
                 <p>Events Manager</p>
                 <button class="btn btn-naf-blue">CONTACT</button>
@@ -56,13 +56,13 @@
      <div class="row m-4 text-center">
 
       <div class="col-lg-3">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Joy Hetrick</h4>
           <p>Events Manager</p>
       </div>
 
        <div class="col-lg-3">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Khanh Moutafis</h4>
           <p>Operations Manager</p>
       </div>
@@ -76,60 +76,60 @@
      <div class="row m-4 text-center">
 
       <div class="col-lg-3 col-md-6">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Barry Clark</h4>
           <p>Board Member</p>
       </div>
 
        <div class="col-lg-3 col-md-6">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Brandi Fletcher</h4>
           <p>Board Member</p>
       </div>
       <div class="col-lg-3 col-md-6">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Yvonne Freeman</h4>
           <p>Board Member</p>
       </div>
 
        <div class="col-lg-3 col-md-6">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Stephen Mackintosh</h4>
           <p>Board Member</p>
       </div>
 
 
       <div class="col-lg-3 col-md-6">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Vicki Niedermeyer</h4>
           <p>Board Member</p>
       </div>
 
        <div class="col-lg-3 col-md-6">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Mike Shipka</h4>
           <p>Board Member</p>
       </div>
       <div class="col-lg-3 col-md-6">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Jill McKean-Bilby</h4>
           <p>Board Member</p>
       </div>
 
        <div class="col-lg-3 col-md-6">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Keith Tansey M.D. PhD</h4>
           <p>Board Member</p>
       </div>
 
       <div class="col-lg-3 col-md-6">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Brian Tatum</h4>
           <p>Board Member</p>
       </div>
 
        <div class="col-lg-3 col-md-6">
-          <img src="img/staff-1.jpg" width="100%" class="mb-2">
+          <img src="img/avatar.png" width="100%" class="mb-2">
           <h4>Steve Wright</h4>
           <p>Board Member</p>
       </div>
