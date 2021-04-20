@@ -48,7 +48,7 @@
        <!-- hero banner 2 - Inspiring Limitless Independece  -->
       <div class="row home-inspiring-independence-img p-5">
           <div class="col-lg-6"></div>
-          <div class="col-lg-6 rounded clear-bg p-4 opacity-50">
+          <div class="col-lg-6 rounded clear-bg p-4 border-0 opacity-50">
              <h3 class="text-naf-white">Inspiring Limitless Independence</h3>
              <p class="my-3 text-naf-white">NAF provides the tools and assistance necessary for our clients to
               achieve limitless independence. Our services are a small investment in comparison to the independence and pride experienced by those we help. What greater gift can be given to someone whose mobility has been lost?</p>
