@@ -167,7 +167,7 @@ a.dropdown-item {
 		padding-left: 1.5rem;
 	}
 
-	
+
 
 }
 
@@ -287,7 +287,7 @@ a.dropdown-item {
 		margin-top: 1rem;
 	}
 
-	
+
 
 
 }
@@ -316,7 +316,7 @@ a.dropdown-item {
     #sm-client-app-counties-third, #sm-client-app-counties-fourth{
       margin-top: -1rem;
     }
-  
+
 
 }
 
@@ -562,11 +562,11 @@ footer a:hover{
 	color: #0B5BAB!important;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 
 		#volunteer-img {
 			display: none;
-			
+
 		}
 
 		#volunteer-text {
@@ -587,7 +587,7 @@ footer a:hover{
 		}
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
 #volunteer-quote-img {
 
 		font-size: 60px;
