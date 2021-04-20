@@ -33,8 +33,8 @@ if ($stmt->prepare($sql)) {
       <img class='cover' src='img/$GTAdditionalImage'  alt='Additional $GTHeader Image' title= Additional '$GTHeader Image'>
     </div>
      <div class='d-flex align-items-start flex-column col-md-8'>
-     <h3 class='events-mobile-spacing header-blue'>$GTHeader</h3><p class='cover'>$GTDetails</p>
-     <h4>$GTPersonName</h4><p>$GTPersonDetails</p>
+       <h3 class='events-mobile-spacing header-blue'>$GTHeader</h3><p class='cover'>$GTDetails</p>
+       <h4 class='header-blue'>$GTPersonName</h4><p>$GTPersonDetails</p>
      </div>
      </div>");
 }
