@@ -124,45 +124,91 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="d-flex justify-content-center m-5">
-            <div class="card p-5 shadow" style="width: 40rem;">
-              <div class="card-body">
-                <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas 1</h4>
+    
 
-                <p class="card-text text-center">"You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"<br>- Thomas, age 49, living with quadriplegia from mountain biking accident</p>
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center m-5">
+                    <div class="card p-5 shadow" style="width: 40rem;">
+                      <div class="card-body">
+                        <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas</h4>
 
+                        <p class="card-text text-center">
+                        "You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"<br>
+                        <br>- Thomas, age 49, living with quadriplegia from mountain biking accident
+                        </p>
+
+                      </div>
+                    </div>
               </div>
             </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center m-5">
-        <div class="card p-5 shadow" style="width: 40rem;">
-        <div class="card-body">
-          <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas 3</h4>
 
-                <p class="card-text text-center">"You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"<br>- Thomas, age 49, living with quadriplegia from mountain biking accident</p>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center m-5">
+                <div class="card p-5 shadow" style="width: 40rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Adrienne</h4>
+                        <p class="card-text text-center">
+                        "Thanks a million for the standing frame! My family has been praying God would provide one for us since February! Answered prayer indeed. I appreciate Neuro Assistance Foundation more than I can explain!"<br>
+                        <br>—Adrienne, age 23, living with quadriplegia
+                        </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          
 
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center m-5">
-        <div class="card p-5 shadow" style="width: 40rem;">
-        <div class="card-body">
-           <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas 2</h4>
+              <div class="carousel-item">
+              <div class="d-flex justify-content-center m-5">
+                <div class="card p-5 shadow" style="width: 40rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Travis</h4>
+                        <p class="card-text text-center">
+                        "Thank you from the bottom of our hearts for your help. You have truly made our lives more bearable. Now it will not feel like Travis is a prisoner in our home."<br>
+                        <br>—Travis' mother - Travis is 18 years old, living with paraplegia from a car accident
+                        </p>
+                </div>
+              </div>
+            </div>
+            </div>
 
-                <p class="card-text text-center">"You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"<br>- Thomas, age 49, living with quadriplegia from mountain biking accident</p>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center m-5">
+                <div class="card p-5 shadow" style="width: 40rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Kimberly</h4>
+                        <p class="card-text text-center">
+                        "I want to thank you for the wheelchair you have lent me and tell you how it has impacted me. It enabled me to go to the therapy room and get PT & OT that I would not have had if I had been bed-bound. It enabled me to interact with other patients, which was very healing. I learned a card game from a gentleman - that was fun! He would ask the therapists if I was coming to therapy that day. The therapy room has lots of window and light which was a tremendous pick me up. The chair gave me independence. I was able to go outside and enjoy the courtyard and the fresh air. And the wheelchair gave me the privilege of eating my meals up in a chair. Thank you very much for what you have done for me"<br>
+                        <br>—Kimberly, age 54, living with quadriplegia
+                        </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          
 
-        </div>
-      </div>
-     </div>
-    </div>
+          <div class="carousel-item">
+              <div class="d-flex justify-content-center m-5">
+                <div class="card p-5 shadow" style="width: 40rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Tia</h4>
+                        <p class="card-text text-center">
+                        "Tia is progressing along well and thanks to the help, we are able to bathe her and get her into the bathroom without a problem. I literally do not know what I would have done without you. It is a miracle, one that I prayed for since the accident."<br>
+                        <br>Beau, Tia's brother
+                        </p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+
   </div>
+
+
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa fa-chevron-right"></i></span>
     <span class="visually-hidden">Previous</span>
