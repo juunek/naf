@@ -419,6 +419,10 @@ a.dropdown-item {
 	color: grey;
 }
 
+.nav-donate-btn{
+	text-decoration: none;
+}
+
 #footer-dropdown {
 		display: none;
 	}
@@ -451,6 +455,7 @@ footer a:hover{
 	color: #B2CCE6;
 	text-decoration: none;
 }
+
 /*--------------------------End Nav bar + Footer----------------------------*/
 
 .item{

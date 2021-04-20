@@ -31,7 +31,7 @@ $htmlNav= "<!doctype html>
 <div class='container'>
 <img height='86px'>
 <nav class='navbar navbar-expand-lg navbar-light fixed-top' id='navbar'>
-    
+
     <a href='index.php' class='navbar-brand'>
       <img src='img/naf-logo.png' alt='' height='70rem'>
     </a>
@@ -45,7 +45,7 @@ $htmlNav= "<!doctype html>
 
     <div class='collapse navbar-collapse d-flex-lg justify-content-end' id='navbarCollapse'>
         <div class='navbar-nav'>
-           
+
              <div class='nav-item dropdown'>
                 <a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown'>About</a>
                 <div class='dropdown-menu'>
@@ -93,10 +93,10 @@ $htmlNav= "<!doctype html>
               </div>
           </div>
 
-            <button class='btn btn-naf-blue ml-2' id='btn-donate-collapsemenu' href='donate.php'><strong>DONATE</strong></button>
+            <a class='nav-donate-btn' href='donate.php'><button class='btn btn-naf-blue ml-2' id='btn-donate-collapsemenu'><strong>DONATE</strong></button></a>
 
         </div>
-        
+
     </div>
   </nav>
 </div>";
@@ -115,8 +115,8 @@ $htmlFooter="<footer>
                   <h4 class ='text-white my-4 fw-800'>Connect with us</h4>
 
                   <div class ='social-media text-white'>
-                        <i class='fa fa-facebook-square fs-x2 mr-3'></i>
-                        <i class='fa fa-linkedin fs-x2'></i>
+                        <a href='https://www.facebook.com/NeuroAssistanceFoundation/'><i class='fa fa-facebook-square fs-x2 mr-3'></i></a>
+                        <a href='https://www.linkedin.com/company/neuro-assistance-foundation/'><i class='fa fa-linkedin fs-x2'></i></a>
 
                 </div>
              </div>
@@ -125,7 +125,7 @@ $htmlFooter="<footer>
 
               <h4 class ='text-white my-4 fw-800' id='footer-joiningemaillist-h4'>Join our email list</h4>
 
-              <button type='button' class='btn-naf-white-squareCorner' id='footer-joiningemaillist-button'>JOIN EMAIL LIST</button>
+              <a href='join-email.php'><button type='button' class='btn-naf-white-squareCorner' id='footer-joiningemaillist-button'>JOIN EMAIL LIST</button></a>
 
             </div>
       </div>
@@ -182,11 +182,11 @@ $htmlFooter="<footer>
 </div>
 
 </footer>
-  
-  
+
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js' integrity='sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf' crossorigin='anonymous'></script>
-   
+
  </body>
 </html>";
 ?>
