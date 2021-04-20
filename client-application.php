@@ -3,7 +3,7 @@
   print($htmlNav);
 ?>
 <div class="container">
-  <h1 class="my-5 text-center">Request Assistance</h1>
+  <h1 class="my-5 text-center text-naf-blue">Request Assistance</h1>
 
   <!--Local Resources -->
 
@@ -76,7 +76,7 @@
 
 <div class="col-md-10 mx-auto mb-5">
   <form action="" method="post">
-    <h3>Patient/Client Info</h3>
+    <h3 class="text-naf-blue">Patient/Client Info</h3>
     <div class="from-group row">
       <div class="d-flex flex-column col-sm-6">
         <label>First Name</label>
@@ -234,7 +234,7 @@
       </div>
     </div>
 
-    <h3>Social Worker Contact Info</h3>
+    <h3 class="text-naf-blue">Social Worker Contact Info</h3>
     <div class="row">
       <div class="d-flex flex-column col-sm-6">
         <label>First Name</label>
@@ -257,7 +257,7 @@
       </div>
     </div>
 
-    <h3>Person Submitting Contact Info</h3>
+    <h3 class="text-naf-blue">Person Submitting Contact Info</h3>
     <div class="row">
       <div class="d-flex flex-column col-sm-6">
         <label>First Name</label>
@@ -280,7 +280,7 @@
       </div>
     </div>
 
-    <h3>Primary Contact Info</h3>
+    <h3 class="text-naf-blue">Primary Contact Info</h3>
     <div class="row">
       <div class="d-flex flex-column col-sm-6">
         <label>First Name</label>
@@ -303,11 +303,16 @@
       </div>
     </div>
 
-    <div class="col-sm-12">
-		<input type="submit" value="Submit Query" name="client_submit" id="client_submit">
-	</div>
+    <div class="row">
+                    <div class="col-sm-12 pt-4">
+                     <button type="submit" name="submit" value="Submit" id="submitDonation" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue btn-block py-2 fs-5">Submit Query</button>
+                     <br>
+                   </div>
+     </div>
+               
 
   </form>
+</div>
 </div>
 <?php
   print($htmlFooter);
