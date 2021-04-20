@@ -190,4 +190,3 @@ $htmlFooter="<footer>
  </body>
 </html>";
 ?>
-text-decoration-none
