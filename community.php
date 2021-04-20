@@ -4,7 +4,7 @@
 ?>
 
 <div class="container">
-  
+
       <h1 class="my-5 text-center text-naf-blue">Community</h1>
 
 
@@ -24,9 +24,9 @@
               <div class="card-body">
                 <img src="img/staff-1.jpg" height="200px" class="mx-auto d-block rounded-circle mb-4">
                 <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas 1</h4>
-                
+
                 <p class="card-text text-center">"You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"<br>- Thomas, age 49, living with quadriplegia from mountain biking accident</p>
-               
+
               </div>
             </div>
       </div>
@@ -38,7 +38,7 @@
           <img src="img/staff-1.jpg" height="200px" class="mx-auto d-block rounded-circle mb-4">
           <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas 2</h4>
           <p class="card-text text-center">"You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"<br>- Thomas, age 49, living with quadriplegia from mountain biking accident</p>
-               
+
         </div>
       </div>
     </div>
@@ -49,9 +49,9 @@
         <div class="card-body">
            <img src="img/staff-1.jpg" height="200px" class="mx-auto d-block rounded-circle mb-4">
            <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas 3</h4>
-          
+
            <p class="card-text text-center">"You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"<br>- Thomas, age 49, living with quadriplegia from mountain biking accident</p>
-               
+
         </div>
       </div>
      </div>
@@ -70,29 +70,32 @@
 </div>
 
 <button class="btn-naf-blue m-4 p-2 mx-auto d-block"><a class="text-naf-white text-decoration-none" href="testimonials.php">TESTIMONIALS</a></button>
-  <!-- Giving Thanks -->  
+  <!-- Giving Thanks -->
 
   <h2 class="resources-heading bg-naf-blue fw-800">Giving Thanks</h2>
 
   <div class="row m-4">
 
-  <div class="col-lg-6">
-      <img src="img/home-hero-wheelchair.jpg" width="90%" class="m-4">
-  </div>
+    <div class="col-md-6">
+        <img src="img/giving-thanks-chernosky-van.jpg" width="90%" class="m-4">
+    </div>
 
-   <div class="col-lg-6">
-      <div class="m-4">
-        <h4 class="fw-800 text-naf-blue">Adaptive Van Donation in Memory of Dr. Martin Chernosky</h4>
-        <p>NAF was extremely honored to receive an adaptive minivan as a donation in December, 2010. The donor is Mrs. Jean Hancock Chernosky of Houston and the van was donated in memory of her late husband, Dr. Marvin Chernosky.</p>
-        <button class="btn-naf-blue p-2">TESTIMONIALS</button>
-      </div>
-  </div>
+    <div class='d-flex align-items-start flex-column col-md-6'>
+       <h3 class='events-mobile-spacing header-blue'>Adaptive Van Donation in Memory of Dr. Martin Chernosky</h3>
+       <p class='cover'>NAF was extremely honored to receive an adaptive minivan as a donation in December, 2010. The donor is Mrs. Jean Hancock Chernosky of Houston and the van was donated in memory of her late husband, Dr. Marvin Chernosky.</p>
 
+       <div class='flex-column w-100 mt-auto'>
+          <a class='events-btn-padding-right' href='volunteer.php'>
+            <button type='button' class='btn btn-naf-primary-btn w-100'>VIEW MORE</button>
+          </a>
+       </div>
+     </div>
+   </div>
 
 
 </div>
-      
-</div> 
+
+</div>
 
 
 
