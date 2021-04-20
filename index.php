@@ -32,7 +32,7 @@
 
           <div class="col-lg-6 col-md-6">
             <div class="mt-4 mb-4 p-5 rounded bg-naf-blue row shadow">
-              <img class="col-lg-6 col-md-12" src="img/home-texas-flag.svg" height="auto" width="100rem">
+              <img class="col-lg-6 col-md-12" src="img/home-texas-flag.svg" height="auto" width="80rem">
               <div class="col-lg-6 col-md-12 d-flex align-items-center">
                   <div class="mx-auto" id="home-texas-flag">
                     <h3 class="text-light text-center fw-800 fs-3">12 YEARS</h3>
