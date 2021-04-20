@@ -267,9 +267,16 @@ a.dropdown-item {
 		margin-top: 1rem;
 	}
 
+	#navbar-brand-img {
+    	height: 70px;
+    }
+
 
 }
 
+@media (min-width: 576px) {
+ 
+}
 
 @media (max-width: 576px) {
     /*Client Application Counties Order*/
@@ -290,6 +297,9 @@ a.dropdown-item {
     }
     #sm-client-app-counties-third, #sm-client-app-counties-fourth{
       margin-top: -1rem;
+    }
+    #navbar-brand-img {
+    	height: 70px;
     }
 
 }

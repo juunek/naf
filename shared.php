@@ -32,8 +32,8 @@ $htmlNav= "<!doctype html>
 <img height='86px'>
 <nav class='navbar navbar-expand-lg navbar-light fixed-top' id='navbar'>
     
-    <a href='#' class='navbar-brand'>
-      <img src='img/logo.png' alt='' height='70rem'>
+    <a href='index.php' class='navbar-brand'>
+      <img src='img/logo.png' id='navbar-brand-img' alt=''>
     </a>
     <div class='d-flex flex-row'>
     <button class='btn btn-naf-blue ml-5' id='btn-donate-tablet' href='#'><strong>DONATE</strong></button>
