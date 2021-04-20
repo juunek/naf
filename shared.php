@@ -49,29 +49,29 @@ $htmlNav= "<!doctype html>
              <div class='nav-item dropdown'>
                 <a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown'>About</a>
                 <div class='dropdown-menu'>
-                    <a href='#' class='dropdown-item'>About</a>
-                    <a href='#' class='dropdown-item'>Contact</a>
-                    <a href='#' class='dropdown-item'>Join Email List</a>
+                    <a href='about.php' class='dropdown-item'>About</a>
+                    <a href='contact.php' class='dropdown-item'>Contact</a>
+                    <a href='join-email.php' class='dropdown-item'>Join Email List</a>
                 </div>
             </div>
 
               <div class='nav-item dropdown'>
                 <a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown'>Community</a>
                 <div class='dropdown-menu'>
-                    <a href='#' class='dropdown-item'>Community</a>
-                    <a href='#' class='dropdown-item'>Testimonials</a>
-                    <a href='#' class='dropdown-item'>Giving Thanks</a>
-                    <a href='#' class='dropdown-item'>Newsletter</a>
+                    <a href='community.php' class='dropdown-item'>Community</a>
+                    <a href='testimonials.php' class='dropdown-item'>Testimonials</a>
+                    <a href='giving-thanks.php' class='dropdown-item'>Giving Thanks</a>
+                    <a href='newsletter.php' class='dropdown-item'>Newsletter</a>
                 </div>
             </div>
 
-            <a href='#' class='nav-item nav-link'>Events</a>
+            <a href='events.php' class='nav-item nav-link'>Events</a>
 
-            <a href='#' class='nav-item nav-link'>Resources</a>
+            <a href='resources.php' class='nav-item nav-link'>Resources</a>
 
-            <a href='#' class='nav-item nav-link'>Get Involved</a>
+            <a href='get-involved.php' class='nav-item nav-link'>Get Involved</a>
 
-            <button class='btn btn-naf-blue ml-2' id='btn-donate-collapsemenu' href='#'><strong>DONATE</strong></button>
+            <button class='btn btn-naf-blue ml-2' id='btn-donate-collapsemenu' href='donate.php'><strong>DONATE</strong></button>
 
         </div>
         
