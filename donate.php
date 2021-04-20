@@ -26,7 +26,8 @@
 
           <p>Click below to make an online donation.</p>
 
-          <button type="button" class="btn-naf-blue-squareCorner mb-4">MAKE A CONTRIBUTION</button>
+          <a class='mt-auto' href='https://connect.clickandpledge.com/w/Organization/neuroassistance/paymentwidget/d01320ca-b4e1-4bbd-bade-eeb2d18d3cd1' target='_blank'><button type='button' class='btn-naf-blue-squareCorner'>MAKE A CONTRIBUTION</button></a>
+          <br>
       </div>
     </div>
   </div>
@@ -39,9 +40,7 @@
   <div class="row m-4">
       <div class="col-md-10 mx-auto">
 
-          <p>If you have assistive vehicles or equipment you would like to donate, please fill out the form below. If you have any questions about a donation or anything else, contact us, and we will get back to you.</p>
-
-          <button type="button" class="btn-naf-blue-squareCorner mb-4">CONTACT US</button>
+          <p>If you have assistive vehicles or equipment you would like to donate, please fill out the form below. If you have any questions about a donation or anything else, <a href='contact.php'><span class="text-naf-blue">contact us</span></a>, and we will get back to you.</p>
 
       </div>
 
