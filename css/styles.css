@@ -227,7 +227,6 @@ a.dropdown-item {
 	#footer-dropdown {
 		display: none!important;
 	}
-
 }
 
 
@@ -438,12 +437,6 @@ a.dropdown-item {
 	text-align: center;
   }
 
-  .thumb-post img {
-	object-fit: cover; /* Do not scale the image */
-	width: 100%;
-	height: 90%;
-	margin-bottom: 1rem;
-  }
 
 /*--------------------------End Nav bar + Footer----------------------------*/
 
