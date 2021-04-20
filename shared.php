@@ -36,7 +36,7 @@ $htmlNav= "<!doctype html>
       <img src='img/naf-logo.png' alt='' height='70rem'>
     </a>
     <div class='d-flex flex-row'>
-    <a class='nav-donate-btn' href='donate.php'><button class='btn btn-naf-blue ml-5' id='btn-donate-tablet' href='#'><strong>DONATE</strong></button></a>
+    <a class='text-decoration-none' href='donate.php'><button class='btn btn-naf-blue ml-5' id='btn-donate-tablet' href='#'><strong>DONATE</strong></button></a>
 
     <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='#navbarCollapse'>
       <span class='navbar-toggler-icon'></span>
@@ -93,7 +93,7 @@ $htmlNav= "<!doctype html>
               </div>
           </div>
 
-            <a class='nav-donate-btn' href='donate.php'><button class='btn btn-naf-blue ml-2' id='btn-donate-collapsemenu'><strong>DONATE</strong></button></a>
+            <a class='text-decoration-none' href='donate.php'><button class='btn btn-naf-blue ml-2' id='btn-donate-collapsemenu'><strong>DONATE</strong></button></a>
 
         </div>
 
@@ -190,3 +190,4 @@ $htmlFooter="<footer>
  </body>
 </html>";
 ?>
+text-decoration-none
