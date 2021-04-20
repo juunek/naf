@@ -8,7 +8,7 @@
 print("<div class='container'>");
 
 
-	print("<h1 class='my-5 text-center'>Events</h1>
+	print("<h1 class='my-5 text-center header-blue'>Events</h1>
 
   <h2 class='resources-heading'>Upcoming Events</h2>
   <br>");
@@ -37,7 +37,7 @@ if ($stmt->prepare($sql)) {
       <img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'>
     </div>
      <div class='d-flex align-items-start flex-column col-12'>
-     <h3 class='events-mobile-spacing'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
+     <h3 class='events-mobile-spacing header-blue'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
 
      <div class='w-100'>
       <a href='$ELinks?EID=$EID'>
@@ -51,20 +51,36 @@ if ($stmt->prepare($sql)) {
 print ("</div></div>
 <h2 class='resources-heading'>Volunteer</h2>
 <br>
+<div class='col-md-10 mx-auto row py-4'>
 <div class='col-md-6'>
-  <img class='cover' src='img/volunteer.png'  alt='Image of volunteers at an event' title= 'Image of volunteers at an event'>
+  <img class='cover' src='img/become-a-volunteer.jpg'  alt='Image of volunteers at an event' title= 'Image of volunteers at an event'>
 </div>
  <div class='d-flex align-items-start flex-column col-md-6'>
- <h3 class='events-mobile-spacing header-blue'>You CAN Make A Difference</h3><p class='cover'>Volunteers are vital to our mission. Whether you
-would like to assist with a special NAF event,
-spread the word about NAF, or help us raise
-valuable financial support - we need your help!</p>
+ <h3 class='events-mobile-spacing header-blue'>You CAN Make A Difference</h3><p class='cover'>Volunteers are vital to our mission. Whether you would like to assist with a special NAF event, spread the word about NAF, or help us raise valuable financial support - we need your help!</p>
 
- <div class='flex-column w-100'>
+ <div class='flex-column w-100 mt-auto'>
   <a class='events-btn-padding-right' href='volunteer.php'>
-  <button type='button' class='btn btn-naf-secondary-btn events-btn-width'>BECOME A VOLUNTEER</button></a>
+  <button type='button' class='btn btn-naf-primary-btn w-100'>BECOME A VOLUNTEER</button></a>
+ </div>
  </div>
  </div>");
+
+ print ("
+ <h2 class='resources-heading'>Donate</h2>
+ <br>
+ <div class='col-md-10 mx-auto row py-4'>
+ <div class='col-md-6'>
+   <img class='cover' src='img/make-a-donation.jpg'  alt='Image of volunteers at an event' title= 'Image of volunteers at an event'>
+ </div>
+  <div class='d-flex align-items-start flex-column col-md-6'>
+  <h3 class='events-mobile-spacing header-blue'>Give Today</h3><p class='cover'>Whether it is a cash donation or donation of equipment, we humbly appreciate anything you can give to help make a positive impact.</p>
+
+  <div class='flex-column w-100 mt-auto'>
+   <a class='events-btn-padding-right' href='volunteer.php'>
+   <button type='button' class='btn btn-naf-primary-btn w-100'>MAKE A DONATION</button></a>
+  </div>
+  </div>
+  </div>");
 
 /* close statement */
 $stmt->close();
