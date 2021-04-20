@@ -8,24 +8,7 @@
 print("<div class='container'>");
 
 
-	print("<h1 class='my-5 text-center header-blue'>Giving Thanks</h1>
-
-  <div class='row mb-4'>
-      <div class='col-md-10 mx-auto'>
-
-
-      <div class='row' id='volunteer-banner'>
-
-         <img src='img/giving-thanks-hero-van.png' width='100%' id='volunteer-img'>
-
-        <div class='col-md-12 bg-naf-blue' id='volunteer-text'>
-            <h4>Volunteer today! You CAN make a difference!</h4>
-            <p class='text-white'>Volunteers are vital to the mission of Neuro Assistance Foundation. We are looking for volunteers in numerous capacities. Whether you would like to assist with a special NAF event, spread the word about NAF, or help us raise valuable financial support—we need your help!</p>
-        </div>
-      </div>
-
-       </div>
-  </div>");
+	print("<h1 class='my-5 text-center header-blue'>Giving Thanks</h1>");
 
 	$sql = "SELECT GTID, GTImage, GTAdditionalImage, GTHeader, GTDetails, GTPersonName, GTPersonDetails FROM GivingThanks";
 
