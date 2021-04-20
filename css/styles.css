@@ -599,3 +599,32 @@ footer a:hover{
 
 
 /*------------End Volunteer------------------------*/
+
+
+/*------------Newsletter------------------------*/
+
+
+
+
+#show-newsletter{
+	border: 1px solid grey;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 2rem;
+	
+	
+}
+@media (max-width: 768px) { 
+
+	#archive-newsletter {
+
+		text-align: center;
+	}
+	#show-newsletter{
+		display: none;
+	}
+
+
+}
+
+/*------------End Newsletter------------------------*/
