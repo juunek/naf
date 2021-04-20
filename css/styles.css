@@ -5,7 +5,7 @@ html, body {
 }
 
 
-p, ul {
+p, ul, li  {
 	font-weight: 400!important;
 	color: #707070!important;
 }
@@ -47,6 +47,13 @@ a.dropdown-item {
 .text-naf-white {
 	color: white!important;
 }
+
+.links-naf-blue {
+	text-decoration: none;
+	font-weight: 700!important;
+	color: #0B5BAB;
+}
+
 
 /*-------------------------- End Typography----------------------------*/
 
@@ -358,6 +365,9 @@ a.dropdown-item {
 .events-donate-spacing{
 	padding-top: 2rem;
 }
+
+
+
 
 /*--------------------------End General----------------------------*/
 
