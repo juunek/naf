@@ -26,7 +26,7 @@
             <div class="align-middle pt-4 pb-4">
                 <h2 class="text-naf-blue"><strong>Our Mission</strong></h2>
                 <p>We are dedicated to assisting spinal cord injured and disabled individuals in the Dallas/Fort Worth area to achieve self-sufficiency and mobility through assistive vehicles, equipment, technology and home modifications.</p>
-                <a href="#">Learn more</a>
+                <a href="about.php">Learn more</a>
             </div>
           </div>
 
@@ -59,13 +59,13 @@
 
        <div class ="row pv-5">
            <div class="col-lg-4 col-md-12 text-center">
-                <button class="btn btn-naf-blue btn-same-size m-2 fw-800" href="#"><i class="fa fa-flag text-light"></i> Apply for Assistance</button>
+                <button class="btn btn-naf-blue btn-same-size m-2 fw-800" href="client-application.php"><i class="fa fa-flag text-light"></i> Apply for Assistance</button>
            </div>
          <div class="col-lg-4 col-md-12 text-center">
-                <button class="btn btn-naf-blue btn-same-size m-2 fw-800" href="#"><i class="fa fa-flag text-light"></i> Resources</button>
+                <button class="btn btn-naf-blue btn-same-size m-2 fw-800" href="resources.php"><i class="fa fa-flag text-light"></i> Resources</button>
            </div>
           <div class="col-lg-4 col-md-12 text-center">
-                <button class="btn btn-naf-blue btn-same-size m-2 fw-800" href="#"><i class="fa fa-flag text-light"></i> Spinal Cord Injuries</button>
+                <button class="btn btn-naf-blue btn-same-size m-2 fw-800" href="spinal-cord-injury.php"><i class="fa fa-flag text-light"></i> Spinal Cord Injuries</button>
            </div>
 
       </div>
