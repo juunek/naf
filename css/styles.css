@@ -511,8 +511,82 @@ footer a:hover{
 /*------------End Carousel------------------------*/
 
 
+/*------------Volunteer------------------------*/
 
 
 
+#volunteer-banner {
+	position: relative;
+	margin-bottom: 120px;
 
-/*------------End Carousel------------------------*/
+}
+
+#volunteer-img {
+	position: absolute;
+	height: 350px;
+	width: auto;
+	z-index: 999;
+	top: -60px;
+	left: 30px;
+}
+
+#volunteer-text {
+
+	padding-left: 230px!important;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-right: 2rem;
+}
+
+#volunteer-quote-img {
+
+	font-size: 80px;
+	padding-left: 30px;
+	color: #0B5BAB!important;
+
+
+}
+
+#quote-volunteer {
+	font-weight: 700!important;
+	font-size: 1.3rem;
+	color: #0B5BAB!important;
+}
+
+@media (max-width: 768px) { 
+
+		#volunteer-img {
+			display: none;
+			
+		}
+
+		#volunteer-text {
+
+		padding-left: 2rem!important;
+
+		}
+
+		#volunteer-banner {
+		margin-bottom: 2rem;
+
+		}
+
+		#volunteer-quote-img {
+
+		font-size: 30px;
+
+		}
+}
+
+@media (max-width: 992px) { 
+#volunteer-quote-img {
+
+		font-size: 60px;
+		padding-left: 10px;
+
+		}
+
+}
+
+
+/*------------End Volunteer------------------------*/
