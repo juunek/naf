@@ -77,7 +77,7 @@
      <div class="row m-4 text-center">
 
       <div class="col-lg-3 col-md-6">
-          <img src="img/avatar.png" width="80%" class="mb-2">
+          <img src="img/about-barry-clark.jpg" width="80%" class="mb-2">
           <h4>Barry Clark</h4>
           <p>Board Member</p>
       </div>
@@ -88,7 +88,7 @@
           <p>Board Member</p>
       </div>
       <div class="col-lg-3 col-md-6">
-          <img src="img/avatar.png" width="80%" class="mb-2">
+          <img src="img/about-yvonne-freeman.jpg" width="80%" class="mb-2">
           <h4>Yvonne Freeman</h4>
           <p>Board Member</p>
       </div>
