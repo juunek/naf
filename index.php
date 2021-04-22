@@ -7,8 +7,8 @@
 
     <!-- hero banner  -->
 
-    <div class="row p-4 text-white home-hero-wheelchair-img">
-      <div class="col-12 p-5 text-right">
+    <div class="row one-cause-padding text-white home-hero-wheelchair-img">
+      <div class="col-12 p-5 text-center">
         <h1 class="display-5 text-naf-white">One cause, One goal</h1>
         <p class="lead my-3 text-naf-white">A better life and a WIN for everyone.</p>
         <button class="clear-bg pl-3 pr-3" href="#"><strong>GIVE NOW</strong></button>
@@ -128,7 +128,7 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
   </div>
   <div class="carousel-inner">
-    
+
 
             <div class="carousel-item active">
               <div class="d-flex justify-content-center m-5">
@@ -159,7 +159,7 @@
               </div>
             </div>
             </div>
-          
+
 
               <div class="carousel-item">
               <div class="d-flex justify-content-center m-5">
@@ -188,7 +188,7 @@
               </div>
             </div>
             </div>
-          
+
 
           <div class="carousel-item">
               <div class="d-flex justify-content-center m-5">
@@ -221,7 +221,7 @@
   </button>
 </div>
 
- </div>  
+ </div>
 
 <?php
   print($htmlFooter);
