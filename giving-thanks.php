@@ -10,7 +10,7 @@ print("<div class='container'>");
 
 	print("<h1 class='my-5 text-center header-blue'>Giving Thanks</h1>");
 
-	$sql = "SELECT GTID, GTImage, GTAdditionalImage, GTHeader, GTDetails, GTPersonName, GTPersonDetails FROM GivingThanks";
+	$sql = "SELECT GTID, GTImage, GTAdditionalImage, GTAdditionalImageAltText, GTHeader, GTDetails, GTPersonName, GTPersonDetails FROM GivingThanks";
 
 /* create a prepared statement */
 $stmt = $conn->stmt_init();
@@ -21,7 +21,7 @@ if ($stmt->prepare($sql)) {
 	$stmt->execute();
 
 	/* bind result variables */
-	$stmt->bind_result($GTID, $GTImage, $GTAdditionalImage, $GTHeader, $GTDetails, $GTPersonName, $GTPersonDetails);
+	$stmt->bind_result($GTID, $GTImage, $GTAdditionalImage, $GTAdditionalImageAltText, $GTHeader, $GTDetails, $GTPersonName, $GTPersonDetails);
 
 	print ("<div>");
 
@@ -30,7 +30,7 @@ if ($stmt->prepare($sql)) {
 		print ("<div class='col-md-10 mx-auto row py-4'>
     <div class='col-md-4'>
       <img class='cover mb-5' src='img/$GTImage'  alt='$GTHeader' Image title= '$GTHeader Image'>
-      <img class='cover' src='img/$GTAdditionalImage'  alt='Additional $GTHeader Image' title= Additional '$GTHeader Image'>
+      <img class='cover' src='img/$GTAdditionalImage'  alt='$GTAdditionalImageAltText' title= '$GTAdditionalImageAltText Image'>
     </div>
      <div class='d-flex align-items-start flex-column col-md-8'>
        <h3 class='events-mobile-spacing header-blue'>$GTHeader</h3><p class='cover'>$GTDetails</p>
