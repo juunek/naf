@@ -60,12 +60,25 @@ a.dropdown-item {
 /*-------------------------- Button ----------------------------*/
 
 .clear-bg {
-	background-color:rgba(255, 255, 255,0);
+	background-color:rgba(255, 255, 255, 0);
 	border: solid 1px white;
 	color: white;
 	border-radius: 5px;
 	padding: 0.5rem;
 	font-weight: 700;
+}
+
+.btn-transparent-white {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: white;
+	border-radius: 5px;
+	padding: 0.5rem;
+	font-weight: 700;
+	border: none;
+}
+
+.btn-transparent-white:hover {
+	background-color: rgba(255, 255, 255, 0.45);
 }
 
 .btn-naf-blue {
@@ -74,6 +87,10 @@ a.dropdown-item {
 	border: none;
 	letter-spacing: 0.7px;
 	font-weight:  800!important;
+}
+
+.btn-naf-blue:hover {
+	background-color: #19AE61!important;
 }
 
 .btn-same-size {
@@ -240,6 +257,16 @@ a.dropdown-item {
 		padding: 0.5rem;
 	}
 
+	.navbar-brand {
+		width: 35%;
+		height: auto;
+	}
+	
+	#navbar-brand-img {
+		height: 100%;
+		width: 100%
+	}
+
 
 
 }
@@ -279,10 +306,6 @@ a.dropdown-item {
 	  content: "\f13a";
 	}
 
-	.home-hero-wheelchair-img div {
-		text-align: center!important;
-	}
-
 	.events-mobile-spacing{
 		margin-top: 1rem;
 	}
@@ -290,7 +313,6 @@ a.dropdown-item {
 	.home-hero {
 		padding: 1.5rem;
 	}
-
 
 }
 
@@ -319,7 +341,10 @@ a.dropdown-item {
       margin-top: -1rem;
     }
 
-
+	#btn-donate-tablet {
+		margin-top: 3px;
+		font-size: .8rem;
+	}
 }
 
 
@@ -332,19 +357,21 @@ a.dropdown-item {
 /*--------------------------General----------------------------*/
 
 .home-hero-wheelchair-img {
-    background-image: url(img/home-hero-wheelchair.jpg);
+    background-image: url(../img/home-hero-wheelchair.jpg);
     background-size: cover;
+}
 
-
+.home-hero-wheelchair-img div {
+	margin-top: 6rem;
 }
 
 .home-inspiring-independence-img {
-	background-image: url(img/home-inspiring-independence.jpg);
+	background-image: url(../img/home-inspiring-independence.jpg);
 	background-size: cover;
 }
 
 .home-stats-img {
-	background-image: url(img/home-stats-image.jpg);
+	background-image: url(../img/home-stats-image.jpg);
 	background-size: cover;
 }
 
@@ -588,6 +615,7 @@ footer a:hover{
 		font-size: 30px;
 
 		}
+	
 }
 
 @media (max-width: 992px) {
@@ -595,7 +623,10 @@ footer a:hover{
 
 		font-size: 60px;
 		padding-left: 10px;
+		}
 
+		.navbar-toggler {
+			border: none!important;
 		}
 
 }

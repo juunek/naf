@@ -11,7 +11,7 @@
       <div class="col-12 home-hero text-center">
         <h1 class="display-5 text-naf-white">One cause, One goal</h1>
         <p class="lead my-3 text-naf-white">A better life and a WIN for everyone.</p>
-        <button class="clear-bg pl-3 pr-3" href="#"><strong>GIVE NOW</strong></button>
+        <button class="btn-transparent-white pl-3 pr-3" href="#"><strong>GIVE NOW</strong></button>
       </div>
     </div>
 

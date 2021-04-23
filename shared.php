@@ -9,7 +9,7 @@ $htmlNav= "<!doctype html>
     <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">
     <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap\" rel=\"stylesheet\">
 
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"css/styles.css\">
     
 
     <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">
@@ -30,14 +30,14 @@ $htmlNav= "<!doctype html>
 <body>
 
 <div class='container'>
-<img height='86px'>
+
 <nav class='navbar navbar-expand-lg navbar-light fixed-top' id='navbar'>
 
     <a href='index.php' class='navbar-brand'>
-      <img src='img/naf-logo.png' height='86px' alt='' id='navbar-brand-img'>
+      <img src='img/naf-logo.png' height='86px' alt='Neuro Assistance Foundation Home' id='navbar-brand-img'>
     </a>
     <div class='d-flex flex-row'>
-    <a class='text-decoration-none' href='donate.php'><button class='btn btn-naf-blue ml-5' id='btn-donate-tablet' href='#'><strong>DONATE</strong></button></a>
+    <a class='text-decoration-none' href='donate.php'><button class='btn btn-naf-blue' id='btn-donate-tablet' href='#'><strong>DONATE</strong></button></a>
 
     <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='#navbarCollapse'>
       <span class='navbar-toggler-icon'></span>
