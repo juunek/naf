@@ -67,7 +67,7 @@ $conn = dbConnect();
 
 						<div class='row my-4'>
 			                <div class='col-md-4 resources-brands text-center'>
-			                    <img class='p-4 my-auto' src='".$arrImg[$j]."' style='width:100%;'>
+			                    <img class='p-4 my-auto' src='img/resources/".$arrImg[$j]."' style='width:100%;'>
 			                </div>
 			                
 			                <div class='col-md-8 resources-detail'>
