@@ -116,7 +116,8 @@ $htmlFooter="<footer>
                   <h4 class ='text-white my-4 fw-800'>Connect with us</h4>
 
                   <div class ='social-media text-white'>
-                        <a href='https://www.facebook.com/NeuroAssistanceFoundation/'><i class='fa fa-facebook-square fs-x2 mr-3'></i></a>
+                        <a href='https://www.facebook.com/NeuroAssistanceFoundation/'><i class='fa fa-facebook-square fs-x2 mr-2'></i></a>
+                        <a href='https://twitter.com/neuroassistance'><i class='fa fa-twitter mr-2 fs-x2'></i></a>
                         <a href='https://www.linkedin.com/company/neuro-assistance-foundation/'><i class='fa fa-linkedin fs-x2'></i></a>
 
                 </div>
