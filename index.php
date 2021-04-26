@@ -55,7 +55,7 @@
           </div>
      </div>
 
-   <!-- 3 buttons  -->
+   <!-- Three client buttons  -->
 
        <div class ="row pv-5">
            <div class="col-lg-4 col-md-12 text-center">
@@ -97,14 +97,14 @@
         <div col-lg-4></div>
      </div>
 
-   <!-- over 28000  -->
+   <!-- SPI fact -->
        <div class ="row pv-5">
           <div class="col-12 text-center">
             <h4 class="fw-800 fs-x2"><span class="text-naf-blue">Over 28,000</span> spinal cord injured people in Texas</h4>
           </div>
        </div>
 
-         <!-- Make different  -->
+         <!-- Make a difference  -->
         <div class ="row pv-5 bg-naf-blue">
           <div class="col-lg-4 text-center">
             <h4 class="mx-5 text-light fw-800">Make a difference</h4>
@@ -115,7 +115,7 @@
           </div>
        </div>
 
-     <!-- Testimonials  -->
+     <!-- Testimonials Start -->
 
       <h2 class="text-center my-5 text-naf-blue fw-800">Testmonials</h2>
 
@@ -203,9 +203,6 @@
               </div>
             </div>
             </div>
-
-
-
   </div>
 
 
@@ -220,6 +217,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<!-- Testimonials End -->
 
  </div>
 
