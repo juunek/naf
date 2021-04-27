@@ -48,16 +48,16 @@
         
          <div class="col-md-10 mx-auto">
           
-            <form id="donationForm" action="" method="post" class="p-3 shadow">
+            <form id="volunteerForm" action="" method="post" class="p-3 shadow">
               <h4 class="fw-800 text-naf-blue my-3">Volunteer Interest</h4>
                 <div class="form-group row">
                     <div class="col-sm-6">
                         <label for="inputFirstnameDonation" id="inputFirstnameVolunteerLabel">First name*</label>
-                        <input type="text" class="form-control" name="firstname" id="inputFirstnameVolunteerLabel" placeholder="First name">
+                        <input type="text" class="form-control" name="firstname" id="inputFirstnameVolunteer" placeholder="First name">
                     </div>
                     <div class="col-sm-6">
                         <label for="inputLastnameVolunteer" id="inputLastnameVolunteerLabel">Last name*</label>
-                        <input type="text" class="form-control" name="lastname" id="inputLastnameDonation" placeholder="Last name">
+                        <input type="text" class="form-control" name="lastname" id="inputLastnameVolunteer" placeholder="Last name">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -79,13 +79,13 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-12">
-                        <label for="inputMessageVolunteer" id="inputDetailMessageLabel">Message*</label>
+                        <label for="inputMessageVolunteer" id="inputMessageVolunteerLabel">Message*</label>
                         <input type="text" class="form-control" id="inputMessageVolunteer" placeholder="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                     <button type="submit" name="submit" value="Submit" id="submitDonation" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue btn-block py-2 fs-5">SEND MESSAGE</button>
+                     <button type="submit" name="submit" value="Submit" id="submitVolunteer" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue btn-block py-2 fs-5">SEND MESSAGE</button>
                      <br>
                    </div>
                 </div>

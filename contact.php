@@ -47,7 +47,7 @@
 
             <div class="form-group row">
                 <div class="col-sm-12">
-                    <label for="inputSubjectContact" id="inputsubjectContactLabel">Subject*</label>
+                    <label for="inputSubjectContact" id="inputSubjectContactLabel">Subject*</label>
                     <input type="text" class="form-control" id="inputSubjectContact" placeholder="">
               </div>
             </div>
