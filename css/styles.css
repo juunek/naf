@@ -72,6 +72,10 @@ a.dropdown-item {
 	font-weight: 800!important;
 }
 
+.blue-text {
+	color: #0B5BAB!important;
+}
+
 .text-naf-white {
 	color: white!important;
 }
@@ -107,7 +111,7 @@ a.dropdown-item {
 }
 
 .btn-transparent-white:hover {
-	background-color: rgba(255, 255, 255, 0.45);
+	background-color: #19AE61!important;
 }
 
 .btn-naf-blue {
@@ -124,7 +128,7 @@ a.dropdown-item {
 
 .btn-same-size {
 	width: 18rem;
-	height: 4rem;
+	height: 5rem;
 }
 
 .btn-naf-blue-squareCorner {
@@ -177,13 +181,6 @@ a.dropdown-item {
 
 
 /*--------------------------Media Query----------------------------*/
-@media (min-width: 992px) {}
-@media (max-width: 992px) {}
-@media (min-width: 768px) {}
-@media (max-width: 768px) {}
-@media (min-width: 576px) {}
-@media (max-width: 576px) {}
-
 
 @media (min-width: 992px) {
 	#btn-donate-tablet {
@@ -207,7 +204,6 @@ a.dropdown-item {
 	.events-btn-padding-left{
 		padding-left: 0.75rem;
 	}
-
 
 }
 
@@ -298,20 +294,27 @@ a.dropdown-item {
 	#footer-dropdown {
 		display: none!important;
 	}
+
+	.home-hero {
+		padding: 6rem 1.5rem 6rem 56%!important;
+	}
+
+	.home-hero-wheelchair-img {
+		padding-top: 6rem;
+		padding-bottom: 5rem;
+	}
+
 }
 
 
 @media (max-width: 768px) {
 	.resources-brands{
 			display: block;
-
 		}
-
 
 	#footer-links div {
 		text-align: center;
 	}
-
 
 	#footer-links{
 
@@ -335,7 +338,7 @@ a.dropdown-item {
 	}
 
 	.home-hero {
-		padding: 1.5rem;
+		padding: 1.5rem!important;
 	}
 
 	h1 {
@@ -348,6 +351,17 @@ a.dropdown-item {
 		padding: 0.5rem;
 		margin: 2rem 0 0 0;
 	}
+
+	.mission {
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+	}
+
+	.home-hero-wheelchair-img {
+		padding-top: 4rem;
+		padding-bottom: 3rem;
+	}
+	
 
 }
 
@@ -412,11 +426,6 @@ a.dropdown-item {
 	height: 100vh;
 }
 
-.home-hero {
-	padding: 9% 8% 6% 58%;
-}
-
-
 .opacity-50 {
 	background-color:rgba(0,0,0,0.2)!important;
 
@@ -443,6 +452,16 @@ a.dropdown-item {
 	font-weight:  800!important;
 }
 
+.bg-gray {
+	background-color: #e3e3e4!important;
+}
+
+/*-------- div class to vertically center align items -------*/
+
+.vertical-align-items {
+	display: flex;
+  	align-items: center;
+}
 
 /*--------------------------End General----------------------------*/
 
@@ -647,6 +666,7 @@ footer a:hover{
 		font-size: 30px;
 
 		}
+		
 	
 }
 

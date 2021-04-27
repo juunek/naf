@@ -126,9 +126,8 @@
        <div class="col-lg-3 col-md-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Keith Tansey, M.D., PhD</h4>
-          <p>Board Member<br>
-          <span class="affiliations">Research Faculty, Neurology & Physiology, Emory University School of Medicine, 
-          Attending Physician at Spinal Cord Injury Clinic, Atlanta VA Medical</span></p>
+          <p>Board Advisor<br>
+          <span class="affiliations">Research Faculty, Neurology & Physiology, Emory University School of Medicine<br>Attending Physician, Spinal Cord Injury Clinic, Atlanta VA Medical</span></p>
       </div>
 
       <div class="col-lg-3 col-md-6 mb-5">

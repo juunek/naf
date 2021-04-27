@@ -9,7 +9,7 @@
 
     <div class="row p-5 text-white home-hero-wheelchair-img">
       <div class="col-12 home-hero text-center">
-        <h1>One cause, One goal</h1>
+        <h1 class="text-white mt-1">One cause, One goal</h1>
         <p class="lead my-3 text-naf-white">A better life and a WIN for everyone.</p>
         <button class="btn-transparent-white pl-3 pr-3" href="#"><strong>GIVE NOW</strong></button>
       </div>
@@ -22,21 +22,21 @@
     <div class="container">
 
       <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div class="align-middle pt-4 pb-4">
-                <h2 class="blue-bar"><strong>Our Mission</strong></h2>
+          <div class="vertical-align-items col-lg-6 col-md-6">
+            <div class="mission px-5">
+                <h2 class="text-naf-blue"><strong>Our Mission</strong></h2>
                 <p>We are dedicated to assisting spinal cord injured and disabled individuals in the Dallas/Fort Worth area to achieve self-sufficiency and mobility through assistive vehicles, equipment, technology and home modifications.</p>
-                <a href="about.php">Learn more</a>
+                <a href="about.php" class="btn btn-naf-blue">LEARN MORE</a>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-6">
-            <div class="mt-4 mb-4 p-5 rounded bg-naf-blue row shadow">
+            <div class="mt-4 mb-4 p-5 rounded bg-naf-blue row">
               <img class="col-lg-6 col-md-12" src="img/home-texas-flag.svg" height="auto" width="80rem">
               <div class="col-lg-6 col-md-12 d-flex align-items-center">
                   <div class="mx-auto" id="home-texas-flag">
-                    <h3 class="text-light text-center fw-800 fs-3">12 YEARS</h3>
-                    <p class="text-light text-center fs-3">of service to the community</p>
+                    <h3 class="text-light text-center fs-3">12 YEARS</h3>
+                    <p class="text-light text-center">of service to the community</p>
                   </div>
               </div>
             </div>
@@ -106,7 +106,7 @@
 
          <!-- Make a difference  -->
         <div class ="row pv-5 bg-naf-blue">
-          <div class="col-lg-4 text-center">
+          <div class="col-lg-4 text-center vertical-align-items">
             <h4 class="mx-5 text-light fw-800">Make a difference</h4>
           </div>
            <div class="col-lg-8 text-center">
