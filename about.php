@@ -71,7 +71,7 @@
      </div>
 
 
-    <h2 class="resources-heading bg-naf-blue">NAF Board Members & Officers</h2>
+    <h2 class="resources-heading bg-naf-blue">Board Members & Officers</h2>
 
 
      <div class="row m-4 text-center">
@@ -79,37 +79,43 @@
       <div class="col-lg-3 col-md-6">
           <img src="img/about/barry-clark.jpg" width="80%" class="mb-2">
           <h4>Barry Clark</h4>
-          <p>Board Member</p>
+          <p>Board Member<br>
+          <span style="affiliation">Owner, Peachtree Construction</span></p>
       </div>
 
        <div class="col-lg-3 col-md-6">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Brandi Fletcher</h4>
-          <p>Board Member</p>
+          <p>Board Member<br>
+          <span style="affiliation">Tax Partner, Whitley Penn</span></p>
       </div>
       <div class="col-lg-3 col-md-6">
           <img src="img/about/yvonne-freeman.jpg" width="80%" class="mb-2">
           <h4>Yvonne Freeman</h4>
-          <p>Board Member</p>
+          <p>Board Member<br>
+          <span style="affiliation">Vice President, Total Rewards & HR Operations Sabre</span></p>
       </div>
 
        <div class="col-lg-3 col-md-6">
-          <img src="img/avatar.png" width="80%" class="mb-2">
+          <img src="img/about/stephen-mackintosh.jpg" width="80%" class="mb-2">
           <h4>Stephen Mackintosh</h4>
-          <p>Board Member</p>
+          <p>Board Member<br>
+          <span style="affiliation">Owner, Group Dynamix</span></p>
       </div>
 
 
       <div class="col-lg-3 col-md-6">
-          <img src="img/avatar.png" width="80%" class="mb-2">
-          <h4>Vicki Niedermeyer</h4>
-          <p>Board Member</p>
+          <img src="img/about/vicki-niedermayer.jpg" width="80%" class="mb-2">
+          <h4>Vicki Niedermayer</h4>
+          <p>Board Member<br>
+          <span style="affiliation">CEO, Helping Restore Ability</span></p>
       </div>
 
        <div class="col-lg-3 col-md-6">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Mike Shipka</h4>
-          <p>Board Member</p>
+          <p>Board Member<br>
+          <span style="affiliation">Area Manager, United Access</span></p>
       </div>
       <div class="col-lg-3 col-md-6">
           <img src="img/avatar.png" width="80%" class="mb-2">
@@ -119,20 +125,24 @@
 
        <div class="col-lg-3 col-md-6">
           <img src="img/avatar.png" width="80%" class="mb-2">
-          <h4>Keith Tansey M.D. PhD</h4>
-          <p>Board Advisor</p>
+          <h4>Keith Tansey, M.D., PhD</h4>
+          <p>Board Member
+          <span style="affiliation">Research Faculty, Neurology & Physiology, Emory University School of Medicine, 
+          Attending Physician at Spinal Cord Injury Clinic, Atlanta VA Medical</span></p>
       </div>
 
       <div class="col-lg-3 col-md-6">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Brian Tatum</h4>
-          <p>Board Member</p>
+          <p>Board Member<br>
+          <span style="affiliation">Krystal Clean Car Wash</span></p>
       </div>
 
        <div class="col-lg-3 col-md-6">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Steve Wright</h4>
-          <p>Board Member</p>
+          <p>Board Member<br>
+          <span style="affiliation">Vice President, TCF Bank</span></p>
       </div>
 
 

@@ -10,6 +10,14 @@ p, ul, li  {
 	color: #707070!important;
 }
 
+/*----- about page board member affiliations start -----*/
+.affiliations {
+	color: red!important;
+	font-size: .7rem!important;
+	line-height: 125%!important;
+}
+/*----- about page board member affiliations end -----*/
+
 h4 {
 	font-weight: 400!important;
 }
@@ -53,6 +61,7 @@ a.dropdown-item {
 	font-weight: 700!important;
 	color: #0B5BAB;
 }
+
 
 
 /*-------------------------- End Typography----------------------------*/
@@ -156,6 +165,11 @@ a.dropdown-item {
 
 
 /*--------------------------Media Query----------------------------*/
+@media (min-width: 992px) {}
+@media (max-width: 992px) {}
+@media (min-width: 768px) {}
+@media (max-width: 768px) {}
+
 @media (min-width: 992px) {
 	#btn-donate-tablet {
 		display:none!important;
