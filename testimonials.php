@@ -9,9 +9,9 @@ print("<div class='container'>");
 print("<div class='container'>");
 
 
-	print("<h1 class='my-5 text-center header-blue'>Testimonials</h1>
+	print("<h1>Testimonials</h1>
 
-  <h2 class='resources-heading'>NAF helped 161 clients in 2020!</h2>
+  <h2 class='blue-bar'>227 clients assisted in 2021 so far!</h2>
   <br>");
 $sql = "SELECT TTID, TestimonialType FROM TestimonialCategory order by TTID ASC";
 

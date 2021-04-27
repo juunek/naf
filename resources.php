@@ -57,7 +57,7 @@ $conn = dbConnect();
 			for ($i=0; $i < 3 ; $i++) { 
 
 
-				$output = $output."<h2 class='resources-heading bg-naf-blue'>".$arrRName[$i]."</h2>";
+				$output = $output."<h2 class='blue-bar'>".$arrRName[$i]."</h2>";
 
 				for ($j=0; $j < count($arrImg); $j++) {
 
@@ -75,7 +75,7 @@ $conn = dbConnect();
 			                  <p class='lead'>$arrLead[$j]</p>
 			                  <br>
 			                  <p>".$arrDescription[$j]."</p>
-			                  <a href='".$arrLink[$j]."'>Visit Website</a> 
+			                  <a href='".$arrLink[$j]."' class='btn btn-naf-blue' target='_blank'>Visit Website</a> 
 			                </div>
 		           		</div>
 
@@ -105,7 +105,7 @@ $conn = dbConnect();
 ?>
 
 <div class="container">
- <h1 class="my-5 text-center text-naf-blue">Resources</h1>
+ <h1>Resources</h1>
 
 
 		<?php

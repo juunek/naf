@@ -9,7 +9,7 @@
 
     <div class="row p-5 text-white home-hero-wheelchair-img">
       <div class="col-12 home-hero text-center">
-        <h1 class="display-5 text-naf-white">One cause, One goal</h1>
+        <h1>One cause, One goal</h1>
         <p class="lead my-3 text-naf-white">A better life and a WIN for everyone.</p>
         <button class="btn-transparent-white pl-3 pr-3" href="#"><strong>GIVE NOW</strong></button>
       </div>
@@ -24,7 +24,7 @@
       <div class="row">
           <div class="col-lg-6 col-md-6">
             <div class="align-middle pt-4 pb-4">
-                <h2 class="text-naf-blue"><strong>Our Mission</strong></h2>
+                <h2 class="blue-bar"><strong>Our Mission</strong></h2>
                 <p>We are dedicated to assisting spinal cord injured and disabled individuals in the Dallas/Fort Worth area to achieve self-sufficiency and mobility through assistive vehicles, equipment, technology and home modifications.</p>
                 <a href="about.php">Learn more</a>
             </div>
@@ -117,7 +117,7 @@
 
      <!-- Testimonials Start -->
 
-      <h2 class="text-center my-5 text-naf-blue fw-800">Testmonials</h2>
+      <h2 class="blue-bar">Testmonials</h2>
 
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">

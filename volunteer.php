@@ -6,7 +6,7 @@
 <div class="container">
     
     <!-- our mission and vision  -->
-    <h1 class="my-5 text-center text-naf-blue">Volunteer</h1>
+    <h1>Volunteer</h1>
 
     <div class="row mb-4">
         <div class="col-md-10 mx-auto">

@@ -7,11 +7,11 @@
 <div class="container">
 
     <!-- our mission and vision  -->
-    <h1 class="my-5 text-center text-naf-blue">About</h1>
+    <h1>About</h1>
 
     <!--Local Resources -->
 
-    <h2 class="resources-heading bg-naf-blue">Our Mission and Vision</h2>
+    <h2 class="blue-bar">Our Mission and Vision</h2>
 
       <div class="row m-4">
 
@@ -29,7 +29,7 @@
       </div>
 
 
-    <h2 class="resources-heading bg-naf-blue">Cindi Cooperman</h2>
+    <h2 class="blue-bar">Cindi Cooperman</h2>
 
       <div class="row m-4">
 
@@ -52,7 +52,7 @@
       </div>
 
 
-    <h2 class="resources-heading bg-naf-blue">Staff</h2>
+    <h2 class="blue-bar">Staff</h2>
 
      <div class="row m-4 text-center">
 
@@ -71,78 +71,78 @@
      </div>
 
 
-    <h2 class="resources-heading bg-naf-blue">Board Members & Officers</h2>
+    <h2 class="blue-bar">Board Members & Officers</h2>
 
 
      <div class="row m-4 text-center">
 
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6 mb-5">
           <img src="img/about/barry-clark.jpg" width="80%" class="mb-2">
           <h4>Barry Clark</h4>
           <p>Board Member<br>
-          <span style="affiliation">Owner, Peachtree Construction</span></p>
+          <span class="affiliations">Owner, Peachtree Construction</span></p>
       </div>
 
-       <div class="col-lg-3 col-md-6">
+       <div class="col-lg-3 col-md-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Brandi Fletcher</h4>
           <p>Board Member<br>
-          <span style="affiliation">Tax Partner, Whitley Penn</span></p>
+          <span class="affiliations">Tax Partner, Whitley Penn</span></p>
       </div>
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6 mb-5">
           <img src="img/about/yvonne-freeman.jpg" width="80%" class="mb-2">
           <h4>Yvonne Freeman</h4>
           <p>Board Member<br>
-          <span style="affiliation">Vice President, Total Rewards & HR Operations Sabre</span></p>
+          <span class="affiliations">Vice President, Total Rewards & HR Operations Sabre</span></p>
       </div>
 
-       <div class="col-lg-3 col-md-6">
+       <div class="col-lg-3 col-md-6 mb-5">
           <img src="img/about/stephen-mackintosh.jpg" width="80%" class="mb-2">
           <h4>Stephen Mackintosh</h4>
           <p>Board Member<br>
-          <span style="affiliation">Owner, Group Dynamix</span></p>
+          <span class="affiliations">Owner, Group Dynamix</span></p>
       </div>
 
 
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6 mb-5">
           <img src="img/about/vicki-niedermayer.jpg" width="80%" class="mb-2">
           <h4>Vicki Niedermayer</h4>
           <p>Board Member<br>
-          <span style="affiliation">CEO, Helping Restore Ability</span></p>
+          <span class="affiliations">CEO, Helping Restore Ability</span></p>
       </div>
 
-       <div class="col-lg-3 col-md-6">
+       <div class="col-lg-3 col-md-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Mike Shipka</h4>
           <p>Board Member<br>
-          <span style="affiliation">Area Manager, United Access</span></p>
+          <span class="affiliations">Area Manager, United Access</span></p>
       </div>
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Jill McKean-Bilby</h4>
           <p>Board Member</p>
       </div>
 
-       <div class="col-lg-3 col-md-6">
+       <div class="col-lg-3 col-md-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Keith Tansey, M.D., PhD</h4>
-          <p>Board Member
-          <span style="affiliation">Research Faculty, Neurology & Physiology, Emory University School of Medicine, 
+          <p>Board Member<br>
+          <span class="affiliations">Research Faculty, Neurology & Physiology, Emory University School of Medicine, 
           Attending Physician at Spinal Cord Injury Clinic, Atlanta VA Medical</span></p>
       </div>
 
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Brian Tatum</h4>
           <p>Board Member<br>
-          <span style="affiliation">Krystal Clean Car Wash</span></p>
+          <span class="affiliations">Krystal Clean Car Wash</span></p>
       </div>
 
-       <div class="col-lg-3 col-md-6">
+       <div class="col-lg-3 col-md-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Steve Wright</h4>
           <p>Board Member<br>
-          <span style="affiliation">Vice President, TCF Bank</span></p>
+          <span class="affiliations">Vice President, TCF Bank</span></p>
       </div>
 
 

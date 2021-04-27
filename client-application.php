@@ -3,11 +3,11 @@
   print($htmlNav);
 ?>
 <div class="container">
-  <h1 class="my-5 text-center text-naf-blue">Request Assistance</h1>
+  <h1>Request Assistance</h1>
 
   <!--Local Resources -->
 
-  <h2 class="resources-heading">Do you need assistance?</h2>
+  <h2 class="blue-bar">Do you need assistance?</h2>
   <br>
   <div class="test">
     <p>Are you living with a spinal cord injury, spinal cord disability, or congenital disorder (birth defect)? NAF's mission is to help with mobility equipment, home modifications, vehicle modifications and technology to ensure maximum independence and self-sufficiency for our clients.</p>
@@ -68,7 +68,7 @@
     </div>
   </div>
 
-  <h2 class="resources-heading">Client Application</h2>
+  <h2 class="blue-bar">Client Application</h2>
   <br>
   <div class="test">
     <p>Thank you for your interest in NAF. To request assistance, please complete the application below. Applications must be completed by a physician, therapist, or hospital case manager, and clients must not have alternative means to receive assistance. We will contact you after the application is received.</p>
