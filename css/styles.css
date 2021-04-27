@@ -129,6 +129,9 @@ a.dropdown-item {
 .btn-same-size {
 	width: 18rem;
 	height: 5rem;
+	padding-top: 1.5rem!important;
+	padding-bottom: 1.5rem!important;
+
 }
 
 .btn-naf-blue-squareCorner {

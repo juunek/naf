@@ -3,13 +3,13 @@
   print($htmlNav);
 ?>
 <div class="container">
+<script type="text/javascript" src="js/donationform.js"></script>
 
-
- <h1>Make a Difference</h1>
+ <h1 class="my-5 text-center text-naf-blue">Make a Difference</h1>
 
 <!--Local Resources -->
 
-<h2 class="blue-bar">Donations</h2>
+<h2 class="resources-heading bg-naf-blue ml-auto">Donations</h2>
 
 
   <div class="row m-4">
@@ -36,7 +36,7 @@
   </div>
 
 
- <h2 class="blue-bar">Vehicles & Equipment</h2>
+ <h2 class="resources-heading bg-naf-blue">Vehicles & Equipment</h2>
 
 
 

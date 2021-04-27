@@ -1,5 +1,5 @@
 
-var page;
+
 
  function init(){
 
@@ -56,10 +56,11 @@ function addErrorMessage(fieldId, msg){
 
 
 
+
   function process(evt, page) {
 
     var err = 0;
-
+    if (page===null) {page="Volunteer";}
 
   // email validation 
   

@@ -59,13 +59,13 @@
 
        <div class ="row pv-5">
            <div class="col-lg-4 col-md-12 text-center">
-                <button class="btn btn-naf-blue btn-same-size m-2 fw-800" href="client-application.php"><i class="fa fa-flag text-light"></i> Apply for Assistance</button>
+                <a class="btn btn-naf-blue btn-same-size m-2 fw-800" href="client-application.php"><i class="fa fa-hands-helping text-light"></i> Apply for Assistance</a>
            </div>
          <div class="col-lg-4 col-md-12 text-center">
-                <button class="btn btn-naf-blue btn-same-size m-2 fw-800" href="resources.php"><i class="fa fa-flag text-light"></i> Resources</button>
+                <a class="btn btn-naf-blue btn-same-size m-2 fw-800" href="resources.php"><i class="fa fa-book text-light"></i> Resources</a>
            </div>
           <div class="col-lg-4 col-md-12 text-center">
-                <button class="btn btn-naf-blue btn-same-size m-2 fw-800" href="spinal-cord-injury.php"><i class="fa fa-flag text-light"></i> Spinal Cord Injuries</button>
+                <a class="btn btn-naf-blue btn-same-size m-2 fw-800" href="spinal-cord-injury.php"><i class="fa fa-info-circle text-light"></i> Spinal Cord Injuries</a>
            </div>
 
       </div>

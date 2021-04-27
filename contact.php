@@ -4,9 +4,9 @@
 ?>
 
 <div class="container">
+<script type="text/javascript" src="js/contactform.js"></script>
 
-
- <h1>Contact Us</h1>
+ <h1 class="my-5 text-center text-naf-blue">Contact Us</h1>
 
 <!-- Contact Us -->
 
