@@ -6,7 +6,7 @@
 <div class="container">
 
 
-    <h1 class="my-5 text-center text-naf-blue">Join Email List</h1>
+    <h1>Join Email List</h1>
 
     <!-- Join Email List -->
 

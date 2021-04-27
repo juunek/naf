@@ -8,7 +8,7 @@
 print("<div class='container'>");
 
 
-	print("<h1 class='my-5 text-center header-blue'>Giving Thanks</h1>");
+	print("<h1>Giving Thanks</h1>");
 
 	$sql = "SELECT GTID, GTImage, GTAdditionalImage, GTAdditionalImageAltText, GTHeader, GTDetails, GTPersonName, GTPersonDetails FROM GivingThanks";
 

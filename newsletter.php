@@ -3,7 +3,8 @@
   print($htmlNav);
 ?>
 
-<h1 class="my-5 text-center text-naf-blue">Newsletters</h1>
+<h1>Newsletter</h1>
+<br>
 
 <div class="container">
     
@@ -14,7 +15,7 @@
             <div class="col-md-3" id="archive-newsletter">
                 
                 <h2 class="text-naf-blue">Archive</h2>
-
+                <br>
                 <h3 class="text-naf-blue">2020</h3>
 
                 <a href="" class="tablinks text-decoration-none" id="test"><p>January/February</p></a>

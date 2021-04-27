@@ -36,14 +36,14 @@ $stmt->store_result();
     print("<div class='container'>");
 
 
-    	print("<h1 class='my-5 text-center header-blue'>Events</h1>");
+    	print("<h1>Events</h1>");
 	print ("<div>");
 	/* fetch values */
 	while ($stmt->fetch()) {
     $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
     $timeStart=date('g:i A', strtotime($EStart));
     $timeEnd=date('g:i A', strtotime($EEnd));
-    print("<h2 class='resources-heading'>$EName</h2>
+    print("<h2 class='blue-bar'>$EName</h2>
     <br>");
 		print ("<div class='col-md-10 mx-auto row py-4'>
     <div class='col-md-4 h-100 pt-4 pb-1 px-4 me-3 mb-4 gray-bg'>
@@ -62,7 +62,7 @@ $stmt->store_result();
 }
 print ("</div>");
 
-print("<h2 class='resources-heading'>Photo Gallery</h2><br>
+print("<h2 class='blue-bar'>Photo Gallery</h2><br>
 
 <div class='photo-gallery'>
         <div class='row text-center text-lg-left photos'>
@@ -117,7 +117,7 @@ print("<h2 class='resources-heading'>Photo Gallery</h2><br>
     </div>
 </div>");
 
-print("<h2 class='resources-heading'>Sponsors</h2><br>
+print("<h2 class='blue-bar'>Sponsors</h2><br>
 
 <div class='row text-center text-lg-left'>
 

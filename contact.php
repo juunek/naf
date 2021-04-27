@@ -6,7 +6,7 @@
 <div class="container">
 
 
- <h1 class="my-5 text-center text-naf-blue">Contact Us</h1>
+ <h1>Contact Us</h1>
 
 <!-- Contact Us -->
 

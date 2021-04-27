@@ -8,9 +8,9 @@
 print("<div class='container'>");
 
 
-	print("<h1 class='my-5 text-center header-blue'>Events</h1>
+	print("<h1>Get Involved</h1>
 
-  <h2 class='resources-heading'>Upcoming Events</h2>
+  <h2 class='blue-bar'>Upcoming Events</h2>
   <br>");
 
 	$sql = "SELECT EID, EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks, RegisterEvtBtn FROM Events LIMIT 3";
@@ -49,7 +49,7 @@ if ($stmt->prepare($sql)) {
      </div>");
 }
 print ("</div></div>
-<h2 class='resources-heading'>Volunteer</h2>
+<h2 class='blue-bar'>Volunteer</h2>
 <br>
 <div class='col-md-10 mx-auto row py-4'>
 <div class='col-md-6'>
@@ -66,7 +66,7 @@ print ("</div></div>
  </div>");
 
  print ("
- <h2 class='resources-heading'>Donate</h2>
+ <h2 class='blue-bar'>Donate</h2>
  <br>
  <div class='col-md-10 mx-auto row py-4'>
  <div class='col-md-6'>

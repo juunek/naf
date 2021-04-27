@@ -5,12 +5,11 @@
 
 <div class="container">
 
-      <h1 class="my-5 text-center text-naf-blue">Community</h1>
-
+      <h1>Community</h1>
 
 
   <!-- Carousel -->
-  <h2 class="resources-heading bg-naf-blue fw-800">Testimonials</h2>
+  <h2 class="blue-bar">Testimonials</h2>
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -115,7 +114,7 @@
 <button class="btn-naf-blue m-4 p-2 mx-auto d-block"><a class="text-naf-white text-decoration-none" href="testimonials.php">TESTIMONIALS</a></button>
   <!-- Giving Thanks -->
 
-  <h2 class="resources-heading bg-naf-blue fw-800">Giving Thanks</h2>
+  <h2 class="blue-bar">Giving Thanks</h2>
 
   <div class="row m-4">
 

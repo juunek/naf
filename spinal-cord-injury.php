@@ -5,10 +5,10 @@
 
 
 <div class="container">
-    <h1 class="my-5 text-center text-naf-blue">Spinal Cord Injuries</h1>
+    <h1>Spinal Cord Injuries</h1>
 
 
-    <h2 class="bg-naf-blue py-2 pl-5 my-4">Spinal Cord Injuries and Social Security Disability</h2>
+    <h2 class="blue-bar">Spinal Cord Injuries and Social Security Disability</h2>
 
     <div class="row">
 
@@ -55,7 +55,7 @@
           </div>
 
 
-               <h2 class="bg-naf-blue py-2 pl-5 my-4">Applying for Disability Benefits</h2>
+               <h2 class="blue-bar">Applying for Disability Benefits</h2>
 
           <div class="row">
              <div class="col-md-10 mx-auto">
@@ -80,7 +80,7 @@
             </div>
           </div>
 
-              <h2 class="bg-naf-blue py-2 pl-5 my-4">Applying for Disability Benefits</h2>
+              <h2 class="blue-bar">Applying for Disability Benefits</h2>
 
                 <div class="row">
                    <div class="col-md-10 mx-auto">

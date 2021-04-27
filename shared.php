@@ -105,7 +105,7 @@ $htmlNav= "<!doctype html>
 
 
 $htmlFooter="<footer>
-<div class='container-fluid'>
+<div class='container-fluid mt-5'>
 
     <div class ='row bg-naf-blue p-lg-5'>
 

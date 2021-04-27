@@ -8,9 +8,9 @@
 print("<div class='container'>");
 
 
-	print("<h1 class='my-5 text-center header-blue'>Events</h1>
+	print("<h1>Events</h1>
 
-  <h2 class='resources-heading'>Upcoming Events</h2>
+  <h2 class='blue-bar'>Upcoming Events</h2>
   <br>");
 
 	$sql = "SELECT EID, EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks, RegisterEvtBtn FROM Events";
