@@ -9,7 +9,7 @@
 
     <div class="row p-5 text-white home-hero-wheelchair-img">
       <div class="col-12 home-hero text-center">
-        <h1 class="text-white mt-1">One cause, One goal</h1>
+        <h3 class="text-light text-center fs-1 mt-1">One cause, One goal</h3>
         <p class="lead my-3 text-naf-white">A better life and a WIN for everyone.</p>
         <button class="btn-transparent-white pl-3 pr-3" href="#"><strong>GIVE NOW</strong></button>
       </div>
@@ -32,11 +32,11 @@
 
           <div class="col-lg-6 col-md-6">
             <div class="mt-4 mb-4 p-5 rounded bg-naf-blue row">
-              <img class="col-lg-6 col-md-12" src="img/home-texas-flag.svg" height="auto" width="80rem">
-              <div class="col-lg-6 col-md-12 d-flex align-items-center">
+              <img class="col-lg-6 col-md-6" src="img/home-texas-flag.svg" height="auto" width="60rem">
+              <div class="col-lg-6 col-md-6 d-flex align-items-center">
                   <div class="mx-auto" id="home-texas-flag">
-                    <h3 class="text-light text-center fs-3">12 YEARS</h3>
-                    <p class="text-light text-center">of service to the community</p>
+                    <h3 class="text-light text-center fs-1">12 years</h3>
+                    <p class="text-light text-center fs-6">of service to the community</p>
                   </div>
               </div>
             </div>
