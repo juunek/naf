@@ -1,12 +1,12 @@
 
-
+var page;
 
  function init(){
 
 
 
   document.getElementById('volunteerForm').addEventListener('submit', function(e){process(e, 'Volunteer')}, false);
-  document.getElementById('contactForm').addEventListener('submit', function(e){process(e, 'Contact')}, false);
+  
  
    
 } 
@@ -56,11 +56,10 @@ function addErrorMessage(fieldId, msg){
 
 
 
-
   function process(evt, page) {
 
     var err = 0;
-    if (page===null) {page="Volunteer";}
+
 
   // email validation 
   

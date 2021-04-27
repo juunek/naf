@@ -1,7 +1,6 @@
- function init(){
+function init(){
 
-  document.getElementById('donationForm').donation.addEventListener('submit', process, false);
-  
+  document.getElementById('donationForm').addEventListener('submit', process, false);
   document.getElementById('DonationType').addEventListener('change', showType, false);
    
 } 
@@ -12,7 +11,7 @@ var xmlHttp;
 function showType(){
 
     xmlHttp=GetXmlHttpObject();
-    if (xmlHttp===null)
+    if (xmlHttp==null)
       {
         alert ("Your browser does not support AJAX!");// how to ensure users can still use the applicaiton?
         return;
@@ -146,7 +145,7 @@ function process(evt){
       } 
 
     var lastName = document.getElementById('inputLastnameDonation').value;
-      
+      var namePattern = /^([a-zA-Z ]){2,15}$/;
       if (namePattern.test(lastName)) {
         removeErrorMessage('inputLastnameDonation');
       } else {
@@ -265,8 +264,3 @@ function process(evt){
 
 
 window.addEventListener('load', init, false);
-
-
-
-
-

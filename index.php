@@ -110,8 +110,8 @@
             <h4 class="mx-5 text-light fw-800">Make a difference</h4>
           </div>
            <div class="col-lg-8 text-center">
-            <button class="clear-bg m-2 btn-same-size fw-800">Volunteer Opportunities</button>
-            <button class="clear-bg m-2 btn-same-size fw-800">Donate</button>
+            <a href="volunteer.php" class="btn btn-same-size clear-bg m-2  fw-800">Volunteer Opportunities</a>
+            <a href="donate.php" class="btn clear-bg btn-same-size  m-2 btn-same-size fw-800">Donate</a>
           </div>
        </div>
 

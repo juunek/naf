@@ -4,7 +4,7 @@
 ?>
 
 <div class="container">
-
+<script type="text/javascript" src="js/joinemailistform.js"></script>
 
     <h1>Join Email List</h1>
 
