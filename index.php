@@ -33,8 +33,8 @@ print($htmlNav);
           </div>
 
           <div class="col-lg-6 col-md-6">
-            <div class="mt-4 mb-4 p-5 rounded bg-naf-blue row">
-              <img class="col-lg-6 col-md-6" src="img/home-texas-flag.svg">
+            <div class="mt-4 mb-4 p-md-5 p-3 rounded bg-naf-blue row">
+              <img class="col-lg-6 col-md-6 mx-auto w-50 h-50" src="img/home-texas-flag.svg">
               <div class="col-lg-6 col-md-6 d-flex align-items-center">
                   <div class="mx-auto" id="home-texas-flag">
                     <h3 class="text-light text-center fs-1">12 years</h3>
