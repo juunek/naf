@@ -32,7 +32,7 @@
 
           <div class="col-lg-6 col-md-6">
             <div class="mt-4 mb-4 p-5 rounded bg-naf-blue row">
-              <img class="col-lg-6 col-md-6" src="img/home-texas-flag.svg" height="auto" width="60rem">
+              <img class="col-lg-6 col-md-6" id="texas-flag-image" src="img/home-texas-flag.svg">
               <div class="col-lg-6 col-md-6 d-flex align-items-center">
                   <div class="mx-auto" id="home-texas-flag">
                     <h3 class="text-light text-center fs-1">12 years</h3>
@@ -59,7 +59,7 @@
 
        <div class ="row pv-5">
            <div class="col-lg-4 col-md-12 text-center">
-                <a class="btn btn-naf-blue btn-same-size m-2 fw-800" href="client-application.php"><i class="fa fa-hands-helping text-light"></i> Apply for Assistance</a>
+                <a class="btn btn-naf-blue btn-same-size m-2 fw-800" href="client-application.php"><i class="fa fa-hands-helping text-light"></i> Request Assistance</a>
            </div>
          <div class="col-lg-4 col-md-12 text-center">
                 <a class="btn btn-naf-blue btn-same-size m-2 fw-800" href="resources.php"><i class="fa fa-book text-light"></i> Resources</a>
@@ -106,7 +106,7 @@
 
          <!-- Make a difference  -->
         <div class ="row pv-5 bg-naf-blue">
-          <div class="col-lg-4 text-center vertical-align-items">
+          <div class="col-lg-4 d-flex align-items-center justify-content-center text-center">
             <h4 class="mx-5 text-light fw-800">Make a difference</h4>
           </div>
            <div class="col-lg-8 text-center">

@@ -366,6 +366,11 @@ a.dropdown-item {
 		padding-bottom: 3rem;
 	}
 
+	#texas-flag-image{
+		height: 8rem;
+		width: auto;
+	}
+
 }
 
 
@@ -457,6 +462,11 @@ a.dropdown-item {
 
 .bg-gray {
 	background-color: #e3e3e4!important;
+}
+
+#texas-flag-image{
+	height: auto;
+	width: 60rem;
 }
 
 /*-------- div class to vertically center align items -------*/
