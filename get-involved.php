@@ -10,8 +10,7 @@ print("<div class='container'>");
 
 	print("<h1>Get Involved</h1>
 
-  <h2 class='blue-bar'>Upcoming Events</h2>
-  <br>");
+  <h2 class='blue-bar'>Upcoming Events</h2>");
 
 	$sql = "SELECT EID, EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks, RegisterEvtBtn FROM Events LIMIT 3";
 
