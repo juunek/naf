@@ -75,7 +75,7 @@
 </div>
 
 <div class="col-md-10 mx-auto mb-5">
-  <form action="" method="post">
+  <form action="" method="post" class="p-3 shadow">
     <h3 class="text-naf-blue">Patient/Client Info</h3>
     <div class="from-group row">
       <div class="d-flex flex-column col-sm-6">
@@ -309,7 +309,7 @@
                      <br>
                    </div>
      </div>
-               
+
 
   </form>
 </div>
