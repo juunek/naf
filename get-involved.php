@@ -26,29 +26,25 @@ if ($stmt->prepare($sql)) {
 	/* bind result variables */
 	$stmt->bind_result($EID, $EImagePreview, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $ELinks, $RegisterEvtBtn);
 
-	print ("<div><div class='col-md-12 d-flex flex-md-row flex-column py-4'>");
+	print ("<div class='col-md-12 d-flex flex-md-row flex-column py-4'>");
 	/* fetch values */
 	while ($stmt->fetch()) {
     $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
     $timeStart=date('g:i A', strtotime($EStart));
     $timeEnd=date('g:i A', strtotime($EEnd));
-		print ("<div class='w-100'>
-    <div class='col-12'>
+		print ("<div class='d-flex flex-column col-md-4'>
       <a href='$ELinks?EID=$EID'><img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
-    </div>
-     <div class='d-flex align-items-start flex-column col-12'>
-     <h3 class='events-mobile-spacing header-blue'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
+     <h3 class='events-mobile-spacing header-blue mt-3 mb-4'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
 
-     <div class='w-100'>
+     <div class='w-100 mt-auto'>
       <a href='$ELinks?EID=$EID'>
-      <button type='button' class='btn btn-naf-secondary-btn w-100 my-3'>VIEW EVENT</button></a>
+      <button type='button' class='btn btn-naf-secondary-btn w-100 mb-3'>VIEW EVENT</button></a></div>
 
       <a href='$RegisterEvtBtn' target='_blank'>
-      <button type='button' class='btn btn-naf-primary-btn w-100 my-3'>REGISTER</button></a></div>
-     </div>
+      <button type='button' class='btn btn-naf-primary-btn w-100 mt-auto mb-md-1 mb-sm-5'>REGISTER</button></a>
      </div>");
 }
-print ("</div></div>
+print ("</div>
 <h2 class='blue-bar'>Volunteer</h2>
 <br>
 <div class='col-md-10 mx-auto row py-4'>
