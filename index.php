@@ -46,6 +46,54 @@ print($htmlNav);
           </div>
       </div>
 
+      <!-- Events Start -->
+      <h2 class='blue-bar'>Upcoming Events</h2>
+
+      <?php
+      	$sql = "SELECT EID, EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks, RegisterEvtBtn FROM Events LIMIT 3";
+
+      /* create a prepared statement */
+      $stmt = $conn->stmt_init();
+
+      if ($stmt->prepare($sql)) {
+
+      	/* execute statement */
+      	$stmt->execute();
+
+      	/* bind result variables */
+      	$stmt->bind_result($EID, $EImagePreview, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $ELinks, $RegisterEvtBtn);
+
+      	print ("<div class='col-md-12 d-flex flex-md-row flex-column py-4'>");
+      	/* fetch values */
+      	while ($stmt->fetch()) {
+          $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
+          $timeStart=date('g:i A', strtotime($EStart));
+          $timeEnd=date('g:i A', strtotime($EEnd));
+      		print ("<div class='d-flex flex-column col-md-4'>
+            <a href='$ELinks?EID=$EID'><img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
+           <h3 class='events-mobile-spacing header-blue mt-3 mb-4'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
+
+           <div class='w-100 mt-auto'>
+            <a href='$ELinks?EID=$EID'>
+            <button type='button' class='btn btn-naf-secondary-btn w-100 mb-3'>VIEW EVENT</button></a></div>
+
+            <a href='$RegisterEvtBtn' target='_blank'>
+            <button type='button' class='btn btn-naf-primary-btn w-100 mt-auto mb-md-1 mb-sm-5'>REGISTER</button></a>
+           </div>");
+      }
+      print("</div>");
+      /* close statement */
+      $stmt->close();
+
+      } else {
+      print ("query failed");
+      }
+
+
+      $conn->close();
+      ?>
+      <!-- Events End -->
+
 
        <!-- hero banner 2 - Inspiring Limitless Independece  -->
       <div class="row home-inspiring-independence-img p-5">
@@ -220,53 +268,6 @@ print($htmlNav);
   </button>
 </div>
 <!-- Testimonials End -->
-
-<!-- Events Start -->
-<h2 class='blue-bar'>Upcoming Events</h2>
-
-<?php
-	$sql = "SELECT EID, EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks, RegisterEvtBtn FROM Events LIMIT 3";
-
-/* create a prepared statement */
-$stmt = $conn->stmt_init();
-
-if ($stmt->prepare($sql)) {
-
-	/* execute statement */
-	$stmt->execute();
-
-	/* bind result variables */
-	$stmt->bind_result($EID, $EImagePreview, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $ELinks, $RegisterEvtBtn);
-
-	print ("<div class='col-md-12 d-flex flex-md-row flex-column py-4'>");
-	/* fetch values */
-	while ($stmt->fetch()) {
-    $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
-    $timeStart=date('g:i A', strtotime($EStart));
-    $timeEnd=date('g:i A', strtotime($EEnd));
-		print ("<div class='d-flex flex-column col-md-4'>
-      <a href='$ELinks?EID=$EID'><img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
-     <h3 class='events-mobile-spacing header-blue mt-3 mb-4'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
-
-     <div class='w-100 mt-auto'>
-      <a href='$ELinks?EID=$EID'>
-      <button type='button' class='btn btn-naf-secondary-btn w-100 mb-3'>VIEW EVENT</button></a></div>
-
-      <a href='$RegisterEvtBtn' target='_blank'>
-      <button type='button' class='btn btn-naf-primary-btn w-100 mt-auto mb-md-1 mb-sm-5'>REGISTER</button></a>
-     </div>");
-}
-
-/* close statement */
-$stmt->close();
-
-} else {
-print ("query failed");
-}
-
-
-$conn->close();
-?>
 
  </div>
 
