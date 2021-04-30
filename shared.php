@@ -128,7 +128,7 @@ $htmlFooter="<footer>
 
               <h4 class ='text-white my-4 fw-800' id='footer-joiningemaillist-h4'>Join our email list</h4>
 
-              <a href='join-email.php'><button type='button' class='btn-naf-white-squareCorner' id='footer-joiningemaillist-button'>JOIN EMAIL LIST</button></a>
+              <a href='join-email.php'><button type='button' class='btn btn-naf-white-squareCorner' id='footer-joiningemaillist-button'>JOIN EMAIL LIST</button></a>
 
             </div>
       </div>

@@ -94,9 +94,9 @@ a.dropdown-item {
 
 .clear-bg {
 	background-color:rgba(255, 255, 255, 0)!important;
-	border: solid 1px white!important;
+	border: solid 2px white!important;
 	color: white!important;
-	border-radius: 5px;
+	border-radius: 10px;
 	padding: 0.5rem;
 	font-weight: 700;
 }
@@ -122,8 +122,19 @@ a.dropdown-item {
 	font-weight:  800!important;
 }
 
-.btn-naf-blue:hover {
+.btn-naf-blue:hover{
 	background-color: #19AE61!important;
+}
+
+.btn.clear-bg:hover{
+	background-color: white!important;
+	color: #0B5BAB!important;
+}
+
+.btn-naf-secondary-btn:hover, .btn-naf-primary-btn:hover{
+	background-color: #19AE61!important;
+	border-color: #19AE61!important;
+	color: white!important;
 }
 
 .btn-same-size {
@@ -150,10 +161,10 @@ a.dropdown-item {
 	text-transform: uppercase;
 	padding: 0.5rem;
 	border: none;
-	font-weight: 700;
+	font-weight: 700!important;
 }
 
-.btn-naf-primary-btn{
+.btn-naf-primary-btn {
 	background-color: #0B5BAB!important;
 	color: white!important;
 	border: 3px solid #0B5BAB!important;
@@ -173,6 +184,10 @@ a.dropdown-item {
 .dropdown-menu a:hover {
 	background-color: #0B5BAB;
 	color: white!important;
+}
+
+#footer-joiningemaillist-button:hover{
+	background-color: #B2CCE6!important;
 }
 
 .dropdown-menu a:clicked {
@@ -371,6 +386,10 @@ a.dropdown-item {
 		width: auto;
 	}
 
+	.btn-tablet-mobile-full{
+		width: 100%;
+	}
+
 }
 
 
@@ -501,6 +520,11 @@ a.dropdown-item {
 .pv-5 {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
+}
+
+.pv-4{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 .pv-2 {

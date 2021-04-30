@@ -13,7 +13,7 @@ print($htmlNav);
       <div class="col-12 home-hero text-center">
         <h3 class="text-light text-center fs-1 mt-1">One cause, One goal</h3>
         <p class="lead my-3 text-naf-white">A better life and a WIN for everyone.</p>
-        <button class="btn-transparent-white pl-3 pr-3" href="#"><strong>GIVE NOW</strong></button>
+        <a href="donate.php"><button class="btn-transparent-white pl-3 pr-3"><strong>GIVE NOW</strong></button></a>
       </div>
     </div>
 
@@ -28,12 +28,12 @@ print($htmlNav);
             <div class="mission px-5">
                 <h2 class="text-naf-blue"><strong>Our Mission</strong></h2>
                 <p>We are dedicated to assisting spinal cord injured and disabled individuals in the Dallas/Fort Worth area to achieve self-sufficiency and mobility through assistive vehicles, equipment, technology and home modifications.</p>
-                <a href="about.php" class="btn btn-naf-blue">LEARN MORE</a>
+                <a href="about.php" class="btn btn-naf-blue btn-tablet-mobile-full">LEARN MORE</a>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-6">
-            <div class="mt-4 mb-4 p-md-5 p-3 rounded bg-naf-blue row">
+            <div class="mt-4 mb-4 p-md-5 pt-4 pb-3 px-3 rounded bg-naf-blue row">
               <img class="col-lg-6 col-md-6 mx-auto w-50 h-50" src="img/home-texas-flag.svg">
               <div class="col-lg-6 col-md-6 d-flex align-items-center">
                   <div class="mx-auto" id="home-texas-flag">
@@ -155,20 +155,19 @@ print($htmlNav);
        </div>
 
          <!-- Make a difference  -->
-        <div class ="row pv-5 bg-naf-blue">
-          <div class="col-lg-4 d-flex align-items-center justify-content-center text-center">
-            <h4 class="mx-5 text-light fw-800">Make a difference</h4>
+        <div class ="row pv-4 bg-naf-blue">
+          <div class="col-lg-4 col-md-12 d-flex align-items-center justify-content-center text-center">
+            <h2 class="mx-5 text-light fw-800">Make a difference</h4>
           </div>
-           <div class="col-lg-8 text-center">
+           <div class="col-lg-4 col-md-6 text-center">
             <a href="volunteer.php" class="btn btn-same-size clear-bg m-2  fw-800">Volunteer Opportunities</a>
-            <a href="donate.php" class="btn clear-bg btn-same-size  m-2 btn-same-size fw-800">Donate</a>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <a href="donate.php" class="btn clear-bg btn-same-size  m-2 fw-800">Donate</a>
           </div>
        </div>
 
      <!-- Testimonials Start -->
-
-      <h2 class="blue-bar">Testmonials</h2>
-
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -252,9 +251,8 @@ print($htmlNav);
                 </div>
               </div>
             </div>
-            </div>
+          </div>
   </div>
-
 
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa fa-chevron-right"></i></span>
@@ -267,6 +265,8 @@ print($htmlNav);
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<button class="btn btn-naf-blue m-4 p-2 mx-auto d-block btn-tablet-mobile-full"><a class="text-naf-white text-decoration-none" href="testimonials.php">TESTIMONIALS</a></button>
 <!-- Testimonials End -->
 
  </div>
