@@ -31,7 +31,7 @@ if ($stmt->prepare($sql)) {
     $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
     $timeStart=date('g:i A', strtotime($EStart));
     $timeEnd=date('g:i A', strtotime($EEnd));
-		print ("<div class='d-flex flex-column col-md-4 mb-lg-5 mb-4'>
+		print ("<div class='d-flex flex-column col-md-4 mb-lg-5 mt-lg-0 mb-lg-0 mt-md-3 mb-md-4 mt-sm-3 my-sm-0 my-4'>
       <a href='$ELinks?EID=$EID'><img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
      <h3 class='events-mobile-spacing header-blue mt-3 mb-4'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
 
