@@ -6,22 +6,22 @@
 <div class="container">
 <script type="text/javascript" src="js/contactform.js"></script>
 
- <h1 class="my-5 text-center text-naf-blue">Contact Us</h1>
+ <h1>Contact Us</h1>
 
 <!-- Contact Us -->
 
   <div class="row m-4">
-      <div class="col-md-10 mx-auto">
+      <div class="col-md-8 mx-auto">
         <div>
           <p>We are happy to answer any questions you may have about our organization, the services we offer,  or any other inquires.</p>
-          <p>*Required Fields</p>
+          <p class="text-danger">*Required Fields</p>
       </div>
     </div>
   </div>
 
   <div class="row">
 
-     <div class="col-md-10 mx-auto">
+     <div class="col-md-8 mx-auto">
         <form id="contactForm" action="" method="post" class="p-3 shadow">
             <div class="form-group row">
                 <div class="col-sm-6">
@@ -37,25 +37,25 @@
             <div class="form-group row">
                 <div class="col-sm-6">
                     <label for="inputEmailContact" id="inputEmailContactLabel">Email Address*</label>
-                    <input type="text" class="form-control" id="inputEmailContact" placeholder="abc@xyz.com">
+                    <input type="text" class="form-control" id="inputEmailContact" placeholder="Email address">
                 </div>
                 <div class="col-sm-6">
-                    <label for="inputPhoneNumberContact" id="inputPhoneNumberContactLabel">Phone Number</label>
-                    <input type="text" class="form-control" id="inputPhoneNumberContact" placeholder="123 456 7890">
+                    <label for="inputPhoneNumberContact" id="inputPhoneNumberContactLabel">Phone Number (optional)</label>
+                    <input type="text" class="form-control" id="inputPhoneNumberContact" placeholder="123-456-7890">
                 </div>
             </div>
 
             <div class="form-group row">
                 <div class="col-sm-12">
                     <label for="inputSubjectContact" id="inputSubjectContactLabel">Subject*</label>
-                    <input type="text" class="form-control" id="inputSubjectContact" placeholder="">
+                    <input type="text" class="form-control" id="inputSubjectContact" placeholder="Subject">
               </div>
             </div>
  
             <div class="form-group row">
                 <div class="col-sm-12">
                     <label for="inputMessageContact" id="inputMessageContactLabel">Message*</label>
-                    <input type="text" class="form-control" id="inputMessageContact" placeholder="">
+                    <input type="textarea" class="form-control" id="inputMessageContact" placeholder="Type your message here">
               </div>
             </div>
 
