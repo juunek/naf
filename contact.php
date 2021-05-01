@@ -51,11 +51,11 @@
                     <input type="text" class="form-control" id="inputSubjectContact" placeholder="Subject">
               </div>
             </div>
- 
+
             <div class="form-group row">
                 <div class="col-sm-12">
                     <label for="inputMessageContact" id="inputMessageContactLabel">Message*</label>
-                    <input type="textarea" class="form-control" id="inputMessageContact" placeholder="Type your message here">
+                    <textarea class="form-control" id="inputMessageContact" placeholder="Type your message here"></textarea>
               </div>
             </div>
 
