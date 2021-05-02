@@ -8,7 +8,6 @@
   <!--Local Resources -->
 
   <h2 class="blue-bar">Do you need assistance?</h2>
-  <br>
   <div class="test">
     <p>Are you living with a spinal cord injury, spinal cord disability, or congenital disorder (birth defect)? NAF's mission is to help with mobility equipment, home modifications, vehicle modifications and technology to ensure maximum independence and self-sufficiency for our clients.</p>
     <p>We assist people in the following Texas counties:</p>
@@ -69,9 +68,9 @@
   </div>
 
   <h2 class="blue-bar">Client Application</h2>
-  <br>
   <div class="test">
     <p>Thank you for your interest in NAF. To request assistance, please complete the application below. Applications must be completed by a physician, therapist, or hospital case manager, and clients must not have alternative means to receive assistance. We will contact you after the application is received.</p>
+    <p class="text-danger">*Required Fields</p>
 </div>
 
 <div class="col-md-10 mx-auto mb-5">
@@ -79,41 +78,50 @@
     <h3 class="text-naf-blue">Patient/Client Info</h3>
     <div class="from-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>First Name</label>
+        <label>First Name*</label>
         <input type="text" class="form-control" id="client_firstname">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label>Last Name</label>
+        <label>Last Name*</label>
         <input type="text" class="form-control" id="client_lastname">
       </div>
+    </div>
 
+    <div class="from-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>Birthdate (mm/dd/yyyy)</label>
+        <label>Birthdate (mm/dd/yyyy)*</label>
         <input type="date" class="form-control" id="client_birthday">
       </div>
+    </div>
 
+    <div class="from-group row">
       <div class="d-flex flex-column col-sm-12">
-        <label>Street Address</label>
+        <label>Street Address*</label>
         <input type="text" class="form-control" id="client_address">
       </div>
+    </div>
 
+    <div class="from-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>City</label>
+        <label>City*</label>
         <input type="text" class="form-control" id="client_city">
       </div>
 
       <div class="d-flex flex-column col-sm-3">
-        <label>State</label>
+        <label>State*</label>
         <input type="text" class="form-control" id="client_state">
       </div>
 
       <div class="d-flex flex-column col-sm-3">
-        <label>Zip Code</label>
+        <label>Zip Code*</label>
         <input type="text" class="form-control" id="client_zip">
       </div>
+    </div>
+
+    <div class="from-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>Patient has children at home</label>
+        <label>Patient has children at home*</label>
           <div class="d-flex flex-row">
             <div class="pe-5">
               <input type="radio" name="client_childrenHome" value="client_childrenHome_yes" id="client_childrenHome_yes">
@@ -130,15 +138,19 @@
         <label>Ages of Children</label>
         <input type="text" class="form-control" id="client_childrenAge">
       </div>
+    </div>
 
+    <div class="from-group row">
       <div class="d-flex flex-column col-sm-12">
-        <label>Describe spinal cord injury (level and cause, i.e., MVA, Fall, etc.). If not a traumatic injury, please explain</label>
+        <label>Describe spinal cord injury (level and cause, i.e., MVA, Fall, etc.). If not a traumatic injury, please explain*</label>
         <textarea name="client_explaination" class="form-control" id="client_explaination"></textarea>
       </div>
+    </div>
 
+    <div class="from-group row">
       <div class="d-flex flex-column col-sm-12">
         <div class= "row">
-        <label>Type of assistance requested</label>
+        <label>Type of assistance requested*</label>
             <div class="col-sm-6">
               <input type="checkbox" name="client_assistType" value="client_assistType_home" id="client_assistType_home">
               <label for="client_assistType_home">Home Modifications</label>
@@ -157,19 +169,23 @@
         </div>
       </div>
     </div>
+  </div>
 
+    <div class="from-group row">
       <div class="d-flex flex-column col-sm-12">
-        <label>Describe patient's needs in order of importance</label>
+        <label>Describe patient's needs in order of importance*</label>
         <textarea name="client_needs" class="form-control" id="client_needs"></textarea>
       </div>
+    </div>
 
+    <div class="from-group row">
       <div class="d-flex flex-column col-sm-6">
         <label>Patient discharge date (mm/dd/yyyy)</label>
         <input type="date" class="form-control" id="client_discharge">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label>Will patient be using catheters</label>
+        <label>Will patient be using catheters*</label>
             <div class="d-flex flex-row">
               <div class="pe-5">
                 <input type="radio" name="client_catheterUse" value="client_catheterUse_yes" id="client_catheterUse_yes">
@@ -181,9 +197,11 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="d-flex flex-column col-sm-4">
-        <label>Is patient insured?</label>
+    <div class="from-group row">
+      <div class="d-flex flex-column col-sm-3">
+        <label>Is patient insured?*</label>
           <div class="d-flex flex-row">
             <div class="pe-5">
               <input type="radio" name="client_insured" value="client_insured_yes" id="client_insured_yes">
@@ -196,8 +214,8 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column col-sm-4">
-        <label>Does patient have Medicare/Medicaid</label>
+      <div class="d-flex flex-column col-sm-6">
+        <label>Does patient have Medicare/Medicaid*</label>
           <div class="d-flex flex-row">
               <div class="pe-5">
                 <input type="radio" name="client_medicare" value="client_medicare_yes" id="client_medicare_yes">
@@ -214,8 +232,8 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column col-sm-4">
-        <label>Is patient a veteran?</label>
+      <div class="d-flex flex-column col-sm-3">
+        <label>Is patient a veteran?*</label>
           <div class="d-flex flex-row">
             <div class="pe-5">
               <input type="radio" name="client_veteran" value="client_veteran_yes" id="client_veteran_yes">
@@ -227,7 +245,9 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="from-group row">
       <div class="d-flex flex-column col-sm-12">
         <label>Describe other program eligibility</label>
         <textarea name="client_eligibility" class="form-control" id="client_eligibility"></textarea>
