@@ -23,7 +23,7 @@ $htmlNav= "<!doctype html>
     <script src=\"https://kit.fontawesome.com/5d3977cc74.js\" crossorigin=\"anonymous\"></script>
 
     <script type=\"text/javascript\" src=\"js/javascript.js\"></script>
-    <script type=\"text/javascript\" src=\"js/js-validation.js\"></script>
+    
 
 
 
