@@ -5,11 +5,11 @@ var page;
 
 
 
- 
+
   document.getElementById('contactForm').addEventListener('submit', function(e){process(e, 'Contact')}, false);
- 
-   
-} 
+
+
+}
 
 var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 var namePattern = /^([a-zA-Z ]){2,15}$/;
@@ -20,7 +20,7 @@ var textPattern = /^([a-zA-Z ]){2,100}$/;
 
 function addErrorMessage(fieldId, msg){
     //console.log(msg);
-    
+
 
     // check if an error message span is available
     if (document.getElementById(fieldId + "ErrMsg"))
@@ -29,7 +29,7 @@ function addErrorMessage(fieldId, msg){
       document.getElementById(fieldId + "ErrMsg").innerHTML = msg;
       document.getElementById(fieldId + "ErrMsg").style.display = "block";
     } else {
-      
+
       // otherwise, create the error message span
       var messageSpan = document.createElement("span");
       messageSpan.className = "errMsg"; // set the CSS class to use
@@ -39,9 +39,9 @@ function addErrorMessage(fieldId, msg){
       var inputLabel = document.getElementById(fieldId+'Label');
       console.log("inputLabel " + inputLabel);
       inputLabel.parentNode.appendChild(messageSpan);
-      
+
     }
-    
+
   }
 
  function removeErrorMessage (fieldId){
@@ -49,9 +49,9 @@ function addErrorMessage(fieldId, msg){
     {
       document.getElementById(fieldId+"Label").style.color = "black";
       document.getElementById(fieldId + "ErrMsg").style.display = "none";
-     
+
     }
-    
+
   }
 
 
@@ -61,8 +61,8 @@ function addErrorMessage(fieldId, msg){
     var err = 0;
 
 
-  // email validation 
-  
+  // email validation
+
 
   var email = document.getElementById('inputEmail'+ page).value;
 
@@ -84,9 +84,9 @@ function addErrorMessage(fieldId, msg){
   } else {
     addErrorMessage('inputFirstname' + page, 'The first name should be letters only and up to 15 characters');
     err ++;
-  } 
+  }
 
- 
+
 
   var lastname = document.getElementById('inputLastname' + page).value;
 
@@ -105,7 +105,7 @@ function addErrorMessage(fieldId, msg){
   } else {
     addErrorMessage('inputPhoneNumber' + page, 'Please enter a valid 10-digit phone number');
     err ++;
-  } 
+  }
 
 
 
@@ -133,8 +133,7 @@ function addErrorMessage(fieldId, msg){
   var message = "";
 
   if (err == 0) {
-
-    message = "<div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>";
+/*    message = "<div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>";
     message += "<div class='modal-dialog'>";
     message += "<div class='modal-content'>";
     message += "<div class='modal-header'>";
@@ -154,14 +153,20 @@ function addErrorMessage(fieldId, msg){
 
 
     message += "<div class='modal-footer'>";
-    message += "<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Do it again</button>"
-    message += "<a href='test-"+page+".html' type='button' class='btn btn-success'>Correct?</a>"
+    message += "<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Edit Information</button>"
+    message += "<a href='contact_post.php' type='button' name='submit' class='btn btn-success'>Submit</a>"*/
 
 
-    
+
 
 
   } else {
+    if (evt.preventDefault)
+    {
+      evt.preventDefault();
+    } else {
+      evt.returnValue = false;
+    }
 
     message = "There are errors.";
 
@@ -173,21 +178,11 @@ function addErrorMessage(fieldId, msg){
 
   document.getElementById('response').innerHTML = message;
 
-  if (evt.preventDefault)
-  {
-    evt.preventDefault();
-  } else {
-    evt.returnValue = false;
-  }
-
-
 }
 
 
- 
+
 
 
 
 window.addEventListener('load', init, false);
-
-
