@@ -133,35 +133,22 @@ function addErrorMessage(fieldId, msg){
   var message = "";
 
   if (err == 0) {
-/*    message = "<div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>";
-    message += "<div class='modal-dialog'>";
-    message += "<div class='modal-content'>";
-    message += "<div class='modal-header'>";
-    message += "<h5 class='modal-title' id='exampleModalLabel'>Thank you!</h5>";
-    message += "<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>";
-    message += "</div>";
-    message += "<div class='modal-body'>";
-    message += "You have submitted the following information. Thank you for your submission.<br><ul> ";
-    message += "<li>First name: " + document.getElementById('inputFirstname' + page).value + "<br/>";
-    message += "<li>Last name: " + document.getElementById('inputLastname' + page).value + "<br/>";
-    message += "<li>Email: " + document.getElementById('inputEmail' + page).value + "<br/>";
-    message += "<li>Phone Number: " + document.getElementById('inputPhoneNumber' + page).value + "<br/>";
-    message += "<li>Subject: " + document.getElementById('inputSubject'+ page).value + "<br/>";
-    message += "<li>Message: " + document.getElementById('inputMessage' + page).value + "<br/>";
-    message += "</ul>";
-    message += "</div>";
+  
 
-
-    message += "<div class='modal-footer'>";
-    message += "<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Edit Information</button>"
-    message += "<a href='contact_post.php' type='button' name='submit' class='btn btn-success'>Submit</a>"*/
-
-
-
+     window.location.replace("thankyou.php");
 
 
   } else {
-    if (evt.preventDefault)
+
+  }
+    
+
+
+  console.log("message: " + message);
+
+  document.getElementById('response').innerHTML = message;
+
+  if (evt.preventDefault)
     {
       evt.preventDefault();
     } else {
@@ -169,14 +156,6 @@ function addErrorMessage(fieldId, msg){
     }
 
     message = "There are errors.";
-
-  }
-
-
-
-  console.log("message: " + message);
-
-  document.getElementById('response').innerHTML = message;
 
 }
 

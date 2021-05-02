@@ -1,10 +1,19 @@
 <?php
-
+session_start();
 include("dbconn.inc.php"); // database connection 
 include("shared_admin.php"); // stored shared contents, such as HTML header and page title, page footer, etc. in variables
 
+function GoToNow ($url){
+    echo '<script language="javascript">window.location.href ="'.$url.'"</script>';
+}
+
+
 // make database connection
 $conn = dbConnect();
+if(!isset($_SESSION["username"])){
+ $url = "http://ctec4350.krk1266.uta.cloud/naf/login.php";
+ GoToNow($url);
+exit(); }
 
 ?>
 

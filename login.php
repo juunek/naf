@@ -2,7 +2,7 @@
 session_start();
 include("dbconn.inc.php"); // database connection 
 include("shared.php");
-print($htmlNav); // stored shared contents, such as HTML header and page title, page footer, etc. in variables
+// stored shared contents, such as HTML header and page title, page footer, etc. in variables
 // make database connection
 $conn = dbConnect();
 
@@ -39,6 +39,9 @@ if(isset($_POST['UserName'])){
 
 ?>
 
+<?php
+print($htmlNav); 
+?>
 
 
 <div class="container">
@@ -60,7 +63,7 @@ if(isset($_POST['UserName'])){
 	  <div class="text-center">
 		  <button type="submit" value="Submit" name="but_submit" id="btn_submit" class="btn btn-naf-blue">Sign in</button>
 		  <br>
-		   <a href="index.php" class="btn btn-naf-blue mt-3">BACK TO HOMEPAGE</a>
+		  
 	   </div>
 	</form>
 
