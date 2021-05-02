@@ -162,14 +162,25 @@ function process(evt){
         err ++;
       }  
 
-      var Type = document.getElementById('DonationType').value;
-     
-      if (Type.value != "") {
-        removeErrorMessage('DonationType');
-      } else {
-        addErrorMessage('DonationType', 'Please select a type');
+      var type = document.getElementById('DonationType').value;
+      console.log("typee: " + type);
+      
+      if (type == "none") {
+         console.log("why: " + type);
+       addErrorMessage('DonationType', 'Please select a type');
         err ++;
+      } else {
+         removeErrorMessage('DonationType');
       } 
+
+    var donationDetail = document.getElementById('inputDetailDonation').value;
+     
+      if (donationDetail != "") {
+        removeErrorMessage('inputDetailDonation');
+      } else {
+        addErrorMessage('inputDetailDonation', 'Please fill out donation details');
+        err ++;
+      }
 
 
 
@@ -185,7 +196,7 @@ function process(evt){
       var jsDonationDetail = document.getElementById('inputDetailDonation').value;
 
       var inputArr = [jsFirstName, jsLastName, jsEmail, jsPhoneNumber, jsDonationType, jsDonationDetail];
-      console.log ("inputArr" + inputArr);
+     
 
       // Creating a cookie after the document is ready
       $(document).ready(function(){
@@ -212,36 +223,12 @@ function process(evt){
       
         if (err == 0) {
 
-          message = "<div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>";
-          message += "<div class='modal-dialog'>";
-          message += "<div class='modal-content'>";
-          message += "<div class='modal-header'>";
-          message += "<h5 class='modal-title' id='exampleModalLabel'>Modal title</h5>";
-          message += "<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>";
-          message += "</div>";
-          message += "<div class='modal-body'>";
-          message += "You have submitted the following information. Thank you for your submission.<br><ul> ";
-          message += "<li>First name: " + document.getElementById('inputFirstnameDonation').value + "<br/>";
-          message += "<li>Last name: " + document.getElementById('inputLastnameDonation').value + "<br/>";
-          message += "<li>Email: " + document.getElementById('inputEmailDonation').value + "<br/>";
-          message += "<li>Phone Number: " + document.getElementById('inputPhoneNumberDonation').value + "<br/>";
-          message += "<li>Vehicle/Equipment Type: " + document.getElementById('DonationType').value + "<br/>";
-          message += "<li>Donation Details: " + document.getElementById('inputDetailDonation').value + "<br/>";
-          message += "</ul>";
-          message += "</div>";
-
-
-          message += "<div class='modal-footer'>";
-          message += "<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Do it again</button>"
-          message += "<a href='admin_edit.php'><button type='button' class='btn btn-success'>Correct?</button></a>"
-
-  
-    
+         window.location.replace("thankyou.php");
 
 
         } else {
 
-          message = "There are errors.";
+         
 
         }
 

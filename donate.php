@@ -70,14 +70,14 @@
                 </div>
                 <div class="col-sm-6">
                     <label for="inputPhoneNumberDonation" id="inputPhoneNumberDonationLabel">Phone Number</label>
-                    <input type="text" class="form-control" id="inputPhoneNumberDonation" placeholder="123 456 7890">
+                    <input type="text" class="form-control" id="inputPhoneNumberDonation" placeholder="1234567890">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6">
                     <label for="DonationType" id="DonationTypeLabel">Vehicle/Equipment Type</label>
                     <select class="form-select" id="DonationType" name="DonationType">
-                       <option selected>Pick an option</option>
+                       <option value="none">Pick an option</option>
                        <option value="vehicle">vehicle</option>
                        <option value="equipment">equipment</option>
                        <option value="other">other</option>
