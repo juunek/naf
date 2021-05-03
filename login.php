@@ -27,7 +27,7 @@ if(isset($_POST['UserName'])){
 				
 				$_SESSION['username'] = $username;
 				
-				 $url = "http://ctec4350.krk1266.uta.cloud/naf/admin_show.php";
+				 $url = "http://ctec4350.krk1266.uta.cloud/naf/adminMain.php";
 				 GoToNow($url);
 				  
 			  } else {$errorPd = "<h5 class='text-danger'>Username/password is incorrect.</h5>";} 
