@@ -111,7 +111,7 @@
   </button>
 </div>
 
-<button class="btn-naf-blue m-4 p-2 mx-auto d-block"><a class="text-naf-white text-decoration-none" href="testimonials.php">TESTIMONIALS</a></button>
+<button class="btn btn-naf-blue m-4 p-2 mx-auto d-block"><a class="text-naf-white text-decoration-none" href="testimonials.php">TESTIMONIALS</a></button>
   <!-- Giving Thanks -->
 
   <h2 class="blue-bar">Giving Thanks</h2>
@@ -119,14 +119,14 @@
   <div class="row m-4">
 
     <div class="col-md-6">
-        <a href="giving-thanks.php"><img src="img/giving-thanks-chernosky-van.jpg" width="90%" class="m-4"></a>
+        <a href="giving-thanks.php"><img src="img/giving-thanks-chernosky-van.jpg" width="90%"></a>
     </div>
 
-    <div class='d-flex align-items-start flex-column col-md-6'>
+    <div class='d-flex align-items-start flex-column col-md-6 my-md-auto'>
        <h3 class='events-mobile-spacing header-blue'>Adaptive Van Donation in Memory of Dr. Martin Chernosky</h3>
        <p class='cover'>NAF was extremely honored to receive an adaptive minivan as a donation in December, 2010. The donor is Mrs. Jean Hancock Chernosky of Houston and the van was donated in memory of her late husband, Dr. Marvin Chernosky.</p>
 
-       <div class='flex-column w-100 mt-auto'>
+       <div class='flex-column btn-tablet-mobile-full mt-3'>
           <a class='events-btn-padding-right' href='giving-thanks.php'>
             <button type='button' class='btn btn-naf-primary-btn w-100'>VIEW MORE</button>
           </a>
