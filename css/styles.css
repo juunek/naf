@@ -390,6 +390,10 @@ a.dropdown-item {
 		width: 100%;
 	}
 
+	.img-no-show{
+		display: none;
+	}
+
 }
 
 
@@ -417,10 +421,6 @@ a.dropdown-item {
 	#btn-donate-tablet {
 		margin-top: 3px;
 		font-size: .8rem;
-	}
-
-	.img-no-show{
-		display: none;
 	}
 
 }

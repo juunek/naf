@@ -8,7 +8,7 @@
     <h1>Spinal Cord Injuries</h1>
 
 
-    <h2 class="blue-bar">Spinal Cord Injuries and Social Security Disability</h2>
+    <h2 class="blue-bar mb-4">Spinal Cord Injuries and Social Security Disability</h2>
 
     <div class="row">
 
@@ -17,7 +17,7 @@
               <div class="row">
                   <div class="col-md-6">
 
-                      <img src="img/sci-social-security-disability.jpg" width="100%">
+                      <img src="img/sci-social-security-disability.jpg" class="img-no-show w-100">
 
                   </div>
 
@@ -55,14 +55,14 @@
           </div>
 
 
-               <h2 class="blue-bar">Applying for Disability Benefits</h2>
+               <h2 class="blue-bar mb-4">Applying for Disability Benefits</h2>
 
           <div class="row">
              <div class="col-md-10 mx-auto">
                <div class="row">
                   <div class="col-md-6">
 
-                      <img src="img/sci-applying-for-disability-benefits.jpg" width="100%">
+                      <img src="img/sci-applying-for-disability-benefits.jpg" class="img-no-show w-100">
 
                   </div>
 
@@ -80,14 +80,14 @@
             </div>
           </div>
 
-              <h2 class="blue-bar">Applying for Disability Benefits</h2>
+              <h2 class="blue-bar mb-4">Applying for Disability Benefits</h2>
 
                 <div class="row">
                    <div class="col-md-10 mx-auto">
                     <div class="row">
                       <div class="col-md-6">
 
-                          <img src="img/sci-social-security-disability-attorney.jpg" width="100%">
+                          <img src="img/sci-social-security-disability-attorney.jpg" class="img-no-show w-100">
 
                       </div>
 

@@ -24,7 +24,7 @@
       <div class="d-flex justify-content-center m-5">
             <div class="card p-5 shadow" style="width: 40rem;">
               <div class="card-body">
-                <img src="img/testimonials/thomas.jpg" height="200px" class="mx-auto d-block">
+                <img src="img/testimonials/thomas.jpg" height="200px" class="mx-auto d-block img-no-show">
                 <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas</h4>
 
                 <p class="card-text text-center">
@@ -40,7 +40,7 @@
       <div class="d-flex justify-content-center m-5">
         <div class="card p-5 shadow" style="width: 40rem;">
         <div class="card-body">
-          <img src="img/testimonials/adrienne.jpg" height="200px" class="mx-auto d-block">
+          <img src="img/testimonials/adrienne.jpg" height="200px" class="mx-auto d-block img-no-show">
           <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Adrienne</h4>
           <p class="card-text text-center">
               "Thanks a million for the standing frame! My family has been praying God would provide one for us since February! Answered prayer indeed. I appreciate Neuro Assistance Foundation more than I can explain!"<br>
@@ -56,7 +56,7 @@
       <div class="d-flex justify-content-center m-5">
         <div class="card p-5 shadow" style="width: 40rem;">
         <div class="card-body">
-           <img src="img/testimonials/travis-d.jpg" height="200px" class="mx-auto d-block">
+           <img src="img/testimonials/travis-d.jpg" height="200px" class="mx-auto d-block img-no-show">
            <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Travis</h4>
 
            <p class="card-text text-center">

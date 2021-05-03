@@ -27,7 +27,7 @@ if ($stmt->prepare($sql)) {
 
 	/* fetch values */
 	while ($stmt->fetch()) {
-		print ("<div class='col-md-10 mx-auto row py-4'>
+		print ("<div class='col-md-10 mx-auto row py-md-4'>
     <div class='col-md-4'>
       <img class='cover mb-md-5 img-no-show' src='img/$GTImage'  alt='$GTHeader' Image title= '$GTHeader Image'>
       <img class='cover img-no-show' src='img/$GTAdditionalImage'  alt='$GTAdditionalImageAltText' title= '$GTAdditionalImageAltText Image'>
