@@ -764,3 +764,24 @@ height: 10rem;
 border-radius: 5px;
 
 }
+
+
+#goTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  background-color:#19AE61;
+  color:white;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+
+#goTop:hover{
+	opacity: 0.5;
+}

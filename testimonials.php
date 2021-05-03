@@ -4,6 +4,9 @@
   $conn = dbConnect();
   print($htmlNav);
 ?>
+
+
+
 <?php
 print("<div class='container'>");
 print("<div class='container'>");
