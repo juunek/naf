@@ -54,7 +54,7 @@
 
 <p>For further inquiries, please contact admin@naf.com</p>
 
-<a class="btn btn-naf-blue mb-3" href="index.html">Go back</a>
+<a class="btn btn-naf-blue mb-3" href="index.php">Go back</a>
 
 <div id="countdown"></div>
 

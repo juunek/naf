@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-sm-6">
                     <label for="inputPhoneNumberContact" id="inputPhoneNumberContactLabel">Phone Number (optional)</label>
-                    <input type="phone" class="form-control"name="phone" id="inputPhoneNumberContact" placeholder="123-456-7890">
+                    <input type="phone" class="form-control"name="phone" id="inputPhoneNumberContact" placeholder="1234567890">
                 </div>
             </div>
 

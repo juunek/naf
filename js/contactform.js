@@ -100,19 +100,25 @@ function addErrorMessage(fieldId, msg){
 
   var phoneNumber = document.getElementById('inputPhoneNumber' + page).value;
 
-  if (phoneNumberPattern.test(phoneNumber)) {
-    removeErrorMessage('inputPhoneNumber' + page);
-  } else {
-    addErrorMessage('inputPhoneNumber' + page, 'Please enter a valid 10-digit phone number');
-    err ++;
-  }
+  if (phoneNumber=="") {
+     removeErrorMessage('inputPhoneNumber' + page);
 
 
+  } else { 
+
+    if (phoneNumberPattern.test(phoneNumber)) {
+      removeErrorMessage('inputPhoneNumber' + page);
+    } else {
+      addErrorMessage('inputPhoneNumber' + page, 'Please enter a valid 10-digit phone number');
+      err ++;
+    }
+
+  } 
 
   var subject = document.getElementById('inputSubject' + page).value;
 
 
-  if (namePattern.test(subject)) {
+  if (subject != "") {
     removeErrorMessage('inputSubject' + page);
   } else {
     addErrorMessage('inputSubject' + page, 'Please add a subject to your message');
@@ -120,9 +126,9 @@ function addErrorMessage(fieldId, msg){
   }
 
 
-  var message = document.getElementById('inputMessage' + page).value;
+  var messageForm = document.getElementById('inputMessage' + page).value;
 
-  if (namePattern.test(message)) {
+  if (messageForm != "") {
     removeErrorMessage('inputMessage' + page);
   } else {
     addErrorMessage('inputMessage' + page, 'Please enter your message');
@@ -140,13 +146,12 @@ function addErrorMessage(fieldId, msg){
 
   } else {
 
+  
   }
     
 
 
-  console.log("message: " + message);
-
-  document.getElementById('response').innerHTML = message;
+ 
 
   if (evt.preventDefault)
     {
@@ -155,7 +160,7 @@ function addErrorMessage(fieldId, msg){
       evt.returnValue = false;
     }
 
-    message = "There are errors.";
+  
 
 }
 
