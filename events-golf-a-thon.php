@@ -58,7 +58,7 @@ $stmt->store_result();
      </div>
 
      <p class='border-top mt-3 events-donate-spacing'>If you can't attend but would like to make a contribution, donate below.</p>
-     <a href='$DonateBtn' target='_blank'><button class = 'btn cover btn-naf-blue mb-4'>DONATE NOW</button></a>
+     <a href='$DonateBtn'><button class = 'btn cover btn-naf-blue mb-4'>DONATE NOW</button></a>
      </div>
      </div>");
 }

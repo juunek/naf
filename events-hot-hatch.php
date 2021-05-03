@@ -9,7 +9,7 @@
 if (isset($_GET['EID'])){
     $EID = intval($_GET['EID']);
 
-	$sql = "SELECT EID, EName, EDate, EStart, EEnd, ELocation, FullDescription, ELinks, RegisterEvtBtn, DetailsHeader1, Details1, DetailsHeader2, Details2, DonateBtn FROM Events Where EID=?";
+	$sql = "SELECT EID, EName, EDate, EStart, EEnd, ELocation, FullDescription, ELinks, RegisterEvtBtn, DetailsHeader1, Details1, DetailsHeader2, Details2, DonateBtn, VolunteerBtn, SponsorBtn FROM Events Where EID=?";
 /* create a prepared statement */
 $stmt = $conn->stmt_init();
 
@@ -99,7 +99,7 @@ $stmt->store_result();
      <h3 class='mt-3 header-blue'>$DetailsHeader2</h3><p>$Details2</p>
 
      <p class='border-top mt-3 events-donate-spacing'>If you can't attend but would like to make a contribution, donate below.</p>
-     <a href='$DonateBtn' target='_blank'><button class = 'btn cover btn-naf-blue mb-4'>DONATE NOW</button></a>
+     <a href='$DonateBtn'><button class = 'btn cover btn-naf-blue mb-4'>DONATE NOW</button></a>
      </div>
      </div>");
 }

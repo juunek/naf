@@ -12,7 +12,7 @@ print("<div class='container'>");
 
   <h2 class='blue-bar'>Upcoming Events</h2>");
 
-	$sql = "SELECT EID, EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks, RegisterEvtBtn FROM Events LIMIT 3";
+	$sql = "SELECT EID, EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks, RegisterEvtBtn FROM Events WHERE EDate >= CAST(CURRENT_TIMESTAMP as DATE) LIMIT 3";
 
 /* create a prepared statement */
 $stmt = $conn->stmt_init();
