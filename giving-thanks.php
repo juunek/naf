@@ -29,10 +29,10 @@ if ($stmt->prepare($sql)) {
 	while ($stmt->fetch()) {
 		print ("<div class='col-md-10 mx-auto row py-4'>
     <div class='col-md-4'>
-      <img class='cover mb-5' src='img/$GTImage'  alt='$GTHeader' Image title= '$GTHeader Image'>
-      <img class='cover' src='img/$GTAdditionalImage'  alt='$GTAdditionalImageAltText' title= '$GTAdditionalImageAltText Image'>
+      <img class='cover mb-md-5 img-no-show' src='img/$GTImage'  alt='$GTHeader' Image title= '$GTHeader Image'>
+      <img class='cover img-no-show' src='img/$GTAdditionalImage'  alt='$GTAdditionalImageAltText' title= '$GTAdditionalImageAltText Image'>
     </div>
-     <div class='d-flex align-items-start flex-column col-md-8'>
+     <div class='d-flex align-items-start flex-column col-md-7 ms-md-auto'>
        <h3 class='events-mobile-spacing header-blue'>$GTHeader</h3><p class='cover'>$GTDetails</p>
        <h4 class='header-blue'>$GTPersonName</h4><p>$GTPersonDetails</p>
      </div>

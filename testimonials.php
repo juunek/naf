@@ -166,7 +166,7 @@ if ($stmt->prepare($sql)) {
 		<div class='col-md-4'>
 			<img class='cover' src='img/testimonials/$TImage'  alt='$TImageAltText' title= '$TImageAltText'>
 		</div>
-		 <div class='d-flex align-items-start flex-column col-md-6'>
+		 <div class='mx-auto d-flex align-items-start flex-column col-md-6'>
 		 <h3 class='events-mobile-spacing header-blue'>$TName</h3><p class='cover'>$date</p><p>$TDetails</p>
 		 </div>
 		 </div>");

@@ -15,14 +15,14 @@
 
       <div class="row m-4">
 
-            <div class="col-lg-4 col-xs-12">
+            <div class="col-lg-4 col-xs-12 me-lg-auto">
                 <h4 class="text-naf-blue">Our Mission</h4>
                 <p>Neuro Assistance Foundation is dedicated to assisting spinal cord injured individuals and those living with spinal cord diseases and birth defects in the Dallas/Fort Worth Metroplex and Greater Houston areas. Assistance is provided to achieve self-sufficiency and independence through vehicle support, mobility equipment, technology and home modifications.</p>
                 <h4 class="text-naf-blue">Our Vision</h4>
                 <p>NAF will strive to ensure that every spinal cord injured or disabled person in our community has the equipment necessary to be mobile and independent.</p>
             </div>
 
-            <div class="col-lg-8 col-xs-12">
+            <div class="col-lg-7 col-xs-12 mt-lg-0 mt-3">
                   <iframe id="about-youtube" width="100%" height="100%" src="https://www.youtube.com/embed/Z8y8uu7CDfk"></iframe>
             </div>
 
@@ -33,14 +33,14 @@
 
       <div class="row m-4">
 
-            <div class="col-lg-3 d-flex flex-column text-center">
-                <img src="img/avatar.png" width="100%" class="mb-2">
+            <div class="col-lg-3 col-md-4 d-flex flex-column text-center mx-lg-auto">
+                <img src="img/avatar.png" width="100%" class="mb-2 px-lg-0 px-md-4 px-sm-5">
                 <h4>Cindi Cooperman</h4>
                 <p>Executive Director</p>
-                <a href="contact.php"><button class="btn btn-naf-blue w-100">CONTACT</button></a>
+                <a href="contact.php"><button class="btn btn-naf-blue w-100 mb-4">CONTACT</button></a>
             </div>
 
-            <div class="col-lg-9">
+            <div class="col-md-7 ms-md-auto">
 
                 <p>Cynthia Cooperman is a co-founder, board member, executive director, and president of the Neuro Assistance Foundation. She has been a board member since Board Member since 2008. She has 16 years of experience in the airline and travel industry both in customer service and management. Her management experience extends to purchasing, quality assurance and competitive analysis. While working for a major airline, she was instrumental in the creation of several new departments and was responsible for their quantitative results.</p>
                 <p>In 2007, Cindi met Bev Olson and her life was profoundly changed by their friendship. Through Bev, she learned that the spinal cord injured community was doing without basic equipment, which in turn, made the simplest aspects of daily life significantly more complicated. Through this friendship, the Neuro Assistance Foundation was born.</p>
@@ -56,13 +56,13 @@
 
      <div class="row m-4 text-center">
 
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-6">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Joy Hetrick</h4>
           <p>Events Manager</p>
       </div>
 
-       <div class="col-lg-3">
+       <div class="col-lg-3 col-6">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Khanh Moutafis</h4>
           <p>Operations Manager</p>
@@ -76,27 +76,27 @@
 
      <div class="row m-4 text-center">
 
-      <div class="col-lg-3 col-md-6 mb-5">
+      <div class="col-lg-3 col-6 mb-5">
           <img src="img/about/barry-clark.jpg" width="80%" class="mb-2">
           <h4>Barry Clark</h4>
           <p>Board Member<br>
           <span class="affiliations">Owner, Peachtree Construction</span></p>
       </div>
 
-       <div class="col-lg-3 col-md-6 mb-5">
+       <div class="col-lg-3 col-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Brandi Fletcher</h4>
           <p>Board Member<br>
           <span class="affiliations">Tax Partner, Whitley Penn</span></p>
       </div>
-      <div class="col-lg-3 col-md-6 mb-5">
+      <div class="col-lg-3 col-6 mb-5">
           <img src="img/about/yvonne-freeman.jpg" width="80%" class="mb-2">
           <h4>Yvonne Freeman</h4>
           <p>Board Member<br>
           <span class="affiliations">Vice President, Total Rewards & HR Operations Sabre</span></p>
       </div>
 
-       <div class="col-lg-3 col-md-6 mb-5">
+       <div class="col-lg-3 col-6 mb-5">
           <img src="img/about/stephen-mackintosh.jpg" width="80%" class="mb-2">
           <h4>Stephen Mackintosh</h4>
           <p>Board Member<br>
@@ -104,40 +104,40 @@
       </div>
 
 
-      <div class="col-lg-3 col-md-6 mb-5">
+      <div class="col-lg-3 col-6 mb-5">
           <img src="img/about/vicki-niedermayer.jpg" width="80%" class="mb-2">
           <h4>Vicki Niedermayer</h4>
           <p>Board Member<br>
           <span class="affiliations">CEO, Helping Restore Ability</span></p>
       </div>
 
-       <div class="col-lg-3 col-md-6 mb-5">
+       <div class="col-lg-3 col-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Mike Shipka</h4>
           <p>Board Member<br>
           <span class="affiliations">Area Manager, United Access</span></p>
       </div>
-      <div class="col-lg-3 col-md-6 mb-5">
+      <div class="col-lg-3 col-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Jill McKean-Bilby</h4>
           <p>Board Member</p>
       </div>
 
-       <div class="col-lg-3 col-md-6 mb-5">
+       <div class="col-lg-3 col-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Keith Tansey, M.D., PhD</h4>
           <p>Board Advisor<br>
           <span class="affiliations">Research Faculty, Neurology & Physiology, Emory University School of Medicine<br>Attending Physician, Spinal Cord Injury Clinic, Atlanta VA Medical</span></p>
       </div>
 
-      <div class="col-lg-3 col-md-6 mb-5">
+      <div class="col-lg-3 col-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Brian Tatum</h4>
           <p>Board Member<br>
           <span class="affiliations">Krystal Clean Car Wash</span></p>
       </div>
 
-       <div class="col-lg-3 col-md-6 mb-5">
+       <div class="col-lg-3 col-6 mb-5">
           <img src="img/avatar.png" width="80%" class="mb-2">
           <h4>Steve Wright</h4>
           <p>Board Member<br>

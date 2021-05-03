@@ -419,6 +419,10 @@ a.dropdown-item {
 		font-size: .8rem;
 	}
 
+	.img-no-show{
+		display: none;
+	}
+
 }
 
 
