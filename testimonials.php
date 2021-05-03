@@ -27,15 +27,15 @@ if ($stmt->prepare($sql)) {
 	$stmt->bind_result($TTID, $TestimonialType);
 
 	print("
-  <div class='dropdown mb-3'>
-  <a class='btn btn-secondary dropdown-toggle' href='#' role='button' id='dropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+  <div class='col-10 mx-auto dropdown mb-3'>
+  <a class='btn btn-naf-secondary-btn dropdown-toggle' href='#' role='button' id='dropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
     Testimonial Filter
   </a>
 
   <div class='dropdown-menu' aria-labelledby='dropdownMenuLink'>
     <a class='dropdown-item' href=testimonials.php>All Testimonials</a>");
     while ($stmt->fetch()) {
-  				print ("<a class='dropdown-item' href=?TTID=$TTID>$TestimonialType Testimonials</a></li>");
+  				print ("<a class='dropdown-item' href=?TTID=$TTID>$TestimonialType</a></li>");
   	}
   print("</div>
 </div>");
@@ -125,7 +125,7 @@ if (!empty($_GET['TTID']) && is_numeric($_GET['TTID'])){
 	    <div class='col-md-4'>
 	      <img class='cover' src='img/testimonials/$TImage'  alt='$TImageAltText' title= '$TImageAltText'>
 	    </div>
-	     <div class='d-flex align-items-start flex-column col-md-6'>
+	     <div class='mx-auto d-flex align-items-start flex-column col-md-6'>
 	     <h3 class='events-mobile-spacing header-blue'>$TName</h3><p class='cover'>$date</p>
        <p>$TDetails</p>
 	     </div>
@@ -134,7 +134,7 @@ if (!empty($_GET['TTID']) && is_numeric($_GET['TTID'])){
 	print ("</div>");
 	/* close statement */
 }else{
-  print ("<div class='error'>No testimonials are found that matches your request. If you believe this is an error, please <a href = 'contact.php'>contact us</a></div>");
+  print ("<div class='container col-10'>No testimonials are found that matches your request. If you believe this is an error, please <a href = 'contact.php'>contact us</a></div>");
 }$stmt->close();
 
 	} else {
