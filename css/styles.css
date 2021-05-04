@@ -86,6 +86,11 @@ a.dropdown-item {
 	color: #0B5BAB;
 }
 
+.links-naf-blue:hover {
+	text-decoration: none;
+	font-weight: 700!important;
+	color: #0B5BAB;
+}
 
 
 /*-------------------------- End Typography----------------------------*/

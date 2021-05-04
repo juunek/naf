@@ -39,37 +39,39 @@
 
 
   <div class="row m-4">
-      <div class="col-md-10 mx-auto">
-        <div>
-          <p>Thank you in advance for your generous support!</p>
+      <div class="col-md-10 mx-auto mb-6">
+          <h4>NAF has provided assistance to <strong class="text-naf-blue">227 clients</strong> in 2021 so far!</h4><br>
+          
           <p>Make a difference by making a monetary or equipment donation today. Your monetary donation is tax deductible to the full extent allowed by the law. Neuro Assistance is a registered 501(c)(3) organization. A receipt for your gift will be mailed to you within 10 days.</p>
 
-          <h4 class="text-naf-blue">Donation by Check</h4>
+          <p>Whatever you can give is appreciated, and we thank you in advance for your generous support!</p>
 
-          <p>Please make your check payable to: <span class="text-naf-blue"> Neuro Assistance Foundation</span><br><br>Mail to:<br>
+          <h4 class="text-naf-blue mt-5 mb-4">Donation by Check</h4>
+
+          <p>Please make your check payable to: <strong> Neuro Assistance Foundation</strong></p>
+          <p class="ml-5">Mail to:<br>
           Neuro Assistance Foundation<br>
           2320 Bridgewood Drive<br>
           Keller, TX 76262</p>
 
-          <h4 class="text-naf-blue">Donate via Credit Card and Pledge</h4>
+          <h4 class="text-naf-blue mt-5 mb-4">Donate Online and Pledge</h4>
 
-          <p>Click below to make an online donation.</p>
+          <p>Click below to make a credit card or echeck donation to our organization. The button below will open in a new tab our donation profile on Click & Pledge, a third-party nonprofit fundraising platform.</p>
 
-          <a class='mt-auto' href='https://connect.clickandpledge.com/w/Organization/neuroassistance/paymentwidget/d01320ca-b4e1-4bbd-bade-eeb2d18d3cd1' target='_blank'><button type='button' class='btn-naf-blue-squareCorner'>MAKE A CONTRIBUTION</button></a>
+          <a class='mt-auto' href='https://connect.clickandpledge.com/w/Organization/neuroassistance/paymentwidget/d01320ca-b4e1-4bbd-bade-eeb2d18d3cd1' target='_blank'><button type='button' class='btn btn-naf-blue'>MAKE A CONTRIBUTION</button></a>
           <br>
-      </div>
     </div>
   </div>
 
 
- <h2 class="blue-bar">Vehicles & Equipment</h2>
+ <h2 class="blue-bar my-5">Vehicles & Equipment</h2>
 
 
 
   <div class="row m-4">
       <div class="col-md-10 mx-auto">
 
-          <p>If you have assistive vehicles or equipment you would like to donate, please fill out the form below. If you have any questions about a donation or anything else, <a href='contact.php'><span class="text-naf-blue">contact us</span></a>, and we will get back to you.</p>
+          <p>If you have assistive vehicles or equipment you would like to donate, please fill out the form below. If you have any questions about a donation or anything else, <a href='contact.php' class='links-naf-blue'>contact us</a>, and we will get back to you.</p>
           <p class="text-danger">*Required Fields</p>
 
       </div>
