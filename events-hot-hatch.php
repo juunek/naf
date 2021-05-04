@@ -2,9 +2,36 @@
   include("dbconn.inc.php");
   include("shared.php");
   $conn = dbConnect();
-  print($htmlNav);
 ?>
-<main>
+
+<!doctype html>
+<html lang="en">
+  <head>
+  <title>Neuro Assitance Foundation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/5d3977cc74.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script type="text/javascript" src="js/volunteerform.js"></script>
+
+  </head>
+
+<?php print($htmlNav); ?>
+
 <?php
 if (isset($_GET['EID'])){
     $EID = intval($_GET['EID']);
@@ -30,7 +57,7 @@ if ($stmt->prepare($sql)) {
 $stmt->store_result();
 
 	/* bind result variables */
-	$stmt->bind_result($EID, $EName, $EDate, $EStart, $EEnd, $ELocation, $FullDescription, $ELinks, $RegisterEvtBtn, $DetailsHeader1, $Details1, $DetailsHeader2, $Details2, $DonateBtn);
+	$stmt->bind_result($EID, $EName, $EDate, $EStart, $EEnd, $ELocation, $FullDescription, $ELinks, $RegisterEvtBtn, $DetailsHeader1, $Details1, $DetailsHeader2, $Details2, $DonateBtn, $VolunteerBtn, $SponsorBtn);
   if ($stmt->num_rows > 0){
 
     print("<div class='container'>");
@@ -45,10 +72,22 @@ $stmt->store_result();
     $timeEnd=date('g:i A', strtotime($EEnd));
     print("<h2 class='blue-bar'>$EName</h2>
     <br>");
-		print ("<div class='col-md-10 mx-auto row py-4'>
-    <div class='col-md-4 h-100 pt-4 pb-1 px-4 me-3 mb-4 gray-bg'>
+		print ("<div class='col-md-10 col-12 mx-auto row py-4'>
+    <div class='col-lg-4 h-100 me-3'>
+    <div class='gray-bg pt-4 pb-1 px-4 mb-4'>
     <p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart -   $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p>
-    <a class='mt-auto' href='$RegisterEvtBtn' target='_blank'><button type='button' class='btn cover btn-naf-blue mb-4'>EVENT DETAILS/ REGISTER</button></a>
+    <a class='mt-auto' href='$RegisterEvtBtn' target='_blank'><button type='button' class='btn cover btn-naf-blue mb-4'>REGISTER</button></a>
+    </div>
+    <div class='px-4 my-lg-5'>
+      <h4 class='mb-lg-3'>Make your mark</h4>
+      <p>Help us achieve our goal of assisting spinal cord injured and disabled individuals by volunteering for the $EName Event!</p>
+
+      Without the efforts of our amazing volunteers, we wouldn’t be able to accomplish even a fraction of what we do today. Whether you’re a survivor, a co-survivor or just someone who cares, we’d be grateful for whatever time you have to offer. Our entire organization, your community and the next person affected by breast cancer thank you in advance.
+      <a href='$VolunteerBtn' target='_blank'><button type='button' class='btn cover btn-naf-secondary-btn mb-4'>VOLUNTEER AT THIS EVENT</button></a>
+
+      <p class='mt-lg-5'>Help us by sponsoring the $EName Event!</p>
+      <a href='$SponsorBtn'><button type='button' class='btn cover btn-naf-secondary-btn mb-4'>SPONSOR THIS EVENT</button></a>
+    </div>
     </div>
      <div class='d-flex align-items-start flex-column col-md-7'>
      <p>$FullDescription</p>
@@ -209,7 +248,7 @@ $conn->close();
     print ("<div class='error'>You did not select an event to view. Go back to the <a href=events.php>Events Page</a> or the <a href='index.php'>Home Page</a> to view an event.</div>");
   }
 ?>
-</main>
+
 <?php
   print($htmlFooter);
 ?>
