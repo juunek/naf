@@ -29,7 +29,7 @@
     <script type="text/javascript" src="js/volunteerform.js"></script>
 
   </head>
-  
+
 <?php print($htmlNav); ?>
 
 <?php
@@ -38,8 +38,7 @@ print("<div class='container'>");
 
 	print("<h1>Events</h1>
 
-  <h2 class='blue-bar'>Upcoming Events</h2>
-  <br>");
+  <h2 class='blue-bar'>Upcoming Events</h2>");
 
 	$sql = "SELECT EID, EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, ELinks, RegisterEvtBtn FROM Events";
 

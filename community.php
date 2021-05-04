@@ -145,7 +145,7 @@
   <div class="row m-4">
 
     <div class="col-md-6">
-        <a href="giving-thanks.php"><img src="img/giving-thanks-chernosky-van.jpg" alt="Picture of the wheelchair van donated by Dr. Martin Chernosky" width="90%"></a>
+        <a href="giving-thanks.php"><img src="img/giving-thanks-chernosky-van.jpg" alt="Picture of the wheelchair van donated by Dr. Martin Chernosky" class="w-100 pe-md-5"></a>
     </div>
 
     <div class='d-flex align-items-start flex-column col-md-6 my-md-auto'>

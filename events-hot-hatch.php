@@ -70,26 +70,15 @@ $stmt->store_result();
     $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
     $timeStart=date('g:i A', strtotime($EStart));
     $timeEnd=date('g:i A', strtotime($EEnd));
-    print("<h2 class='blue-bar'>$EName</h2>
-    <br>");
-		print ("<div class='col-md-10 col-12 mx-auto row py-4'>
-    <div class='col-lg-4 h-100 me-3'>
+    print("<h2 class='blue-bar'>$EName</h2>");
+		print ("<div class='col-12 row py-4'>
+    <div class='col-lg-4 h-100 me-auto'>
     <div class='gray-bg pt-4 pb-1 px-4 mb-4'>
     <p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart -   $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p>
     <a class='mt-auto' href='$RegisterEvtBtn' target='_blank'><button type='button' class='btn cover btn-naf-blue mb-4'>REGISTER</button></a>
     </div>
-    <div class='px-4 my-lg-5'>
-      <h4 class='mb-lg-3'>Make your mark</h4>
-      <p>Help us achieve our goal of assisting spinal cord injured and disabled individuals by volunteering for the $EName Event!</p>
-
-      Without the efforts of our amazing volunteers, we wouldn’t be able to accomplish even a fraction of what we do today. Whether you’re a survivor, a co-survivor or just someone who cares, we’d be grateful for whatever time you have to offer. Our entire organization, your community and the next person affected by breast cancer thank you in advance.
-      <a href='$VolunteerBtn' target='_blank'><button type='button' class='btn cover btn-naf-secondary-btn mb-4'>VOLUNTEER AT THIS EVENT</button></a>
-
-      <p class='mt-lg-5'>Help us by sponsoring the $EName Event!</p>
-      <a href='$SponsorBtn'><button type='button' class='btn cover btn-naf-secondary-btn mb-4'>SPONSOR THIS EVENT</button></a>
     </div>
-    </div>
-     <div class='d-flex align-items-start flex-column col-md-7'>
+     <div class='d-flex align-items-start flex-column col-lg-7'>
      <p>$FullDescription</p>
      <table class='table my-4'>
       <tr>
@@ -136,15 +125,27 @@ $stmt->store_result();
      </table>
      <h3 class='mt-3 header-blue'>$DetailsHeader1</h3><p>$Details1</p>
      <h3 class='mt-3 header-blue'>$DetailsHeader2</h3><p>$Details2</p>
-
-     <p class='border-top mt-3 events-donate-spacing'>If you can't attend but would like to make a contribution, donate below.</p>
-     <a href='$DonateBtn'><button class = 'btn cover btn-naf-blue mb-4'>DONATE NOW</button></a>
      </div>
+      </div>
+     <div class='col-12 my-lg-5 row d-flex flex-row justify-content-between'>
+       <h2 class='blue-bar mb-5'>Make your mark</h2>
+       <div class = 'col-lg-4 col-12 px-3 mb-lg-0 mb-4 d-flex flex-column'>
+         <p>We wouldn’t be able to accomplish what we do today without our volunteers. Whether you’re affected by spinal cord injury, know someone with SCI, or just someone who cares, we are thankful and appreciative of any time you can offer.</p>
+         <a href='$VolunteerBtn' target='_blank' class='mt-auto'><button type='button' class='btn cover btn-naf-blue mb-4'>VOLUNTEER AT THIS EVENT</button></a>
+       </div>
+       <div class = 'col-lg-4 col-12 px-3 mb-lg-0 mb-4 d-flex flex-column'>
+         <p>Since 2008, NAF has assisted people with spinal cord injuries on their journey to independence. Our sponsors help us with accomplishing our mission, and with your help, we can continue to reach over 28,000 Texans affected by SCI.</p>
+         <a href='$SponsorBtn' class='mt-auto'><button type='button' class='btn cover btn-naf-secondary-btn mb-4'>SPONSOR THIS EVENT</button></a>
+       </div>
+       <div class='col-lg-3 col-12 px-3 d-flex flex-column'>
+         <p>If you can't attend but would like to make a contribution, donate below.</p>
+         <a href='$DonateBtn' class='mt-auto'><button class = 'btn cover btn-naf-secondary-btn mb-4'>DONATE NOW</button></a>
+       </div>
      </div>");
 }
 print ("</div>");
 
-print("<h2 class='blue-bar'>Photo Gallery</h2><br>
+print("<h2 class='blue-bar'>Photo Gallery</h2>
 
 <div class='photo-gallery'>
         <div class='row text-center text-lg-left photos'>
@@ -199,7 +200,7 @@ print("<h2 class='blue-bar'>Photo Gallery</h2><br>
     </div>
 </div>");
 
-print("<h2 class='blue-bar'>Sponsors</h2><br>
+print("<h2 class='blue-bar'>Sponsors</h2>
 
 <div class='row text-center text-lg-left'>
 

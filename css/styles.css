@@ -172,7 +172,7 @@ a.dropdown-item {
 	font-weight:  800!important;
 }
 
-.btn-naf-secondary-btn{
+.btn-naf-secondary-btn, .btn-testimonials-filter{
 	background-color: transparent!important;
 	color: #0B5BAB!important;
 	border: 3px solid #0B5BAB!important;
@@ -491,6 +491,11 @@ a.dropdown-item {
 	height: auto;
 }
 
+.golf-a-thon-banner-img {
+    background-image: url(img/events/golf-a-thon-banner.jpg);
+    background-size: cover;
+}
+
 /*-------- div class to vertically center align items -------*/
 
 .vertical-align-items {
@@ -759,7 +764,7 @@ footer a:hover{
 .admin-card {
 
 
-background-color: #0B5BAB; 
+background-color: #0B5BAB;
 height: 10rem;
 border-radius: 5px;
 

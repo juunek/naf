@@ -73,15 +73,14 @@ if ($stmt->prepare($sql)) {
 }
 print ("</div>
 <h2 class='blue-bar'>Volunteer</h2>
-<br>
-<div class='col-md-10 mx-auto row py-4'>
+<div class='row m-4'>
 <div class='col-md-6'>
-  <a href='volunteer.php'><img class='cover' src='img/become-a-volunteer.jpg'  alt='Image of volunteers at an event' title= 'Image of volunteers at an event'></a>
+  <a href='volunteer.php'><img class='w-100 pe-md-5' src='img/become-a-volunteer.jpg'  alt='Image of volunteers at an event' title= 'Image of volunteers at an event'></a>
 </div>
- <div class='d-flex align-items-start flex-column col-md-6'>
+ <div class='d-flex align-items-start flex-column col-md-6  my-md-auto'>
  <h3 class='events-mobile-spacing header-blue'>You CAN Make A Difference</h3><p class='cover'>Volunteers are vital to our mission. Whether you would like to assist with a special NAF event, spread the word about NAF, or help us raise valuable financial support - we need your help!</p>
 
- <div class='flex-column w-100 mt-auto'>
+ <div class='flex-column btn-tablet-mobile-full mt-3'>
   <a class='events-btn-padding-right' href='volunteer.php'>
   <button type='button' class='btn btn-naf-primary-btn w-100'>BECOME A VOLUNTEER</button></a>
  </div>
@@ -89,16 +88,31 @@ print ("</div>
  </div>");
 
  print ("
- <h2 class='blue-bar'>Donate</h2>
- <br>
- <div class='col-md-10 mx-auto row py-4'>
+ <h2 class='blue-bar mt-5'>Sponsors</h2>
+ <div class='row m-4'>
  <div class='col-md-6'>
-   <a href='donate.php'><img class='cover' src='img/make-a-donation.jpg'  alt='Image of person helped by donations' title= 'Image of person helped by donations'></a>
+   <a href='contact.php'><img class='w-100 pe-md-5' src='img/sponsors.jpg'  alt='Image of NAF volunteer at sponsor table' title= 'Image of NAF volunteer at sponsor table'></a>
  </div>
-  <div class='d-flex align-items-start flex-column col-md-6'>
+  <div class='d-flex align-items-start flex-column col-md-6 my-md-auto'>
+  <h3 class='events-mobile-spacing header-blue'>Join the journey</h3><p class='cover'>Since 2008, Neuro Assistance Foundation has provided a variety of services to help those with spinal cord injury regain their independence, confidence, and sense of self. Our sponsors help us with accomplishing our mission, and with your help, we can continue to reach over 28,000 Texans affected by SCI.<br><br> By partnering with NAF, you get the chance to grant someone the freedom they once lost. And with your continued support, we are given more opportunities to help the many people affected by spinal cord injury.</p>
+
+  <div class='flex-column btn-tablet-mobile-full mt-3'>
+   <a class='events-btn-padding-right' href='contact.php'>
+   <button type='button' class='btn btn-naf-primary-btn w-100'>BECOME A SPONSOR</button></a>
+  </div>
+  </div>
+  </div>");
+
+ print ("
+ <h2 class='blue-bar mt-5'>Donate</h2>
+ <div class='row m-4'>
+ <div class='col-md-6'>
+   <a href='donate.php'><img class='w-100 pe-md-5' src='img/make-a-donation.jpg'  alt='Image of person helped by donations' title= 'Image of person helped by donations'></a>
+ </div>
+  <div class='d-flex align-items-start flex-column col-md-6 my-md-auto'>
   <h3 class='events-mobile-spacing header-blue'>Give Today</h3><p class='cover'>Whether it is a cash donation or donation of equipment, we humbly appreciate anything you can give to help make a positive impact.</p>
 
-  <div class='flex-column w-100 mt-auto'>
+  <div class='flex-column btn-tablet-mobile-full mt-3'>
    <a class='events-btn-padding-right' href='volunteer.php'>
    <button type='button' class='btn btn-naf-primary-btn w-100'>MAKE A DONATION</button></a>
   </div>

@@ -40,8 +40,7 @@ print("<div class='container'>");
 
 	print("<h1>Testimonials</h1>
 
-  <h2 class='blue-bar'>227 clients assisted in 2021 so far!</h2>
-  <br>");
+  <h2 class='blue-bar'>227 clients assisted in 2021 so far!</h2>");
 $sql = "SELECT TTID, TestimonialType FROM TestimonialCategory order by TTID ASC";
 
 /* create a prepared statement */
@@ -57,12 +56,12 @@ if ($stmt->prepare($sql)) {
 
 	print("
   <div class='col-10 mx-auto dropdown mb-3'>
-  <a class='btn btn-naf-secondary-btn dropdown-toggle' href='#' role='button' id='dropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+  <a class='btn btn-testimonials-filter dropdown-toggle' href='#' role='button' id='dropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
     Testimonial Filter
   </a>
 
   <div class='dropdown-menu' aria-labelledby='dropdownMenuLink'>
-    <a class='dropdown-item' href=testimonials.php>All Testimonials</a>");
+    <a class='dropdown-item' href=testimonials.php>All</a>");
     while ($stmt->fetch()) {
   				print ("<a class='dropdown-item' href=?TTID=$TTID>$TestimonialType</a></li>");
   	}

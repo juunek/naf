@@ -25,7 +25,7 @@
     <script type="text/javascript" src="js/volunteerform.js"></script>
 
   </head>
-  
+
 <?php print($htmlNav); ?>
 
 
@@ -33,7 +33,7 @@
     <h1>Spinal Cord Injuries</h1>
 
 
-    <h2 class="blue-bar mb-4">Spinal Cord Injuries and Social Security Disability</h2>
+    <h2 class="blue-bar">Spinal Cord Injuries and Social Security Disability</h2>
 
     <div class="row">
 

@@ -36,7 +36,7 @@
 if (isset($_GET['EID'])){
     $EID = intval($_GET['EID']);
 
-	$sql = "SELECT EID, EName, EDate, EStart, EEnd, ELocation, FullDescription, ELinks, RegisterEvtBtn, DetailsHeader1, Details1, DetailsHeader2, Details2, DonateBtn FROM Events Where EID=?";
+	$sql = "SELECT EID, EName, EDate, EStart, EEnd, ELocation, FullDescription, ELinks, RegisterEvtBtn, DetailsHeader1, Details1, DetailsHeader2, Details2, DonateBtn, VolunteerBtn, SponsorBtn FROM Events Where EID=?";
 /* create a prepared statement */
 $stmt = $conn->stmt_init();
 
@@ -57,7 +57,7 @@ if ($stmt->prepare($sql)) {
 $stmt->store_result();
 
 	/* bind result variables */
-	$stmt->bind_result($EID, $EName, $EDate, $EStart, $EEnd, $ELocation, $FullDescription, $ELinks, $RegisterEvtBtn, $DetailsHeader1, $Details1, $DetailsHeader2, $Details2, $DonateBtn);
+	$stmt->bind_result($EID, $EName, $EDate, $EStart, $EEnd, $ELocation, $FullDescription, $ELinks, $RegisterEvtBtn, $DetailsHeader1, $Details1, $DetailsHeader2, $Details2, $DonateBtn, $VolunteerBtn, $SponsorBtn);
   if ($stmt->num_rows > 0){
 
     print("<div class='container'>");
@@ -70,26 +70,38 @@ $stmt->store_result();
     $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
     $timeStart=date('g:i A', strtotime($EStart));
     $timeEnd=date('g:i A', strtotime($EEnd));
-    print("<h2 class='blue-bar'>$EName</h2>
-    <br>");
-		print ("<div class='col-md-10 mx-auto row py-4'>
-    <div class='col-md-4 h-100 pt-4 pb-1 px-4 me-3 mb-4 gray-bg'>
+    print("<h2 class='blue-bar'>$EName</h2>");
+		print ("<div class='col-12 mx-auto row py-4'>
+    <div class='col-lg-4 h-100 pt-4 pb-1 px-4 me-3 mb-4 gray-bg'>
     <p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart -   $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p>
-    <a class='mt-auto' href='$RegisterEvtBtn' target='_blank'><button type='button' class='btn cover btn-naf-blue mb-4'>EVENT DETAILS/ REGISTER</button></a>
+    <a class='mt-auto' href='$RegisterEvtBtn' target='_blank'><button type='button' class='btn cover btn-naf-blue mb-4'>REGISTER</button></a>
     </div>
-     <div class='d-flex align-items-start flex-column col-md-7'>
+     <div class='d-flex align-items-start flex-column col-lg-7'>
      <p>$FullDescription</p>
      <h3 class='mt-3 header-blue'>$DetailsHeader1</h3><p>$Details1</p>
      <h3 class='mt-3 header-blue'>$DetailsHeader2</h3><p>$Details2</p>
-
-     <p class='border-top mt-3 events-donate-spacing'>If you can't attend but would like to make a contribution, donate below.</p>
-     <a href='$DonateBtn' target='_blank'><button class = 'btn cover btn-naf-blue mb-4'>DONATE NOW</button></a>
      </div>
+
+     <div class='col-12 row d-flex flex-row justify-content-between'>
+       <h2 class='blue-bar my-5'>Make your mark</h2>
+       <div class = 'col-lg-4 col-12 px-3 mb-lg-0 mb-4 d-flex flex-column'>
+         <p>We wouldn’t be able to accomplish what we do today without our volunteers. Whether you’re affected by spinal cord injury, know someone with SCI, or just someone who cares, we are thankful and appreciative of any time you can offer.</p>
+         <a href='$VolunteerBtn' class='mt-auto'><button type='button' class='btn cover btn-naf-blue mb-4'>VOLUNTEER AT THIS EVENT</button></a>
+       </div>
+       <div class = 'col-lg-4 col-12 px-3 mb-lg-0 mb-4 d-flex flex-column'>
+         <p>Since 2008, NAF has assisted people with spinal cord injuries on their journey to independence. Our sponsors help us with accomplishing our mission, and with your help, we can continue to reach over 28,000 Texans affected by SCI.</p>
+         <a href='$SponsorBtn' target='_blank' class='mt-auto'><button type='button' class='btn cover btn-naf-secondary-btn mb-4'>SPONSOR THIS EVENT</button></a>
+       </div>
+       <div class='col-lg-3 col-12 px-3 d-flex flex-column'>
+         <p>If you can't attend but would like to make a contribution, donate below.</p>
+         <a href='$DonateBtn' class='mt-auto'><button class = 'btn cover btn-naf-secondary-btn mb-4'>DONATE NOW</button></a>
+       </div>
+
      </div>");
 }
 print ("</div>");
 
-print("<h2 class='blue-bar'>Photo Gallery</h2><br>
+print("<h2 class='blue-bar'>Photo Gallery</h2>
 
 <div class='photo-gallery'>
         <div class='row text-center text-lg-left photos'>
@@ -144,7 +156,7 @@ print("<h2 class='blue-bar'>Photo Gallery</h2><br>
     </div>
 </div>");
 
-print("<h2 class='blue-bar'>Sponsors</h2><br>
+print("<h2 class='blue-bar'>Sponsors</h2>
 
 <div class='row text-center text-lg-left'>
 
