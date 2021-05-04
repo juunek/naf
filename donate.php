@@ -70,6 +70,7 @@
       <div class="col-md-10 mx-auto">
 
           <p>If you have assistive vehicles or equipment you would like to donate, please fill out the form below. If you have any questions about a donation or anything else, <a href='contact.php'><span class="text-naf-blue">contact us</span></a>, and we will get back to you.</p>
+          <p class="text-danger">*Required Fields</p>
 
       </div>
 
@@ -123,7 +124,7 @@
             <div class="form-group row">
                 <div class="col-sm-12">
                     <label for="inputDetailDonation" id="inputDetailDonationLabel">Donation Details</label>
-                    <textarea class="form-control" id="inputDetailDonation" placeholder=""></textarea> 
+                    <textarea class="form-control" id="inputDetailDonation" placeholder=""></textarea>
                 </div>
             </div>
             <div class="row">

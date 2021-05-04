@@ -39,7 +39,7 @@
        <div class="col-md-6 mx-auto">
             <div>
               <p>Sign up to get interesting news, events and updates delivered to your inbox.</p>
-              <p>*Required fields.</p>
+              <p class="text-danger">*Required Fields</p>
             </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
 
             </form>
 
-      
+
 
             <br>
             <div id="response">
