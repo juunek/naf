@@ -39,7 +39,7 @@
             <div class="col-12 newsletter">
 
               <h3 class="text-naf-blue mt-5">2020</h3>
-              <a href="https://myemail.constantcontact.com/It-s-a-new-year--See-what-s-happening--.html?soid=1102631205358&aid=122B1woVTk4" class="tablinks text-decoration-none" id="test"><p>January/February</p></a>
+              <a href="https://myemail.constantcontact.com/It-s-a-new-year--See-what-s-happening--.html?soid=1102631205358&aid=122B1woVTk4" class="tablinks text-decoration-none" target="_blank"><p>January/February</p></a>
 
               <h3 class="text-naf-blue mt-5">2019</h3>
               <a href="https://conta.cc/356gVXR" class="tablinks text-decoration-none" target="_blank"><p>September/October</p></a>
