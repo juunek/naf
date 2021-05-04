@@ -22,7 +22,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/5d3977cc74.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/javascript.js"></script>
-    <script type="text/javascript" src="js/volunteerform.js"></script>
+
 
   </head>
 
@@ -128,7 +128,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                 <button type="submit" name="submit" value="Submit" id="submitDonation" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue btn-block py-2 fs-5">Submit</button>
+                 <button type="submit" name="submit" value="Submit" id="submitDonation"  class="btn-naf-blue btn-block py-2 fs-5">Submit</button>
                  <br>
                </div>
             </div>

@@ -1,9 +1,11 @@
 <?php 
 
 include("dbconn.inc.php");  
-include("shared.php"); 
+include("shared_admin.php"); 
 
 $conn = dbConnect();
+
+
 
 $outputString = $_COOKIE["cookieArr"];
 $outputArr = explode(',', $outputString);
@@ -17,7 +19,7 @@ $PhoneNumber = $outputArr[3];
 $DonationType = $outputArr[4];
 $DonationDetail = $outputArr[5];
 
-//if (isset($_POST['Submit'])) { 
+
 
 
 	$stmt = $conn->stmt_init();
@@ -44,32 +46,17 @@ $DonationDetail = $outputArr[5];
 		
 		$output = "<div class='error'>Database query failed.  Please contact the webmaster.</div>";
 	}
-//} else {
-	//$output = "<div class='error'>Please begin your product managment operation from the <a href='admin_linkList.php'>Admin page</a>.</div>";
-//}
 
-header("Location: http://ctec4321.tkn7277.uta.cloud/naf/donation.html");
-die();
+
+
+function GoToNow ($url){
+echo '<script language="javascript">window.location.href ="'.$url.'"</script>';
+}
+
+ $url = "http://ctec4350.krk1266.uta.cloud/naf/thankyou.php";
+ GoToNow($url);
 
 
 ?>
 
-<?php 
-	print $HTMLHeader; 
-?>
-<header>
-</header>
 
-
-
-<main class='flexboxContainer'>
-    
-    <div>   
-       
-    </div>
-
-</main>
-
-
-</body>
-</html>

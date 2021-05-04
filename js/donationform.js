@@ -191,21 +191,27 @@ function process(evt){
 
 //output the message when click submit
       var message = "";
+      
+      
+        if (err == 0) {
+          var jsFirstName = document.getElementById('inputFirstnameDonation').value;
+          var jsLastName = document.getElementById('inputLastnameDonation').value;
+          var jsEmail = document.getElementById('inputEmailDonation').value;
+          var jsPhoneNumber = document.getElementById('inputPhoneNumberDonation').value;
+          var jsDonationType = document.getElementById('DonationType').value;
+          var jsDonationDetail = document.getElementById('inputDetailDonation').value;
 
-
-      var jsFirstName = document.getElementById('inputFirstnameDonation').value;
-      var jsLastName = document.getElementById('inputLastnameDonation').value;
-      var jsEmail = document.getElementById('inputEmailDonation').value;
-      var jsPhoneNumber = document.getElementById('inputPhoneNumberDonation').value;
-      var jsDonationType = document.getElementById('DonationType').value;
-      var jsDonationDetail = document.getElementById('inputDetailDonation').value;
-
-      var inputArr = [jsFirstName, jsLastName, jsEmail, jsPhoneNumber, jsDonationType, jsDonationDetail];
-     
+          var inputArr = [jsFirstName, jsLastName, jsEmail, jsPhoneNumber, jsDonationType, jsDonationDetail];
+          console.log ("inputArr:" + inputArr);
 
       // Creating a cookie after the document is ready
+      
+      document.cookie = "cookieArr=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
       $(document).ready(function(){
-          createCookie("cookieArr", inputArr, "10");
+
+        createCookie("cookieArr", inputArr, "10");
+
       });
 
       function createCookie(name, value, days){
@@ -217,36 +223,31 @@ function process(evt){
             date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
             expires = "; expires=" + date.toGMTString();
           } else {
-          expires = "";
+            expires = "";
           }
-      
-        document.cookie = escape(name) + "=" + 
-        escape(value) + expires + "; path=/";
+
+          document.cookie = escape(name) + "=" + 
+          escape(value) + expires + "; path=/";
+        
+        
+
+          window.location.href = "http://ctec4350.krk1266.uta.cloud/naf/admin_edit.php";
 
 
-      }
-      
-        if (err == 0) {
-
-         window.location.replace("thankyou.php");
-
-
+        }
         } else {
 
          
 
         }
 
-         console.log("message: " + message);
-
-        document.getElementById('response').innerHTML = message;
-
-        if (evt.preventDefault)
+    if (evt.preventDefault)
           {
             evt.preventDefault();
           } else {
             evt.returnValue = false;
           }
+
     
 
 }
