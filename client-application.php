@@ -34,7 +34,7 @@
   <!--Local Resources -->
 
   <h2 class="blue-bar">Do you need assistance?</h2>
-  <div class="test">
+  <div class="col-11 mx-auto">
     <p>Are you living with a spinal cord injury, spinal cord disability, or congenital disorder (birth defect)? NAF's mission is to help with mobility equipment, home modifications, vehicle modifications and technology to ensure maximum independence and self-sufficiency for our clients.</p>
     <p>We assist people in the following Texas counties:</p>
     <div class="row pb-4">
@@ -94,7 +94,7 @@
   </div>
 
   <h2 class="blue-bar">Client Application</h2>
-  <div class="test">
+  <div class="col-10 mx-auto">
     <p>Thank you for your interest in NAF. To request assistance, please complete the application below. Applications must be completed by a physician, therapist, or hospital case manager, and clients must not have alternative means to receive assistance. We will contact you after the application is received.</p>
     <p class="text-danger">*Required Fields</p>
 </div>
