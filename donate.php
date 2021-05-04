@@ -81,17 +81,17 @@
         <form id="donationForm" action="" method="post" class="p-3 shadow">
             <div class="form-group row">
                 <div class="col-sm-6">
-                    <label for="inputFirstnameDonation" id="inputFirstnameDonationLabel">First name</label>
+                    <label for="inputFirstnameDonation" id="inputFirstnameDonationLabel">First name*</label>
                     <input type="text" class="form-control" name="firstname" id="inputFirstnameDonation" placeholder="First name">
                 </div>
                 <div class="col-sm-6">
-                    <label for="inputLastnameDonation" id="inputLastnameDonationLabel">Last name</label>
+                    <label for="inputLastnameDonation" id="inputLastnameDonationLabel">Last name*</label>
                     <input type="text" class="form-control" name="lastname" id="inputLastnameDonation" placeholder="Last name">
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-sm-6">
-                    <label for="inputEmailDonation" id="inputEmailDonationLabel">Email Address</label>
+                    <label for="inputEmailDonation" id="inputEmailDonationLabel">Email Address*</label>
                     <input type="text" class="form-control" id="inputEmailDonation" placeholder="abc@xyz.com">
                 </div>
                 <div class="col-sm-6">
@@ -101,24 +101,29 @@
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <label for="DonationType" id="DonationTypeLabel">Vehicle/Equipment Type</label>
-                    <select class="form-select" id="DonationType" name="DonationType">
-                       <option value="none">Pick an option</option>
-                       <option value="vehicle">vehicle</option>
-                       <option value="equipment">equipment</option>
-                       <option value="other">other</option>
+                    <label for="DonationType" id="DonationTypeLabel">Vehicle/Equipment Type*</label>
+                    <select class="form-select mb-3" id="DonationType" name="DonationType">
+                      <option value="none">Pick an option</option>
+                       <option value="Shower Chair">Shower Chair</option>
+                       <option value="Tub Transfer Bench">Tub Transfer Bench</option>
+                       <option value="Hospital Bed">Hospital Bed</option>
+                       <option value="Patient Lift">Patient Lift</option>
+                       <option value="Wheelchair - Manual">Wheelchair - Manual</option>
+                       <option value="Wheelchair - Power">Wheelchair - Power</option>
+                       <option value="Other">Other</option>
+
 
                     </select>
                 </div>
                 <div class="col-sm-6">
-                    <div class="border border-secondary" id="typeDetails"></div>
+                    <div class="" id="typeDetails"></div>
                 </div>
 
             </div>
             <div class="form-group row">
                 <div class="col-sm-12">
                     <label for="inputDetailDonation" id="inputDetailDonationLabel">Donation Details</label>
-                    <input type="text" class="form-control" id="inputDetailDonation" placeholder="">
+                    <textarea class="form-control" id="inputDetailDonation" placeholder=""></textarea> 
                 </div>
             </div>
             <div class="row">

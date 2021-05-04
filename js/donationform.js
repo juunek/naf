@@ -43,7 +43,7 @@ function stateChanged(userChoice){
      var descriptionArr = xmlDoc.getElementsByTagName("Description");
     
 
-     var exampleArr = xmlDoc.getElementsByTagName("Example");
+    
     
 
 
@@ -54,8 +54,8 @@ function stateChanged(userChoice){
        
         if (typeValue == userChoice) {
 
-          output = output + "<li>" + descriptionArr[i].childNodes[0].nodeValue + "</li>";
-          output = output + "<li>" + exampleArr[i].childNodes[0].nodeValue + "</li>";
+          output = output + "<p class='pt-4' style='color: #0B5BAB!important;'>" + descriptionArr[i].childNodes[0].nodeValue + "</p";
+          
 
         }
      }
@@ -155,13 +155,18 @@ function process(evt){
 
       var phoneNumber = document.getElementById('inputPhoneNumberDonation').value;
       var phoneNumberPattern = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
-      if (phoneNumberPattern.test(phoneNumber)) {
+      
+      if (phoneNumber == "") {
         removeErrorMessage('inputPhoneNumberDonation');
-      } else {
-        addErrorMessage('inputPhoneNumberDonation', 'The phone number should be numberic and contain 10 numbers');
-        err ++;
-      }  
+        } else {
 
+        if (phoneNumberPattern.test(phoneNumber)) {
+          removeErrorMessage('inputPhoneNumberDonation');
+        } else {
+          addErrorMessage('inputPhoneNumberDonation', 'The phone number should be numberic and contain 10 numbers');
+          err ++;
+        }  
+      }
       var type = document.getElementById('DonationType').value;
       console.log("typee: " + type);
       

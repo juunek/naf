@@ -51,7 +51,7 @@ if ($stmt->prepare($sql)) {
 
             $output = "
             <table class='table'>\n
-            <thead class='thead-dark'>\n
+            <thead class='' style='background-color: #0B5BAB!important;'>\n
             <tr><th scope='col'>Last Name</th><th scope='col'>Last Name</th><th scope='col'>Email</th><th scope='col'>Phone Number</th><th scope='col'>Donation Type</th><th scope = 'col'>Donation Detail</th></tr>\n
             <thead>\n".$tblRows.
             "</tbody>\n</table>\n";
