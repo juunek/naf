@@ -1,6 +1,9 @@
 <?php
 // store shared information in this file, such as headers, menu, and footers
 
+
+
+
 //HTML Header
 $HTMLHeader = "
 <!DOCTYPE html>
@@ -23,7 +26,7 @@ $HTMLHeader = "
             <!-- Sidebar-->
             <div class='bg-light border-right' id='sidebar-wrapper'>
                 <div class='sidebar-heading'>
-                     <img src='img/naf-logo.png' alt='' height='40rem'>
+                  <a href ='index.php'><img src='img/naf-logo.png' alt='' height='40rem'></a>
                 </div>
 
                 <div class='list-group list-group-flush'>
@@ -33,6 +36,7 @@ $HTMLHeader = "
                     <a class='list-group-item list-group-item-action bg-light' href='#!'>Events</a>
                     <a class='list-group-item list-group-item-action bg-light' href='#!'>Profile</a>
                     <a class='list-group-item list-group-item-action bg-light' href='#!'>Status</a>
+                    <a class='list-group-item list-group-item-action bg-light' href='logout.php' target='_blank'>Log out</a>
                 </div>
             </div>
             <!-- Page Content-->
