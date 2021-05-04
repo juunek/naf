@@ -3,7 +3,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Neuro Assitance Foundation</title>
+  <title> Community | Neuro Assitance Foundation</title>
+  <meta name="description" content="Learn more about the wheelchair vans donated in Dallas Texas by NAF and the people with spinal cord injuries.">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +50,7 @@
       <div class="d-flex justify-content-center m-5">
             <div class="card p-5 shadow" style="width: 40rem;">
               <div class="card-body">
-                <img src="img/testimonials/thomas.jpg" height="200px" class="mx-auto d-block img-no-show">
+                <img src="img/testimonials/thomas.jpg" alt="Picture of Thomas" height="200px" class="mx-auto d-block img-no-show">
                 <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas</h4>
 
                 <p class="card-text text-center">
@@ -65,7 +66,7 @@
       <div class="d-flex justify-content-center m-5">
         <div class="card p-5 shadow" style="width: 40rem;">
         <div class="card-body">
-          <img src="img/testimonials/adrienne.jpg" height="200px" class="mx-auto d-block img-no-show">
+          <img src="img/testimonials/adrienne.jpg" alt="Picture of Adrienne" height="200px" class="mx-auto d-block img-no-show">
           <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Adrienne</h4>
           <p class="card-text text-center">
               "Thanks a million for the standing frame! My family has been praying God would provide one for us since February! Answered prayer indeed. I appreciate Neuro Assistance Foundation more than I can explain!"<br>
@@ -81,7 +82,7 @@
       <div class="d-flex justify-content-center m-5">
         <div class="card p-5 shadow" style="width: 40rem;">
         <div class="card-body">
-           <img src="img/testimonials/travis-d.jpg" height="200px" class="mx-auto d-block img-no-show">
+           <img src="img/testimonials/travis-d.jpg" alt="Picture of Travis D" height="200px" class="mx-auto d-block img-no-show">
            <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Travis</h4>
 
            <p class="card-text text-center">
@@ -144,7 +145,7 @@
   <div class="row m-4">
 
     <div class="col-md-6">
-        <a href="giving-thanks.php"><img src="img/giving-thanks-chernosky-van.jpg" width="90%"></a>
+        <a href="giving-thanks.php"><img src="img/giving-thanks-chernosky-van.jpg" alt="Picture of the wheelchair van donated by Dr. Martin Chernosky" width="90%"></a>
     </div>
 
     <div class='d-flex align-items-start flex-column col-md-6 my-md-auto'>
