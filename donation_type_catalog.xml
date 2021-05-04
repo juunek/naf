@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DonationType>
 	<DTC>
-		<Type>vehicle</Type>
-		<Description>This is description of vehicle</Description>
-		<Example>This is Example of vehicle</Example>
+		<Type>Shower Chair</Type>
+		<Description>Please specify under Donation Details</Description>
 	</DTC>
 	<DTC>
-		<Type>equipment</Type>
-		<Description>This is description of equipment</Description>
-		<Example>This is Example of equipment</Example>
+		<Type>Tub Transfer Bench</Type>
+		<Description>Please specify under Donation Details</Description>
 	</DTC>
 	<DTC>
-		<Type>other</Type>
-		<Description>This is description of other</Description>
-		<Example>This is Example of other</Example>
+		<Type>Hospital Bed</Type>
+		<Description>Please specify under Donation Details: semi, full, bariatric</Description>
+	</DTC>
+	<DTC>
+		<Type>Patient Lift</Type>
+		<Description>Please specify under Donation Details: sling, accessories, manual or electric hoyer</Description>
+	</DTC>
+	<DTC>
+		<Type>Wheelchair - Manual</Type>
+		<Description>Please specify under Donation Details: transport, standard, bariatric, reclining back, tilt-in-space, FR, ELR</Description>
+	</DTC>
+	<DTC>
+		<Type>Wheelchair - Power</Type>
+		<Description>Please specify under Donation Details: charging cable, manual, 3-wheel, 4-wheel</Description>
+	</DTC>
+	<DTC>
+		<Type>Other</Type>
+		<Description>Please describe the donation under Donation Details</Description>
 	</DTC>
 </DonationType>
