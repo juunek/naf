@@ -39,7 +39,7 @@
 
 
   <div class="row m-4">
-      <div class="col-md-10 mx-auto mb-6">
+        <div class="col-md-10 mx-auto">
           <h4>NAF has provided assistance to <strong class="text-naf-blue">227 clients</strong> in 2021 so far!</h4><br>
           
           <p>Make a difference by making a monetary or equipment donation today. Your monetary donation is tax deductible to the full extent allowed by the law. Neuro Assistance is a registered 501(c)(3) organization. A receipt for your gift will be mailed to you within 10 days.</p>
@@ -53,14 +53,21 @@
           Neuro Assistance Foundation<br>
           2320 Bridgewood Drive<br>
           Keller, TX 76262</p>
-
-          <h4 class="text-naf-blue mt-5 mb-4">Donate Online and Pledge</h4>
-
-          <p>Click below to make a credit card or echeck donation to our organization. The button below will open in a new tab our donation profile on Click & Pledge, a third-party nonprofit fundraising platform.</p>
-
-          <a class='mt-auto' href='https://connect.clickandpledge.com/w/Organization/neuroassistance/paymentwidget/d01320ca-b4e1-4bbd-bade-eeb2d18d3cd1' target='_blank'><button type='button' class='btn btn-naf-blue'>MAKE A CONTRIBUTION</button></a>
-          <br>
+        </div>
     </div>
+    
+    <div class="row m-4">
+        <div class="col-md-5 col-12 block-donate-now">
+            <h4 class="text-naf-blue mb-4">Donate Online and Pledge</h4>
+          
+            <p>Click below to make a credit card or echeck donation to our organization. The button below will open in a new tab our donation profile on Click & Pledge, a third-party nonprofit fundraising platform.</p>
+
+             <a class='mt-auto' href='https://connect.clickandpledge.com/w/Organization/neuroassistance/paymentwidget/d01320ca-b4e1-4bbd-bade-eeb2d18d3cd1' target='_blank'><button type='button' class='btn btn-naf-blue'>MAKE A CONTRIBUTION</button></a>
+        </div>
+        <div class="col-md-5 col-12 mx-auto">
+            <a href='https://connect.clickandpledge.com/w/Organization/neuroassistance/paymentwidget/d01320ca-b4e1-4bbd-bade-eeb2d18d3cd1' target='_blank'><img src="img/donate-click-and-pledge.png" alt="NAF Click and Pledge donate and contribute page" width="100%" height="auto"></a>
+            <a href='https://connect.clickandpledge.com/w/Organization/neuroassistance/paymentwidget/d01320ca-b4e1-4bbd-bade-eeb2d18d3cd1' target='_blank' class="small-description-link"><p class="mt-1" style="font-size: 12px">Click & Pledge donate online page</p></a>
+        </div>
   </div>
 
 

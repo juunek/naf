@@ -92,6 +92,15 @@ a.dropdown-item {
 	color: #0B5BAB;
 }
 
+.small-description-link {
+	text-decoration: none;
+}
+
+.small-description-link:hover {
+	text-decoration: none;
+	color: #0B5BAB;
+}
+
 
 /*-------------------------- End Typography----------------------------*/
 
@@ -334,6 +343,10 @@ a.dropdown-item {
 		margin-left: 1rem;
 	}
 
+	.block-donate-now {
+		margin-left: 8.5%;
+	}
+
 }
 
 
@@ -413,7 +426,12 @@ a.dropdown-item {
 		text-align: center;
 	}
 
+	.block-donate-now {
+		margin-bottom: 3rem;
+	}
+
 }
+
 
 
 @media (max-width: 576px) {
