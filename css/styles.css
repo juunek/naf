@@ -309,6 +309,8 @@ a.dropdown-item {
 
 
 }
+
+
 @media (min-width: 768px) {
 	#footer-dropdown {
 		display: none!important;
@@ -321,6 +323,10 @@ a.dropdown-item {
 	.home-hero-wheelchair-img {
 		padding-top: 6rem;
 		padding-bottom: 5rem;
+	}
+
+	.newsletter {
+		margin-left: 1rem;
 	}
 
 }
@@ -392,6 +398,14 @@ a.dropdown-item {
 
 	.img-no-show{
 		display: none;
+	}
+
+	.testimonial-header {
+		margin-bottom: 3rem;
+	}
+
+	.newsletter {
+		text-align: center;
 	}
 
 }

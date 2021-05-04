@@ -13,10 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
@@ -40,7 +37,7 @@ print("<div class='container'>");
 
 	print("<h1>Testimonials</h1>
 
-  <h2 class='blue-bar'>227 clients assisted in 2021 so far!</h2>");
+  <h2 class='blue-bar testimonial-header'>227 clients assisted in 2021 so far!</h2>");
 $sql = "SELECT TTID, TestimonialType FROM TestimonialCategory order by TTID ASC";
 
 /* create a prepared statement */
