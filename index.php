@@ -7,10 +7,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Neuro Assitance Foundation</title>
+  <title>NAF|Spinal Cord Injury Assistance DFW </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="The Neuro Assistance Foundation is a non-profit organization dedicated to assisting spinal cord injured and disabled individuals in the Dallas/Fort Worth & Lubbock areas to achieve self-sufficiency and mobility through assistive vehicles, equipment, technology and home modifications.">
+     <meta name="keywords" content=" wheelchair vans dallas tx, sci support, spinal cord injury, resources for paraplegics, nonprofit">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -29,7 +31,7 @@
     <script type="text/javascript" src="js/volunteerform.js"></script>
 
   </head>
-  
+
 <?php print($htmlNav); ?>
 
 </div>
@@ -41,7 +43,7 @@
       <div class="col-12 home-hero text-center">
         <h3 class="text-light text-center fs-1 mt-1">One cause, One goal</h3>
         <p class="lead my-3 text-naf-white">A better life and a WIN for everyone.</p>
-        <a href="donate.php"><button class="btn-transparent-white pl-3 pr-3"><strong>GIVE NOW</strong></button></a>
+        <a href="donate.php" alt="Donate to NAF"><button class="btn-transparent-white pl-3 pr-3"><strong>GIVE NOW</strong></button></a>
       </div>
     </div>
 
@@ -56,7 +58,7 @@
             <div class="mission px-5">
                 <h2 class="text-naf-blue"><strong>Our Mission</strong></h2>
                 <p>We are dedicated to assisting spinal cord injured and disabled individuals in the Dallas/Fort Worth area to achieve self-sufficiency and mobility through assistive vehicles, equipment, technology and home modifications.</p>
-                <a href="about.php" class="btn btn-naf-blue btn-tablet-mobile-full">LEARN MORE</a>
+                <a href="about.php" alt="Learn More About NAF"class="btn btn-naf-blue btn-tablet-mobile-full">LEARN MORE</a>
             </div>
           </div>
 
@@ -137,13 +139,13 @@
 
        <div class ="row pv-5">
            <div class="col-lg-4 col-md-12 text-center">
-                <a class="btn btn-naf-blue btn-same-size m-2 fw-800" href="client-application.php"><i class="fa fa-hands-helping text-light"></i> Request Assistance</a>
+                <a class="btn btn-naf-blue btn-same-size m-2 fw-800" alt="Application for Spinal Cord Injury Resources and Assistance" href="client-application.php"><i class="fa fa-hands-helping text-light"></i> Request Assistance</a>
            </div>
          <div class="col-lg-4 col-md-12 text-center">
-                <a class="btn btn-naf-blue btn-same-size m-2 fw-800" href="resources.php"><i class="fa fa-book text-light"></i> Resources</a>
+                <a class="btn btn-naf-blue btn-same-size m-2 fw-800" href="resources.php" alt="Resources for SCI support and paralysis"><i class="fa fa-book text-light"></i> Resources</a>
            </div>
           <div class="col-lg-4 col-md-12 text-center">
-                <a class="btn btn-naf-blue btn-same-size m-2 fw-800" href="spinal-cord-injury.php"><i class="fa fa-info-circle text-light"></i> Spinal Cord Injuries</a>
+                <a class="btn btn-naf-blue btn-same-size m-2 fw-800" alt="More Information about Spinal Cord Injuries" href="spinal-cord-injury.php"><i class="fa fa-info-circle text-light"></i> Spinal Cord Injuries</a>
            </div>
 
       </div>
@@ -188,10 +190,10 @@
             <h2 class="mx-5 text-light fw-800">Make a difference</h4>
           </div>
            <div class="col-lg-4 col-md-6 text-center">
-            <a href="volunteer.php" class="btn btn-same-size clear-bg m-2  fw-800">Volunteer Opportunities</a>
+            <a href="volunteer.php" alt="Application to Voulenteer with NAF" class="btn btn-same-size clear-bg m-2  fw-800">Volunteer Opportunities</a>
           </div>
           <div class="col-lg-4 col-md-6 text-center">
-            <a href="donate.php" class="btn clear-bg btn-same-size  m-2 fw-800">Donate</a>
+            <a href="donate.php" alt="Donate to NAF" class="btn clear-bg btn-same-size  m-2 fw-800">Donate</a>
           </div>
        </div>
 
