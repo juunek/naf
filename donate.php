@@ -3,10 +3,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Neuro Assitance Foundation</title>
+  <title>Donate to Spinal Cord Injury Resources | Neuro Assitance Foundation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Donate to DFW nonprofit charity that supports people with spinal cord injuries.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -41,7 +42,7 @@
   <div class="row m-4">
         <div class="col-md-10 mx-auto">
           <h4>NAF has provided assistance to <strong class="text-naf-blue">227 clients</strong> in 2021 so far!</h4><br>
-          
+
           <p>Make a difference by making a monetary or equipment donation today. Your monetary donation is tax deductible to the full extent allowed by the law. Neuro Assistance is a registered 501(c)(3) organization. A receipt for your gift will be mailed to you within 10 days.</p>
 
           <p>Whatever you can give is appreciated, and we thank you in advance for your generous support!</p>
@@ -55,11 +56,11 @@
           Keller, TX 76262</p>
         </div>
     </div>
-    
+
     <div class="row m-4">
         <div class="col-md-5 col-12 block-donate-now">
             <h4 class="text-naf-blue mb-4">Donate Online and Pledge</h4>
-          
+
             <p>Click below to make a credit card or echeck donation to our organization. The button below will open in a new tab our donation profile on Click & Pledge, a third-party nonprofit fundraising platform.</p>
 
              <a class='mt-auto' href='https://connect.clickandpledge.com/w/Organization/neuroassistance/paymentwidget/d01320ca-b4e1-4bbd-bade-eeb2d18d3cd1' target='_blank'><button type='button' class='btn btn-naf-blue'>MAKE A CONTRIBUTION</button></a>
