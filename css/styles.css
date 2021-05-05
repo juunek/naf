@@ -827,3 +827,10 @@ border-radius: 5px;
 #goTop:hover{
 	opacity: 0.5;
 }
+
+
+
+.table-head{
+  background-color: #0B5BAB!important;
+  color:white!important;
+}

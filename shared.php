@@ -161,7 +161,7 @@ $htmlFooter="<footer>
 
     <div class='row bg-naf-blue text-center'>
          <p class='text-center text-white m-0 pb-5'> © Neuro Assistance Foundation is a a 501(c)(3) Public Charity</p>
-         <a href='http://ctec4350.krk1266.uta.cloud/naf/login.php' class='text-center mb-3 text-decoration-none'><p class='text-light'>Admin Login</p></a>
+         <a href='http://ctec4350.krk1266.uta.cloud/naf/login.php'  target='_blank' class='text-center mb-3 text-decoration-none'><p class='text-light'>Admin Login</p></a>
     </div>
 
 </div>
