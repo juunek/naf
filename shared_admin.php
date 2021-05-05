@@ -15,7 +15,7 @@ $HTMLHeader = "
         <meta name='author' content='' />
         <title>NAF Admin</title>
         <!-- Favicon-->
-        
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href='css/boostrap.css' rel='stylesheet' />
         <link href='css/styles.css' rel='stylesheet' />
@@ -44,7 +44,7 @@ $HTMLHeader = "
                 <nav class='navbar navbar-expand-lg navbar-light bg-light border-bottom'>
                     <button class='btn btn-naf-blue' id='menu-toggle'>Menu</button>
                     <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'><span class='navbar-toggler-icon'></span></button>
-                    
+
                 </nav>
 ";
 

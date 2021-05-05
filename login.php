@@ -1,40 +1,41 @@
 <?php
 session_start();
-include("dbconn.inc.php"); // database connection 
 include("shared.php");
 // stored shared contents, such as HTML header and page title, page footer, etc. in variables
 // make database connection
-$conn = dbConnect();
 
+// clear out session value
+if (isset($_GET['logout'])){
+    $_SESSION['access'] = false;
+}
 
-if(isset($_POST['UserName'])){
+// check to see if there's a form submission of user name and password
+if (isset($_POST['Username']) && isset($_POST['Password']) && !empty($_POST['Username']) && !empty($_POST['Password'])){
 
-    $username = $_POST['UserName'];
+    $username = $_POST['Username'];
     $password = $_POST['Password'];
-	
-      $sql = "SELECT username, password FROM User WHERE username = '$username' AND password = '$password'";
-	  $stmt = $conn->stmt_init();
-		
-	  if ($stmt->prepare($sql)) {
-		  
-		  $stmt->execute();
-		  
-		  $stmt->store_result();
-		  
-		  $rows = $stmt->num_rows;
-		  
-		  if ($rows==1){
-				
-				$_SESSION['username'] = $username;
-				
-				 $url = "http://ctec4350.krk1266.uta.cloud/naf/adminMain.php";
-				 GoToNow($url);
-				  
-			  } else {$errorPd = "<h5 class='text-danger'>Username/password is incorrect.</h5>";} 
-			  
-		 $stmt->close();
-			  
-		  } else {echo "query error";}
+
+    //echo "u: $username - p: $password <br>";
+
+    // add additional validation here if necessary
+
+    // validate user name and password
+    // -- in this example, only one set of user name and password is valid so it's hard-coded here.  If there are multiple accounts, you may want to check the user input against your database records to grand access
+
+    if ($username == "admin" && $password == "123456") {
+        // grant access
+        $_SESSION['access'] = true;
+        // redirect it to the admin page #1
+        header('Location: adminMain.php');
+        exit;
+    } else {
+        // error message
+        $errorPd = "<div class='error'>The user name and password you provided are incorrect.  Please try again.</div>";
+    }
+
+} else if (isset($_POST['username']) || isset($_POST['password'])){
+    $errorPd = "<div class='error'>Please enter both the user name and password to log in.</div>";
+
 }
 
 ?>
@@ -64,7 +65,7 @@ if(isset($_POST['UserName'])){
 
   </head>
 <?php
-print($htmlNav); 
+print($htmlNav);
 ?>
 
 
@@ -75,19 +76,19 @@ print($htmlNav);
 	  	<h4 class="text-center">Admin Login</h4>
 		<div class="form-group">
 	    <label for="UserName">User Name</label>
-	    <input type="text" class="form-control" id="UserName" name="UserName" placeholder="admin">
+	    <input type="text" class="form-control" id="UserName" name="Username" placeholder="admin">
 	  </div>
 	  <div class="form-group">
 	    <label for="Password">Password</label>
 	    <input type="password" class="form-control" id="Password" name="Password" placeholder="Password">
 	  </div>
-	  <?php 
+	  <?php
 		print $errorPd;
 	   ?>
 	  <div class="text-center">
-		  <button type="submit" value="Submit" name="but_submit" id="btn_submit" class="btn btn-naf-blue">Sign in</button>
+		  <button type="submit" value="Submit" name="submit" id="btn_submit" class="btn btn-naf-blue">Sign in</button>
 		  <br>
-		  
+
 	   </div>
 	</form>
 
