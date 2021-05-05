@@ -131,7 +131,7 @@ function process(evt){
     if (emailPattern.test(email)) {
       removeErrorMessage('inputEmailDonation');
     } else {
-      addErrorMessage('inputEmailDonation', 'The email should follow xyz@abc.efg');
+      addErrorMessage('inputEmailDonation', 'Please enter a valid email address');
       err ++;
     }
 
@@ -140,7 +140,7 @@ function process(evt){
       if (namePattern.test(firstName)) {
         removeErrorMessage('inputFirstnameDonation');
       } else {
-        addErrorMessage('inputFirstnameDonation', 'The first name should be filled and no more than 15 letters');
+        addErrorMessage('inputFirstnameDonation', 'Please complete with letters only, up to 15 characters');
         err ++;
       } 
 
@@ -149,7 +149,7 @@ function process(evt){
       if (namePattern.test(lastName)) {
         removeErrorMessage('inputLastnameDonation');
       } else {
-        addErrorMessage('inputLastnameDonation', 'The last name should be filled and no more than 15 letters');
+        addErrorMessage('inputLastnameDonation', 'Please complete with letters only, up to 15 characters');
         err ++;
       }
 
@@ -172,7 +172,7 @@ function process(evt){
       
       if (type == "none") {
          console.log("why: " + type);
-       addErrorMessage('DonationType', 'Please select a type');
+       addErrorMessage('DonationType', 'Please select a donation option');
         err ++;
       } else {
          removeErrorMessage('DonationType');
@@ -183,7 +183,7 @@ function process(evt){
       if (donationDetail != "") {
         removeErrorMessage('inputDetailDonation');
       } else {
-        addErrorMessage('inputDetailDonation', 'Please fill out donation details');
+        addErrorMessage('inputDetailDonation', 'Please describe your donation details along with any questions you have');
         err ++;
       }
 

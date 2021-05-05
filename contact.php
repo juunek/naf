@@ -62,12 +62,12 @@
 
             <div class="form-group row">
                 <div class="col-sm-6">
-                    <label for="inputEmailContact" id="inputEmailContactLabel">Email Address*</label>
+                    <label for="inputEmailContact" id="inputEmailContactLabel">Email address*</label>
                     <input type="email" class="form-control" name="email" id="inputEmailContact" placeholder="Email address">
                 </div>
                 <div class="col-sm-6">
-                    <label for="inputPhoneNumberContact" id="inputPhoneNumberContactLabel">Phone Number (optional)</label>
-                    <input type="phone" class="form-control"name="phone" id="inputPhoneNumberContact" placeholder="1234567890">
+                    <label for="inputPhoneNumberContact" id="inputPhoneNumberContactLabel">Phone number (optional)</label>
+                    <input type="phone" class="form-control"name="phone" id="inputPhoneNumberContact" placeholder="10-digit phone number">
                 </div>
             </div>
 

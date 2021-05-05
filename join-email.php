@@ -65,8 +65,8 @@
 
                 <div class="form-group row">
                     <div class="col-sm-12">
-                        <label for="inputEmailJoinlist" id="inputEmailJoinlistLabel">Email Address*</label>
-                        <input type="text" class="form-control" id="inputEmailJoinlist" placeholder="abc@xyz.com">
+                        <label for="inputEmailJoinlist" id="inputEmailJoinlistLabel">Email address*</label>
+                        <input type="text" class="form-control" id="inputEmailJoinlist" placeholder="Email address">
                     </div>
                 </div>
 

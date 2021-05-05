@@ -102,12 +102,12 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-6">
-                    <label for="inputEmailDonation" id="inputEmailDonationLabel">Email Address*</label>
-                    <input type="text" class="form-control" id="inputEmailDonation" placeholder="abc@xyz.com">
+                    <label for="inputEmailDonation" id="inputEmailDonationLabel">Email address*</label>
+                    <input type="text" class="form-control" id="inputEmailDonation" placeholder="Email address">
                 </div>
                 <div class="col-sm-6">
-                    <label for="inputPhoneNumberDonation" id="inputPhoneNumberDonationLabel">Phone Number</label>
-                    <input type="text" class="form-control" id="inputPhoneNumberDonation" placeholder="1234567890">
+                    <label for="inputPhoneNumberDonation" id="inputPhoneNumberDonationLabel">Phone number (optional)</label>
+                    <input type="text" class="form-control" id="inputPhoneNumberDonation" placeholder="10-digit phone number">
                 </div>
             </div>
             <div class="row">
@@ -133,7 +133,7 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-12">
-                    <label for="inputDetailDonation" id="inputDetailDonationLabel">Donation Details</label>
+                    <label for="inputDetailDonation" id="inputDetailDonationLabel">Donation details</label>
                     <textarea class="form-control" id="inputDetailDonation" placeholder=""></textarea>
                 </div>
             </div>

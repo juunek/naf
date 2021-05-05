@@ -82,7 +82,7 @@ function addErrorMessage(fieldId, msg){
   if (namePattern.test(firstname)) {
     removeErrorMessage('inputFirstname' + page);
   } else {
-    addErrorMessage('inputFirstname' + page, 'The first name should be letters only and up to 15 characters');
+    addErrorMessage('inputFirstname' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   }
 
@@ -94,7 +94,7 @@ function addErrorMessage(fieldId, msg){
   if (namePattern.test(lastname)) {
     removeErrorMessage('inputLastname' + page);
   } else {
-    addErrorMessage('inputLastname' + page, 'The last name should be letters only and up to 15 characters');
+    addErrorMessage('inputLastname' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   }
 

@@ -70,7 +70,7 @@ function addErrorMessage(fieldId, msg){
   if (emailPattern.test(email)) {
     removeErrorMessage('inputEmail'+ page);
   } else {
-    addErrorMessage('inputEmail'+ page, 'The email should follow xyz@abc.efg');
+    addErrorMessage('inputEmail'+ page, 'Please enter a valid email address');
     err ++;
   }
 
@@ -82,7 +82,7 @@ function addErrorMessage(fieldId, msg){
   if (namePattern.test(firstname)) {
     removeErrorMessage('inputFirstname' + page);
   } else {
-    addErrorMessage('inputFirstname' + page, 'The first name should be filled and no more than 15 letters');
+    addErrorMessage('inputFirstname' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   } 
 
@@ -94,7 +94,7 @@ function addErrorMessage(fieldId, msg){
   if (namePattern.test(lastname)) {
     removeErrorMessage('inputLastname' + page);
   } else {
-    addErrorMessage('inputLastname' + page, 'The last name should be filled and no more than 15 letters');
+    addErrorMessage('inputLastname' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   }
 
