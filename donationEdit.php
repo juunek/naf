@@ -2,7 +2,7 @@
 // acquire shared info from other files
 include("dbconn.inc.php"); // database connection
 include("access.php");
-include("shared.php"); // stored shared contents, such as HTML header and page title, page footer, etc. in variables
+include("shared_admin.php"); // stored shared contents, such as HTML header and page title, page footer, etc. in variables
 
 // make database connection
 $conn = dbConnect();
@@ -19,7 +19,7 @@ if (isset($_POST['Submit'])) {
 	$expected = array("KEYID", "FirstName", "LastName", "Email", "PhoneNumber", "DonationType", "DonationDetail"); // again, the spelling of each item should match the form field names
 
     // set up a label array, use the field name as the key and label as the value
-  $label = array ('FirstName'=>'FirstName', "LastName"=>'LastName', "Email"=>'Email', "PhoneNumber"=>'PhoneNumber', "DonationType"=>'DonationType', "DonationDetail"=>'DonationDetail');
+  $label = array ("KEYID" => "KEYID", 'FirstName'=>'FirstName', "LastName"=>'LastName', "Email"=>'Email', "PhoneNumber"=>'PhoneNumber', "DonationType"=>'DonationType', "DonationDetail"=>'DonationDetail');
 
 
 	$missing = array();
@@ -100,34 +100,38 @@ if (isset($_POST['Submit'])) {
 
                 // NOTE: the following code does not produce most user-friendly message.  Particularly the category information is presented as an number which the user will have no idea about.  Can you fix it?
 
-				$output = "<span class='success'>Success!</span><p>The following information has been saved in the database:</p>";
+				$output = "<h2 class='text-center text-success my-5'>Success!</h2><p>The following information has been saved in the database:</p>";
 				foreach($expected as $key){
-					$output .= "<b>{$label[$key]}</b>: {$_POST[$key]} <br>";
+					$output .= "<p><b class= 'text-naf-blue'>{$label[$key]}:</b>  {$_POST[$key]}</p>";
 				}
-				$output .= "<p><a href='donationShow.php'><button class='submit-btn'>Back to the Product List Page</button></a></p>";
+				$output .= "<p><a href='donationShow.php'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Donation Management Page</button></a></p>";
 			} else {
 				//$stmt->execute() failed.
-				$output = "<div class='error'>Database operation failed.  Please contact the webmaster.</div>";
+				$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>Database operation failed.  Please contact the webmaster.</p>";
 			}
 		} else {
 			// statement is not successfully prepared (issues with the query).
-			$output = "<div class='error'>Database query failed.  Please contact the webmaster.</div>";
+			$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>Database query failed.  Please contact the webmaster.<p>";
 		}
 
 	} else {
 		if (!empty($missing)) {
 		// $missing is not empty
-		$output = "<div class='error'><p>The following required fields are missing in your form submission.  Please check your form again and fill them out.  <br>Thank you.<br>\n<ul>\n";
+		$output = "<h2 class='text-center text-danger my-5'>Missing Form Fields</h2><p class='text-center'>The following required fields are missing in your form submission.  Please check your form again and fill them out.</p>\n<ul>\n";
 		foreach($missing as $m){
-			$output .= "<li>{$label[$m]}\n";
+			$output .= "<li class='text-naf-blue'>{$label[$m]}\n";
 		}
-		$output .= "</ul></div>\n";
+		if ($KEYID != "") {
+			$output .= "</ul><a href='donationForm.php?KEYID=$KEYID'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Donation Form Page</button></a></div>\n";
+		}else {
+			$output .= "</ul><a href='donationForm.php'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Donation Form Page</button></a></div>\n";
+		}
 	}
 	$output .=" <p>$uploadMessage</p>\n";
 }
 
 } else {
-	$output = "<div class='error'>Please begin your product managment operation from the <a href='donationShow.php'>admin page</a>.</div>";
+	$output = "<h2 class='text-center text-danger my-5'>Invalid Request</h2><p class='text-center'>Please begin your donation managment operation from the <a href='donationShow.php'>Donation Page</a>.</p>";
 }
 
 
@@ -136,15 +140,12 @@ if (isset($_POST['Submit'])) {
 <?php
 	print $HTMLHeader;
 ?>
-
-<main class='flexboxContainer'>
-
-    <div class="loginClass mobile-margin">
-		<div>
+  <div class="container">
+		<div class="col-10 mx-auto">
         <?= $output ?>
-    </div></div>
+    </div>
+	</div>
 
-</main>
 
 <?php print $PageFooter; ?>
 

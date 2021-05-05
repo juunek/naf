@@ -29,9 +29,9 @@ if (isset($_GET['KEYID'])) { // note that the spelling 'pid' is based on the que
 				$stmt->bind_param('i',$KEYID);
 
 				if ($stmt->execute()){ // $stmt->execute() will return true (successful) or false
-					$output = "<span class='success'>Success!</span><p>The selected record has been seccessfully deleted.</p>";
+					$output = "<h2 class='text-center text-success my-5'>Success!</h2><p class='text-center'>The selected record has been seccessfully deleted.</p>";
 				} else {
-					$output = "<div class='error'>The database operation to delete the record has been failed.  Please try again or contact the system administrator.</div>";
+					$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>The database operation to delete the record has been failed.  Please try again or contact the system administrator.</p>";
 				}
 
 			}
@@ -41,35 +41,27 @@ if (isset($_GET['KEYID'])) { // note that the spelling 'pid' is based on the que
 			// product id <= 0. reset $pid. prepare error message
 			$KEYID = "";
 			// compose an error message
-			$output = "<p><b>!</b> If you are expecting to delete an exiting item, there are some error occured in the process -- the product you selected is not recognizable. Please contact the webmaster.  Thank you.</p>";
+			$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>If you are expecting to delete an exiting item, there are some error occured in the process -- the product you selected is not recognizable. Please contact the webmaster.  Thank you.</p>";
 		}
 } else {
 	// $_GET['pid'] is not set, which means that no product id is provided
-	$output = "<p><b>!</b> To manage product records, please follow the link below to visit the admin page.  Thank you. </p>";
+	$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>To manage product records, please follow the link below to visit the admin page.  Thank you. </p>";
 }
 
 ?>
 <br>
 <?php
-	print $htmlNav;
+	print $HTMLHeader;
 ?>
-<header>
-	<h1><?= $SubTitle_Admin ?></h1>
-</header>
+<div class='container'>
 
-<main class='flexboxContainer'>
-
-    <div>
+    <div class='col-10 mx-auto'>
         <?= $output ?>
 
-        <p>Back to the <a href='donationShow.php'>product list page</a></p>
+        <p class='text-center'>Back to the <a href='donationShow.php'>product list page</a></p>
     </div>
 
-</main>
-
-
-
-
+</div>
 
 <?php print $PageFooter; ?>
 

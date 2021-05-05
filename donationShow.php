@@ -12,7 +12,7 @@ $conn = dbConnect();
 <?php
 
 print $HTMLHeader;
-
+print("<h2 class='text-center my-5 text-naf-blue'>Manage Donations</h2>");
 
 ?>
 
@@ -62,7 +62,7 @@ if ($stmt->prepare($sql)) {
 
             $output = "
             <table class='table'>\n
-            <thead class='' style='background-color: #0B5BAB!important;'>\n
+            <thead class='table-head'>\n
             <tr><th scope='col'>First Name</th><th scope='col'>Last Name</th><th scope='col'>Email</th><th scope='col'>Phone Number</th><th scope='col'>Donation Type</th><th scope = 'col'>Donation Detail</th><th scope = 'col'>Options</th></tr>\n
             <thead>\n".$tblRows.
             "</tbody>\n</table>\n";
