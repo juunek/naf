@@ -7,10 +7,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Neuro Assitance Foundation</title>
+  <title>Cinco De Mayo Charity Event | Neuro Assitance Foundation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Join Neuro Assistance Foundation at an event to support peoeple with spinal injuries on Cinco De Mayo.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -145,49 +146,49 @@ print("<h2 class='blue-bar'>Photo Gallery</h2>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/cinco-de-mayo-gallery-01.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-01.jpg'>
+                  <img class='img-fluid' Alt='Image from cinco de mayo event' src='img/events/cinco-de-mayo-gallery-01.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/cinco-de-mayo-gallery-02.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-02.jpg'>
+                  <img class='img-fluid' Alt='Image from cinco de mayo event'src='img/events/cinco-de-mayo-gallery-02.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/cinco-de-mayo-gallery-03.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-03.jpg'>
+                  <img class='img-fluid' Alt='Image from cinco de mayo event'src='img/events/cinco-de-mayo-gallery-03.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/cinco-de-mayo-gallery-04.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-04.jpg'>
+                  <img class='img-fluid' Alt='Image from cinco de mayo event'src='img/events/cinco-de-mayo-gallery-04.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/cinco-de-mayo-gallery-05.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-05.jpg'>
+                  <img class='img-fluid'Alt='Image from cinco de mayo event' src='img/events/cinco-de-mayo-gallery-05.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/cinco-de-mayo-gallery-06.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-06.jpg'>
+                  <img class='img-fluid'Alt='Image from cinco de mayo event' src='img/events/cinco-de-mayo-gallery-06.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/cinco-de-mayo-gallery-07.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-07.jpg'>
+                  <img class='img-fluid'Alt='Image from cinco de mayo event' src='img/events/cinco-de-mayo-gallery-07.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/cinco-de-mayo-gallery-08.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/cinco-de-mayo-gallery-08.jpg'>
+                  <img class='img-fluid' Alt='Image from cinco de mayo event'src='img/events/cinco-de-mayo-gallery-08.jpg'>
                  </a>
            </div>
     </div>
@@ -199,58 +200,58 @@ print("<h2 class='blue-bar'>Sponsors</h2>
 
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://www.bswrehab.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' id='myImg' src='img/events/sponsors-bsw.png' alt=''>
+       <img class='mw-100 sponsors-img-height' Alt='Event Sponsor BSW' id='myImg' src='img/events/sponsors-bsw.png' alt=''>
      </a>
 
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://candrmedical.net' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-candr-medical-supplies.png' alt=''>
+       <img class='mw-100 sponsors-img-height' Alt='Event Sponsor Cander Medical Supplies' src='img/events/sponsors-candr-medical-supplies.png' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://craigranchfitness.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-craig-ranch.png' alt=''>
+       <img class='mw-100 sponsors-img-height' Alt='Event Sponsor Craig Ranch' src='img/events/sponsors-craig-ranch.png' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://jeremiahsice.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-jeremiahsice.png' alt=''>
+       <img class='mw-100 sponsors-img-height' Alt='Event Sponsor Jeremiah Sice' src='img/events/sponsors-jeremiahsice.png' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://www.facebook.com/NickiNielsenLM/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-liberty-mutual.png' alt=''>
+       <img class='mw-100 sponsors-img-height' Alt='Event Sponsor Liberty Mutual' src='img/events/sponsors-liberty-mutual.png' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://www.mobilityworks.com/locations/wheelchair-vans-for-sale-in-fort-worth-texas/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-mobility-works.png' alt=''>
+       <img class='mw-100 sponsors-img-height' Alt='Event Sponsor Mobility Works' src='img/events/sponsors-mobility-works.png' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://movin-pictures.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-movin-pictures.jpg' alt=''>
+       <img class='mw-100 sponsors-img-height' Alt='Event Sponsor Movin Pictures' src='img/events/sponsors-movin-pictures.jpg' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://www.nsm-seating.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-nsm.svg' alt=''>
+       <img class='mw-100 sponsors-img-height' Alt='Event Sponsor NSM' src='img/events/sponsors-nsm.svg' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://www.playtri.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-playtri.png' alt=''>
+       <img class='mw-100 sponsors-img-height' Alt='Event Sponsor Playtri' src='img/events/sponsors-playtri.png' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://www.runwithstride.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-stride.png' alt=''>
+       <img class='mw-100 sponsors-img-height' Alt='Event Sponsor Run with Stride' src='img/events/sponsors-stride.png' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://www.unitedaccess.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-unitedaccess.png' alt=''>
+       <img class='mw-100 sponsors-img-height' Alt='Event Sponsor United Access' src='img/events/sponsors-unitedaccess.png' alt=''>
      </a>
 </div>
 </div>");
