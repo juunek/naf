@@ -4,7 +4,7 @@ print($htmlNav);
 $firstnameC = $_POST['firstname'];
 $lastnameC = $_POST['lastname'];
 $emailC = $_POST['email'];
-$adminemailC = 'kkerr98@sbcglobal.net';
+$adminemailC = 'kathryn.kerr@mavs.uta.edu';
 $phoneC = $_POST['phone'];
 $subjectC = $_POST['subject'];
 $messageC = $_POST['message'];
