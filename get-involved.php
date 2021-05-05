@@ -7,7 +7,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Neuro Assitance Foundation</title>
+  <title>Get Involved with Our Non-Profit | Neuro Assitance Foundation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,10 +65,10 @@ if ($stmt->prepare($sql)) {
 
      <div class='w-100 mt-auto'>
       <a href='$ELinks?EID=$EID'>
-      <button type='button' class='btn btn-naf-secondary-btn w-100 mb-3'>VIEW EVENT</button></a></div>
+      <button type='button' alt='Click to View Event' class='btn btn-naf-secondary-btn w-100 mb-3'>VIEW EVENT</button></a></div>
 
       <a href='$RegisterEvtBtn' target='_blank'>
-      <button type='button' class='btn btn-naf-primary-btn w-100 mt-auto mb-md-1 mb-sm-5'>REGISTER</button></a>
+      <button type='button' alt='Click to Register for Event' class='btn btn-naf-primary-btn w-100 mt-auto mb-md-1 mb-sm-5'>REGISTER</button></a>
      </div>");
 }
 print ("</div>
@@ -82,7 +82,7 @@ print ("</div>
 
  <div class='flex-column btn-tablet-mobile-full mt-3'>
   <a class='events-btn-padding-right' href='volunteer.php'>
-  <button type='button' class='btn btn-naf-primary-btn w-100'>BECOME A VOLUNTEER</button></a>
+  <button type='button' alt='Click to become an Event Volunteer' class='btn btn-naf-primary-btn w-100'>BECOME A VOLUNTEER</button></a>
  </div>
  </div>
  </div>");
@@ -98,7 +98,7 @@ print ("</div>
 
   <div class='flex-column btn-tablet-mobile-full mt-3'>
    <a class='events-btn-padding-right' href='contact.php'>
-   <button type='button' class='btn btn-naf-primary-btn w-100'>BECOME A SPONSOR</button></a>
+   <button type='button' alt='Click to Become and Event Sponsor' class='btn btn-naf-primary-btn w-100'>BECOME A SPONSOR</button></a>
   </div>
   </div>
   </div>");
@@ -114,7 +114,7 @@ print ("</div>
 
   <div class='flex-column btn-tablet-mobile-full mt-3'>
    <a class='events-btn-padding-right' href='volunteer.php'>
-   <button type='button' class='btn btn-naf-primary-btn w-100'>MAKE A DONATION</button></a>
+   <button type='button' alt='Click to Make a Donation to Neuro Assistance Foundation' class='btn btn-naf-primary-btn w-100'>MAKE A DONATION</button></a>
   </div>
   </div>
   </div>");
