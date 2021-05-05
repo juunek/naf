@@ -91,18 +91,18 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-6">
-                        <label for="inputEmailVolunteer" id="inputEmailVolunteerLabel">Email Address*</label>
-                        <input type="text" class="form-control" id="inputEmailVolunteer" placeholder="abc@xyz.com">
+                        <label for="inputEmailVolunteer" id="inputEmailVolunteerLabel">Email address*</label>
+                        <input type="text" class="form-control" id="inputEmailVolunteer" placeholder="Email address">
                     </div>
                     <div class="col-sm-6">
-                        <label for="inputPhoneNumberVolunteer" id="inputPhoneNumberVolunteerLabel">Phone Number</label>
-                        <input type="text" class="form-control" id="inputPhoneNumberVolunteer" placeholder="123 456 7890">
+                        <label for="inputPhoneNumberVolunteer" id="inputPhoneNumberVolunteerLabel">Phone number</label>
+                        <input type="text" class="form-control" id="inputPhoneNumberVolunteer" placeholder="10-digit phone number">
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-12">
                         <label for="inputSubjectVolunteer" id="inputSubjectVolunteerLabel">Subject*</label>
-                        <input type="text" class="form-control" id="inputSubjectVolunteer" placeholder="123 456 7890">
+                        <input type="text" class="form-control" id="inputSubjectVolunteer" placeholder="Subject">
                     </div>
 
                 </div>

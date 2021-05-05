@@ -13,7 +13,7 @@ var page;
 
 var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 var namePattern = /^([a-zA-Z ]){2,15}$/;
-var phoneNumberPattern = /^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$/;
+// var phoneNumberPattern = /^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$/;
 var textPattern = /^([a-zA-Z ]){2,100}$/;
 
 
@@ -70,7 +70,7 @@ function addErrorMessage(fieldId, msg){
   if (emailPattern.test(email)) {
     removeErrorMessage('inputEmail'+ page);
   } else {
-    addErrorMessage('inputEmail'+ page, 'The email should follow xyz@abc.efg');
+    addErrorMessage('inputEmail'+ page, 'Please enter a valid email address');
     err ++;
   }
 
@@ -82,7 +82,7 @@ function addErrorMessage(fieldId, msg){
   if (namePattern.test(firstname)) {
     removeErrorMessage('inputFirstname' + page);
   } else {
-    addErrorMessage('inputFirstname' + page, 'The first name should be filled and no more than 15 letters');
+    addErrorMessage('inputFirstname' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   } 
 
@@ -94,19 +94,20 @@ function addErrorMessage(fieldId, msg){
   if (namePattern.test(lastname)) {
     removeErrorMessage('inputLastname' + page);
   } else {
-    addErrorMessage('inputLastname' + page, 'The last name should be filled and no more than 15 letters');
+    addErrorMessage('inputLastname' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   }
 
   var phoneNumber = document.getElementById('inputPhoneNumber' + page).value;
 
+  /* removed phone number validation
   if (phoneNumberPattern.test(phoneNumber)) {
     removeErrorMessage('inputPhoneNumber' + page);
   } else {
     addErrorMessage('inputPhoneNumber' + page, 'The phone number should be numberic and contain 10 numbers');
     err ++;
   } 
-
+  */
 
 
   var subject = document.getElementById('inputSubject' + page).value;
@@ -115,7 +116,7 @@ function addErrorMessage(fieldId, msg){
   if (namePattern.test(subject)) {
     removeErrorMessage('inputSubject' + page);
   } else {
-    addErrorMessage('inputSubject' + page, 'The Subject should be filled');
+    addErrorMessage('inputSubject' + page, 'Please add a subject to your message');
     err ++;
   }
 
@@ -125,7 +126,7 @@ function addErrorMessage(fieldId, msg){
   if (namePattern.test(message)) {
     removeErrorMessage('inputMessage' + page);
   } else {
-    addErrorMessage('inputMessage' + page, 'Please describe your wanted volunteer in brief');
+    addErrorMessage('inputMessage' + page, 'Please describe your volunteer interest');
     err ++;
   }
 
