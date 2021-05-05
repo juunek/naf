@@ -7,10 +7,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Neuro Assitance Foundation</title>
+  <title>Top Golf Charity Event | Neuro Assitance Foundation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Join Neuro Assistance Foundation at the Topgolf Charity event to support peoeple with spinal injuries.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -108,49 +109,49 @@ print("<h2 class='blue-bar'>Photo Gallery</h2>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/naf-topgolf-charity-event-gallery-01.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/naf-topgolf-charity-event-gallery-01.jpg'>
+                  <img class='img-fluid' alt='Image from Topgolf charity event' src='img/events/naf-topgolf-charity-event-gallery-01.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/naf-topgolf-charity-event-gallery-02.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/naf-topgolf-charity-event-gallery-02.jpg'>
+                  <img class='img-fluid' alt='Image from Topgolf charity event' src='img/events/naf-topgolf-charity-event-gallery-02.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/naf-topgolf-charity-event-gallery-03.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/naf-topgolf-charity-event-gallery-03.jpg'>
+                  <img class='img-fluid' alt='Image from Topgolf charity event' src='img/events/naf-topgolf-charity-event-gallery-03.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/naf-topgolf-charity-event-gallery-04.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/naf-topgolf-charity-event-gallery-04.jpg'>
+                  <img class='img-fluid' alt='Image from Topgolf charity event' src='img/events/naf-topgolf-charity-event-gallery-04.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/naf-topgolf-charity-event-gallery-05.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/naf-topgolf-charity-event-gallery-05.jpg'>
+                  <img class='img-fluid' alt='Image from Topgolf charity event' src='img/events/naf-topgolf-charity-event-gallery-05.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/naf-topgolf-charity-event-gallery-06.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/naf-topgolf-charity-event-gallery-06.jpg'>
+                  <img class='img-fluid' alt='Image from Topgolf charity event' src='img/events/naf-topgolf-charity-event-gallery-06.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/naf-topgolf-charity-event-gallery-07.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/naf-topgolf-charity-event-gallery-07.jpg'>
+                  <img class='img-fluid' alt='Image from Topgolf charity event' src='img/events/naf-topgolf-charity-event-gallery-07.jpg'>
                  </a>
            </div>
 
             <div class='col-sm-6 col-md-4 col-lg-3 item'>
                   <a href='img/events/naf-topgolf-charity-event-gallery-08.jpg' data-lightbox='photos'>
-                  <img class='img-fluid' src='img/events/naf-topgolf-charity-event-gallery-08.jpg'>
+                  <img class='img-fluid' alt='Image from Topgolf charity event' src='img/events/naf-topgolf-charity-event-gallery-08.jpg'>
                  </a>
            </div>
     </div>
@@ -162,23 +163,23 @@ print("<h2 class='blue-bar'>Sponsors</h2>
 
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://www.bswrehab.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' id='myImg' src='img/events/sponsors-bsw.png' alt=''>
+       <img class='mw-100 sponsors-img-height' alt='Event sponsor BSW' id='myImg' src='img/events/sponsors-bsw.png' alt=''>
      </a>
 
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://candrmedical.net' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-candr-medical-supplies.png' alt=''>
+       <img class='mw-100 sponsors-img-height' alt='Event sponsor Candr Medical Supplies' src='img/events/sponsors-candr-medical-supplies.png' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://www.nsm-seating.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-nsm.svg' alt=''>
+       <img class='mw-100 sponsors-img-height' alt='Event sponsor NSM' src='img/events/sponsors-nsm.svg' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://www.unitedaccess.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' src='img/events/sponsors-unitedaccess.png' alt=''>
+       <img class='mw-100 sponsors-img-height' alt='Event sponsor United Access' src='img/events/sponsors-unitedaccess.png' alt=''>
      </a>
 </div>
 </div>");
