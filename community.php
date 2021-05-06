@@ -46,83 +46,102 @@
   </div>
   <div class="carousel-inner">
 
-    <div class="carousel-item active">
-      <div class="d-flex justify-content-center m-5">
-            <div class="card p-5 shadow" style="width: 40rem;">
-              <div class="card-body">
-                <img src="img/testimonials/thomas.jpg" alt="Picture of Thomas" height="200px" class="mx-auto d-block img-no-show">
-                <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas</h4>
+  <div class="carousel-item active">
+              <div class="d-flex justify-content-center m-5">
+                <div class="card p-5 shadow" style="width: 40rem;">
+                  <div class="card-body">
 
-                <p class="card-text text-center">
-                        "You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"<br>
-                        <br>- Thomas, age 49, living with quadriplegia from mountain biking accident
-                        </p>
+                      <img src="img/testimonials/thomas.jpg" alt="Picture of Thomas" height="200px" class="mx-auto mb-3 d-block img-no-show">
+                      
+                      <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas</h4>
+
+                      <p class="card-text text-center">
+                      "You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"
+                      <br><br>
+                      - Thomas, 49, living with quadriplegia from mountain biking accident</p>
+                        
+                  </div>
+                </div>
               </div>
             </div>
-      </div>
-    </div>
 
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center m-5">
-        <div class="card p-5 shadow" style="width: 40rem;">
-        <div class="card-body">
-          <img src="img/testimonials/adrienne.jpg" alt="Picture of Adrienne" height="200px" class="mx-auto d-block img-no-show">
-          <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Adrienne</h4>
-          <p class="card-text text-center">
-              "Thanks a million for the standing frame! My family has been praying God would provide one for us since February! Answered prayer indeed. I appreciate Neuro Assistance Foundation more than I can explain!"<br>
-              <br>—Adrienne, age 23, living with quadriplegia
-              </p>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center m-5">
+                <div class="card p-5 shadow" style="width: 40rem;">
+                  <div class="card-body">
 
-        </div>
-      </div>
-    </div>
-    </div>
+                      <img src="img/testimonials/travis-d.jpg" alt="Picture of Travis" height="200px" class="mx-auto mb-3 d-block img-no-show">
+                      
+                      <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Travis</h4>
 
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center m-5">
-        <div class="card p-5 shadow" style="width: 40rem;">
-        <div class="card-body">
-           <img src="img/testimonials/travis-d.jpg" alt="Picture of Travis D" height="200px" class="mx-auto d-block img-no-show">
-           <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Travis</h4>
+                      <p class="card-text text-center">
+                      "Thank you from the bottom of our hearts for your help. You have truly made our lives more bearable. Now it will not feel like Travis is a prisoner in our home."
+                      <br><br>
+                      - Cheryl D., Travis' mother</p>
+                        
+                  </div>
+                </div>
+              </div>
+            </div>
 
-           <p class="card-text text-center">
-              "Thank you from the bottom of our hearts for your help. You have truly made our lives more bearable. Now it will not feel like Travis is a prisoner in our home."<br>
-              <br>—Travis' mother - Travis is 18 years old, living with paraplegia from a car accident
-              </p>
-        </div>
-      </div>
-     </div>
-    </div>
 
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center m-5">
-        <div class="card p-5 shadow" style="width: 40rem;">
-        <div class="card-body">
-           <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Kimberly</h4>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center m-5">
+                <div class="card p-5 shadow" style="width: 40rem;">
+                  <div class="card-body">
 
-           <p class="card-text text-center">
-                        "I want to thank you for the wheelchair you have lent me and tell you how it has impacted me. It enabled me to go to the therapy room and get PT & OT that I would not have had if I had been bed-bound. It enabled me to interact with other patients, which was very healing. I learned a card game from a gentleman - that was fun! He would ask the therapists if I was coming to therapy that day. The therapy room has lots of window and light which was a tremendous pick me up. The chair gave me independence. I was able to go outside and enjoy the courtyard and the fresh air. And the wheelchair gave me the privilege of eating my meals up in a chair. Thank you very much for what you have done for me"<br>
-                        <br>—Kimberly, age 54, living with quadriplegia
-                        </p>
-        </div>
-      </div>
-     </div>
-    </div>
+                      <img src="img/testimonials/adrienne.jpg" alt="Picture of Adrienne" height="200px" class="mx-auto mb-3 d-block img-no-show">
+                      
+                      <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Adrienne</h4>
 
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center m-5">
-        <div class="card p-5 shadow" style="width: 40rem;">
-        <div class="card-body">
-           <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Tia</h4>
+                      <p class="card-text text-center">
+                      "Thanks a million for the standing frame! My family has been praying God would provide one for us since February! Answered prayer indeed. I appreciate Neuro Assistance Foundation more than I can explain!"
+                      <br><br>
+                      - Adrienne, 23, living with quadriplegia</p>
+                        
+                  </div>
+                </div>
+              </div>
+            </div>
+            
 
-           <p class="card-text text-center">
-                        "Tia is progressing along well and thanks to the help, we are able to bathe her and get her into the bathroom without a problem. I literally do not know what I would have done without you. It is a miracle, one that I prayed for since the accident."<br>
-                        <br>Beau, Tia's brother
-                        </p>
-        </div>
-      </div>
-     </div>
-    </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center m-5">
+                <div class="card p-5 shadow" style="width: 40rem;">
+                  <div class="card-body">
+
+                      <img src="img/testimonials/terri-y.jpg" alt="Picture of Terri" height="200px" class="mx-auto mb-3 d-block img-no-show">
+                      
+                      <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Terri</h4>
+
+                      <p class="card-text text-center">
+                      "I never thought I'd be able to have a van like this. I feel like I have an angel on my shoulder whenever I drive it!"
+                      <br><br>
+                      - Terri</p>
+                        
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center m-5">
+                <div class="card p-5 shadow" style="width: 40rem;">
+                  <div class="card-body">
+
+                      <img src="img/testimonials/keith-m.jpg" alt="Picture of Keith" height="200px" class="mx-auto mb-3 d-block img-no-show">
+                      
+                      <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Keith</h4>
+
+                      <p class="card-text text-center">
+                      "A car accident in 2018 left me with a dislocated shoulder, collapsed lung, lacerated kidney, and broken ribs, hip, and pelvis. My left leg was amputated at the hip. After I woke up from a 9-day coma, I was paralyzed for the first 8 weeks. I was fitted with a basic and uncomfortable wheelchair. NAF helped with out with a "real" wheelchair and didn't ask for anything in return. Words can not express the appreciation and gratitude that I have for you."
+                      <br><br>
+                      - Keith, 52, Army Veteran</p>
+                        
+                  </div>
+                </div>
+              </div>
+            </div>
 
   </div>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
