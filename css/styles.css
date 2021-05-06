@@ -534,11 +534,19 @@ a.dropdown-item {
     background-size: cover;
 }
 
+
+
+
 /*-------- div class to vertically center align items -------*/
 
 .vertical-align-items {
 	display: flex;
   	align-items: center;
+}
+
+.naf-youtube {
+	width: 100%;
+	height: auto!important;
 }
 
 /*--------------------------End General----------------------------*/

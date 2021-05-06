@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>About Our DFW Non-Profit| Neuro Assistance Foundation</title>
+  <title>About Our DFW Non-Profit | Neuro Assistance Foundation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,38 +34,55 @@
     <!-- our mission and vision  -->
     <h1>About</h1>
 
-    <!--Local Resources -->
 
-    <h2 class="blue-bar">Our Mission and Vision</h2>
+    <h2 class="blue-bar mb-5">Our Mission and Vision</h2>
+    
+    <div class="d-flex flex-row flex-wrap justify-content-evenly">
+            
+            <div class="col-md-5">
+                <h4 class="text-naf-blue">Spinal Cord Injury</h4>
+                <p>Spinal cord injury (SCI) is damage to any part of the spinal cord or nerves at the end of the spinal canal. SCI often causes permanent loss of strength, sensation, and function below the site of the injury. Individuals who are paraplegic have loss of movement and sensation in the lower body, and individuals with quadriplegia have loss of movement and sensation in both the arms and legs.</p>
+                <p>Over 1 million Americans are living with SCI. 42.6% of individuals with SCI are considered paraplegic and 56.4% quadriplegic. Because of the severity of spinal cord injury on so many and the need for assistance is why we exist.</p>
+            </div>
 
-      <div class="row m-4">
+            <div class="col-md-5 mt-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z8y8uu7CDfk" title="YouTube video player" frameborder="0"></iframe>
+                </div>
+            </div>
 
-            <div class="col-lg-4 col-xs-12 me-lg-auto">
+    </div>
+
+    <div class="d-flex flex-row flex-wrap justify-content-evenly mt-5">
+
+            <div class="col-md-5">
                 <h4 class="text-naf-blue">Our Mission</h4>
                 <p>Neuro Assistance Foundation is dedicated to assisting spinal cord injured individuals and those living with spinal cord diseases and birth defects in the Dallas/Fort Worth Metroplex and Greater Houston areas. Assistance is provided to achieve self-sufficiency and independence through vehicle support, mobility equipment, technology and home modifications.</p>
+                
+            </div>
+
+            <div class="col-md-5">
                 <h4 class="text-naf-blue">Our Vision</h4>
                 <p>NAF will strive to ensure that every spinal cord injured or disabled person in our community has the equipment necessary to be mobile and independent.</p>
             </div>
 
-            <div class="col-lg-7 col-xs-12 mt-lg-0 mt-3">
-                  <iframe id="about-youtube" width="100%" height="100%" src="https://www.youtube.com/embed/Z8y8uu7CDfk"></iframe>
-            </div>
-
-      </div>
+    </div>
 
 
-    <h2 class="blue-bar">Cindi Cooperman</h2>
 
-      <div class="row m-4">
 
-            <div class="col-lg-3 col-md-4 d-flex flex-column text-center mx-lg-auto">
-                <img src="img/avatar.png" width="100%" class="mb-2 px-lg-0 px-md-4 px-sm-5">
+    <h2 class="blue-bar mb-5">Cindi Cooperman</h2>
+
+      <div class="row m-4 d-flex justify-content-evenly">
+
+            <div class="col-lg-3 col-6 d-flex flex-column text-center mx-lg-auto">
+                <img src="img/avatar.png" width="100%" class="mb-4 px-lg-0 mx-auto px-md-4 px-sm-5">
                 <h4>Cindi Cooperman</h4>
                 <p>Executive Director</p>
                 <a href="contact.php" alt="Contact NAF"><button class="btn btn-naf-blue w-100 mb-4">CONTACT</button></a>
             </div>
 
-            <div class="col-md-7 ms-md-auto">
+            <div class="col-lg-7 me-lg-5">
 
                 <p>Cynthia Cooperman is a co-founder, board member, executive director, and president of the Neuro Assistance Foundation. She has been a board member since Board Member since 2008. She has 16 years of experience in the airline and travel industry both in customer service and management. Her management experience extends to purchasing, quality assurance and competitive analysis. While working for a major airline, she was instrumental in the creation of several new departments and was responsible for their quantitative results.</p>
                 <p>In 2007, Cindi met Bev Olson and her life was profoundly changed by their friendship. Through Bev, she learned that the spinal cord injured community was doing without basic equipment, which in turn, made the simplest aspects of daily life significantly more complicated. Through this friendship, the Neuro Assistance Foundation was born.</p>
@@ -77,7 +94,7 @@
       </div>
 
 
-    <h2 class="blue-bar">Staff</h2>
+    <h2 class="blue-bar mb-5">Staff</h2>
 
      <div class="row m-4 text-center">
 
@@ -96,7 +113,7 @@
      </div>
 
 
-    <h2 class="blue-bar">Board Members & Officers</h2>
+    <h2 class="blue-bar mb-5">Board Members & Officers</h2>
 
 
      <div class="row m-4 text-center">
@@ -152,7 +169,7 @@
           <img src="img/avatar.png" alt="Picture of Keith Tansey, M.D., PhD" width="80%" class="mb-2">
           <h4>Keith Tansey, M.D., PhD</h4>
           <p>Board Advisor<br>
-          <span class="affiliations">Research Faculty, Neurology & Physiology, Emory University School of Medicine<br>Attending Physician, Spinal Cord Injury Clinic, Atlanta VA Medical</span></p>
+          <span class="affiliations">Research Faculty, Neurology & Physiology, Emory University School of Medicine and Attending Physician, Spinal Cord Injury Clinic, Atlanta VA Medical</span></p>
       </div>
 
       <div class="col-lg-3 col-6 mb-5">
