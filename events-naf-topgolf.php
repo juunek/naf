@@ -200,7 +200,11 @@ $conn->close();
 }else{
     print ("<div class='error'>You did not select an event to view. Go back to the <a href=events.php>Events Page</a> or the <a href='index.php'>Home Page</a> to view an event.</div>");
   }
+
 ?>
+
+
+</div>
 
 <?php
   print($htmlFooter);

@@ -274,6 +274,8 @@ $conn->close();
   }
 ?>
 
+</div>
+
 <?php
   print($htmlFooter);
 ?>
