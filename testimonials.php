@@ -58,7 +58,7 @@ if ($stmt->prepare($sql)) {
   </a>
 
   <div class='dropdown-menu' aria-labelledby='dropdownMenuLink'>
-    <a class='dropdown-item' href=testimonials.php>All</a>");
+    <a class='dropdown-item' href=testimonials.php?TTID=ALL>All</a>");
     while ($stmt->fetch()) {
   				print ("<a class='dropdown-item' href=?TTID=$TTID>$TestimonialType</a></li>");
   	}
@@ -166,9 +166,45 @@ if (!empty($_GET['TTID']) && is_numeric($_GET['TTID'])){
 		print ("<div class='error'>Query failed</div>");
 	}
 
-}else {
+}else if (!empty($_GET['TTID']) && !is_numeric($_GET['TTID'])){
+    $sql = "SELECT TID, TDate, TName, TDetails, TImage, TImageAltText, TTID FROM Testimonials ORDER BY TDate DESC";
 
-	$sql = "SELECT TID, TDate, TName, TDetails, TImage, TImageAltText, TTID FROM Testimonials ORDER BY TDate DESC";
+  /* create a prepared statement */
+  $stmt = $conn->stmt_init();
+
+  if ($stmt->prepare($sql)) {
+
+  	/* execute statement */
+  	$stmt->execute();
+
+  	/* bind result variables */
+  	$stmt->bind_result($TID, $TDate, $TName, $TDetails, $TImage, $TImageAltText, $TTID);
+
+  	print ("<div>");
+  	/* fetch values */
+  	while ($stmt->fetch()) {
+
+  		$date=date('F Y', strtotime($TDate));
+
+  		print ("<div class='col-md-10 mx-auto row py-4'>
+  		<div class='col-md-4'>
+  			<img class='cover' src='img/testimonials/$TImage'  alt='$TImageAltText' title= '$TImageAltText'>
+  		</div>
+  		 <div class='mx-auto d-flex align-items-start flex-column col-md-6'>
+  		 <h3 class='events-mobile-spacing header-blue'>$TName</h3><p class='cover'>$date</p><p>$TDetails</p>
+  		 </div>
+  		 </div>");
+  }
+  print ("</div>");
+
+  /* close statement */
+  $stmt->close();
+
+  } else {
+  print ("query failed");
+  }
+  } else {
+	$sql = "SELECT TID, TDate, TName, TDetails, TImage, TImageAltText, TTID FROM Testimonials WHERE TTID = 2 ORDER BY TDate DESC";
 
 /* create a prepared statement */
 $stmt = $conn->stmt_init();

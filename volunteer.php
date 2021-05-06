@@ -24,7 +24,7 @@
     <script src="https://kit.fontawesome.com/5d3977cc74.js" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="js/javascript.js"></script>
-    
+
     <script type="text/javascript" src="js/volunteerform.js"></script>
 
   </head>
@@ -102,7 +102,7 @@
                 <div class="form-group row">
                     <div class="col-sm-12">
                         <label for="inputSubjectVolunteer" id="inputSubjectVolunteerLabel">Subject*</label>
-                        <input type="text" class="form-control" id="inputSubjectVolunteer" placeholder="Subject">
+                        <input type="text" class="form-control" id="inputSubjectVolunteer" value="I am interested in becoming a volunteer.">
                     </div>
 
                 </div>
