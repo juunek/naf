@@ -166,7 +166,7 @@ if (!empty($_GET['TTID']) && is_numeric($_GET['TTID'])){
 		print ("<div class='error'>Query failed</div>");
 	}
 
-}else if (!empty($_GET['TTID']) && !is_numeric($_GET['TTID'])){
+}else if ($_GET['TTID']=='ALL'){
     $sql = "SELECT TID, TDate, TName, TDetails, TImage, TImageAltText, TTID FROM Testimonials ORDER BY TDate DESC";
 
   /* create a prepared statement */
@@ -203,7 +203,7 @@ if (!empty($_GET['TTID']) && is_numeric($_GET['TTID'])){
   } else {
   print ("query failed");
   }
-  } else {
+} else if  (empty($_GET['TTID']) && !is_numeric($_GET['TTID'])){
 	$sql = "SELECT TID, TDate, TName, TDetails, TImage, TImageAltText, TTID FROM Testimonials WHERE TTID = 2 ORDER BY TDate DESC";
 
 /* create a prepared statement */
@@ -241,6 +241,10 @@ $stmt->close();
 print ("query failed");
 }
 
+}else {
+  print("<div class='col-md-10 mx-auto row py-4'>
+    <p>The category you are looking for doesn't exist. You can continue browsing or <a href='contact.php'>contact us</a> if you have any questions.</p>
+  </div>");
 }
 print("</div>");
 
