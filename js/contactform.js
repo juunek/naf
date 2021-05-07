@@ -1,10 +1,17 @@
 
 var page;
 
+
+
+
+
+
  function init(){
 
-
-
+  var queryStringContact = location.search.substring(1);
+  var newqueryStringContact = queryStringContact.replace(/-/g, " ");
+  console.log("query string" + queryStringContact);
+  document.getElementById("inputSubjectContact").value = newqueryStringContact;
 
   document.getElementById('contactForm').addEventListener('submit', function(e){process(e, 'Contact')}, false);
 

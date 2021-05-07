@@ -79,7 +79,7 @@
   <div class="row m-4">
       <div class="col-md-10 mx-auto">
 
-          <p>If you have assistive vehicles or equipment you would like to donate, please fill out the form below. If you have any questions about a donation or anything else, <a href='contact.php' class='links-naf-blue'>contact us</a>, and we will get back to you.</p>
+          <p>If you have assistive vehicles or equipment you would like to donate, please fill out the form below. If you have any questions about a donation or anything else, <a href='contact.php?Vehicles-and-Equipment-Donation-Inquiry' class='links-naf-blue'>contact us</a>, and we will get back to you.</p>
           <p class="text-danger">*Required Fields</p>
 
       </div>
