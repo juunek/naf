@@ -214,6 +214,11 @@ function process(evt){
 
       });
 
+    
+      $(document).ready(function(){
+
+      }
+
       function createCookie(name, value, days){
 
           var expires;
@@ -229,12 +234,12 @@ function process(evt){
           document.cookie = escape(name) + "=" + 
           escape(value) + expires + "; path=/";
         
-        
+        }
 
           window.location.href = "http://ctec4350.krk1266.uta.cloud/naf/admin_edit.php";
 
 
-        }
+        
         } else {
 
          

@@ -29,6 +29,7 @@
 <?php print($htmlNav); ?>
 
 <div class="container">
+   <script type="text/javascript" src="js/clientform.js"></script>
   <h1>Request Assistance</h1>
 
   <!--Local Resources -->
@@ -97,86 +98,93 @@
   <div class="col-10 mx-auto">
     <p>Thank you for your interest in NAF. To request assistance, please complete the application below. Applications must be completed by a physician, therapist, or hospital case manager, and clients must not have alternative means to receive assistance. We will contact you after the application is received.</p>
     <p class="text-danger">*Required Fields</p>
-</div>
+ </div>
 
-<div class="col-md-10 mx-auto mb-5">
-  <form action="" method="post" class="p-3 shadow">
+
+        <!-- strat heere------------------------------------------------------------------>
+<div class="col-10 mx-auto mb-5">
+          
+<form id="clientForm" action="" method="post" class="p-3 shadow">
     <h3 class="text-naf-blue">Patient/Client Info</h3>
-    <div class="form-group row">
+    <div class="from-group row">
+
       <div class="d-flex flex-column col-sm-6">
-        <label>First Name*</label>
-        <input type="text" class="form-control" id="client_firstname">
+        <label for="inputFirstnameInfoClient" id="inputFirstnameInfoClientLabel">First Name*</label>
+        <input type="text" class="form-control" id="inputFirstnameInfoClient">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label>Last Name*</label>
-        <input type="text" class="form-control" id="client_lastname">
+        <label for="inputLastnameInfoClient" id="inputLastnameInfoClientLabel">Last Name*</label>
+        <input type="text" class="form-control" id="inputLastnameInfoClient">
       </div>
+
     </div>
 
-    <div class="form-group row">
+     <div class="from-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>Birthdate (mm/dd/yyyy)*</label>
-        <input type="date" class="form-control" id="client_birthday">
+        <label for="inputBirthdayInfoClient" id="inputBirthdayInfoClientLabel">Birthdate* (mm/dd/yyyy)</label>
+        <input type="date" class="form-control" id="inputBirthdayInfoClient">
       </div>
     </div>
 
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-12">
-        <label>Street Address*</label>
-        <input type="text" class="form-control" id="client_address">
+        <label for="inputStreetAddClient" id="inputStreetAddClientLabel">Street Address*</label>
+        <input type="text" class="form-control" id="inputStreetAddClient">
       </div>
     </div>
 
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>City*</label>
-        <input type="text" class="form-control" id="client_city">
+        <label for="inputCityAddClient" id="inputCityAddClientLabel">City*</label>
+        <input type="text" class="form-control" id="inputCityAddClient">
       </div>
 
       <div class="d-flex flex-column col-sm-3">
-        <label>State*</label>
-        <input type="text" class="form-control" id="client_state">
+        <label for="inputStateAddClient" id="inputStateAddClientLabel">State*</label>
+        <input type="text" class="form-control" id="inputStateAddClient">
       </div>
 
       <div class="d-flex flex-column col-sm-3">
-        <label>Zip Code*</label>
-        <input type="text" class="form-control" id="client_zip">
+        <label for="inputZipcodeAddClient" id="inputZipcodeAddClientLabel">Zip Code*</label>
+        <input type="text" class="form-control" id="inputZipcodeAddClient">
       </div>
     </div>
 
-    <div class="form-group row">
+     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>Patient has children at home*</label>
+        <label id="client_childrenHomeLabel">Patient has children at home*</label>
           <div class="d-flex flex-row">
-            <div class="pe-5">
-              <input type="radio" name="client_childrenHome" value="client_childrenHome_yes" id="client_childrenHome_yes">
+            <div class="pe-5" id="client_childrenHome_yesSection">
+              <input type="radio" name="client_childrenHome" value="yes" id="yes_ChildrenHome">
               <label for="client_childrenHome_yes">Yes</label>
             </div>
             <div>
-              <input type="radio" name="client_childrenHome" value="client_childrenHome_no" id="client_childrenHome_no">
+              <input type="radio" name="client_childrenHome" value="no">
               <label for="client_childrenHome_no">No</label>
           </div>
         </div>
       </div>
 
-      <div class="d-flex flex-column col-sm-6">
-        <label>Ages of Children</label>
-        <input type="text" class="form-control" id="client_childrenAge">
+      <div class="d-flex flex-column col-sm-6" id="AgeChildrenClient">
+        <label for="inputAgeChildrenClient" id="inputAgeChildrenClientLabel">Ages of Children</label>
+        <input type="text" class="form-control" id="inputAgeChildrenClient" placeholder="If patient doesn't have a child, please this fill blank.">
       </div>
     </div>
 
-    <div class="form-group row">
-      <div class="d-flex flex-column col-sm-12">
-        <label>Describe spinal cord injury (level and cause, i.e., MVA, Fall, etc.). If not a traumatic injury, please explain*</label>
-        <textarea name="client_explaination" class="form-control" id="client_explaination"></textarea>
-      </div>
-    </div>
 
-    <div class="form-group row">
+   <div class="form-group row">
       <div class="d-flex flex-column col-sm-12">
+        <label for="inputDescribeSCIClient" id="inputDescribeSCIClientLabel">Describe spinal cord injury (level and cause, i.e., MVA, Fall, etc.). If not a traumatic injury, please explain*</label>
+        <textarea name="client_explaination" class="form-control" id="inputDescribeSCIClient"></textarea>
+      </div>
+   </div>
+
+   <div class="form-group row">
+      <div class="d-flex flex-column col-sm-12">
+         <label id="client_assistTypeLabel">Type of assistance requested</label>
         <div class= "row">
-        <label>Type of assistance requested* (select at least one)</label>
+       
             <div class="col-sm-6">
               <input type="checkbox" name="client_assistType" value="client_assistType_home" id="client_assistType_home">
               <label for="client_assistType_home">Home Modifications</label>
@@ -197,21 +205,22 @@
     </div>
   </div>
 
-    <div class="form-group row">
+
+  <div class="form-group row">
       <div class="d-flex flex-column col-sm-12">
-        <label>Describe patient's needs in order of importance*</label>
-        <textarea name="client_needs" class="form-control" id="client_needs"></textarea>
+        <label for="inputPatientNeedsClient" id="inputPatientNeedsClientLabel">Describe patient's needs in order of importance*</label>
+        <textarea name="client_needs" class="form-control" id="inputPatientNeedsClient"></textarea>
       </div>
-    </div>
+  </div>
 
-    <div class="form-group row">
+   <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>Patient discharge date (mm/dd/yyyy)</label>
-        <input type="date" class="form-control" id="client_discharge">
+        <label for="inputDischargeDateClient" id="inputDischargeDateClientLabel">Patient discharge date (mm/dd/yyyy)</label>
+        <input type="date" class="form-control" id="inputDischargeDateClient">
       </div>
-
+   
       <div class="d-flex flex-column col-sm-6">
-        <label>Will patient be using catheters*</label>
+        <label id="client_catheterUseLabel">Will patient be using catheters*</label>
             <div class="d-flex flex-row">
               <div class="pe-5">
                 <input type="radio" name="client_catheterUse" value="client_catheterUse_yes" id="client_catheterUse_yes">
@@ -223,11 +232,11 @@
           </div>
         </div>
       </div>
-    </div>
+   </div>
 
-    <div class="form-group row">
-      <div class="d-flex flex-column col-sm-3">
-        <label>Is patient insured?*</label>
+ <div class="form-group row">
+      <div class="d-flex flex-column col-sm-4">
+        <label id="client_insuredLabel">Is patient insured?*</label>
           <div class="d-flex flex-row">
             <div class="pe-5">
               <input type="radio" name="client_insured" value="client_insured_yes" id="client_insured_yes">
@@ -240,8 +249,8 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column col-sm-6">
-        <label>Does patient have Medicare/Medicaid*</label>
+      <div class="d-flex flex-column col-sm-4">
+        <label id="client_medicareLabel">Does patient have Medicare/Medicaid*</label>
           <div class="d-flex flex-row">
               <div class="pe-5">
                 <input type="radio" name="client_medicare" value="client_medicare_yes" id="client_medicare_yes">
@@ -258,8 +267,8 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column col-sm-3">
-        <label>Is patient a veteran?*</label>
+      <div class="d-flex flex-column col-sm-4">
+        <label id="client_veteranLabel">Is patient a veteran*?</label>
           <div class="d-flex flex-row">
             <div class="pe-5">
               <input type="radio" name="client_veteran" value="client_veteran_yes" id="client_veteran_yes">
@@ -271,100 +280,112 @@
           </div>
         </div>
       </div>
-    </div>
+  </div>
 
-    <div class="form-group row">
+
+   <div class="form-group row">
       <div class="d-flex flex-column col-sm-12">
-        <label>Describe other program eligibility</label>
+        <label >Describe other program eligibility</label>
         <textarea name="client_eligibility" class="form-control" id="client_eligibility"></textarea>
       </div>
-    </div>
+  </div>
+
 
     <h3 class="text-naf-blue mt-5">Social Worker Contact Info</h3>
     <p>If you are not or do not have a social worker, please leave this section blank.</p>
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>First Name</label>
-        <input type="text" class="form-control" id="client_social_firstname">
+        <label for="inputFirstnameSocialClient" id="inputFirstnameSocialClientLabel">First Name</label>
+        <input type="text" class="form-control" id="inputFirstnameSocialClient">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label>Last Name</label>
-        <input type="text" class="form-control" id="client_social_lastname">
+        <label for="inputLastnameSocialClient" id="inputLastnameSocialClientLabel">Last Name</label>
+        <input type="text" class="form-control" id="inputLastnameSocialClient">
       </div>
     </div>
 
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>Email Address</label>
-        <input type="email" class="form-control" id="client_social_email">
+        <label for="inputEmailSocialClient" id="inputEmailSocialClientLabel">Email Address</label>
+        <input type="email" class="form-control" id="inputEmailSocialClient">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label>Phone Number</label>
-        <input type="tel" class="form-control" id="client_social_phone">
+        <label for="inputPhoneSocialClient" id="inputPhoneSocialClientLabel">Phone Number</label>
+        <input type="tel" class="form-control" id="inputPhoneSocialClient">
       </div>
     </div>
+  
 
-    <h3 class="text-naf-blue mt-5">Person Submitting Contact Info</h3>
+    <h3 class="text-naf-blue mt-5">Person Submitting Contact Info*</h3>
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>First Name*</label>
-        <input type="text" class="form-control" id="client_contact_firstname">
+        <label for="inputFirstnameSubmittingClient" id="inputFirstnameSubmittingClientLabel">First Name</label>
+        <input type="text" class="form-control" id="inputFirstnameSubmittingClient">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label>Last Name*</label>
-        <input type="text" class="form-control" id="client_contact_lastname">
+        <label for="inputLastnameSubmittingClient" id="inputLastnameSubmittingClientLabel">Last Name</label>
+        <input type="text" class="form-control" id="inputLastnameSubmittingClient">
       </div>
     </div>
+
 
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>Email Address*</label>
-        <input type="email" class="form-control" id="client_contact_email">
+        <label for="inputEmailSubmittingClient" id="inputEmailSubmittingClientLabel">Email Address</label>
+        <input type="email" class="form-control" id="inputEmailSubmittingClient">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label>Phone Number*</label>
-        <input type="tel" class="form-control" id="client_contact_phone">
+        <label for="inputPhoneSubmittingClient" id="inputPhoneSubmittingClientLabel">Phone Number</label>
+        <input type="tel" class="form-control" id="inputPhoneSubmittingClient">
       </div>
     </div>
 
-    <h3 class="text-naf-blue mt-5">Primary Contact Info</h3>
+    <h3 class="text-naf-blue">Primary Contact Info</h3>
     <p>If you are not the client submitting this application, please enter the clients contact information.</p>
+
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>First Name</label>
-        <input type="text" class="form-control" id="client_primary_firstname">
+        <label for="inputFirstnamePrimarygClient" id="inputFirstnamePrimaryClientLabel">First Name</label>
+        <input type="text" class="form-control" id="inputFirstnamePrimaryClient">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label>Last Name</label>
-        <input type="text" class="form-control" id="client_primary_lastname">
+        <label for="inputLastnamePrimarygClient" id="inputLastnamePrimaryClientLabel">Last Name</label>
+        <input type="text" class="form-control" id="inputLastnamePrimaryClient">
       </div>
     </div>
 
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label>Email Address</label>
-        <input type="email" class="form-control" id="client_primary_email">
+        <label for="inputEmailPrimarygClient" id="inputEmailPrimaryClientLabel">Email Address</label>
+        <input type="email" class="form-control" id="inputEmailPrimaryClient">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label>Phone Number</label>
-        <input type="tel" class="form-control" id="client_primary_phone">
+        <label for="inputPhonePrimarygClient" id="inputPhonePrimaryClientLabel">Phone Number</label>
+        <input type="tel" class="form-control" id="inputPhonePrimaryClient">
       </div>
     </div>
 
     <div class="form-group row">
-                    <div class="col-sm-12 pt-4">
-                     <button type="submit" name="submit" value="Submit" id="submitDonation" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue btn-block py-2 fs-5">Submit Query</button>
-                     <br>
-                   </div>
+      <div class="d-flex flex-row align-item-center col-sm-12 mt-2">
+          <input type="checkbox" value="yes" name="sameAsperson" id="sameAsperson" class="my-1"> 
+          <label for='sameAsperson' id="forTerms" class="pl-1 m-0">Same as person submitting</label>
+      </div>
+    
+   </div>
+
+    <div class="form-group row">
+          <div class="col-sm-12 pt-4">
+              <button type="submit" name="submit" value="Submit" id="submitClient" class="btn-naf-blue btn-block py-2 fs-5">Submit Query</button>
+              <br>
+          </div>
      </div>
-
-
+    
   </form>
 </div>
 </div>
