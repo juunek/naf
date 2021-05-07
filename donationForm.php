@@ -102,7 +102,7 @@ if (isset($_GET['KEYID'])) {
 			<h2 class='text-center my-5 text-naf-blue'>Donation Form</h2>
 
 		<div class="col-md-10 mx-auto">
-			<a href="donationShow.php"><button class='btn btn-danger mb-4'>Cancel</button></a>
+			<a href="donationShow.php"><button class='btn btn-danger'>Cancel</button></a>
 
 
 		  <p><?= $errMsg ?></p>
@@ -110,15 +110,26 @@ if (isset($_GET['KEYID'])) {
 			<form action="donationEdit.php" method="POST" enctype="multipart/form-data">
 				<!-- pass the pid information using a hidden field -->
 				<input type="hidden" name="KEYID" value="<?=$KEYID?>">
-				<p class="text-danger mb-4">*Required Fields</p>
+				<p class="text-danger mb-1">*Required Fields</p>
 
 				<table class='formTable mx-auto'>
-					<tr><th class='pr-4'>First Name*:</th><td><input class="form-control" type="text" name="FirstName" size="45" value="<?= htmlentities($FirstName) ?>"></td></tr>
-					<tr><th class='pr-4'>Last Name*:</th><td><input class="form-control" type="text" name="LastName" size="45" value="<?= htmlentities($LastName) ?>"></td></tr>
-					<tr><th class='pr-4'>Email*:</th><td><input class="form-control" type="email" name="Email" size="45" value="<?= htmlentities($Email) ?>"></td></tr>
-					<tr><th class='pr-4'>Phone Number*:</th><td><input class="form-control" type="text" name="PhoneNumber" size="45" value="<?= htmlentities($PhoneNumber) ?>"></td></tr>
-					<tr><th class='pr-4'>Donation Type*:</th><td><input class="form-control" type="text" name="DonationType" size="45" value="<?= htmlentities($DonationType) ?>"></td></tr>
-					<tr><th class='pr-4'>Donation Detail*:</th><td><input class="form-control" type="text" name="DonationDetail" size="45" value="<?= htmlentities($DonationDetail) ?>"></td></tr>
+					<tr><th class='pr-4'>First Name*:</th><td><input class="form-control mb-1" type="text" name="FirstName" size="45" value="<?= htmlentities($FirstName) ?>"></td></tr>
+					<tr><th class='pr-4'>Last Name*:</th><td><input class="form-control mb-1" type="text" name="LastName" size="45" value="<?= htmlentities($LastName) ?>"></td></tr>
+					<tr><th class='pr-4'>Email*:</th><td><input class="form-control mb-1" type="email" name="Email" size="45" value="<?= htmlentities($Email) ?>"></td></tr>
+					<tr><th class='pr-4'>Phone Number*:</th><td><input class="form-control mb-1" type="text" name="PhoneNumber" size="45" value="<?= htmlentities($PhoneNumber) ?>"></td></tr>
+					<tr><th class='pr-4'>Vehicle/Equipment Type*:</th><td>
+							<select class="form-control mb-1" id="DonationType" name="DonationType">
+								 <option value="none">Pick an option</option>
+								 <option value="Shower Chair">Shower Chair</option>
+								 <option value="Tub Transfer Bench">Tub Transfer Bench</option>
+								 <option value="Hospital Bed">Hospital Bed</option>
+								 <option value="Patient Lift">Patient Lift</option>
+								 <option value="Wheelchair - Manual">Wheelchair - Manual</option>
+								 <option value="Wheelchair - Power">Wheelchair - Power</option>
+								 <option value="Other">Other</option>
+							</select>
+					</td></tr>
+					<tr><th class='pr-4'>Donation Detail*:</th><td><input class="form-control mb-1" type="text" name="DonationDetail" size="45" value="<?= htmlentities($DonationDetail) ?>"></td></tr>
 					<!--<tr><th>Category*:</th><td><select class='selectcustom' name="GID">CategoryOptionList($GID)?></select></td></tr>-->
 					<tr><td colspan=2><input class='btn btn-naf-blue w-100 mt-5' type=submit name="Submit" value="Submit Donation Information"></td></tr>
 				</table>
