@@ -30,12 +30,20 @@ if (isset($_POST['Username']) && isset($_POST['Password']) && !empty($_POST['Use
         exit;
     } else {
         // error message
-        $errorPd = "<div class='error'>The user name and password you provided are incorrect.  Please try again.</div>";
+        if ($username !== 'admin' && $password == '123456') {
+          $errorPd = "<div><p class='text-danger'>The user name you provided is incorrect.  Please try again.</p></div>";
+        }else if ($username == 'admin' && $password !== '123456') {
+          $errorPd = "<div><p class='text-danger'>The password you provided is incorrect.  Please try again.</p></div>";
+        }else {
+          $errorPd = "<div><p class='text-danger'>The user name and password you provided are incorrect.  Please try again.</p></div>";
+        }
     }
 
-} else if (isset($_POST['username']) || isset($_POST['password'])){
-    $errorPd = "<div class='error'>Please enter both the user name and password to log in.</div>";
+} else if (isset($_POST['Username']) || isset($_POST['Password'])){
+    $errorPd = "<div><p class=text-danger>Please enter both the user name and password to log in.</p></div>";
 
+}else {
+  $errorPd = "";
 }
 
 ?>
@@ -69,14 +77,14 @@ print($htmlNav);
 ?>
 
 
-<div class="container">
+<div class="container col-md-7 col-12 mx-auto">
 
 	<h1></h1>
 	<form class="" id="app-form" action="" method="POST">
 	  	<h4 class="text-center">Admin Login</h4>
 		<div class="form-group">
 	    <label for="UserName">User Name</label>
-	    <input type="text" class="form-control" id="UserName" name="Username" placeholder="admin">
+	    <input type="text" class="form-control" id="UserName" name="Username" placeholder="Username">
 	  </div>
 	  <div class="form-group">
 	    <label for="Password">Password</label>
@@ -86,7 +94,7 @@ print($htmlNav);
 		print $errorPd;
 	   ?>
 	  <div class="text-center">
-		  <button type="submit" value="Submit" name="submit" id="btn_submit" class="btn btn-naf-blue">Sign in</button>
+		  <button type="submit" value="Submit" name="submit" id="btn_submit" class="btn btn-naf-blue btn-tablet-mobile-full">Sign in</button>
 		  <br>
 
 	   </div>
