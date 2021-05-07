@@ -58,7 +58,7 @@ if (isset($_GET['KEYID'])) { // note that the spelling 'pid' is based on the que
     <div class='col-10 mx-auto'>
         <?= $output ?>
 
-        <p class='text-center'>Back to the <a href='donationShow.php'>product list page</a></p>
+        <p class='text-center'>Back to the <a href='donationShow.php'>Donation Page</a></p>
     </div>
 
 </div>

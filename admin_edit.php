@@ -8,9 +8,9 @@ $conn = dbConnect();
 
 
 $outputString = $_COOKIE["cookieArr"];
-$outputArr = explode(',', $outputString);
+$outputArr = explode(',', $outputString, 6);
 
-
+// print_r($outputArr);
 
 $FirstName = $outputArr[0];
 $LastName =$outputArr[1];
