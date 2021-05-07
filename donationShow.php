@@ -37,7 +37,7 @@ function confirmDel(FirstName, KEYID) {
 <?php
 
 
-$sql = "SELECT KEYID, FirstName, LastName, Email, PhoneNumber, DonationType, DonationDetail FROM NAFDonation ORDER BY LastName";
+$sql = "SELECT KEYID, DTimeStamp, FirstName, LastName, Email, PhoneNumber, DonationType, DonationDetail FROM NAFDonation ORDER BY DTimeStamp DESC, LastName ASC";
 
 $stmt = $conn->stmt_init();
 
@@ -48,22 +48,25 @@ if ($stmt->prepare($sql)) {
             $stmt->execute();
 
             /* bind result variables */
-            $stmt->bind_result($KEYID, $FirstName,$LastName, $Email, $PhoneNumber, $DonationType, $DonationDetail);
+            $stmt->bind_result($KEYID, $DTimeStamp, $FirstName,$LastName, $Email, $PhoneNumber, $DonationType, $DonationDetail);
 
             $tblRows = "<tbody>";
 
             while ($stmt->fetch()) {
-              $Delete_js = htmlspecialchars($FirstName, ENT_QUOTES);
+							$date=date('m/d/Y', strtotime($DTimeStamp));
+							$fullName = "$FirstName $LastName";
+							$deleteInfo = "$date - $fullName";
+              $Delete_js = htmlspecialchars($deleteInfo, ENT_QUOTES);
 
                 $tblRows = $tblRows."<tr>
-                <td>$FirstName</td><td>$LastName</td><td>$Email</td><td>$PhoneNumber</td><td>$DonationType</td><td>$DonationDetail</td><td><a href='donationForm.php?KEYID=$KEYID'>Edit</a> | <a href='javascript:confirmDel(\"$Delete_js\",$KEYID)'>Delete</a></td></tr></tr>";
+                <td>$date</td><td>$fullName</td><td>$Email</td><td>$PhoneNumber</td><td>$DonationType</td><td>$DonationDetail</td><td><a href='donationForm.php?KEYID=$KEYID'>Edit</a> | <a href='javascript:confirmDel(\"$Delete_js\",$KEYID)'>Delete</a></td></tr></tr>";
 
             }
 
             $output = "
             <table class='table'>\n
             <thead class='table-head'>\n
-            <tr><th scope='col'>First Name</th><th scope='col'>Last Name</th><th scope='col'>Email</th><th scope='col'>Phone Number</th><th scope='col'>Donation Type</th><th scope = 'col'>Donation Detail</th><th scope = 'col'>Options</th></tr>\n
+            <tr><th scope='col'>Submission Date</th><th scope='col'>Full Name</th><th scope='col'>Email</th><th scope='col'>Phone Number</th><th scope='col'>Donation Type</th><th scope = 'col'>Donation Detail</th><th scope = 'col'>Options</th></tr>\n
             <thead>\n".$tblRows.
             "</tbody>\n</table>\n";
 
