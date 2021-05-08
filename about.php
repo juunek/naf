@@ -76,7 +76,7 @@
       <div class="row m-4 d-flex justify-content-evenly">
 
             <div class="col-lg-3 col-6 d-flex flex-column text-center mx-lg-auto">
-                <img src="img/avatar.png" width="100%" class="mb-4 px-lg-0 mx-auto px-md-4 px-sm-5">
+                <img src="img/cindi-cooperman.jpg" width="100%" class="mb-4 px-lg-0 mx-auto px-md-4 px-sm-5">
                 <h4>Cindi Cooperman</h4>
                 <p>Executive Director</p>
                 <a href="contact.php" alt="Contact NAF"><button class="btn btn-naf-blue w-100 mb-4">CONTACT</button></a>

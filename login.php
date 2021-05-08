@@ -77,11 +77,11 @@ print($htmlNav);
 ?>
 
 
-<div class="container col-md-7 col-12 mx-auto">
+<div class="container col-lg-4 col-md-6 col-10 mx-auto py-5">
 
-	<h1></h1>
-	<form class="" id="app-form" action="" method="POST">
-	  	<h4 class="text-center">Admin Login</h4>
+<h1 class="text-center text-naf-blue mb-5">Admin Login</h1>
+	<form class="mb-5" id="app-form" action="" method="POST">
+	  	
 		<div class="form-group">
 	    <label for="UserName">User Name</label>
 	    <input type="text" class="form-control" id="UserName" name="Username" placeholder="Username">
@@ -93,10 +93,9 @@ print($htmlNav);
 	  <?php
 		print $errorPd;
 	   ?>
-	  <div class="text-center">
+	  <div class="text-center pb-3">
+      <br>
 		  <button type="submit" value="Submit" name="submit" id="btn_submit" class="btn btn-naf-blue btn-tablet-mobile-full">Sign in</button>
-		  <br>
-
 	   </div>
 	</form>
 

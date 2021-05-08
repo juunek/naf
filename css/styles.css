@@ -80,6 +80,14 @@ a.dropdown-item {
 	color: white!important;
 }
 
+a.text-naf-white {
+	color: white!important;
+}
+
+a.text-naf-white:hover {
+	color: #b2cce6;
+}
+
 .links-naf-blue {
 	text-decoration: none;
 	font-weight: 700!important;
@@ -238,6 +246,16 @@ a.dropdown-item {
 		padding-left: 0.75rem;
 	}
 
+	#footer-connect {
+		margin-bottom: 2.2rem;
+	}
+
+	.connect-with-us {
+		margin-top: 1rem;
+		margin-bottom: .75rem;
+	}
+
+
 }
 
 @media (max-width: 992px) {
@@ -277,10 +295,19 @@ a.dropdown-item {
 			background-color: white!important;
 			width: 100%;
 			text-align: center;
-			padding-top: 1.5rem;
-			padding-bottom: 2rem;
-
+			padding-top: 2rem;
+			padding-bottom: 2.25rem;
 		}
+
+	.connect-with-us {
+		margin: 2rem 0!important;
+	}
+	
+	#footer-connect {
+		display: flex;
+		margin-right: auto;
+		margin-left: auto;
+	}
 
 	#footer-joiningemaillist-h4{
 		color: #0B5BAB!important;
@@ -291,12 +318,6 @@ a.dropdown-item {
 		color: white!important;
 	}
 
-	#footer-connect {
-		display: flex;
-		margin-right: auto;
-		margin-left: auto;
-
-	}
 
 	.social-media {
 		margin-top: 1.5rem;
@@ -318,6 +339,12 @@ a.dropdown-item {
 	#navbar-brand-img {
 		height: 100%;
 		width: 100%
+	}
+
+	#footer-connect {
+		display: flex;
+		margin-right: auto;
+		margin-left: auto;
 	}
 
 
@@ -369,11 +396,11 @@ a.dropdown-item {
 	}
 
 	[data-toggle="collapse"] .fa:before {
-	  content: "\f139";
+	  content: "\f106";
 	}
 
 	[data-toggle="collapse"].collapsed .fa:before {
-	  content: "\f13a";
+	  content: "\f107";
 	}
 
 	.events-mobile-spacing{
@@ -771,6 +798,7 @@ footer a:hover{
 		.navbar-toggler {
 			border: none!important;
 		}
+
 
 }
 

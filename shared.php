@@ -9,7 +9,7 @@ function GoToNow ($url){
 $htmlNav= "
 <body>
 
-<button onclick='topFunction()' id='goTop' title='Go to top'><i class='fa fa-chevron-up'></i></button>
+<button onclick='topFunction()' id='goTop' title='Back to top of page'><i class='fa fa-angle-double-up'></i></button>
 
 <div class='container'>
 
@@ -95,21 +95,23 @@ $htmlFooter="<footer>
 
               <div class='' id='footer-connect'>
 
-                  <h4 class ='text-white my-4 fw-800'>Connect with us</h4>
+                  
+                  <h4 class='text-white connect-with-us fw-800'>Connect with us</h4>
+                  
 
                   <div class ='social-media text-white'>
-                        <a href='https://www.facebook.com/NeuroAssistanceFoundation/'><i class='fa fa-facebook-square fs-x2 mr-2'></i></a>
-                        <a href='https://twitter.com/neuroassistance'><i class='fa fa-twitter mr-2 fs-x2'></i></a>
-                        <a href='https://www.linkedin.com/company/neuro-assistance-foundation/'><i class='fa fa-linkedin fs-x2'></i></a>
+                        <a href='https://www.facebook.com/NeuroAssistanceFoundation/' target='_blank' alt='Neuro Assistance Foundation Facebook'><i class='fa fa-facebook-square fs-x2 mr-2'></i></a>
+                        <a href='https://twitter.com/neuroassistance' target='_blank' alt='Neuro Assistance Foundation Twitter'><i class='fa fa-twitter mr-2 fs-x2'></i></a>
+                        <a href='https://www.linkedin.com/company/neuro-assistance-foundation/' target='_blank' alt='Neuro Assistance Foundation LinkedIn'><i class='fa fa-linkedin fs-x2'></i></a>
 
                 </div>
              </div>
 
              <div class='order-md-last' id='footer-joiningemaillist-div'>
 
-              <h4 class ='text-white my-4 fw-800' id='footer-joiningemaillist-h4'>Join our email list</h4>
+              <h4 class ='text-white fw-800 mb-3' id='footer-joiningemaillist-h4'>Join our email list</h4>
 
-              <a href='join-email.php'><button type='button' class='btn btn-naf-white-squareCorner' id='footer-joiningemaillist-button'>JOIN EMAIL LIST</button></a>
+              <a href='join-email.php' alt='Join NAF Email List'><button type='button' class='btn btn-naf-white-squareCorner' id='footer-joiningemaillist-button'>JOIN EMAIL LIST</button></a>
 
             </div>
       </div>
@@ -150,7 +152,7 @@ $htmlFooter="<footer>
               <div class='d-flex flex-column'>
                   <h4 class ='text-white my-4 fw-800'>Resources</h4>
                   <a class='mb-2' href='resources.php'>Resources</a>
-                  <a  class='mb-2' href='spinal-cord-injury.php'>Spinal Cord Injuries</a>
+                  <a class='mb-2' href='spinal-cord-injury.php'>Spinal Cord Injuries</a>
                   <a class='mb-2' href='client-application.php'>Request Assistance</a>
                   <a class='mb-2' href='sitemap.php'>Sitemap</a>
                 </div>
@@ -160,9 +162,13 @@ $htmlFooter="<footer>
     </div>
 
     <div class='row bg-naf-blue text-center'>
-         <p class='text-center text-white m-0 pb-5'> © Neuro Assistance Foundation is a a 501(c)(3) Public Charity</p>
-         <a href='http://ctec4350.krk1266.uta.cloud/naf/login.php'  target='_blank' class='text-center mb-3 text-decoration-none'><p class='text-light'>Admin Login</p></a>
+        <p class='text-center text-white m-0 pb-3' style='font-size:85%;'>© Neuro Assistance Foundation is a a 501(c)(3) Public Charity</p>
+        <p class='text-center text-naf-white' style='font-size:75%;'>Brigade | For class use only | <a href='http://ctec4350.krk1266.uta.cloud/naf/login.php' class='text-naf-white text-decoration-none font-weight-bold' target='_blank' >Admin Login</a>
+        </p>
     </div>
+
+
+
 
 </div>
 
