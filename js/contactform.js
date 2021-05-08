@@ -111,7 +111,7 @@ function addErrorMessage(fieldId, msg){
      removeErrorMessage('inputPhoneNumber' + page);
 
 
-  } else { 
+  } else {
 
     if (phoneNumberPattern.test(phoneNumber)) {
       removeErrorMessage('inputPhoneNumber' + page);
@@ -120,7 +120,7 @@ function addErrorMessage(fieldId, msg){
       err ++;
     }
 
-  } 
+  }
 
   var subject = document.getElementById('inputSubject' + page).value;
 
@@ -143,37 +143,72 @@ function addErrorMessage(fieldId, msg){
   }
 
 
-  var message = "";
-
-  if (err == 0) {
-  
-
-     window.location.replace("thankyou.php");
+  //output the message when click submit
+        var message = "";
 
 
-  } else {
+          if (err == 0) {
+            var jsCFirstName = document.getElementById('inputFirstname' + page).value;
+            var jsCLastName = document.getElementById('inputLastname' + page).value;
+            var jsCEmail = document.getElementById('inputEmail'+ page).value;
+            var jsCPhoneNumber = document.getElementById('inputPhoneNumber' + page).value;
+            var jsCSubject = document.getElementById('inputSubject' + page).value;
+            var jsCDetails = document.getElementById('inputMessage' + page).value;
 
-  
+            var inputArr = [jsCFirstName, jsCLastName, jsCEmail, jsCPhoneNumber, jsCSubject, jsCDetails];
+            console.log ("inputArr:" + inputArr);
+
+        // Creating a cookie after the document is ready
+
+        document.cookie = "cookieArr=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+        $(document).ready(function(){
+
+          createCookie("cookieArr", inputArr, "10");
+
+        });
+
+
+        function createCookie(name, value, days){
+
+            var expires;
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+              expires = "; expires=" + date.toGMTString();
+            } else {
+              expires = "";
+            }
+
+            document.cookie = escape(name) + "=" +
+            escape(value) + expires + "; path=/";
+
+          }
+
+            window.location.href = "http://ctec4350.krk1266.uta.cloud/naf/admin_edit_contact.php";
+
+
+
+          } else {
+
+
+
+          }
+
+      if (evt.preventDefault)
+            {
+              evt.preventDefault();
+            } else {
+              evt.returnValue = false;
+            }
+
+
+
   }
-    
-
-
- 
-
-  if (evt.preventDefault)
-    {
-      evt.preventDefault();
-    } else {
-      evt.returnValue = false;
-    }
-
-  
-
-}
 
 
 
 
 
-
-window.addEventListener('load', init, false);
+  window.addEventListener('load', init, false);

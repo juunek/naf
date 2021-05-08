@@ -1,6 +1,6 @@
 <?php
 include("dbconn.inc.php"); // database connection
-include("shared_admin.php"); 
+include("shared_admin.php");
 include("access.php");
 // make database connection
 $conn = dbConnect();
@@ -34,7 +34,7 @@ print $HTMLHeader;
                       </div>
 
                           <div class="col-lg-4">
-                        <a href="" class="text-decoration-none">
+                        <a href="contactShow.php" class="text-decoration-none">
                             <div class="admin-card d-flex justify-content-center pt-4">
                                 <h4 class="p-0 m-0 text-light">Contact</h4>
 

@@ -48,7 +48,7 @@
   <div class="row">
 
      <div class="col-md-8 mx-auto">
-        <form id="contactForm" action="contact_post.php" method="post" class="p-3 shadow">
+        <form id="contactForm" action="" method="post" class="p-3 shadow">
             <div class="form-group row">
                 <div class="col-sm-6">
                     <label for="inputFirstnameContact" id="inputFirstnameContactLabel">First name*</label>
