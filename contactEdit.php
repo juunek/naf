@@ -13,13 +13,13 @@ if (isset($_POST['Submit'])) {
 	//validate user input
 
 	// set up the required array
-	$required = array("contactReply"); // note that, in this array, the spelling of each item should match the form field names
+	$required = array("Reply"); // note that, in this array, the spelling of each item should match the form field names
 
 	// set up the expected array
-	$expected = array("CID", "contactReply"); // again, the spelling of each item should match the form field names
+	$expected = array("CID", "CFirstName", "CLastName", "CEmail", "CSubject", "Reply"); // again, the spelling of each item should match the form field names
 
     // set up a label array, use the field name as the key and label as the value
-  $label = array ("CID" => "CID", "contactReply"=>'contactReply');
+  $label = array ("CID" => "CID", "CFirstName" => "CFirstName", "CLastName" => "CLastName", "CEmail" => "CEmail", "CSubject" => "CSubject", "Reply"=>'Reply');
 
 
 	$missing = array();
@@ -69,57 +69,29 @@ if (isset($_POST['Submit'])) {
 			// Ensure $pid contains an integer.
 			$CID = intval($CID);
 
-			$sql = "SELECT CID, CFirstName, CLastName, CEmail, CPhone, CSubject, CDetails FROM NAFContact";
 
-			$stmt = $conn->stmt_init();
+			$output = "<h2 class='text-center text-success my-5'>Success!</h2><p>Your reply was sent, you sent the following information:</p>";
+			foreach($expected as $key){
+				$output .= "<p><b class= 'text-naf-blue'>{$label[$key]}:</b>  {$_POST[$key]}</p>";
+			}
+			$emailC = "<a href=mailto:$CEmail>$CEmail</a>";
+			$to="kathryn.kerr@mavs.uta.edu, $CEmail"; // change this to your own email address
+			$subject="RE: $CSubject";
+			$header="From: Neuro Assistance Foundation <naf@gmail.com>";
+			$message="$Reply";
+	// try setting $message = $output; and see what you receive in the email
 
+			$mailSent = mail($to,$subject,$message,$header);
 
-			if ($stmt->prepare($sql)) {
+	// add $emailResultMessage to the comment preview table as the final output
+			$output = $output.$emailResultMessage;
 
-								$stmt->bind_param('i',$CID);
-			            /* execute statement */
-			            $stmt->execute();
-
-			            /* bind result variables */
-			            $stmt->bind_result($CID, $CFirstName,$CLastName, $CEmail, $CPhone, $CSubject, $CDetails);
-
-									$stmt_prepared = 1;
+			$output .= "<p><a href='contactShow.php'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Contact Management Page</button></a></p>";
 
 		} else {
 			// no existing pid ==> this means no existing record to deal with, then it must be a new record ==> use an insert query
 			$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>The contact request doesn't exist</p>";
 		}
-
-		if ($stmt_prepared == 1){
-			if ($stmt->execute()){
-
-                // NOTE: the following code does not produce most user-friendly message.  Particularly the category information is presented as an number which the user will have no idea about.  Can you fix it?
-
-				$output = "<h2 class='text-center text-success my-5'>Success!</h2><p>The following information has been saved in the database:</p>";
-				foreach($expected as $key){
-					$output .= "<p><b class= 'text-naf-blue'>{$label[$key]}:</b>  {$_POST[$key]}</p>";
-					$emailC = "<a href=mailto:$CEmail>$CEmail</a>";
-					$to="kathryn.kerr@mavs.uta.edu, $CEmail"; // change this to your own email address
-					$subject="RE: $CSubject";
-					$header="From: Neuro Assistance Foundation <naf@gmail.com>";
-					$message="$contactReply";
-			// try setting $message = $output; and see what you receive in the email
-
-					$mailSent = mail($to,$subject,$message,$header);
-
-			// add $emailResultMessage to the comment preview table as the final output
-					$output = $output.$emailResultMessage;
-				}
-				$output .= "<p><a href='donationShow.php'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Donation Management Page</button></a></p>";
-			} else {
-				//$stmt->execute() failed.
-				$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>Database operation failed.  Please contact the webmaster.</p>";
-			}
-		} else {
-			// statement is not successfully prepared (issues with the query).
-			$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>Database query failed.  Please contact the webmaster.<p>";
-		}
-	}
 } else {
 		if (!empty($missing)) {
 		// $missing is not empty
@@ -128,15 +100,15 @@ if (isset($_POST['Submit'])) {
 			$output .= "<li class='text-naf-blue'>{$label[$m]}\n";
 		}
 		if ($CID != "") {
-			$output .= "</ul><a href='donationForm.php?CID=$CID'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Donation Form Page</button></a></div>\n";
+			$output .= "</ul><a href='contactForm.php?CID=$CID'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Contact Form Page</button></a></div>\n";
 		}else {
-			$output .= "</ul><a href='donationForm.php'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Donation Form Page</button></a></div>\n";
+			$output .= "</ul><a href='contactForm.php'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Contact Form Page</button></a></div>\n";
 		}
 	}
 }
 
 } else {
-	$output = "<h2 class='text-center text-danger my-5'>Invalid Request</h2><p class='text-center'>Please begin your donation managment operation from the <a href='donationShow.php'>Donation Page</a>.</p>";
+	$output = "<h2 class='text-center text-danger my-5'>Invalid Request</h2><p class='text-center'>Please begin your contact managment operation from the <a href='contactShow.php'>Contact Page</a>.</p>";
 }
 
 ?>
