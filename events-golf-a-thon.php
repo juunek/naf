@@ -104,7 +104,7 @@ $stmt->store_result();
 }
 print ("</div>");
 
-print("<h2 class='blue-bar'>Photo Gallery</h2>
+print("<h2 class='blue-bar mb-5'>Photo Gallery</h2>
 
 <div class='photo-gallery'>
         <div class='row text-center text-lg-left photos'>

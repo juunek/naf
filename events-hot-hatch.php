@@ -146,7 +146,7 @@ $stmt->store_result();
 }
 print ("</div>");
 
-print("<h2 class='blue-bar'>Photo Gallery</h2>
+print("<h2 class='blue-bar mb-5'>Photo Gallery</h2>
 
 <div class='photo-gallery'>
         <div class='row text-center text-lg-left photos'>
@@ -201,7 +201,7 @@ print("<h2 class='blue-bar'>Photo Gallery</h2>
     </div>
 </div>");
 
-print("<h2 class='blue-bar'>Sponsors</h2>
+print("<h2 class='blue-bar mb-5'>Sponsors</h2>
 
 <div class='row text-center text-lg-left'>
 
@@ -223,7 +223,7 @@ print("<h2 class='blue-bar'>Sponsors</h2>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
  <a href='https://www.nsm-seating.com/' target='_blank' class='d-block mb-4 h-100'>
-       <img class='mw-100 sponsors-img-height' alt='Event Sponsor NSM' src='img/events/sponsors-nsm.svg' alt=''>
+       <img class='mw-100 sponsors-img-height' alt='Event Sponsor NSM' src='img/events/sponsors-nsm.png' alt=''>
      </a>
 </div>
 <div class='col-lg-3 col-md-4 col-6'>
