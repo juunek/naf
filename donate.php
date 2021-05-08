@@ -89,7 +89,7 @@
   <div class="row">
 
      <div class="col-md-10 mx-auto">
-        <form id="donationForm" action="" method="post" class="p-3 shadow">
+        <form id="donationForm" action="" method="post" class="px-4 pt-4 pb-0 shadow rounded-3">
             <div class="form-group row">
                 <div class="col-sm-6">
                     <label for="inputFirstnameDonation" id="inputFirstnameDonationLabel">First name*</label>
@@ -138,8 +138,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
-                 <button type="submit" name="submit" value="Submit" id="submitDonation"  class="btn-naf-blue btn-block py-2 fs-5">Submit</button>
+                <div class="col-sm-12 pt-4">
+                 <button type="submit" name="submit" value="Submit" id="submitDonation"  class="btn-naf-blue rounded-2 btn-block py-2 fs-5">SUBMIT</button>
                  <br>
                </div>
             </div>

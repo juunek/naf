@@ -46,7 +46,7 @@
            <img src="img/volunteer.png" width="100%" id="volunteer-img">
 
           <div class="col-md-12 bg-naf-blue" id="volunteer-text">
-              <h4>Volunteer today! You CAN make a difference!</h4>
+              <h4 class="fw-800">Volunteer today! You CAN make a difference!</h4>
               <p class="text-white">Volunteers are vital to the mission of Neuro Assistance Foundation. We are looking for volunteers in numerous capacities. Whether you would like to assist with a special NAF event, spread the word about NAF, or help us raise valuable financial support—we need your help!</p>
           </div>
         </div>
@@ -54,16 +54,13 @@
         <div class="row">
             <div class="col-md-10 mx-auto">
               <div class="row">
-                    <div class="col-sm-2">
-
+                    <div class="col-2 mx-1">
                       <i class="fas fa-quote-left" id="volunteer-quote-img"></i>
-
                     </div>
 
-                    <div class="col-sm-10">
-
+                    <div class="col-9 mx-1">
                          <p id="quote-volunteer">It is one of the most beautiful compensations of life, that no man can sincerely try to help another without helping himself.</p>
-                         <hr width="5%" height="2px"><p class="fs-4">Ralph Waldo Emerson </p>
+                         <p class="fs-5">Ralph Waldo Emerson </p>
 
                     </div>
               </div>
@@ -77,8 +74,8 @@
 
          <div class="col-md-10 mx-auto">
 
-            <form id="volunteerForm" action="" method="post" class="p-3 shadow">
-              <h4 class="fw-800 text-naf-blue my-3">Volunteer Interest</h4>
+            <form id="volunteerForm" action="" method="post" class="px-4 pt-4 pb-0 shadow rounded-3">
+              <h4 class="fw-800 text-naf-blue mb-3">Volunteer Interest</h4>
                 <div class="form-group row">
                     <div class="col-sm-6">
                         <label for="inputFirstnameDonation" id="inputFirstnameVolunteerLabel">First name*</label>
@@ -113,8 +110,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12">
-                     <button type="submit" name="submit" value="Submit" id="submitVolunteer" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue btn-block py-2 fs-5">SEND MESSAGE</button>
+                    <div class="col-sm-12 pt-4">
+                     <button type="submit" name="submit" value="Submit" id="submitVolunteer" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue rounded-2 btn-block py-2 fs-5">SEND MESSAGE</button>
                      <br>
                    </div>
                 </div>

@@ -47,7 +47,7 @@
       <div class="row">
 
         <div class="col-md-6 mx-auto">
-            <form id="joinlistForm" action="" method="post" class="p-3 shadow">
+            <form id="joinlistForm" action="" method="post" class="px-4 pt-4 pb-0 shadow rounded-3">
 
                 <div class="form-group row">
                   <div class="col-sm-12">
@@ -71,8 +71,8 @@
                 </div>
 
               <div class="row">
-                <div class="col-sm-12">
-                  <button type="submit" name="submit" value="Submit" id="submitJoinlist" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue btn-block py-2 fs-5">SEND MESSAGE</button>
+                <div class="col-sm-12 pt-4">
+                  <button type="submit" name="submit" value="Submit" id="submitJoinlist" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue btn-block rounded-2 py-2 fs-5">SIGN UP</button>
                   <br>
                 </div>
               </div>
