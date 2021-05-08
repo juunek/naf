@@ -16,7 +16,6 @@ $CID = ""; // place holder for product id information.  Set it as empty initally
 $CFirstName = "";
 $CLastName = "";
 $CEmail="";
-$CPhone="";
 $CSubject="";
 $CDetails="";
 
@@ -31,7 +30,7 @@ if (isset($_GET['CID'])) {
 	if ($CID > 0){
 
 		//compose a select query
-		$sql = "SELECT CFirstName, CLastName, CEmail, CPhone, CSubject, CDetails FROM NAFContact WHERE CID=?";
+		$sql = "SELECT CFirstName, CLastName, CEmail, CSubject, CDetails FROM NAFContact WHERE CID=?";
 
 		$stmt = $conn->stmt_init();
 
@@ -39,7 +38,7 @@ if (isset($_GET['CID'])) {
 			$stmt->bind_param('i',$CID);
 			$stmt->execute();
 
-			$stmt->bind_result($CFirstName,$CLastName, $CEmail, $CPhone, $CSubject, $CDetails); // bind the five pieces of information necessary for the form.
+			$stmt->bind_result($CFirstName,$CLastName, $CEmail, $CSubject, $CDetails); // bind the five pieces of information necessary for the form.
 
 			$stmt->store_result();
 
@@ -112,17 +111,16 @@ if (isset($_GET['CID'])) {
 				<input type="hidden" name="CID" value="<?=$CID?>">
 				<p class="text-danger mb-1">*Required Fields</p>
 
-				<ul>
-					<li>Contact Name: <?php print("$CFirstName $CLastName");?></li>
-					<li>Subject: <?php print($CSubject);?></li>
-					<li>Details: <?php print($CDetails);?></li>
-				</ul>
-
-
-					<p>Donation Detail*:</p><textarea class="form-control mb-1" type="text" name="contactReply" size="45" value="Reply to the message" ></textarea>
+				<table class='formTable mx-auto'>
+					<tr><th class='pr-4'>Full Name:</th><td><input type="text" readonly class="form-control-plaintext" name="CFirstName" size="45" value="<?=$CFirstName?>"></td>
+					<td><input type="text" readonly class="form-control-plaintext" name="CLastName" size="45" value="<?=$CLastName?>"></td></tr>
+					<input type="hidden" name="CEmail" value="<?=$CEmail?>">
+					<input type="hidden" name="CSubject" value="<?=$CSubject?>">
+					<tr><th class='pr-4'>Message:</th><td><input type="text" readonly class="form-control-plaintext" name="CDetails" size="45" value="<?=$CDetails?>"></td></tr>
+					<tr><th class='pr-4'>Admin Response*:</th></tr><tr><td><input class="form-control mb-1" type="text" name="Reply" size="45" value="<?= htmlentities($DonationDetail) ?>"></td></tr>
 					<!--<tr><th>Category*:</th><td><select class='selectcustom' name="GID">CategoryOptionList($GID)?></select></td></tr>-->
-					<input class='btn btn-naf-blue w-100 mt-5' type=submit name="Submit" value="Submit Contact Reply">
-
+					<tr><td colspan=2><input class='btn btn-naf-blue w-100 mt-5' type=submit name="Submit" value="Submit Contact Response"></td></tr>
+				</table>
 			</form>
 		</div>
 </div>
