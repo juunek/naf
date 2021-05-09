@@ -106,7 +106,7 @@ function addErrorMessage(fieldId, msg){
     err ++;
   }
 
-/*  var emailPrimary = document.getElementById('inputEmailPrimary'+ page).value;
+var emailPrimary = document.getElementById('inputEmailPrimary'+ page).value;
 
 
   if (emailPattern.test(emailPrimary)) {
@@ -115,7 +115,7 @@ function addErrorMessage(fieldId, msg){
     addErrorMessage('inputEmailPrimary'+ page, 'Please enter a valid email address');
     err ++;
   }
-*/
+
 
 
   // firstname validation 
@@ -151,7 +151,7 @@ function addErrorMessage(fieldId, msg){
     err ++;
   } 
 
-/*   var firstnamePrimary = document.getElementById('inputFirstnamePrimary' + page).value;
+var firstnamePrimary = document.getElementById('inputFirstnamePrimary' + page).value;
 
   if (namePattern.test(firstnamePrimary)) {
     removeErrorMessage('inputFirstnamePrimary' + page);
@@ -159,7 +159,7 @@ function addErrorMessage(fieldId, msg){
     addErrorMessage('inputFirstnamePrimary' + page, 'The first name should be filled and no more than 15 letters');
     err ++;
   } 
-*/
+
 
   // lastname validation 
 
@@ -193,7 +193,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
     err ++;
   } 
 
-/*   var lastnamePrimary = document.getElementById('inputLastnamePrimary' + page).value;
+var lastnamePrimary = document.getElementById('inputLastnamePrimary' + page).value;
 
   if (namePattern.test(lastnamePrimary)) {
     removeErrorMessage('inputLastnamePrimary' + page);
@@ -201,7 +201,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
     addErrorMessage('inputLastnamePrimary' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   } 
-*/
+
 
   // phonenumber validation 
 
@@ -226,7 +226,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
   } 
 
 
-/*    var phonePrimary= document.getElementById('inputPhonePrimary' + page).value;
+var phonePrimary= document.getElementById('inputPhonePrimary' + page).value;
 
   if (phoneNumberPattern.test(phonePrimary)) {
     removeErrorMessage('inputPhonePrimary' + page);
@@ -234,7 +234,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
     addErrorMessage('inputPhonePrimary' + page, 'The phone number should be numberic and contain 10 numbers');
     err ++;
   } 
-*/
+
 
   // Address
 

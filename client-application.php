@@ -361,24 +361,24 @@
    </div>
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputFirstnamePrimarygClient" id="inputFirstnamePrimaryClientLabel">First name</label>
+        <label for="inputFirstnamePrimarygClient" id="inputFirstnamePrimaryClientLabel">First name*</label>
         <input type="text" class="form-control" id="inputFirstnamePrimaryClient" placeholder="First name">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputLastnamePrimarygClient" id="inputLastnamePrimaryClientLabel">Last name</label>
+        <label for="inputLastnamePrimarygClient" id="inputLastnamePrimaryClientLabel">Last name*</label>
         <input type="text" class="form-control" id="inputLastnamePrimaryClient" placeholder="Last name">
       </div>
     </div>
 
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputEmailPrimarygClient" id="inputEmailPrimaryClientLabel">Email address</label>
+        <label for="inputEmailPrimarygClient" id="inputEmailPrimaryClientLabel">Email address*</label>
         <input type="email" class="form-control" id="inputEmailPrimaryClient" placeholder="Last name">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputPhonePrimarygClient" id="inputPhonePrimaryClientLabel">Phone number</label>
+        <label for="inputPhonePrimarygClient" id="inputPhonePrimaryClientLabel">Phone number*</label>
         <input type="tel" class="form-control" id="inputPhonePrimaryClient" placeholder="10-digit phone number">
       </div>
     </div>
