@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Neuro Assitance Foundation</title>
+  <title>Sitemap | Neuro Assitance Foundation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,6 +28,37 @@
 
 <?php print($htmlNav); ?>
 
+<ul>
+  <li><a href="index.php"><p><strong>Home</strong></p></a></li>
+  <li><a href="about.php"><p><strong>About</strong></p></a></li>
+    <ul>
+      <li><a href="contact.php"><p>Contact</p></a></li>
+      <li><a href="join-email.php"><p>Join Email List</p></a></li>
+    </ul>
+  <li><a href="community.php"><p><strong>Community</strong></p></a></li>
+    <ul>
+      <li><a href="testimonials.php"><p>Testimonials</p></a></li>
+      <li><a href="giving-thanks.php"><p>Giving Thanks</p></a></li>
+      <li><a href="newsletter.php"><p>Newsletter</p></a></li>
+    </ul>
+  <li><a href="events.php"><p><strong>Events</strong></p></a></li>
+    <ul>
+      <li><a href="events-naf-topgolf.php"><p>NAF TopGolf Charity</p></a></li>
+      <li><a href="events-hot-hatch.php"><p>Hot Hatch</p></a></li>
+      <li><a href="events-cinco-de-mayo.php"><p>Cinco De Mayo</p></a></li>
+      <li><a href="events-golf-a-thon.php"><p>Golf-A-Thon</p></a></li>
+    </ul>
+  <li><a href="resources.php"><p><strong>Resources</strong></p></a></li>
+    <ul>
+      <li><a href="spinal-cord-injury.php"><p>Spinal Cord Injury</p></a></li>
+      <li><a href="client-application.php"><p>Request Assistance</p></a></li>
+    </ul>
+  <li><a href="get-involved.php"><p><strong>Get Involved</strong></p></a></li>
+    <ul>
+      <li><a href="volunteer.php"><p>Volunteer</p></a></li>
+    </ul>
+  <li><a href="donate.php"><p><strong>Donate</strong></p></a></li>
+</ul>
 
 <?php
   print($htmlFooter);
