@@ -31,16 +31,16 @@ if (isset($_POST['Username']) && isset($_POST['Password']) && !empty($_POST['Use
     } else {
         // error message
         if ($username !== 'admin' && $password == '123456') {
-          $errorPd = "<div><p class='text-danger'>The user name you provided is incorrect.  Please try again.</p></div>";
+          $errorPd = "<div><p class='text-danger'>The username you provided is incorrect.  Please try again.</p></div>";
         }else if ($username == 'admin' && $password !== '123456') {
           $errorPd = "<div><p class='text-danger'>The password you provided is incorrect.  Please try again.</p></div>";
         }else {
-          $errorPd = "<div><p class='text-danger'>The user name and password you provided are incorrect.  Please try again.</p></div>";
+          $errorPd = "<div><p class='text-danger'>The username and password you provided are incorrect.  Please try again.</p></div>";
         }
     }
 
 } else if (isset($_POST['Username']) || isset($_POST['Password'])){
-    $errorPd = "<div><p class=text-danger>Please enter both the user name and password to log in.</p></div>";
+    $errorPd = "<div><p class=text-danger>Please enter both the username and password to log in.</p></div>";
 
 }else {
   $errorPd = "";
@@ -83,7 +83,7 @@ print($htmlNav);
 	<form class="mb-5" id="app-form" action="" method="POST">
 	  	
 		<div class="form-group">
-	    <label for="UserName">User Name</label>
+	    <label for="UserName">Username</label>
 	    <input type="text" class="form-control" id="UserName" name="Username" placeholder="Username">
 	  </div>
 	  <div class="form-group">
@@ -95,7 +95,7 @@ print($htmlNav);
 	   ?>
 	  <div class="text-center pb-3">
       <br>
-		  <button type="submit" value="Submit" name="submit" id="btn_submit" class="btn btn-naf-blue btn-tablet-mobile-full">Sign in</button>
+		  <button type="submit" value="Submit" name="submit" id="btn_submit" class="btn btn-naf-blue btn-tablet-mobile-full">SIGN IN</button>
 	   </div>
 	</form>
 
