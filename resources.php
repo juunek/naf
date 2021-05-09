@@ -7,10 +7,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Neuro Assitance Foundation</title>
+  <title>Spinal Cord Injury Resources | Neuro Assitance Foundation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="List of resources for people with spinal cord injuries, people in need of SCI support, or people who need access to wheelchair vans in Dallas, Tx.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -33,15 +34,15 @@
 <?php print($htmlNav); ?>
 
 
-<?php 
+<?php
 
-	
+
 	$sql = "SELECT Resources.ResID, Resources.Img, Resources.Title, Resources.Lead, Resources.Description, Resources.Link, Resources.RID FROM Resources ORDER BY Resources.RID";
 
 	$stmt = $conn->stmt_init();
-		
+
 		if ($stmt->prepare($sql)) {
-			
+
 			/* execute statement */
 			$stmt->execute();
 
@@ -58,7 +59,7 @@
 
 			while ($stmt->fetch()) {
 
-				
+
 				array_push($arrImg, $Img);
 				array_push($arrTitle, $Title);
 				array_push($arrLead, $Lead);
@@ -72,8 +73,8 @@
 
 			$arrRName = ["Local Resources", "Media Resources", "National Resources"];
 
-			
-			for ($i=0; $i < 3 ; $i++) { 
+
+			for ($i=0; $i < 3 ; $i++) {
 
 
 				$output = $output."<h2 class='blue-bar'>".$arrRName[$i]."</h2>";
@@ -81,29 +82,29 @@
 				for ($j=0; $j < count($arrImg); $j++) {
 
 					if ($arrRID[$j] == $i+1) {
-					 	
+
 						$output = $output."
 
 						<div class='row my-4'>
 			                <div class='col-md-4 resources-brands text-center'>
 			                    <img class='p-4 my-auto' src='img/resources/".$arrImg[$j]."' style='width:100%;'>
 			                </div>
-			                
+
 			                <div class='col-md-8 resources-detail'>
 			                  <h4>".$arrTitle[$j]."</h4>
 			                  <p class='lead'>$arrLead[$j]</p>
 			                  <br>
 			                  <p>".$arrDescription[$j]."</p>
-			                  <a href='".$arrLink[$j]."' class='btn btn-naf-blue' target='_blank'>Visit Website</a> 
+			                  <a href='".$arrLink[$j]."' class='btn btn-naf-blue' target='_blank'>Visit Website</a>
 			                </div>
 		           		</div>
 
 
 						";
 
-					}	
+					}
 				 }
-				
+
 			}
 
 
@@ -130,7 +131,7 @@
 		<?php
 
 
-		
+
 		 echo $output
 
 		  ?>
@@ -140,4 +141,3 @@
 <?php
   print($htmlFooter);
 ?>
-
