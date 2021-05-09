@@ -34,15 +34,15 @@
 <?php print($htmlNav); ?>
 
 
-<?php
+<?php 
 
-
+	
 	$sql = "SELECT Resources.ResID, Resources.Img, Resources.Title, Resources.Lead, Resources.Description, Resources.Link, Resources.RID FROM Resources ORDER BY Resources.RID";
 
 	$stmt = $conn->stmt_init();
-
+		
 		if ($stmt->prepare($sql)) {
-
+			
 			/* execute statement */
 			$stmt->execute();
 
@@ -59,7 +59,7 @@
 
 			while ($stmt->fetch()) {
 
-
+				
 				array_push($arrImg, $Img);
 				array_push($arrTitle, $Title);
 				array_push($arrLead, $Lead);
@@ -73,8 +73,8 @@
 
 			$arrRName = ["Local Resources", "Media Resources", "National Resources"];
 
-
-			for ($i=0; $i < 3 ; $i++) {
+			
+			for ($i=0; $i < 3 ; $i++) { 
 
 
 				$output = $output."<h2 class='blue-bar'>".$arrRName[$i]."</h2>";
@@ -82,30 +82,31 @@
 				for ($j=0; $j < count($arrImg); $j++) {
 
 					if ($arrRID[$j] == $i+1) {
-
+					 	
 						$output = $output."
 
-						<div class='row my-4'>
-							<div class='col-md-3 col-8 resources-brands text-center'>
+						<div class='row my-4 d-flex justify-content-center mx-2'>
+			                <div class='col-lg-3 col-md-4 col-9 resources-brands text-center'>
 							<a href='".$arrLink[$j]."' target='_blank'>
-								<img class='p-5 my-auto' src='img/resources/".$arrImg[$j]."' style='width:100%;'>
+								<img class='px-5 pt-3 pb-4 my-auto' src='img/resources/".$arrImg[$j]."' style='width:100%;'>
 							</a>
 			                </div>
-
-			                <div class='col-md-6 resources-detail'>
-							  <a href='".$arrLink[$j]."' class='text-naf-blue text-decoration-none' target='_blank'><h3>".$arrTitle[$j]."</h3></a>
-			                  <p class='lead'>$arrLead[$j]</p>
-			                  <p>".$arrDescription[$j]."</p>
-			                  <a href='".$arrLink[$j]."' class='text-decoration-none' target='_blank'><p class='text-naf-blue'>Visit Website</p></a>
-			                </div>
-		           		</div>
+			                
+			                <div class='col-md-6 resources-detail mx-2'>
+							<a href='".$arrLink[$j]."' class='text-naf-blue text-decoration-none' target='_blank'><h3>".$arrTitle[$j]."</h3></a>
+							<p class='lead'>$arrLead[$j]</p>
+							<p>".$arrDescription[$j]."</p>
+							<a href='".$arrLink[$j]."' class='text-decoration-none' target='_blank'><p class='text-naf-blue'>Visit Website</p></a>
+							<br>
+		           			</div>
+						</div>
 
 
 						";
 
-					}
+					}	
 				 }
-
+				
 			}
 
 
@@ -132,7 +133,7 @@
 		<?php
 
 
-
+		
 		 echo $output
 
 		  ?>
@@ -142,3 +143,4 @@
 <?php
   print($htmlFooter);
 ?>
+
