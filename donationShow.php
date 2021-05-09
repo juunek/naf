@@ -52,18 +52,19 @@ $total_pages_sql = "SELECT COUNT(*) FROM NAFDonation";
 
 
     $sql = "SELECT KEYID, DTimeStamp, FirstName, LastName, Email, PhoneNumber, DonationType, DonationDetail FROM NAFDonation ORDER BY DTimeStamp DESC, LastName ASC LIMIT $offset, $no_of_records_per_page";
-      
+
  $res_data = mysqli_query($conn,$sql);
 
 ?>
-  
+
 <div class="container-fluid">
     <div class='flexboxContainer'>
       <div><a href="donationForm.php"><span class='button'> + </span> Add a new item</a></div>
       <div>
         <table class='table'>
             <thead class='table-head'>
-                <tr><th scope='col'>Submission Date</th><th scope='col'>Full Name</th><th scope='col'>Email</th><th scope='col'>Phone Number</th><th scope='col'>Donation Type</th><th scope = 'col'>Donation Detail</th><th scope = 'col'>Options</th><th scope = 'col'>Function</th></tr>
+                <tr><th scope='col'>Submission Date</th><th scope='col'>Full Name</th><th scope='col'>Email</th><th scope='col'>Phone Number</th><th scope='col'>Donation Type</th><th scope = 'col'>Donation Details
+                </th><th scope = 'col'>Options</th></tr>
             </thead>
             <tbody>
 
@@ -76,22 +77,30 @@ $total_pages_sql = "SELECT COUNT(*) FROM NAFDonation";
 
     ?>
 
+    <?php
+        $CFirstName = $row["FirstName"];
+        $CLastName = $row["LastName"];
+        $fullName = "$CFirstName $CLastName";
+    ?>
+
 
 
             <tr>
-                <td><?php echo $row["DTimeStamp"]; ?></td>
-                <td><?php echo $row["FirstName"]; ?></td>
-                <td><?php echo $row["LastName"]; ?></td>
+                <td><?php echo $date=date('m/d/Y', strtotime($row["DTimeStamp"])); ?></td>
+                <td><?php echo $fullName?></td>
                 <td><?php echo $row["Email"]; ?></td>
                 <td><?php echo $row["PhoneNumber"]; ?></td>
                 <td><?php echo $row["DonationType"]; ?></td>
                 <td><?php echo $row["DonationDetail"]; ?></td>
-           
+
                    <?php
 
+                   $deleteInfo = "$date - $fullName";
+   	              $Delete_js = htmlspecialchars($deleteInfo, ENT_QUOTES);
+
                 $KEYID = $row['KEYID'];
-                
-                 echo "<td><a href='donationForm.php?KEYID=$KEYID'>Edit</a> | <a href='javascript:confirmDel(\"$Delete_js\",$KEYID)'>Delete</a></td>" 
+
+                 echo "<td><a href='donationForm.php?KEYID=$KEYID'>Edit</a> | <a href='javascript:confirmDel(\"$Delete_js\",$KEYID)'>Delete</a></td>"
                  ?>
             </tr>
 
@@ -121,10 +130,10 @@ $total_pages_sql = "SELECT COUNT(*) FROM NAFDonation";
     </div>
 
 
-           
-         
-             
-     
+
+
+
+
      </div>
 
 
