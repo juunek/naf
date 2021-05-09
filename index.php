@@ -321,7 +321,7 @@
   </button>
 </div>
 
-<button class="btn btn-naf-blue m-4 px-3 py-2 mx-auto d-block btn-tablet-mobile-full"><a class="text-naf-white text-decoration-none" href="testimonials.php">TESTIMONIALS</a></button>
+<button class="btn btn-naf-blue m-4 px-3 py-2 mx-auto d-block btn-tablet-mobile-full"><a class="text-naf-white text-decoration-none" href="testimonials.php">VIEW MORE TESTIMONIALS</a></button>
 <!-- Testimonials End -->
 
  </div>

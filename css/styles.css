@@ -285,9 +285,9 @@ a.text-naf-white:hover {
 	}
 
 	.resources-brands{
-				display: none;
-
-			}
+		display: block;
+	}
+	
 	#about-youtube {
 		height: 400px;
 	}
