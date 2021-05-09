@@ -97,7 +97,7 @@
   <h2 class="blue-bar mb-4">Client Application</h2>
   <div class="col-md-10 col-12 mx-auto px-4">
     <p>Thank you for your interest in NAF. To request assistance, please complete the application below. Applications must be completed by a physician, therapist, or hospital case manager, and clients must not have alternative means to receive assistance. We will contact you after the application is received.</p>
-    <p class="text-danger">*Required Fields</p>
+    <p class="text-danger">*Required fields</p>
  </div>
 
 
@@ -325,12 +325,12 @@
     <h3 class="text-naf-blue mt-5">Person Submitting Application*</h3>
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputFirstnameSubmittingClient" id="inputFirstnameSubmittingClientLabel">First name</label>
+        <label for="inputFirstnameSubmittingClient" id="inputFirstnameSubmittingClientLabel">First name*</label>
         <input type="text" class="form-control" id="inputFirstnameSubmittingClient" placeholder="First name">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputLastnameSubmittingClient" id="inputLastnameSubmittingClientLabel">Last name</label>
+        <label for="inputLastnameSubmittingClient" id="inputLastnameSubmittingClientLabel">Last name*</label>
         <input type="text" class="form-control" id="inputLastnameSubmittingClient" placeholder="Last name">
       </div>
     </div>
@@ -338,20 +338,20 @@
 
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputEmailSubmittingClient" id="inputEmailSubmittingClientLabel">Email address</label>
+        <label for="inputEmailSubmittingClient" id="inputEmailSubmittingClientLabel">Email address*</label>
         <input type="email" class="form-control" id="inputEmailSubmittingClient" placeholder="Last name">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputPhoneSubmittingClient" id="inputPhoneSubmittingClientLabel">Phone number</label>
+        <label for="inputPhoneSubmittingClient" id="inputPhoneSubmittingClientLabel">Phone number*</label>
         <input type="tel" class="form-control" id="inputPhoneSubmittingClient" placeholder="10-digit phone number">
       </div>
     </div>
 
 
 
-    <h3 class="text-naf-blue mt-5">Primary Contact Info</h3>
-    <p>Please enter the contact information for the patient/client or the primary contact for the patient/client.</p>
+    <h3 class="text-naf-blue mt-5">Primary Contact Info*</h3>
+    <p>Please enter the contact information for the patient/client or the primary contact of the patient/client.</p>
     <div class="form-group row">
       <div class="d-flex flex-row align-item-center col-sm-12">
           <input type="checkbox" value="yes" name="sameAsperson" id="sameAsperson" class="my-1"> 
@@ -361,24 +361,24 @@
    </div>
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputFirstnamePrimarygClient" id="inputFirstnamePrimaryClientLabel">First name</label>
+        <label for="inputFirstnamePrimarygClient" id="inputFirstnamePrimaryClientLabel">First name*</label>
         <input type="text" class="form-control" id="inputFirstnamePrimaryClient" placeholder="First name">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputLastnamePrimarygClient" id="inputLastnamePrimaryClientLabel">Last name</label>
+        <label for="inputLastnamePrimarygClient" id="inputLastnamePrimaryClientLabel">Last name*</label>
         <input type="text" class="form-control" id="inputLastnamePrimaryClient" placeholder="Last name">
       </div>
     </div>
 
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputEmailPrimarygClient" id="inputEmailPrimaryClientLabel">Email address</label>
+        <label for="inputEmailPrimarygClient" id="inputEmailPrimaryClientLabel">Email address*</label>
         <input type="email" class="form-control" id="inputEmailPrimaryClient" placeholder="Last name">
       </div>
 
       <div class="d-flex flex-column col-sm-6">
-        <label for="inputPhonePrimarygClient" id="inputPhonePrimaryClientLabel">Phone number</label>
+        <label for="inputPhonePrimarygClient" id="inputPhonePrimaryClientLabel">Phone number*</label>
         <input type="tel" class="form-control" id="inputPhonePrimaryClient" placeholder="10-digit phone number">
       </div>
     </div>

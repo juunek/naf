@@ -41,9 +41,9 @@
 
     <div class="row p-5 text-white home-hero-wheelchair-img">
       <div class="col-12 home-hero text-center">
-        <h3 class="text-light text-center fs-1 mt-1">One cause, One goal</h3>
-        <p class="lead my-3 text-naf-white">A better life and a WIN for everyone.</p>
-        <a href="donate.php" alt="Donate to NAF"><button class="btn-transparent-white pl-3 pr-3"><strong>GIVE NOW</strong></button></a>
+        <h3 class="text-light text-center fs-1 mt-5">One cause, One goal</h3>
+        <p class="lead my-3 text-naf-white">A better life and a win for everyone.</p>
+        <a href="donate.php" alt="Donate to NAF"><button class="btn-transparent-white px-3 mb-4"><strong>GIVE NOW</strong></button></a>
       </div>
     </div>
 
@@ -54,19 +54,19 @@
     <div class="container">
 
       <div class="row">
-          <div class="vertical-align-items col-lg-6 col-md-6">
-            <div class="mission px-5">
+          <div class="d-flex align-items-center col-lg-6 col-md-6">
+            <div class="mission mt-3 mb-0 mx-lg-5 ml-md-2 ml-0 pl-md-3 pr-md-1 pl-4 pr-4">
                 <h2 class="text-naf-blue"><strong>Our Mission</strong></h2>
                 <p>We are dedicated to assisting spinal cord injured and disabled individuals in the Dallas/Fort Worth area to achieve self-sufficiency and mobility through assistive vehicles, equipment, technology and home modifications.</p>
                 <a href="about.php" alt="Learn More About NAF"class="btn btn-naf-blue btn-tablet-mobile-full">LEARN MORE</a>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6">
-            <div class="mt-4 mb-4 p-md-5 pt-4 pb-3 px-3 rounded bg-naf-blue row">
+          <div class="col-lg-6 col-md-6 mt-4 mb-3">
+            <div class="mx-4 mt-md-4 p-lg-5 pt-4 p-3 bg-naf-blue row">
               <img class="col-lg-6 col-md-6 mx-auto w-50 h-50" src="img/home-texas-flag.svg">
               <div class="col-lg-6 col-md-6 d-flex align-items-center">
-                  <div class="mx-auto" id="home-texas-flag">
+                  <div class="mx-auto my-3" id="home-texas-flag">
                     <h3 class="text-light text-center fs-1">12 years</h3>
                     <p class="text-light text-center fs-6">of service to the community</p>
                   </div>
@@ -93,24 +93,47 @@
       	/* bind result variables */
       	$stmt->bind_result($EID, $EImagePreview, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $ELinks, $RegisterEvtBtn);
 
+        $stmt -> store_result();
+
       	print ("<div class='col-md-12 d-flex flex-md-row flex-column'>");
+        $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
+        $timeStart=date('g:i A', strtotime($EStart));
+        $timeEnd=date('g:i A', strtotime($EEnd));
       	/* fetch values */
       	while ($stmt->fetch()) {
-          $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
-          $timeStart=date('g:i A', strtotime($EStart));
-          $timeEnd=date('g:i A', strtotime($EEnd));
-      		print ("<div class='d-flex flex-column col-md-4 mb-lg-5 mt-lg-0 mb-lg-0 mt-md-3 mb-md-4 mt-sm-3 my-sm-0 my-4'>
-            <a href='$ELinks?EID=$EID'><img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
-           <h3 class='events-mobile-spacing header-blue mt-3 mb-4'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
+          if ($stmt->num_rows > 1) {
+            print ("<div class='d-flex flex-column col-md-4 mb-lg-5 mt-lg-0 mb-lg-0 mt-md-3 mb-md-4 mt-sm-3 my-sm-0 my-4'>
+              <a href='$ELinks?EID=$EID'><img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
+             <h3 class='events-mobile-spacing header-blue mt-3 mb-4'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
 
-           <div class='w-100 mt-auto'>
-            <a href='$ELinks?EID=$EID'>
-            <button type='button' class='btn btn-naf-secondary-btn w-100 mb-3'>VIEW EVENT</button></a></div>
+             <div class='w-100 mt-auto'>
+              <a href='$ELinks?EID=$EID'>
+              <button type='button' alt='Click to View Event' class='btn btn-naf-secondary-btn w-100 mb-3'>VIEW EVENT</button></a></div>
 
-            <a href='$RegisterEvtBtn' target='_blank'>
-            <button type='button' class='btn btn-naf-primary-btn w-100 mt-auto mb-md-1 mb-sm-5'>REGISTER</button></a>
-           </div>");
-      }
+              <a href='$RegisterEvtBtn' target='_blank'>
+              <button type='button' alt='Click to Register for Event' class='btn btn-naf-primary-btn w-100 mt-auto mb-md-1 mb-sm-5'>REGISTER</button></a>
+             </div>");
+          }else if ($stmt->num_rows > 0){
+            print ("<div class='col-md-10 mx-auto row py-4'>
+            <div class='col-md-6'>
+              <a href='$ELinks?EID=$EID'><img class='cover' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
+            </div>
+             <div class='d-flex align-items-start flex-column col-md-6'>
+             <h3 class='events-mobile-spacing header-blue'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
+
+             <div class='flex-xl-row flex-lg-column w-100'>
+              <a class='events-btn-padding-right' href='$ELinks?EID=$EID'>
+              <button type='button' class='btn btn-naf-secondary-btn events-btn-width'>VIEW EVENT</button></a>
+
+              <a class='events-btn-padding-left' href='$RegisterEvtBtn' target='_blank'>
+              <button type='button' class='btn btn-naf-primary-btn events-btn-width'>REGISTER</button></a></div>
+             </div>
+             </div>");
+          }}if ($stmt->num_rows == 0) {
+            print ("<div class='col-md-10 mx-auto row py-4'>
+              <p class='text-center'>There are currently no upcoming events. View our <a href='events.php'>past events here</a>.</p>
+             </div>");
+          }
       print("</div>");
       /* close statement */
       $stmt->close();
@@ -153,21 +176,21 @@
    <!-- numbers and circle  -->
      <div class="row home-stats-img">
         <div class ="col-lg-8 col-md-12 block d-flex justify-content-between wrap my-5">
-          <div class="row">
+          <div class="row px-4">
                 <div class="col-lg-4">
-                    <div class="circle shadow">
+                    <div class="circle shadow p-2">
                         <p><span class="fs-x2 fw-800">1 in 50</span><br>
                         <span class="fs-6">Americans are living with paralysis</span></p>
                     </div>
                   </div>
                   <div class="col-lg-4">
-                    <div class="circle shadow">
+                    <div class="circle shadow p-2">
                         <p><span class="fs-x2 fw-800">5.6M</span><br>
                         <span class="fs-6">Americans are paralyzed</span></p>
                     </div>
                   </div>
                   <div class="col-lg-4">
-                  <div class="circle shadow">
+                  <div class="circle shadow p-3">
                       <p><span class="fs-x2 fw-800">1.3M</span><br>
                       <span class="fs-6">Americans have a spinal cord injury</span></p>
                 </div>
@@ -215,14 +238,14 @@
                   <div class="card-body">
 
                       <img src="img/testimonials/thomas.jpg" alt="Picture of Thomas" height="200px" class="mx-auto rounded-circle d-block img-no-show">
-                      
+
                       <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Thomas</h4>
 
                       <p class="card-text text-center">
                       "You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"
                       <br><br>
                       - Thomas, 49, living with quadriplegia from mountain biking accident</p>
-                        
+
                   </div>
                 </div>
               </div>
@@ -234,14 +257,14 @@
                   <div class="card-body">
 
                       <img src="img/testimonials/travis-d.jpg" alt="Picture of Travis" height="200px" class="mx-auto rounded-circle d-block img-no-show">
-                      
+
                       <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Travis</h4>
 
                       <p class="card-text text-center">
                       "Thank you from the bottom of our hearts for your help. You have truly made our lives more bearable. Now it will not feel like Travis is a prisoner in our home."
                       <br><br>
                       - Cheryl D., Travis' mother</p>
-                        
+
                   </div>
                 </div>
               </div>
@@ -254,19 +277,19 @@
                   <div class="card-body">
 
                       <img src="img/testimonials/adrienne.jpg" alt="Picture of Adrienne" height="200px" class="mx-auto rounded-circle d-block img-no-show">
-                      
+
                       <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Adrienne</h4>
 
                       <p class="card-text text-center">
                       "Thanks a million for the standing frame! My family has been praying God would provide one for us since February! Answered prayer indeed. I appreciate Neuro Assistance Foundation more than I can explain!"
                       <br><br>
                       - Adrienne, 23, living with quadriplegia</p>
-                        
+
                   </div>
                 </div>
               </div>
             </div>
-            
+
 
             <div class="carousel-item">
               <div class="d-flex justify-content-center m-5">
@@ -274,14 +297,14 @@
                   <div class="card-body">
 
                       <img src="img/testimonials/terri-y.jpg" alt="Picture of Terri" height="200px" class="mx-auto rounded-circle d-block img-no-show">
-                      
+
                       <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Terri</h4>
 
                       <p class="card-text text-center">
                       "I never thought I'd be able to have a van like this. I feel like I have an angel on my shoulder whenever I drive it!"
                       <br><br>
                       - Terri</p>
-                        
+
                   </div>
                 </div>
               </div>
@@ -293,20 +316,20 @@
                   <div class="card-body">
 
                       <img src="img/testimonials/keith-m.jpg" alt="Picture of Keith" height="200px" class="mx-auto rounded-circle d-block img-no-show">
-                      
+
                       <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Keith</h4>
 
                       <p class="card-text text-center">
                       "A car accident in 2018 left me with a dislocated shoulder, collapsed lung, lacerated kidney, and broken ribs, hip, and pelvis. My left leg was amputated at the hip. After I woke up from a 9-day coma, I was paralyzed for the first 8 weeks. I was fitted with a basic and uncomfortable wheelchair. NAF helped with out with a "real" wheelchair and didn't ask for anything in return. Words can not express the appreciation and gratitude that I have for you."
                       <br><br>
                       - Keith, 52, Army Veteran</p>
-                        
+
                   </div>
                 </div>
               </div>
             </div>
 
-            
+
   </div>
 
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -321,7 +344,7 @@
   </button>
 </div>
 
-<button class="btn btn-naf-blue m-4 px-3 py-2 mx-auto d-block btn-tablet-mobile-full"><a class="text-naf-white text-decoration-none" href="testimonials.php">TESTIMONIALS</a></button>
+<button class="btn btn-naf-blue m-4 px-3 py-2 mx-auto d-block btn-tablet-mobile-full"><a class="text-naf-white text-decoration-none" href="testimonials.php">VIEW MORE TESTIMONIALS</a></button>
 <!-- Testimonials End -->
 
  </div>

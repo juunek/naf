@@ -40,7 +40,7 @@
        <div class="col-md-6 mx-auto">
             <div>
               <p>Sign up to get interesting news, events and updates delivered to your inbox.</p>
-              <p class="text-danger">*Required Fields</p>
+              <p class="text-danger">*Required fields</p>
             </div>
         </div>
       </div>

@@ -42,12 +42,12 @@
         <div class="col-md-10 mx-auto">
 
 
-        <div class="row" id="volunteer-banner">
+        <div class="row mr-md-2" id="volunteer-banner">
 
            <img src="img/volunteer.png" width="100%" id="volunteer-img">
 
-          <div class="col-md-12 bg-naf-blue" id="volunteer-text">
-              <h4 class="fw-800">Volunteer today! You CAN make a difference!</h4>
+          <div class="col-md-12 bg-naf-blue pt-4" id="volunteer-text">
+              <h4 class="fw-800 mt-4">Volunteer today! You CAN make a difference!</h4>
               <p class="text-white">Volunteers are vital to the mission of Neuro Assistance Foundation. We are looking for volunteers in numerous capacities. Whether you would like to assist with a special NAF event, spread the word about NAF, or help us raise valuable financial support—we need your help!</p>
           </div>
         </div>
@@ -59,10 +59,9 @@
                       <i class="fas fa-quote-left" id="volunteer-quote-img"></i>
                     </div>
 
-                    <div class="col-9 mx-1">
+                    <div class="col-9 mx-1 mb-2">
                          <p id="quote-volunteer">It is one of the most beautiful compensations of life, that no man can sincerely try to help another without helping himself.</p>
                          <p class="fs-5">Ralph Waldo Emerson </p>
-
                     </div>
               </div>
             </div>
@@ -77,6 +76,7 @@
 
             <form id="volunteerForm" action="" method="post" class="px-4 pt-4 pb-0 shadow rounded-3">
               <h4 class="fw-800 text-naf-blue mb-3">Volunteer Interest</h4>
+              <p class="text-danger">*Required fields</p><br>
                 <div class="form-group row">
                     <div class="col-sm-6">
                         <label for="inputFirstnameDonation" id="inputFirstnameVolunteerLabel">First name*</label>
@@ -100,7 +100,7 @@
                 <div class="form-group row">
                     <div class="col-sm-12">
                         <label for="inputSubjectVolunteer" id="inputSubjectVolunteerLabel">Subject*</label>
-                        <input type="text" class="form-control" id="inputSubjectVolunteer" value="I am interested in becoming a volunteer.">
+                        <input type="text" class="form-control" id="inputSubjectVolunteer" value="I'm interested in volunteering for NAF">
                     </div>
 
                 </div>

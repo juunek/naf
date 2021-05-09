@@ -30,7 +30,7 @@ if (isset($_GET['CID'])) {
 	if ($CID > 0){
 
 		//compose a select query
-		$sql = "SELECT CFirstName, CLastName, CEmail, CSubject, CDetails FROM NAFContact WHERE CID=?";
+		$sql = "SELECT CFirstName, CLastName, CEmail, CSubject, CDetails, CReplied FROM NAFContact WHERE CID=?";
 
 		$stmt = $conn->stmt_init();
 
@@ -38,7 +38,7 @@ if (isset($_GET['CID'])) {
 			$stmt->bind_param('i',$CID);
 			$stmt->execute();
 
-			$stmt->bind_result($CFirstName,$CLastName, $CEmail, $CSubject, $CDetails); // bind the five pieces of information necessary for the form.
+			$stmt->bind_result($CFirstName,$CLastName, $CEmail, $CSubject, $CDetails, $CReplied); // bind the five pieces of information necessary for the form.
 
 			$stmt->store_result();
 
@@ -54,7 +54,7 @@ if (isset($_GET['CID'])) {
 			// reset $pid
 			$CID = "";
 			// compose an error message
-			$errMsg = "<div class='error'> If you are expecting to edit an exiting item, some error occured in the process -- the selected donation is not recognizable.  Please follow the link below to the product adminstration interface or contact the webmaster.  Thank you.</div>";
+			$errMsg = "<div class='error'> If you are expecting to edit an exiting item, some error occured in the process -- the selected item is not recognizable.  Please follow the link below to the product adminstration interface or contact the webmaster.  Thank you.</div>";
 		}
 
 		$stmt->close();
@@ -101,7 +101,7 @@ if (isset($_GET['CID'])) {
 			<h2 class='text-center my-5 text-naf-blue'>Contact - Admin Reply</h2>
 
 		<div class="col-md-10 mx-auto">
-			<a href="donationShow.php"><button class='btn btn-danger'>Cancel</button></a>
+			<a href="contactShow.php"><button class='btn btn-danger'>Cancel</button></a>
 
 
 		  <p><?= $errMsg ?></p>
@@ -109,18 +109,18 @@ if (isset($_GET['CID'])) {
 			<form action="contactEdit.php" method="POST" enctype="multipart/form-data">
 				<!-- pass the pid information using a hidden field -->
 				<input type="hidden" name="CID" value="<?=$CID?>">
+				<input type="hidden" name="CFirstName" value="<?=$CFirstName?>">
+				<input type="hidden" name="CLastName" value="<?=$CLastName?>">
+				<input type="hidden" name="CEmail" value="<?=$CEmail?>">
+				<input type="hidden" name="CSubject" value="<?=$CSubject?>">
+				<input type="hidden" name="CReplied" value="Yes">
 				<p class="text-danger mb-1">*Required Fields</p>
 
-				<table class='formTable mx-auto'>
-					<tr><th class='pr-4'>Full Name:</th><td><input type="text" readonly class="form-control-plaintext" name="CFirstName" size="45" value="<?=$CFirstName?>"></td>
-					<td><input type="text" readonly class="form-control-plaintext" name="CLastName" size="45" value="<?=$CLastName?>"></td></tr>
-					<input type="hidden" name="CEmail" value="<?=$CEmail?>">
-					<input type="hidden" name="CSubject" value="<?=$CSubject?>">
-					<tr><th class='pr-4'>Message:</th><td><input type="text" readonly class="form-control-plaintext" name="CDetails" size="45" value="<?=$CDetails?>"></td></tr>
-					<tr><th class='pr-4'>Admin Response*:</th></tr><tr><td><input class="form-control mb-1" type="text" name="Reply" size="45" value="<?= htmlentities($DonationDetail) ?>"></td></tr>
-					<!--<tr><th>Category*:</th><td><select class='selectcustom' name="GID">CategoryOptionList($GID)?></select></td></tr>-->
-					<tr><td colspan=2><input class='btn btn-naf-blue w-100 mt-5' type=submit name="Submit" value="Submit Contact Response"></td></tr>
-				</table>
+					<p><b class= 'text-naf-blue'>Full Name:</b> <?="$CFirstName $CLastName"?></p>
+					<p><b class= 'text-naf-blue'>Message:</b><input type="text" readonly class="form-control-plaintext" name="CDetails" size="45" value="<?=$CDetails?>"></p>
+					<p><b class= 'text-naf-blue'>Admin Response*:</b></p><textarea class="form-control mb-1" type="text" name="Reply" size="45" placeholder="Write a response."></textarea>
+					<!--Category*:<select class='selectcustom' name="GID">CategoryOptionList($GID)?></select>-->
+					<input class='btn btn-naf-blue w-100 mt-5' type=submit name="Submit" value="Submit Contact Response">
 			</form>
 		</div>
 </div>
