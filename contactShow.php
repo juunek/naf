@@ -51,47 +51,50 @@ $total_pages_sql = "SELECT COUNT(*) FROM NAFContact";
 
 
 
-$sql = "SELECT CID, CTimeStamp, CFirstName, CLastName, CEmail, CPhone, CSubject, CDetails FROM NAFContact ORDER BY CTimeStamp DESC LIMIT $offset, $no_of_records_per_page";
- 
+$sql = "SELECT CID, CTimeStamp, CFirstName, CLastName, CEmail, CPhone, CSubject, CDetails, CReplied FROM NAFContact ORDER BY CTimeStamp DESC LIMIT $offset, $no_of_records_per_page";
+
  $res_data = mysqli_query($conn,$sql);
 
 ?>
 <div class="container-fluid">
     <div class='flexboxContainer'>
-      <div><a href="donationForm.php"><span class='button'> + </span> Add a new item</a></div>
       <div>
         <table class='table'>
             <thead class='table-head'>
-                <tr><th scope='col'>Submission Date</th><th scope='col'>First Name</th><th scope='col'>Last Name</th><th scope='col'>Email</th><th scope='col'>Phone Number</th><th scope = 'col'>Subject</th><th scope = 'col'>Details</th><th scope = 'col'>Option</th></tr>
+                <tr><th scope='col'>Submission Date</th><th scope='col'>Full Name</th><th scope='col'>Email</th><th scope='col'>Phone Number</th><th scope = 'col'>Subject</th><th scope = 'col'>Details</th><th scope = 'col'>Replied</th><th scope = 'col'>Option</th></tr>
             </thead>
             <tbody>
 
     <?php
            while($row = mysqli_fetch_array($res_data)){
-                            $date=date('m/d/Y', strtotime($DTimeStamp));
-                            $fullName = "$FirstName $LastName";
-                            $deleteInfo = "$date - $fullName";
-              $Delete_js = htmlspecialchars($deleteInfo, ENT_QUOTES);
 
     ?>
 
+		<?php
+				$CFirstName = $row["CFirstName"];
+				$CLastName = $row["CLastName"];
+				$fullName = "$CFirstName $CLastName";
+		?>
+
             <tr>
-                <td><?php echo $row["CTimeStamp"]; ?></td>
-                <td><?php echo $row["CFirstName"]; ?></td>
-                <td><?php echo $row["CLastName"]; ?></td>
+                <td><?php echo $date=date('m/d/Y', strtotime($row["CTimeStamp"])); ?></td>
+                <td><?php echo $fullName?></td>
                 <td><?php echo $row["CEmail"]; ?></td>
                 <td><?php echo $row["CPhone"]; ?></td>
                 <td><?php echo $row["CSubject"]; ?></td>
                 <td><?php echo $row["CDetails"]; ?></td>
-           
+								<td><?php echo $row["CReplied"]; ?></td>
+
                 <?php
+								$deleteInfo = "$date - $fullName";
+	              $Delete_js = htmlspecialchars($deleteInfo, ENT_QUOTES);
 
                 $CID = $row['CID'];
-                
-                 echo "<td><a href='contactForm.php?CID=$CID'>Reply</a> | <a href='javascript:confirmDel(\"$Delete_js\",$CID)'>Delete</a></td>" 
+
+                 echo "<td><a href='contactForm.php?CID=$CID'>Reply</a> | <a href='javascript:confirmDel(\"$Delete_js\",$CID)'>Delete</a></td>"
                  ?>
             </tr>
-           
+
 
     <?php
     };
@@ -119,10 +122,10 @@ $sql = "SELECT CID, CTimeStamp, CFirstName, CLastName, CEmail, CPhone, CSubject,
     </div>
 
 
-           
-         
-             
-     
+
+
+
+
      </div>
 
 

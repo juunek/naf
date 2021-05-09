@@ -16,10 +16,10 @@ if (isset($_POST['Submit'])) {
 	$required = array("Reply"); // note that, in this array, the spelling of each item should match the form field names
 
 	// set up the expected array
-	$expected = array("CID", "CFirstName", "CLastName", "CEmail", "CSubject", "Reply"); // again, the spelling of each item should match the form field names
+	$expected = array("CID", "CFirstName", "CLastName", "CEmail", "CSubject", "CReplied", "Reply"); // again, the spelling of each item should match the form field names
 
     // set up a label array, use the field name as the key and label as the value
-  $label = array ("CID" => "CID", "CFirstName" => "CFirstName", "CLastName" => "CLastName", "CEmail" => "CEmail", "CSubject" => "CSubject", "Reply"=>'Reply');
+  $label = array ("CID" => "CID", "CFirstName" => "CFirstName", "CLastName" => "CLastName", "CEmail" => "CEmail", "CSubject" => "CSubject", "CReplied"=>'CReplied' ,"Reply"=>'Reply');
 
 
 	$missing = array();
@@ -61,6 +61,8 @@ if (isset($_POST['Submit'])) {
 
 		//========================
 		// processing user input
+
+		$stmt = $conn->stmt_init();
 		// compose a query: Insert or Update? Depending on whether there is a $pid.
 
 		if ($CID != "") {
@@ -69,7 +71,18 @@ if (isset($_POST['Submit'])) {
 			// Ensure $pid contains an integer.
 			$CID = intval($CID);
 
+			$sql = "Update NAFContact SET CReplied = ? WHERE CID = ?";
 
+			if($stmt->prepare($sql)){
+
+				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
+				$stmt->bind_param('si',$CReplied, $CID);
+				$stmt_prepared = 1;// set up a variable to signal that the query statement is successfully prepared.
+			}
+
+
+	if ($stmt_prepared == 1){
+		if ($stmt->execute()){
 			$output = "<h2 class='text-center text-success my-5'>Success!</h2><p>Your reply was sent, you sent the following information:</p>";
 			foreach($expected as $key){
 				$output .= "<p><b class= 'text-naf-blue'>{$label[$key]}:</b>  {$_POST[$key]}</p>";
@@ -87,6 +100,17 @@ if (isset($_POST['Submit'])) {
 			$output = $output.$emailResultMessage;
 
 			$output .= "<p><a href='contactShow.php'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Contact Management Page</button></a></p>";
+
+		}else {
+				//$stmt->execute() failed.
+				$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>Database operation failed.  Please contact the webmaster.</p>";
+			}
+			} else {
+			// statement is not successfully prepared (issues with the query).
+			$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>Database query failed.  Please contact the webmaster.<p>";
+			}
+
+
 
 		} else {
 			// no existing pid ==> this means no existing record to deal with, then it must be a new record ==> use an insert query
