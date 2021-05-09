@@ -7,10 +7,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Neuro Assitance Foundation</title>
+  <title>Testimonials | Neuro Assitance Foundation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Testimonials from people that the Neuro Assistance Foundation has helped with SCI Support, resources for Spinal Cord Injury, and helped find wheelchair vans in Dallas Tx.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
