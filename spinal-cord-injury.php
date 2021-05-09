@@ -3,10 +3,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Neuro Assitance Foundation</title>
+  <title> Spinal Cord Injury Information | Neuro Assitance Foundation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Spinal cord injuries are some of the most severe injuries an individual can face. They often result in devastating disabilities.   These disabilities can prevent an individual from performing any type of gainful work activity whatsoever. As a result, the individuals who suffer from these injuries are in desperate need of disability benefits. It is important when applying for disability benefits, however, to understand which spinal cord injuries qualify an individual for benefits from the Social Security Administration (SSA) and what criteria must be met in order to qualify.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -30,7 +31,7 @@
 
 
 <div class="container">
-  
+
   <h1>Spinal Cord Injuries</h1>
 
 
