@@ -95,17 +95,7 @@ if ($stmt->prepare($sql)) {
         <p class='text-center'>There are currently no upcoming events. View our <a href='events.php'>past events here</a>.</p>
        </div>");
     }
-		/*print ("<div class='d-flex flex-column col-md-4 mb-lg-5 mt-lg-0 mb-lg-0 mt-md-3 mb-md-4 mt-sm-3 my-sm-0 my-4'>
-      <a href='$ELinks?EID=$EID'><img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
-     <h3 class='events-mobile-spacing header-blue mt-3 mb-4'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
 
-     <div class='w-100 mt-auto'>
-      <a href='$ELinks?EID=$EID'>
-      <button type='button' alt='Click to View Event' class='btn btn-naf-secondary-btn w-100 mb-3'>VIEW EVENT</button></a></div>
-
-      <a href='$RegisterEvtBtn' target='_blank'>
-      <button type='button' alt='Click to Register for Event' class='btn btn-naf-primary-btn w-100 mt-auto mb-md-1 mb-sm-5'>REGISTER</button></a>
-     </div>");*/
 
 print ("</div>
 <h2 class='blue-bar'>Volunteer</h2>
