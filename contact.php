@@ -40,7 +40,7 @@
       <div class="col-md-8 mx-auto">
         <div>
           <p>We are happy to answer any questions you may have about our organization, the services we offer,  or any other inquires.</p>
-          <p class="text-danger">*Required Fields</p>
+          <p class="text-danger">*Required fields</p>
       </div>
     </div>
   </div>

@@ -724,8 +724,7 @@ footer a:hover{
 
 #volunteer-banner {
 	position: relative;
-	margin-bottom: 120px;
-
+	margin-bottom: 0rem!important;
 }
 
 #volunteer-img {
@@ -738,7 +737,6 @@ footer a:hover{
 }
 
 #volunteer-text {
-
 	padding-left: 230px!important;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -746,12 +744,9 @@ footer a:hover{
 }
 
 #volunteer-quote-img {
-
 	font-size: 80px;
 	padding-left: 30px;
 	color: #0B5BAB!important;
-
-
 }
 
 #quote-volunteer {
@@ -770,31 +765,36 @@ footer a:hover{
 		#volunteer-text {
 
 		padding-left: 2rem!important;
+		padding-right: 1.7rem!important;
 
 		}
 
 		#volunteer-banner {
-		margin-bottom: 2rem;
+			margin-bottom: 3rem;
 
 		}
 
 		#volunteer-quote-img {
+			font-size: 30px;
+			
+		}
 
-		font-size: 30px;
-
+		#quote-volunteer {
+			
 		}
 
 
 }
 
 @media (max-width: 992px) {
-#volunteer-quote-img {
-
+	#volunteer-quote-img {
 		font-size: 60px;
 		padding-left: 10px;
-		}
+	}
 
-		.navbar-toggler {
+	
+	
+	.navbar-toggler {
 			border: none!important;
 		}
 
