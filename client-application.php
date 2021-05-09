@@ -350,8 +350,8 @@
 
 
 
-    <h3 class="text-naf-blue mt-5">Primary Contact Info</h3>
-    <p>Please enter the contact information for the patient/client or the primary contact for the patient/client.</p>
+    <h3 class="text-naf-blue mt-5">Primary Contact Info*</h3>
+    <p>Please enter the contact information for the patient/client or the primary contact of the patient/client.</p>
     <div class="form-group row">
       <div class="d-flex flex-row align-item-center col-sm-12">
           <input type="checkbox" value="yes" name="sameAsperson" id="sameAsperson" class="my-1"> 

@@ -41,9 +41,9 @@
 
     <div class="row p-5 text-white home-hero-wheelchair-img">
       <div class="col-12 home-hero text-center">
-        <h3 class="text-light text-center fs-1 mt-1">One cause, One goal</h3>
-        <p class="lead my-3 text-naf-white">A better life and a WIN for everyone.</p>
-        <a href="donate.php" alt="Donate to NAF"><button class="btn-transparent-white pl-3 pr-3"><strong>GIVE NOW</strong></button></a>
+        <h3 class="text-light text-center fs-1 mt-5">One cause, One goal</h3>
+        <p class="lead my-3 text-naf-white">A better life and a win for everyone.</p>
+        <a href="donate.php" alt="Donate to NAF"><button class="btn-transparent-white px-3 mb-4"><strong>GIVE NOW</strong></button></a>
       </div>
     </div>
 
@@ -54,19 +54,19 @@
     <div class="container">
 
       <div class="row">
-          <div class="vertical-align-items col-lg-6 col-md-6">
-            <div class="mission px-5">
+          <div class="d-flex align-items-center col-lg-6 col-md-6">
+            <div class="mission mt-3 mb-0 mx-lg-5 ml-md-2 ml-0 pl-md-3 pr-md-1 pl-4 pr-4">
                 <h2 class="text-naf-blue"><strong>Our Mission</strong></h2>
                 <p>We are dedicated to assisting spinal cord injured and disabled individuals in the Dallas/Fort Worth area to achieve self-sufficiency and mobility through assistive vehicles, equipment, technology and home modifications.</p>
                 <a href="about.php" alt="Learn More About NAF"class="btn btn-naf-blue btn-tablet-mobile-full">LEARN MORE</a>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6">
-            <div class="mt-4 mb-4 p-md-5 pt-4 pb-3 px-3 rounded bg-naf-blue row">
+          <div class="col-lg-6 col-md-6 mt-4 mb-3">
+            <div class="mx-4 mt-md-4 p-lg-5 pt-4 p-3 bg-naf-blue row">
               <img class="col-lg-6 col-md-6 mx-auto w-50 h-50" src="img/home-texas-flag.svg">
               <div class="col-lg-6 col-md-6 d-flex align-items-center">
-                  <div class="mx-auto" id="home-texas-flag">
+                  <div class="mx-auto my-3" id="home-texas-flag">
                     <h3 class="text-light text-center fs-1">12 years</h3>
                     <p class="text-light text-center fs-6">of service to the community</p>
                   </div>
@@ -176,21 +176,21 @@
    <!-- numbers and circle  -->
      <div class="row home-stats-img">
         <div class ="col-lg-8 col-md-12 block d-flex justify-content-between wrap my-5">
-          <div class="row">
+          <div class="row px-4">
                 <div class="col-lg-4">
-                    <div class="circle shadow">
+                    <div class="circle shadow p-2">
                         <p><span class="fs-x2 fw-800">1 in 50</span><br>
                         <span class="fs-6">Americans are living with paralysis</span></p>
                     </div>
                   </div>
                   <div class="col-lg-4">
-                    <div class="circle shadow">
+                    <div class="circle shadow p-2">
                         <p><span class="fs-x2 fw-800">5.6M</span><br>
                         <span class="fs-6">Americans are paralyzed</span></p>
                     </div>
                   </div>
                   <div class="col-lg-4">
-                  <div class="circle shadow">
+                  <div class="circle shadow p-3">
                       <p><span class="fs-x2 fw-800">1.3M</span><br>
                       <span class="fs-6">Americans have a spinal cord injury</span></p>
                 </div>
