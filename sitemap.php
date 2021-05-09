@@ -28,37 +28,51 @@
 
 <?php print($htmlNav); ?>
 
-<ul>
-  <li><a href="index.php"><p><strong>Home</strong></p></a></li>
-  <li><a href="about.php"><p><strong>About</strong></p></a></li>
-    <ul>
-      <li><a href="contact.php"><p>Contact</p></a></li>
-      <li><a href="join-email.php"><p>Join Email List</p></a></li>
-    </ul>
-  <li><a href="community.php"><p><strong>Community</strong></p></a></li>
-    <ul>
-      <li><a href="testimonials.php"><p>Testimonials</p></a></li>
-      <li><a href="giving-thanks.php"><p>Giving Thanks</p></a></li>
-      <li><a href="newsletter.php"><p>Newsletter</p></a></li>
-    </ul>
-  <li><a href="events.php"><p><strong>Events</strong></p></a></li>
-    <ul>
-      <li><a href="events-naf-topgolf.php"><p>NAF TopGolf Charity</p></a></li>
-      <li><a href="events-hot-hatch.php"><p>Hot Hatch</p></a></li>
-      <li><a href="events-cinco-de-mayo.php"><p>Cinco De Mayo</p></a></li>
-      <li><a href="events-golf-a-thon.php"><p>Golf-A-Thon</p></a></li>
-    </ul>
-  <li><a href="resources.php"><p><strong>Resources</strong></p></a></li>
-    <ul>
-      <li><a href="spinal-cord-injury.php"><p>Spinal Cord Injury</p></a></li>
-      <li><a href="client-application.php"><p>Request Assistance</p></a></li>
-    </ul>
-  <li><a href="get-involved.php"><p><strong>Get Involved</strong></p></a></li>
-    <ul>
-      <li><a href="volunteer.php"><p>Volunteer</p></a></li>
-    </ul>
-  <li><a href="donate.php"><p><strong>Donate</strong></p></a></li>
-</ul>
+<div class="container">
+
+      <h1>Sitemap</h1>
+
+        <div class="row">
+
+            <div class="col-10 mx-3">
+              <p>
+              <ul style="line-height:200%">
+                <li><a href="index.php" target='_blank' class='sitemap-links text-decoration-none pb-3'><strong>Home</strong></a></li>
+                <li><a href="about.php" target='_blank' class='sitemap-links text-decoration-none pb-3'><strong>About</strong></a></li>
+                  <ul>
+                    <li><a href="contact.php" target='_blank' class='sitemap-links text-decoration-none pb-3'>Contact</a></li>
+                    <li><a href="join-email.php" target='_blank' class='sitemap-links text-decoration-none pb-3'>Join Email List</a></li>
+                  </ul>
+                <li><a href="community.php" target='_blank' class='sitemap-links text-decoration-none pb-3'><strong>Community</strong></a></li>
+                  <ul>
+                    <li><a href="testimonials.php" target='_blank' class='sitemap-links text-decoration-none pb-3'>Testimonials</a></li>
+                    <li><a href="giving-thanks.php" target='_blank' class='sitemap-links text-decoration-none pb-3'>Giving Thanks</a></li>
+                    <li><a href="newsletter.php" target='_blank' class='sitemap-links text-decoration-none pb-3'>Newsletter</a></li>
+                  </ul>
+                <li><a href="events.php" target='_blank' class='sitemap-links text-decoration-none pb-3'><strong>Events</strong></a></li>
+                  <ul>
+                    <li><a href="events-cinco-de-mayo.php?EID=1" target='_blank' class='sitemap-links text-decoration-none pb-3'>Cinco De Mayo</a></li>
+                    <li><a href="events-hot-hatch.php?EID=2" target='_blank' class='sitemap-links text-decoration-none pb-3'>Hot Hatch</a></li>
+                    <li><a href="events-naf-topgolf.php?EID=3" target='_blank' class='sitemap-links text-decoration-none pb-3'>NAF TopGolf Charity</a></li>
+                    <li><a href="events-golf-a-thon.php?EID=4" target='_blank' class='sitemap-links text-decoration-none pb-3'>Golf-A-Thon</a></li>
+                  </ul>
+                <li><a href="resources.php" target='_blank' class='sitemap-links text-decoration-none pb-3'><strong>Resources</strong></a></li>
+                  <ul>
+                    <li><a href="spinal-cord-injury.php" target='_blank' class='sitemap-links text-decoration-none pb-3'>Spinal Cord Injury</a></li>
+                    <li><a href="client-application.php" target='_blank' class='sitemap-links text-decoration-none pb-3'>Request Assistance</a></li>
+                  </ul>
+                <li><a href="get-involved.php" target='_blank' class='sitemap-links text-decoration-none pb-3'><strong>Get Involved</strong></a></li>
+                  <ul>
+                    <li><a href="volunteer.php" target='_blank' class='sitemap-links text-decoration-none pb-3'>Volunteer</a></li>
+                  </ul>
+                <li><a href="donate.php" target='_blank' class='sitemap-links text-decoration-none pb-3'><strong>Donate</strong></a></li>
+              </ul>
+            </p>
+        </div>
+
+    </div>
+
+</div>
 
 <?php
   print($htmlFooter);

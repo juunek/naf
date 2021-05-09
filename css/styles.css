@@ -72,6 +72,20 @@ a.dropdown-item {
 	font-weight: 800!important;
 }
 
+.text-naf-blue-light {
+	color: #0B5BAB!important;
+	font-weight: 400!important;
+}
+
+.sitemap-links {
+	color: #0B5BAB!important;
+}
+
+a.sitemap-links:hover {
+	color: #19AE61!important;
+}
+
+
 .blue-text {
 	color: #0B5BAB!important;
 }
