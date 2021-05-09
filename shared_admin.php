@@ -36,7 +36,7 @@ $HTMLHeader = "
                     <a class='list-group-item list-group-item-action bg-light' href='#!'>Events</a>
                     <a class='list-group-item list-group-item-action bg-light' href='#!'>Profile</a>
                     <a class='list-group-item list-group-item-action bg-light' href='#!'>Status</a>
-                    <a class='list-group-item list-group-item-action bg-light' href='logout.php' target='_blank'>Log out</a>
+                    <a class='list-group-item list-group-item-action bg-light' href='logout.php'>Log out</a>
                 </div>
             </div>
             <!-- Page Content-->
