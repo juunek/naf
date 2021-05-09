@@ -146,7 +146,7 @@
       </div>
 
       <div class="d-flex flex-column col-sm-3">
-        <label for="inputZipcodeAddClient" id="inputZipcodeAddClientLabel">Zip Code*</label>
+        <label for="inputZipcodeAddClient" id="inputZipcodeAddClientLabel">ZIP Code*</label>
         <input type="text" class="form-control" id="inputZipcodeAddClient">
       </div>
     </div>
@@ -296,7 +296,7 @@
 
 
     <h3 class="text-naf-blue mt-5">Social Worker Contact Info</h3>
-    <p>If you are not or do not have a social worker, please leave this section blank.</p>
+    <p>Leave blank if the patient/client does not have a social worker.</p>
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
         <label for="inputFirstnameSocialClient" id="inputFirstnameSocialClientLabel">First name</label>
@@ -322,7 +322,7 @@
     </div>
   
 
-    <h3 class="text-naf-blue mt-5">Person Submitting Contact Info*</h3>
+    <h3 class="text-naf-blue mt-5">Person Submitting Application*</h3>
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
         <label for="inputFirstnameSubmittingClient" id="inputFirstnameSubmittingClientLabel">First name</label>
@@ -351,7 +351,7 @@
 
 
     <h3 class="text-naf-blue mt-5">Primary Contact Info</h3>
-    <p>If you are not the client submitting this application, please enter the clients contact information.</p>
+    <p>Please enter the contact information for the patient/client or the primary contact for the patient/client.</p>
     <div class="form-group row">
       <div class="d-flex flex-row align-item-center col-sm-12">
           <input type="checkbox" value="yes" name="sameAsperson" id="sameAsperson" class="my-1"> 
