@@ -102,7 +102,7 @@ function addErrorMessage(fieldId, msg){
   if (emailPattern.test(emailSubmitting)) {
     removeErrorMessage('inputEmailSubmitting'+ page);
   } else {
-    addErrorMessage('inputEmailSubmitting'+ page, 'The email should follow xyz@abc.efg');
+    addErrorMessage('inputEmailSubmitting'+ page, 'Please enter a valid email address');
     err ++;
   }
 
@@ -112,7 +112,7 @@ function addErrorMessage(fieldId, msg){
   if (emailPattern.test(emailPrimary)) {
     removeErrorMessage('inputEmailPrimary'+ page);
   } else {
-    addErrorMessage('inputEmailPrimary'+ page, 'The email should follow xyz@abc.efg');
+    addErrorMessage('inputEmailPrimary'+ page, 'Please enter a valid email address');
     err ++;
   }
 */
@@ -126,7 +126,7 @@ function addErrorMessage(fieldId, msg){
   if (namePattern.test(firstnameInfo)) {
     removeErrorMessage('inputFirstnameInfo' + page);
   } else {
-    addErrorMessage('inputFirstnameInfo' + page, 'The first name should be filled and no more than 15 letters');
+    addErrorMessage('inputFirstnameInfo' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   } 
 
@@ -147,7 +147,7 @@ function addErrorMessage(fieldId, msg){
   if (namePattern.test(firstnameSubmitting)) {
     removeErrorMessage('inputFirstnameSubmitting' + page);
   } else {
-    addErrorMessage('inputFirstnameSubmitting' + page, 'The first name should be filled and no more than 15 letters');
+    addErrorMessage('inputFirstnameSubmitting' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   } 
 
@@ -168,7 +168,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
   if (namePattern.test(lastnameInfo)) {
     removeErrorMessage('inputLastnameInfo' + page);
   } else {
-    addErrorMessage('inputLastnameInfo' + page, 'The Last name should be filled and no more than 15 letters');
+    addErrorMessage('inputLastnameInfo' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   } 
 
@@ -189,7 +189,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
   if (namePattern.test(lastnameSubmitting)) {
     removeErrorMessage('inputLastnameSubmitting' + page);
   } else {
-    addErrorMessage('inputLastnameSubmitting' + page, 'The Last name should be filled and no more than 15 letters');
+    addErrorMessage('inputLastnameSubmitting' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   } 
 
@@ -198,7 +198,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
   if (namePattern.test(lastnamePrimary)) {
     removeErrorMessage('inputLastnamePrimary' + page);
   } else {
-    addErrorMessage('inputLastnamePrimary' + page, 'The Last name should be filled and no more than 15 letters');
+    addErrorMessage('inputLastnamePrimary' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
   } 
 */
@@ -221,7 +221,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
   if (phoneNumberPattern.test(phoneSubmitting)) {
     removeErrorMessage('inputPhoneSubmitting' + page);
   } else {
-    addErrorMessage('inputPhoneSubmitting' + page, 'The phone number should be numberic and contain 10 numbers');
+    addErrorMessage('inputPhoneSubmitting' + page, 'Please enter a valid 10-digit phone number');
     err ++;
   } 
 
@@ -245,7 +245,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
   if (addressPattern.test(street)) {
     removeErrorMessage('inputStreetAdd' + page);
   } else {
-    addErrorMessage('inputStreetAdd' + page, 'The Subject should be filled');
+    addErrorMessage('inputStreetAdd' + page, 'Please enter a street address');
     err ++;
   }
 
@@ -256,7 +256,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
   if (addressPattern.test(city)) {
     removeErrorMessage('inputCityAdd' + page);
   } else {
-    addErrorMessage('inputCityAdd' + page, 'The Subject should be filled');
+    addErrorMessage('inputCityAdd' + page, 'Please enter the city');
     err ++;
   }
 
@@ -266,7 +266,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
   if (addressPattern.test(state)) {
     removeErrorMessage('inputStateAdd' + page);
   } else {
-    addErrorMessage('inputStateAdd' + page, 'The Subject should be filled');
+    addErrorMessage('inputStateAdd' + page, 'Please enter the state');
     err ++;
   }
 
@@ -276,7 +276,7 @@ var lastnameInfo = document.getElementById('inputLastnameInfo' + page).value;
   if (zipPattern.test(zipcode)) {
     removeErrorMessage('inputZipcodeAdd' + page);
   } else {
-    addErrorMessage('inputZipcodeAdd' + page, 'The Subject should be filled');
+    addErrorMessage('inputZipcodeAdd' + page, 'Please enter the ZIP code');
     err ++;
   }
 
@@ -290,7 +290,7 @@ var birthdate = document.getElementById('inputBirthdayInfo' + page).value;
 if (birthdate != "") {
 removeErrorMessage('inputBirthdayInfo' + page);
   } else {
-    addErrorMessage('inputBirthdayInfo' + page, 'The birthdate should be filled');
+    addErrorMessage('inputBirthdayInfo' + page, 'Please enter the birthdate');
     err ++;
   }
 
@@ -322,7 +322,7 @@ var DescribeSCIClient = document.getElementById('inputDescribeSCI' + page).value
 if (DescribeSCIClient != "") {
 removeErrorMessage('inputDescribeSCI' + page);
   } else {
-    addErrorMessage('inputDescribeSCI' + page, 'Please provide your description about SCI');
+    addErrorMessage('inputDescribeSCI' + page, 'Please provide a description');
     err ++;
   }
   
@@ -344,7 +344,7 @@ removeErrorMessage('inputDescribeSCI' + page);
       }
 
       if (AssistanceRequestedFlag == ""){
-      addErrorMessage('client_assistType', 'Please pick a type of assistance');
+      addErrorMessage('client_assistType', 'Please select at least one option');
         err ++;
       } else {
         removeErrorMessage('client_assistType');
@@ -358,7 +358,7 @@ var PatientNeeds = document.getElementById('inputPatientNeeds' + page).value;
 if (DescribeSCIClient != "") {
 removeErrorMessage('inputPatientNeeds' + page);
   } else {
-    addErrorMessage('inputPatientNeeds' + page, 'Please provide your patients needs in order of importance');
+    addErrorMessage('inputPatientNeeds' + page, 'Please describe the patient\'s needs');
     err ++;
   }
 
