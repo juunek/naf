@@ -91,12 +91,12 @@
 								<img class='p-5 my-auto' src='img/resources/".$arrImg[$j]."' style='width:100%;'>
 							</a>
 			                </div>
-			                
+
 			                <div class='col-md-6 resources-detail'>
 							  <a href='".$arrLink[$j]."' class='text-naf-blue text-decoration-none' target='_blank'><h3>".$arrTitle[$j]."</h3></a>
 			                  <p class='lead'>$arrLead[$j]</p>
 			                  <p>".$arrDescription[$j]."</p>
-			                  <a href='".$arrLink[$j]."' class='text-decoration-none' target='_blank'><p class='text-naf-blue'>Visit Website</p></a> 
+			                  <a href='".$arrLink[$j]."' class='text-decoration-none' target='_blank'><p class='text-naf-blue'>Visit Website</p></a>
 			                </div>
 		           		</div>
 
