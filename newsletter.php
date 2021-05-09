@@ -3,10 +3,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Neuro Assitance Foundation</title>
+  <title>Newsletter Archive | Neuro Assitance Foundation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="View all of the archived newsletters for the Neuro Assistance Foundation for information on events, sci support resources, and non-profit updates.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -28,7 +29,7 @@
 
 <?php print($htmlNav); ?>
 
-<div class="container"> 
+<div class="container">
 
     <h1>Newsletter</h1>
 
@@ -63,7 +64,7 @@
               <a href="https://conta.cc/3by52Oi" class="tablinks text-decoration-none" target="_blank"><p>July/August</p></a>
               <a href="https://conta.cc/2OQDKc5" class="tablinks text-decoration-none" target="_blank"><p>May/June</p></a>
               <a href="https://conta.cc/39xtQUy" class="tablinks text-decoration-none" target="_blank"><p>January/February</p></a>
-            
+
               <h3 class="text-naf-blue mt-5">2016</h3>
               <a href="https://conta.cc/2OKchcb" class="tablinks text-decoration-none" target="_blank"><p>September/December</p></a>
               <a href="https://conta.cc/38pw48t" class="tablinks text-decoration-none" target="_blank"><p>July/August</p></a>
@@ -88,8 +89,8 @@
               <a href="https://conta.cc/3brRIea" class="tablinks text-decoration-none" target="_blank"><p>January/February</p></a>
 
               <h3 class="text-naf-blue mt-5">2013</h3>
-              <a href="https://conta.cc/2Hng0Ik" class="tablinks text-decoration-none" target="_blank"><p>July/August</p></a> 
-           
+              <a href="https://conta.cc/2Hng0Ik" class="tablinks text-decoration-none" target="_blank"><p>July/August</p></a>
+
             </div>
 
       </div>
