@@ -51,9 +51,9 @@
                 <div class="card p-5 shadow" style="width: 40rem;">
                   <div class="card-body">
 
-                      <img src="img/testimonials/thomas.jpg" alt="Picture of Thomas" height="200px" class="mx-auto mb-3 d-block img-no-show">
+                      <img src="img/testimonials/thomas.jpg" alt="Picture of Thomas" height="200px" class="mx-auto rounded-circle d-block img-no-show">
                       
-                      <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Thomas</h4>
+                      <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Thomas</h4>
 
                       <p class="card-text text-center">
                       "You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"
@@ -70,9 +70,9 @@
                 <div class="card p-5 shadow" style="width: 40rem;">
                   <div class="card-body">
 
-                      <img src="img/testimonials/travis-d.jpg" alt="Picture of Travis" height="200px" class="mx-auto mb-3 d-block img-no-show">
+                      <img src="img/testimonials/travis-d.jpg" alt="Picture of Travis" height="200px" class="mx-auto rounded-circle d-block img-no-show">
                       
-                      <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Travis</h4>
+                      <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Travis</h4>
 
                       <p class="card-text text-center">
                       "Thank you from the bottom of our hearts for your help. You have truly made our lives more bearable. Now it will not feel like Travis is a prisoner in our home."
@@ -90,9 +90,9 @@
                 <div class="card p-5 shadow" style="width: 40rem;">
                   <div class="card-body">
 
-                      <img src="img/testimonials/adrienne.jpg" alt="Picture of Adrienne" height="200px" class="mx-auto mb-3 d-block img-no-show">
+                      <img src="img/testimonials/adrienne.jpg" alt="Picture of Adrienne" height="200px" class="mx-auto rounded-circle d-block img-no-show">
                       
-                      <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Adrienne</h4>
+                      <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Adrienne</h4>
 
                       <p class="card-text text-center">
                       "Thanks a million for the standing frame! My family has been praying God would provide one for us since February! Answered prayer indeed. I appreciate Neuro Assistance Foundation more than I can explain!"
@@ -110,9 +110,9 @@
                 <div class="card p-5 shadow" style="width: 40rem;">
                   <div class="card-body">
 
-                      <img src="img/testimonials/terri-y.jpg" alt="Picture of Terri" height="200px" class="mx-auto mb-3 d-block img-no-show">
+                      <img src="img/testimonials/terri-y.jpg" alt="Picture of Terri" height="200px" class="mx-auto rounded-circle d-block img-no-show">
                       
-                      <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Terri</h4>
+                      <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Terri</h4>
 
                       <p class="card-text text-center">
                       "I never thought I'd be able to have a van like this. I feel like I have an angel on my shoulder whenever I drive it!"
@@ -129,9 +129,9 @@
                 <div class="card p-5 shadow" style="width: 40rem;">
                   <div class="card-body">
 
-                      <img src="img/testimonials/keith-m.jpg" alt="Picture of Keith" height="200px" class="mx-auto mb-3 d-block img-no-show">
+                      <img src="img/testimonials/keith-m.jpg" alt="Picture of Keith" height="200px" class="mx-auto rounded-circle d-block img-no-show">
                       
-                      <h4 class="card-title text-center fw-800 text-naf-blue mb-2">Keith</h4>
+                      <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Keith</h4>
 
                       <p class="card-text text-center">
                       "A car accident in 2018 left me with a dislocated shoulder, collapsed lung, lacerated kidney, and broken ribs, hip, and pelvis. My left leg was amputated at the hip. After I woke up from a 9-day coma, I was paralyzed for the first 8 weeks. I was fitted with a basic and uncomfortable wheelchair. NAF helped with out with a "real" wheelchair and didn't ask for anything in return. Words can not express the appreciation and gratitude that I have for you."
@@ -143,7 +143,10 @@
               </div>
             </div>
 
+            
   </div>
+
+
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa fa-chevron-right"></i></span>
     <span class="visually-hidden">Previous</span>
@@ -156,7 +159,7 @@
   </button>
 </div>
 
-<button class="btn btn-naf-blue m-4 p-2 mx-auto d-block"><a class="text-naf-white text-decoration-none" href="testimonials.php">TESTIMONIALS</a></button>
+<button class="btn btn-naf-blue m-4 px-3 py-2 mx-auto d-block"><a class="text-naf-white text-decoration-none" href="testimonials.php">TESTIMONIALS</a></button>
   <!-- Giving Thanks -->
 
   <h2 class="blue-bar">Giving Thanks</h2>
