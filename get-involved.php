@@ -53,24 +53,50 @@ if ($stmt->prepare($sql)) {
 	/* bind result variables */
 	$stmt->bind_result($EID, $EImagePreview, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $ELinks, $RegisterEvtBtn);
 
+  $stmt -> store_result();
+
 	print ("<div class='col-md-12 d-flex flex-md-row flex-column'>");
 	/* fetch values */
-	while ($stmt->fetch()) {
-    $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
-    $timeStart=date('g:i A', strtotime($EStart));
-    $timeEnd=date('g:i A', strtotime($EEnd));
-		print ("<div class='d-flex flex-column col-md-4 mb-lg-5 mt-lg-0 mb-lg-0 mt-md-3 mb-md-4 mt-sm-3 my-sm-0 my-4'>
-      <a href='$ELinks?EID=$EID'><img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
-     <h3 class='events-mobile-spacing header-blue mt-3 mb-4'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
+  $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
+  $timeStart=date('g:i A', strtotime($EStart));
+  $timeEnd=date('g:i A', strtotime($EEnd));
 
-     <div class='w-100 mt-auto'>
-      <a href='$ELinks?EID=$EID'>
-      <button type='button' alt='Click to View Event' class='btn btn-naf-secondary-btn w-100 mb-3'>VIEW EVENT</button></a></div>
+  while ($stmt->fetch()) {
+    if ($stmt->num_rows > 1) {
+      print ("<div class='d-flex flex-column col-md-4 mb-lg-5 mt-lg-0 mb-lg-0 mt-md-3 mb-md-4 mt-sm-3 my-sm-0 my-4'>
+        <a href='$ELinks?EID=$EID'><img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
+       <h3 class='events-mobile-spacing header-blue mt-3 mb-4'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
 
-      <a href='$RegisterEvtBtn' target='_blank'>
-      <button type='button' alt='Click to Register for Event' class='btn btn-naf-primary-btn w-100 mt-auto mb-md-1 mb-sm-5'>REGISTER</button></a>
-     </div>");
-}
+       <div class='w-100 mt-auto'>
+        <a href='$ELinks?EID=$EID'>
+        <button type='button' alt='Click to View Event' class='btn btn-naf-secondary-btn w-100 mb-3'>VIEW EVENT</button></a></div>
+
+        <a href='$RegisterEvtBtn' target='_blank'>
+        <button type='button' alt='Click to Register for Event' class='btn btn-naf-primary-btn w-100 mt-auto mb-md-1 mb-sm-5'>REGISTER</button></a>
+       </div>");
+    }else if ($stmt->num_rows > 0){
+      print ("<div class='col-md-10 mx-auto row py-4'>
+      <div class='col-md-6'>
+        <a href='$ELinks?EID=$EID'><img class='cover' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>
+      </div>
+       <div class='d-flex align-items-start flex-column col-md-6'>
+       <h3 class='events-mobile-spacing header-blue'>$EName</h3><p class='cover'><i class='fa fa-calendar-o event-icon' aria-hidden='true'></i> $date<br><i class='fa fa-clock-o event-icon' aria-hidden='true'></i> $timeStart - $timeEnd<br><i class='fa fa-map-marker event-icon' aria-hidden='true'></i> $ELocation</p><p>$EDescriptionPreview</p>
+
+       <div class='flex-xl-row flex-lg-column w-100'>
+        <a class='events-btn-padding-right' href='$ELinks?EID=$EID'>
+        <button type='button' class='btn btn-naf-secondary-btn events-btn-width'>VIEW EVENT</button></a>
+
+        <a class='events-btn-padding-left' href='$RegisterEvtBtn' target='_blank'>
+        <button type='button' class='btn btn-naf-primary-btn events-btn-width'>REGISTER</button></a></div>
+       </div>
+       </div>");
+    }}if ($stmt->num_rows == 0) {
+      print ("<div class='col-md-10 mx-auto row py-4'>
+        <p class='text-center'>There are currently no upcoming events. View our <a href='events.php'>past events here</a>.</p>
+       </div>");
+    }
+
+
 print ("</div>
 <h2 class='blue-bar'>Volunteer</h2>
 <div class='row m-4'>
