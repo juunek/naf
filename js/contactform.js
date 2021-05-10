@@ -160,11 +160,11 @@ function addErrorMessage(fieldId, msg){
 
         // Creating a cookie after the document is ready
 
-        document.cookie = "cookieArr=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        document.cookie = "cookieArrContact=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
         $(document).ready(function(){
 
-          createCookie("cookieArr", inputArr, "10");
+          createCookie("cookieArrContact", inputArr, "10");
 
         });
 

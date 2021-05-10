@@ -7,7 +7,7 @@ $conn = dbConnect();
 
 
 
-$outputString = $_COOKIE["cookieArr"];
+$outputString = $_COOKIE["cookieArrContact"];
 $outputArr = explode(',', $outputString, 6);
 
 //print_r($outputArr);
