@@ -36,9 +36,9 @@
 
 
     <h2 class="blue-bar mb-5">Our Mission and Vision</h2>
-    
+
     <div class="d-flex flex-row flex-wrap justify-content-evenly">
-            
+
             <div class="col-md-5">
                 <h4 class="text-naf-blue">Spinal Cord Injury</h4>
                 <p>Spinal cord injury (SCI) is damage to any part of the spinal cord or nerves at the end of the spinal canal. SCI often causes permanent loss of strength, sensation, and function below the site of the injury. Individuals who are paraplegic have loss of movement and sensation in the lower body, and individuals with quadriplegia have loss of movement and sensation in both the arms and legs.</p>
@@ -58,7 +58,7 @@
             <div class="col-md-5">
                 <h4 class="text-naf-blue">Our Mission</h4>
                 <p>Neuro Assistance Foundation is dedicated to assisting spinal cord injured individuals and those living with spinal cord diseases and birth defects in the Dallas/Fort Worth Metroplex and Greater Houston areas. Assistance is provided to achieve self-sufficiency and independence through vehicle support, mobility equipment, technology and home modifications.</p>
-                
+
             </div>
 
             <div class="col-md-5">
@@ -79,7 +79,7 @@
                 <img src="img/cindi-cooperman.jpg" width="100%" class="mb-4 px-lg-0 mx-auto px-md-4 px-sm-5">
                 <h4>Cindi Cooperman</h4>
                 <p>Executive Director</p>
-                <a href="contact.php" alt="Contact NAF"><button class="btn btn-naf-blue w-100 mb-4">CONTACT</button></a>
+                <a href="contact.php?Inquiry-for-Cindi-Cooperman" alt="Contact NAF"><button class="btn btn-naf-blue w-100 mb-4">CONTACT</button></a>
             </div>
 
             <div class="col-lg-7 me-lg-5">

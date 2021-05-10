@@ -120,10 +120,10 @@ print ("</div>
    <a href='contact.php'><img class='w-100 pe-md-5' src='img/sponsors.jpg'  alt='Image of NAF volunteer at sponsor table' title= 'Image of NAF volunteer at sponsor table'></a>
  </div>
   <div class='d-flex align-items-start flex-column col-md-6 my-md-auto'>
-  <h3 class='events-mobile-spacing header-blue'>Join the journey</h3><p class='cover'>Since 2008, Neuro Assistance Foundation has provided a variety of services to help those with spinal cord injury regain their independence, confidence, and sense of self. Our sponsors help us with accomplishing our mission, and with your help, we can continue to reach over 28,000 Texans affected by SCI.<br><br> By partnering with NAF, you get the chance to grant someone the freedom they once lost. And with your continued support, we are given more opportunities to help the many people affected by spinal cord injury.</p>
+  <h3 class='events-mobile-spacing header-blue'>Join the journey</h3><p class='cover'>Since 2008, Neuro Assistance Foundation has provided a variety of services to help those with spinal cord injury regain their independence, confidence, and sense of self. Our sponsors help us with accomplishing our mission, and with your help, we can continue to reach over 28,000 Texans affected by spinal cord injury.<br><br> By partnering with NAF, you get the chance to grant someone the freedom they once lost. And with your continued support, we are given more opportunities to help the many people affected by spinal cord injury.</p>
 
   <div class='flex-column btn-tablet-mobile-full mt-3'>
-   <a class='events-btn-padding-right' href='contact.php'>
+   <a class='events-btn-padding-right' href='contact.php?Sponsorship-Inquiry'>
    <button type='button' alt='Click to Become and Event Sponsor' class='btn btn-naf-primary-btn w-100'>BECOME A SPONSOR</button></a>
   </div>
   </div>

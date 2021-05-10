@@ -93,7 +93,7 @@ $stmt->store_result();
        </div>
        <div class = 'col-lg-4 col-12 px-3 mb-lg-0 mb-4 d-flex flex-column'>
          <p>Since 2008, NAF has assisted people with spinal cord injuries on their journey to independence. Our sponsors help us with accomplishing our mission, and with your help, we can continue to reach over 28,000 Texans affected by SCI.</p>
-         <a href='$SponsorBtn' class='mt-auto'><button type='button' class='btn cover btn-naf-secondary-btn mb-4'>SPONSOR THIS EVENT</button></a>
+         <a href='$SponsorBtn?Golf-A-Thon-Event-Sponsorship-Inquiry' class='mt-auto'><button type='button' class='btn cover btn-naf-secondary-btn mb-4'>SPONSOR THIS EVENT</button></a>
        </div>
        <div class='col-lg-3 col-12 px-3 d-flex flex-column'>
          <p>If you can't attend but would like to make a contribution, donate below.</p>
