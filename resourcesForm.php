@@ -70,7 +70,7 @@ if (isset($_GET['ResID'])) {
 
 // function to create the options for the category drop-down list.
 //  -- the value of parameter $selectedCID comes from the function call
-function CategoryOptionList($selectedR){
+function CategoryOptionList($selectedRID){
 
 	$list = ""; //placeholder for the CD category option list
 
