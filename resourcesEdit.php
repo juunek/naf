@@ -37,16 +37,24 @@ if (isset($_POST['Submit'])) {
 	  }else {
 	    $uploadMessage = "<p>You cannot upload that file type! Accepted file types are .TIFF, .PNG, .JPEG, and .GIF.</p>";
 		}
+		if (!empty($uploadMessage)) {
+			if($_POST['LogoExists'] == 'No'){
+				$uploadMessage = "<ul><li>Resource Logo File $uploadMessage</li></ul>";
+			}else {
+				$Img = $_POST['LogoExists'];
+				$uploadMessage = "";
+			}
+		}
 	//validate user input
 
 	// set up the required array
 	$required = array("Title", "Lead", "Description", "Link", "RID"); // note that, in this array, the spelling of each item should match the form field names
 
 	// set up the expected array
-	$expected = array("ResID", "Title", "Lead", "Description", "Link", "RID",); // again, the spelling of each item should match the form field names
+	$expected = array("ResID", "Title", "Lead", "Description", "Link", "RID", "LogoExists"); // again, the spelling of each item should match the form field names
 
     // set up a label array, use the field name as the key and label as the value
-  $label = array ("ResID" => "ResID", 'Img'=>'Img', "Title"=>'title', "Lead"=>'Lead', "Description"=>'Description', "Link"=>'Link', "RID"=>'RID',);
+  $label = array ("ResID" => "Resource ID (ResID)", 'Img'=>'Image', "Title"=>'Title', "Lead"=>'Lead', "Description"=>'Description', "Link"=>'Resource Link', "RID"=>'Resource Category ID (RID)', "LogoExists"=>'Logo Exists');
 
 
 	$missing = array();
@@ -129,7 +137,12 @@ if (isset($_POST['Submit'])) {
 
 				$output = "<h2 class='text-center text-success my-5'>Success!</h2><p>The following information has been saved in the database:</p>";
 				foreach($expected as $key){
-					$output .= "<p><b class= 'text-naf-blue'>{$label[$key]}:</b>  {$_POST[$key]}</p>";
+					if ($key == "LogoExists") {
+						$v = $Img;
+					}else {
+						$v = ${$key};
+					}
+					$output .= "<p><b class= 'text-naf-blue'>{$label[$key]}:</b>  $v</p>";
 				}
 				$output .= "<p><a href='resourcesShow.php'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE RESOURCES MANAGEMENT PAGE</button></a></p>";
 			} else {

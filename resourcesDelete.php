@@ -58,7 +58,7 @@ if (isset($_GET['ResID'])) { // note that the spelling 'pid' is based on the que
     <div class='col-10 mx-auto'>
         <?= $output ?>
 
-        <p class='text-center'>Back to the <a href='resourcesShow.php'>RESOURCES PAGE</a></p>
+        <p class='text-center'>Back to the <a href='resourcesShow.php'>Resources Page</a></p>
     </div>
 
 </div>

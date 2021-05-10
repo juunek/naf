@@ -35,7 +35,7 @@ $HTMLHeader = "
                     <a class='list-group-item list-group-item-action bg-light' href='#!'>Overview</a>
                     <a class='list-group-item list-group-item-action bg-light' href='#!'>Events</a>
                     <a class='list-group-item list-group-item-action bg-light' href='emaillistShow.php'>Email List</a>
-                    <a class='list-group-item list-group-item-action bg-light' href='#!'>Status</a>
+                    <a class='list-group-item list-group-item-action bg-light' href='resourcesShow.php'>Resources</a>
                     <a class='list-group-item list-group-item-action bg-light' href='logout.php'>Log out</a>
                 </div>
             </div>

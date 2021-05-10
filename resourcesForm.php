@@ -19,7 +19,7 @@ $Lead="";
 $Description="";
 $Link="";
 $RID="";
-
+$ResourceLogo = "<input type='hidden' name='LogoExists' value='No'>";
 $errMsg = "";
 
 // check to see if a book id available via the query string
@@ -31,7 +31,7 @@ if (isset($_GET['ResID'])) {
 	if ($ResID > 0){
 
 		//compose a select query
-		$sql = "SELECT Img, Title, Lead, Description, Link, RID FROM Resources WHERE RID=?";
+		$sql = "SELECT Img, Title, Lead, Description, Link, RID FROM Resources WHERE ResID=?";
 
 		$stmt = $conn->stmt_init();
 
@@ -46,6 +46,11 @@ if (isset($_GET['ResID'])) {
 			// proceed only if a match is found -- there should be only one row returned in the result
 			if($stmt->num_rows == 1){
 				$stmt->fetch();
+				if (file_exists('/home/krk1266/ctec4350.krk1266.uta.cloud/naf/img/resources/'.$Img)) {
+					$ResourceLogo = "<img src='img/resources/$Img'><input type='hidden' name='LogoExists' value='$Img'>";
+				}else {
+					$ResourceLogo = "<p>$Img is not found</p>$ResourceLogo";
+				}
 			} else {
 				$errMsg = "<div class='error'>Information on the record you requested is not available.  If it is an error, please contact the webmaster.  Thank you.</div>";
 				$ResID = ""; // reset $pid
@@ -113,7 +118,7 @@ function CategoryOptionList($selectedR){
 				<p class="text-danger mb-1">*Required Fields</p>
 
 				<table class='formTable mx-auto'>
-					<tr><th class='pr-4'>Resource Logo*:</th><td><input type="file" name="Img" id="Img"></td></tr>
+					<tr><th class='pr-4'>Resource Logo*:</th><td><?=$ResourceLogo?><input type="file" name="Img" id="Img"></td></tr>
 					<tr><th class='pr-4'>Resource Name*:</th><td><input class="form-control mb-1" type="text" name="Title" size="45" value="<?= htmlentities($Title) ?>"></td></tr>
 					<tr><th class='pr-4'>Lead*:</th><td><input class="form-control mb-1" type="text" name="Lead" size="45" value="<?= htmlentities($Lead) ?>"></td></tr>
 					<tr><th class='pr-4'>Description*:</th><td><input class="form-control mb-1" type="text" name="Description" size="45" value="<?= htmlentities($Description) ?>"></td></tr>
