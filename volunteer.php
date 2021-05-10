@@ -54,12 +54,12 @@
 
         <div class="row">
             <div class="col-md-10 mx-auto">
-              <div class="row">
+              <div class="row mt-5 d-flex justify-content-center">
                     <div class="col-2 mx-1">
                       <i class="fas fa-quote-left" id="volunteer-quote-img"></i>
                     </div>
 
-                    <div class="col-9 mx-1 mb-2">
+                    <div class="col-md-7 col-9 mx-1 mb-2">
                          <p id="quote-volunteer">It is one of the most beautiful compensations of life, that no man can sincerely try to help another without helping himself.</p>
                          <p class="fs-5">Ralph Waldo Emerson </p>
                     </div>
