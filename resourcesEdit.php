@@ -10,16 +10,43 @@ $conn = dbConnect();
 // Process only if there is any submission
 if (isset($_POST['Submit'])) {
 	// ==========================
+
+	// define constant for upload folder
+	  define('UPLOAD_DIR', '/home/krk1266/ctec4350.krk1266.uta.cloud/naf/img/resources/');
+
+	  $allowedTypes = array(IMAGETYPE_PNG, IMAGETYPE_JPEG, IMAGETYPE_GIF, IMAGETYPE_TIFF_II, IMAGETYPE_TIFF_MM);
+	  $detectedType =exif_imagetype($_FILES['Img']['tmp_name']);
+
+	  if (in_array($detectedType, $allowedTypes))  {
+
+	    trim($_FILES['Img']['name']);
+	    $_FILES['Img']['name']= str_replace(" ", "_", $_FILES['Img']['name']);
+	    // move the file to the upload folder and rename it
+	    if (move_uploaded_file($_FILES['Img']['tmp_name'], UPLOAD_DIR.$_FILES['Img']['name'])){
+
+	        $Img = $_FILES['Img']['name'];
+
+	        //$message = "The selected file has been successfully uploaded. <br>
+	       // <a href='/upload/uploadassignment/storage/$fileName'>Click to see your uploaded file.</a>";
+				 $uploadMessage="";
+			} else {
+	        // something is wrong
+	        $uploadMessage = "<p>We have encountered issues in uploading this file.  Please try again later or contact the web master.</p>";
+	    }
+
+	  }else {
+	    $uploadMessage = "<p>You cannot upload that file type! Accepted file types are .TIFF, .PNG, .JPEG, and .GIF.</p>";
+		}
 	//validate user input
 
 	// set up the required array
-	$required = array("FirstName", "LastName", "Email", "PhoneNumber", "DonationType", "DonationDetail"); // note that, in this array, the spelling of each item should match the form field names
+	$required = array("Title", "Lead", "Description", "Link", "RID"); // note that, in this array, the spelling of each item should match the form field names
 
 	// set up the expected array
-	$expected = array("KEYID", "FirstName", "LastName", "Email", "PhoneNumber", "DonationType", "DonationDetail"); // again, the spelling of each item should match the form field names
+	$expected = array("ResID", "Title", "Lead", "Description", "Link", "RID",); // again, the spelling of each item should match the form field names
 
     // set up a label array, use the field name as the key and label as the value
-  $label = array ("KEYID" => "KEYID", 'FirstName'=>'FirstName', "LastName"=>'LastName', "Email"=>'Email', "PhoneNumber"=>'PhoneNumber', "DonationType"=>'DonationType', "DonationDetail"=>'DonationDetail');
+  $label = array ("ResID" => "ResID", 'Img'=>'Img', "Title"=>'title', "Lead"=>'Lead', "Description"=>'Description', "Link"=>'Link', "RID"=>'RID',);
 
 
 	$missing = array();
@@ -57,7 +84,7 @@ if (isset($_POST['Submit'])) {
 	// ex. $price should be a number
 
 	/* proceed only if there is no required fields missing and all other data validation rules are satisfied */
-	if (empty($missing)){
+	if (empty($missing) && empty($uploadMessage)){
 
 		//========================
 		// processing user input
@@ -67,30 +94,30 @@ if (isset($_POST['Submit'])) {
 
 		// compose a query: Insert or Update? Depending on whether there is a $pid.
 
-		if ($KEYID != "") {
+		if ($ResID != "") {
 			/* there is an existing pid ==> need to deal with an existing reocrd ==> use an update query */
 
 			// Ensure $pid contains an integer.
-			$KEYID = intval($KEYID);
+			$ResID = intval($ResID);
 
-			$sql = "Update NAFDonation SET FirstName = ?, LastName = ?, Email = ?, PhoneNumber = ?, DonationType = ?, DonationDetail = ? WHERE KEYID = ?";
+			$sql = "Update Resources SET Img = ?, Title = ?, Lead = ?, Description = ?, Link = ?, RID = ? WHERE ResID = ?";
 
 			if($stmt->prepare($sql)){
 
 				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
-				$stmt->bind_param('sssissi',$FirstName, $LastName, $Email, $PhoneNumber, $DonationType, $DonationDetail, $KEYID);
+				$stmt->bind_param('sssssii',$Img, $Title, $Lead, $Description, $Link, $RID, $ResID);
 				$stmt_prepared = 1;// set up a variable to signal that the query statement is successfully prepared.
 			}
 
 		} else {
 			// no existing pid ==> this means no existing record to deal with, then it must be a new record ==> use an insert query
-			$sql = "Insert Into NAFDonation (FirstName, LastName,  Email, PhoneNumber, DonationType, DonationDetail) values (?, ?, ?, ?, ?, ?)";
+			$sql = "Insert Into Resources (Img, Title, Lead, Description, Link, RID) values (?, ?, ?, ?, ?, ?)";
 
 			if($stmt->prepare($sql)){
 
 				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
 
-				$stmt->bind_param('sssiss',$FirstName, $LastName, $Email, $PhoneNumber, $DonationType, $DonationDetail);
+				$stmt->bind_param('sssssi',$Img, $Title, $Lead, $Description, $Link, $RID);
 				$stmt_prepared = 1; // set up a variable to signal that the query statement is successfully prepared.
 			}
 		}
@@ -104,7 +131,7 @@ if (isset($_POST['Submit'])) {
 				foreach($expected as $key){
 					$output .= "<p><b class= 'text-naf-blue'>{$label[$key]}:</b>  {$_POST[$key]}</p>";
 				}
-				$output .= "<p><a href='donationShow.php'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE DONATION MANAGEMENT PAGE</button></a></p>";
+				$output .= "<p><a href='resourcesShow.php'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE RESOURCES MANAGEMENT PAGE</button></a></p>";
 			} else {
 				//$stmt->execute() failed.
 				$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>Database operation failed.  Please contact the webmaster.</p>";
@@ -121,17 +148,17 @@ if (isset($_POST['Submit'])) {
 		foreach($missing as $m){
 			$output .= "<li class='text-naf-blue'>{$label[$m]}\n";
 		}
-		if ($KEYID != "") {
-			$output .= "</ul><a href='donationForm.php?KEYID=$KEYID'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE DONATION FORM PAGE</button></a></div>\n";
+		$output .=" <p>$uploadMessage</p>\n";
+		if ($ResID != "") {
+			$output .= "</ul><a href='resourcesForm.php?ResID=$ResID'> <p>$uploadMessage</p>\n <button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE RESOURCES FORM PAGE</button></a></div>\n";
 		}else {
-			$output .= "</ul><a href='donationForm.php'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE DONATION FORM PAGE</button></a></div>\n";
+			$output .= "</ul><a href='resourcesForm.php'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE RESOURCES FORM PAGE</button></a></div>\n";
 		}
 	}
-	$output .=" <p>$uploadMessage</p>\n";
 }
 
 } else {
-	$output = "<h2 class='text-center text-danger my-5'>Invalid Request</h2><p class='text-center'>Please begin your donation managment operation from the <a href='donationShow.php'>Donation Page</a>.</p>";
+	$output = "<h2 class='text-center text-danger my-5'>Invalid Request</h2><p class='text-center'>Please begin your donation managment operation from the <a href='resourcesShow.php'>Resources Page</a>.</p>";
 }
 
 

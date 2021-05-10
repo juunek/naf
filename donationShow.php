@@ -21,7 +21,7 @@ function confirmDel(FirstName, KEYID) {
 // javascript function to ask for deletion confirmation
 
     url = "donationDelete.php?KEYID="+KEYID;
-    var agree = confirm("Delete this item: " + FirstName + " ? ");
+    var agree = confirm("Delete this message from " + FirstName + " ? ");
     if (agree) {
         // redirect to the deletion script
         location.href = url;
@@ -61,7 +61,7 @@ $total_pages_sql = "SELECT COUNT(*) FROM NAFDonation";
     <div class='flexboxContainer'>
       <div><a href="donationForm.php"><span class='button'> + </span> Add a new item</a></div>
       <div>
-        <table class='table'>
+        <table class='table adminTable'>
             <thead class='table-head'>
                 <tr><th scope='col'>Submission Date</th><th scope='col'>Full Name</th><th scope='col'>Email</th><th scope='col'>Phone Number</th><th scope='col'>Donation Type</th><th scope = 'col'>Donation Details
                 </th><th scope = 'col'>Options</th></tr>
@@ -70,9 +70,7 @@ $total_pages_sql = "SELECT COUNT(*) FROM NAFDonation";
 
     <?php
            while($row = mysqli_fetch_array($res_data)){
-                            $date=date('m/d/Y', strtotime($DTimeStamp));
-                            $fullName = "$FirstName $LastName";
-                            $deleteInfo = "$date - $fullName";
+
               $Delete_js = htmlspecialchars($deleteInfo, ENT_QUOTES);
 
     ?>
@@ -94,8 +92,8 @@ $total_pages_sql = "SELECT COUNT(*) FROM NAFDonation";
                 <td><?php echo $row["DonationDetail"]; ?></td>
 
                    <?php
-
-                   $deleteInfo = "$date - $fullName";
+                  $DonationType = $row["DonationType"];
+                  $deleteInfo = "$fullName on $date about $DonationType";
    	              $Delete_js = htmlspecialchars($deleteInfo, ENT_QUOTES);
 
                 $KEYID = $row['KEYID'];

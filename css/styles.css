@@ -10,6 +10,10 @@ p, ul, li  {
 	color: #707070!important;
 }
 
+.adminTable{
+	font-size: 85%;
+}
+
 /*----- about page board member affiliations start -----*/
 .affiliations {
 	font-size: .7rem!important;
@@ -300,7 +304,7 @@ a.text-naf-white:hover {
 	.resources-brands{
 		display: block;
 	}
-	
+
 	#about-youtube {
 		height: 400px;
 	}
@@ -316,7 +320,7 @@ a.text-naf-white:hover {
 	.connect-with-us {
 		margin: 2rem 0!important;
 	}
-	
+
 	#footer-connect {
 		display: flex;
 		margin-right: auto;
@@ -500,7 +504,7 @@ a.text-naf-white:hover {
 		font-size: .8rem;
 	}
 
-	
+
 }
 
 
@@ -790,11 +794,11 @@ footer a:hover{
 
 		#volunteer-quote-img {
 			font-size: 30px;
-			
+
 		}
 
 		#quote-volunteer {
-			
+
 		}
 
 
@@ -806,8 +810,8 @@ footer a:hover{
 		padding-left: 10px;
 	}
 
-	
-	
+
+
 	.navbar-toggler {
 			border: none!important;
 		}
