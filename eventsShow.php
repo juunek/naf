@@ -12,15 +12,15 @@ $conn = dbConnect();
 <?php
 
 print $HTMLHeader;
-print("<h2 class='text-center my-5 text-naf-blue'>Manage Resources</h2>");
+print("<h2 class='text-center my-5 text-naf-blue'>Manage Events</h2>");
 
 ?>
 
 <script>
-function confirmDel(FirstName, ResID) {
+function confirmDel(FirstName, EID) {
 // javascript function to ask for deletion confirmation
 
-    url = "resourcesDelete.php?ResID="+ResID;
+    url = "eventsDelete.php?EID="+EID;
     var agree = confirm("Are you sure you want to delete this " + FirstName + " ? ");
     if (agree) {
         // redirect to the deletion script
@@ -44,13 +44,13 @@ if (isset($_GET['pageno'])) {
         $no_of_records_per_page = 10;
         $offset = ($pageno-1) * $no_of_records_per_page;
 
-$total_pages_sql = "SELECT COUNT(*) FROM Resources";
+$total_pages_sql = "SELECT COUNT(*) FROM Events";
         $result = mysqli_query($conn,$total_pages_sql);
         $total_rows = mysqli_fetch_array($result)[0];
         $total_pages = ceil($total_rows / $no_of_records_per_page);
 
 
-    $sql = "SELECT Resources.ResID, Resources.Img, Resources.Title, Resources.Lead, Resources.Description, Resources.Link, ResourcesCategory.ResourcesType FROM Resources, ResourcesCategory WHERE Resources.RID = ResourcesCategory.RID ORDER BY Resources.RID ASC LIMIT $offset, $no_of_records_per_page";
+    $sql = "SELECT  FROM Events ORDER BY EDate DESC LIMIT $offset, $no_of_records_per_page";
 
  $res_data = mysqli_query($conn,$sql);
 
@@ -58,7 +58,7 @@ $total_pages_sql = "SELECT COUNT(*) FROM Resources";
 
 <div class="container-fluid">
     <div class='flexboxContainer'>
-      <div><a href="resourcesForm.php"><span class='button'> + </span> Add a new item</a></div>
+      <div><a href="eventsForm.php"><span class='button'> + </span> Add a new item</a></div>
       <div>
         <table class='table adminTable'>
             <thead class='table-head'>
@@ -74,13 +74,13 @@ $total_pages_sql = "SELECT COUNT(*) FROM Resources";
     ?>
 
     <?php
-           $ResourcesImg = $row["Img"];
+           $EventsImg = $row["Img"];
 
     ?>
 
             <tr>
                 <td><?php echo $row["ResourcesType"]; ?></td>
-                <td><?php echo "<img class='img-fluid' src=img/resources/$ResourcesImg>";?></td>
+                <td><?php echo "<img class='img-fluid' src=img/resources/$EventsImg>";?></td>
                 <td><?php echo $row["Title"]; ?></td>
                 <td><?php echo $row["Lead"]; ?></td>
                 <td><?php echo $row["Description"]; ?></td>
@@ -92,9 +92,9 @@ $total_pages_sql = "SELECT COUNT(*) FROM Resources";
                   $deleteInfo = "$ResourceType - $Title";
    	              $Delete_js = htmlspecialchars($deleteInfo, ENT_QUOTES);
 
-                $ResID = $row['ResID'];
+                $EID = $row['EID'];
 
-                 echo "<td><a href='resourcesForm.php?ResID=$ResID'>Edit</a> | <a href='javascript:confirmDel(\"$Delete_js\",$ResID)'>Delete</a></td>"
+                 echo "<td><a href='resourcesForm.php?EID=$EID'>Edit</a> | <a href='javascript:confirmDel(\"$Delete_js\",$EID)'>Delete</a></td>"
                  ?>
             </tr>
 
