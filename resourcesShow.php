@@ -12,24 +12,24 @@ $conn = dbConnect();
 <?php
 
 print $HTMLHeader;
-print("<h2 class='text-center my-5 text-naf-blue'>Manage Contact Inquiries</h2>");
+print("<h2 class='text-center my-5 text-naf-blue'>Manage Resources</h2>");
 
 ?>
 
 <script>
-function confirmDel(FirstName, CID) {
+function confirmDel(FirstName, ResID) {
 // javascript function to ask for deletion confirmation
 
-	url = "contactDelete.php?CID="+CID;
-	var agree = confirm("Delete this message from " + FirstName + " ? ");
-	if (agree) {
-		// redirect to the deletion script
-		location.href = url;
-	}
-	else {
-		// do nothing
-		return;
-	}
+    url = "resourcesDelete.php?ResID="+ResID;
+    var agree = confirm("Are you sure you want to delete this " + FirstName + " ? ");
+    if (agree) {
+        // redirect to the deletion script
+        location.href = url;
+    }
+    else {
+        // do nothing
+        return;
+    }
 }
 </script>
 
@@ -44,57 +44,59 @@ if (isset($_GET['pageno'])) {
         $no_of_records_per_page = 10;
         $offset = ($pageno-1) * $no_of_records_per_page;
 
-$total_pages_sql = "SELECT COUNT(*) FROM NAFContact";
+$total_pages_sql = "SELECT COUNT(*) FROM Resources";
         $result = mysqli_query($conn,$total_pages_sql);
         $total_rows = mysqli_fetch_array($result)[0];
         $total_pages = ceil($total_rows / $no_of_records_per_page);
 
 
-
-$sql = "SELECT CID, CTimeStamp, CFirstName, CLastName, CEmail, CPhone, CSubject, CDetails, CReplied FROM NAFContact ORDER BY CTimeStamp DESC LIMIT $offset, $no_of_records_per_page";
+    $sql = "SELECT Resources.ResID, Resources.Img, Resources.Title, Resources.Lead, Resources.Description, Resources.Link, ResourcesCategory.ResourcesType FROM Resources, ResourcesCategory WHERE Resources.RID = ResourcesCategory.RID ORDER BY Resources.RID ASC LIMIT $offset, $no_of_records_per_page";
 
  $res_data = mysqli_query($conn,$sql);
 
 ?>
+
 <div class="container-fluid">
     <div class='flexboxContainer'>
+      <div><a href="resourcesForm.php"><span class='button'> + </span> Add a new item</a></div>
       <div>
         <table class='table adminTable'>
             <thead class='table-head'>
-                <tr><th scope='col'>Submission Date</th><th scope='col'>Full Name</th><th scope='col'>Email</th><th scope='col'>Phone Number</th><th scope = 'col'>Subject</th><th scope = 'col'>Details</th><th scope = 'col'>Replied</th><th scope = 'col'>Option</th></tr>
+                <tr><th scope='col'>Resources Type</th><th scope='col'>Image</th><th scope='col'>Title</th><th scope='col'>Lead</th><th scope='col'>Description</th><th scope = 'col'>Link
+                </th><th scope = 'col'>Options</th></tr>
             </thead>
             <tbody>
 
     <?php
            while($row = mysqli_fetch_array($res_data)){
 
+
     ?>
 
-		<?php
-				$CFirstName = $row["CFirstName"];
-				$CLastName = $row["CLastName"];
-				$fullName = "$CFirstName $CLastName";
-		?>
+    <?php
+           $ResourcesImg = $row["Img"];
+
+    ?>
 
             <tr>
-                <td><?php echo $date=date('m/d/Y', strtotime($row["CTimeStamp"])); ?></td>
-                <td><?php echo $fullName?></td>
-                <td><?php echo $row["CEmail"]; ?></td>
-                <td><?php echo $row["CPhone"]; ?></td>
-                <td><?php echo $row["CSubject"]; ?></td>
-                <td><?php echo $row["CDetails"]; ?></td>
-								<td><?php echo $row["CReplied"]; ?></td>
+                <td><?php echo $row["ResourcesType"]; ?></td>
+                <td><?php echo "<img class='img-fluid' src=img/resources/$ResourcesImg>";?></td>
+                <td><?php echo $row["Title"]; ?></td>
+                <td><?php echo $row["Lead"]; ?></td>
+                <td><?php echo $row["Description"]; ?></td>
+                <td><?php echo $row["Link"]; ?></td>
 
-                <?php
-								$deleteInfo = "$fullName on $date";
-	              $Delete_js = htmlspecialchars($deleteInfo, ENT_QUOTES);
+                   <?php
+                  $ResourceType = $row["ResourcesType"];
+                  $Title = $row["Title"];
+                  $deleteInfo = "$ResourceType - $Title";
+   	              $Delete_js = htmlspecialchars($deleteInfo, ENT_QUOTES);
 
-                $CID = $row['CID'];
+                $ResID = $row['ResID'];
 
-                 echo "<td><a href='contactForm.php?CID=$CID'>Reply</a> | <a href='javascript:confirmDel(\"$Delete_js\",$CID)'>Delete</a></td>"
+                 echo "<td><a href='resourcesForm.php?ResID=$ResID'>Edit</a> | <a href='javascript:confirmDel(\"$Delete_js\",$ResID)'>Delete</a></td>"
                  ?>
             </tr>
-
 
     <?php
     };

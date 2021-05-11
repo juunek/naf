@@ -57,11 +57,10 @@ if ($stmt->prepare($sql)) {
 
 	print ("<div class='col-md-12 d-flex flex-md-row flex-column'>");
 	/* fetch values */
-  $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
-  $timeStart=date('g:i A', strtotime($EStart));
-  $timeEnd=date('g:i A', strtotime($EEnd));
-
   while ($stmt->fetch()) {
+    $date=date('l\,\ F jS\,\ Y', strtotime($EDate));
+    $timeStart=date('g:i A', strtotime($EStart));
+    $timeEnd=date('g:i A', strtotime($EEnd));
     if ($stmt->num_rows > 1) {
       print ("<div class='d-flex flex-column col-md-4 mb-lg-5 mt-lg-0 mb-lg-0 mt-md-3 mb-md-4 mt-sm-3 my-sm-0 my-4'>
         <a href='$ELinks?EID=$EID'><img class='w-100' src='img/$EImagePreview'  alt='Image of $EName Event' title= 'Image of $EName Event'></a>

@@ -102,7 +102,7 @@ if (isset($_GET['KEYID'])) {
 			<h2 class='text-center my-5 text-naf-blue'>Donation Form</h2>
 
 		<div class="col-md-10 mx-auto">
-			<a href="donationShow.php"><button class='btn btn-danger'>Cancel</button></a>
+			<a href="donationShow.php"><button class='btn btn-danger'>CANCEL</button></a>
 
 
 		  <p><?= $errMsg ?></p>
@@ -131,7 +131,7 @@ if (isset($_GET['KEYID'])) {
 					</td></tr>
 					<tr><th class='pr-4'>Donation Detail*:</th><td><input class="form-control mb-1" type="text" name="DonationDetail" size="45" value="<?= htmlentities($DonationDetail) ?>"></td></tr>
 					<!--<tr><th>Category*:</th><td><select class='selectcustom' name="GID">CategoryOptionList($GID)?></select></td></tr>-->
-					<tr><td colspan=2><input class='btn btn-naf-blue w-100 mt-5' type=submit name="Submit" value="Submit Donation Information"></td></tr>
+					<tr><td colspan=2><input class='btn btn-naf-blue w-100 mt-5' type=submit name="Submit" value="SUBMIT DONATION INFORMATION"></td></tr>
 				</table>
 			</form>
 		</div>

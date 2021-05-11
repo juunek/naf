@@ -99,7 +99,7 @@ if (isset($_POST['Submit'])) {
 	// add $emailResultMessage to the comment preview table as the final output
 			$output = $output.$emailResultMessage;
 
-			$output .= "<p><a href='contactShow.php'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Contact Management Page</button></a></p>";
+			$output .= "<p><a href='contactShow.php'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE CONTACT MANAGEMENT PAGE</button></a></p>";
 
 		}else {
 				//$stmt->execute() failed.
@@ -124,9 +124,9 @@ if (isset($_POST['Submit'])) {
 			$output .= "<li class='text-naf-blue'>{$label[$m]}\n";
 		}
 		if ($CID != "") {
-			$output .= "</ul><a href='contactForm.php?CID=$CID'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Contact Form Page</button></a></div>\n";
+			$output .= "</ul><a href='contactForm.php?CID=$CID'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE CONTACT FORM PAGE</button></a></div>\n";
 		}else {
-			$output .= "</ul><a href='contactForm.php'><button class='btn btn-naf-blue w-100 mt-5'>Back to the Contact Form Page</button></a></div>\n";
+			$output .= "</ul><a href='contactForm.php'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE CONTACT FORM PAGE</button></a></div>\n";
 		}
 	}
 }

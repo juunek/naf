@@ -101,7 +101,7 @@ if (isset($_GET['CID'])) {
 			<h2 class='text-center my-5 text-naf-blue'>Contact - Admin Reply</h2>
 
 		<div class="col-md-10 mx-auto">
-			<a href="contactShow.php"><button class='btn btn-danger'>Cancel</button></a>
+			<a href="contactShow.php"><button class='btn btn-danger'>CANCEL</button></a>
 
 
 		  <p><?= $errMsg ?></p>
@@ -117,10 +117,10 @@ if (isset($_GET['CID'])) {
 				<p class="text-danger mb-1">*Required Fields</p>
 
 					<p><b class= 'text-naf-blue'>Full Name:</b> <?="$CFirstName $CLastName"?></p>
-					<p><b class= 'text-naf-blue'>Message:</b><input type="text" readonly class="form-control-plaintext" name="CDetails" size="45" value="<?=$CDetails?>"></p>
+					<p><b class= 'text-naf-blue'>Contact Message:</b><input type="text" readonly class="form-control-plaintext" name="CDetails" size="45" value="<?=$CDetails?>"></p>
 					<p><b class= 'text-naf-blue'>Admin Response*:</b></p><textarea class="form-control mb-1" type="text" name="Reply" size="45" placeholder="Write a response."></textarea>
 					<!--Category*:<select class='selectcustom' name="GID">CategoryOptionList($GID)?></select>-->
-					<input class='btn btn-naf-blue w-100 mt-5' type=submit name="Submit" value="Submit Contact Response">
+					<input class='btn btn-naf-blue w-100 mt-5' type=submit name="Submit" value="SEND REPLY">
 			</form>
 		</div>
 </div>

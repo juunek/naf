@@ -12,15 +12,15 @@ $conn = dbConnect();
 <?php
 
 print $HTMLHeader;
-print("<h2 class='text-center my-5 text-naf-blue'>Manage Contact Inquiries</h2>");
+print("<h2 class='text-center my-5 text-naf-blue'>Manage Email List Subscribers</h2>");
 
 ?>
 
 <script>
-function confirmDel(FirstName, CID) {
+function confirmDel(FirstName, ELID) {
 // javascript function to ask for deletion confirmation
 
-	url = "contactDelete.php?CID="+CID;
+	url = "emaillistDelete.php?ELID="+ELID;
 	var agree = confirm("Delete this message from " + FirstName + " ? ");
 	if (agree) {
 		// redirect to the deletion script
@@ -44,14 +44,14 @@ if (isset($_GET['pageno'])) {
         $no_of_records_per_page = 10;
         $offset = ($pageno-1) * $no_of_records_per_page;
 
-$total_pages_sql = "SELECT COUNT(*) FROM NAFContact";
+$total_pages_sql = "SELECT COUNT(*) FROM NAFEmailList";
         $result = mysqli_query($conn,$total_pages_sql);
         $total_rows = mysqli_fetch_array($result)[0];
         $total_pages = ceil($total_rows / $no_of_records_per_page);
 
 
 
-$sql = "SELECT CID, CTimeStamp, CFirstName, CLastName, CEmail, CPhone, CSubject, CDetails, CReplied FROM NAFContact ORDER BY CTimeStamp DESC LIMIT $offset, $no_of_records_per_page";
+$sql = "SELECT ELID, ELTimeStamp, ELFirstName, ELLastName, ELEmail FROM NAFEmailList ORDER BY ELTimeStamp DESC LIMIT $offset, $no_of_records_per_page";
 
  $res_data = mysqli_query($conn,$sql);
 
@@ -61,7 +61,7 @@ $sql = "SELECT CID, CTimeStamp, CFirstName, CLastName, CEmail, CPhone, CSubject,
       <div>
         <table class='table adminTable'>
             <thead class='table-head'>
-                <tr><th scope='col'>Submission Date</th><th scope='col'>Full Name</th><th scope='col'>Email</th><th scope='col'>Phone Number</th><th scope = 'col'>Subject</th><th scope = 'col'>Details</th><th scope = 'col'>Replied</th><th scope = 'col'>Option</th></tr>
+                <tr><th scope='col'>Submission Date</th><th scope='col'>Full Name</th><th scope='col'>Email</th><th scope = 'col'>Option</th></tr>
             </thead>
             <tbody>
 
@@ -71,27 +71,22 @@ $sql = "SELECT CID, CTimeStamp, CFirstName, CLastName, CEmail, CPhone, CSubject,
     ?>
 
 		<?php
-				$CFirstName = $row["CFirstName"];
-				$CLastName = $row["CLastName"];
-				$fullName = "$CFirstName $CLastName";
+				$ELFirstName = $row["ELFirstName"];
+				$ELLastName = $row["ELLastName"];
+				$fullName = "$ELFirstName $ELLastName";
 		?>
 
             <tr>
-                <td><?php echo $date=date('m/d/Y', strtotime($row["CTimeStamp"])); ?></td>
+                <td><?php echo $date=date('m/d/Y', strtotime($row["ELTimeStamp"])); ?></td>
                 <td><?php echo $fullName?></td>
-                <td><?php echo $row["CEmail"]; ?></td>
-                <td><?php echo $row["CPhone"]; ?></td>
-                <td><?php echo $row["CSubject"]; ?></td>
-                <td><?php echo $row["CDetails"]; ?></td>
-								<td><?php echo $row["CReplied"]; ?></td>
-
+                <td><?php echo $row["ELEmail"]; ?></td>
                 <?php
 								$deleteInfo = "$fullName on $date";
 	              $Delete_js = htmlspecialchars($deleteInfo, ENT_QUOTES);
 
-                $CID = $row['CID'];
+                $ELID = $row['ELID'];
 
-                 echo "<td><a href='contactForm.php?CID=$CID'>Reply</a> | <a href='javascript:confirmDel(\"$Delete_js\",$CID)'>Delete</a></td>"
+                 echo "<td><a href='javascript:confirmDel(\"$Delete_js\",$ELID)'>Delete</a></td>"
                  ?>
             </tr>
 

@@ -6,10 +6,10 @@ var page;
 
 
   document.getElementById('joinlistForm').addEventListener('submit', function(e){process(e, 'Joinlist')}, false);
-  
- 
-   
-} 
+
+
+
+}
 
 var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 var namePattern = /^([a-zA-Z ]){2,15}$/;
@@ -20,7 +20,7 @@ var textPattern = /^([a-zA-Z ]){2,100}$/;
 
 function addErrorMessage(fieldId, msg){
     //console.log(msg);
-    
+
 
     // check if an error message span is available
     if (document.getElementById(fieldId + "ErrMsg"))
@@ -29,7 +29,7 @@ function addErrorMessage(fieldId, msg){
       document.getElementById(fieldId + "ErrMsg").innerHTML = msg;
       document.getElementById(fieldId + "ErrMsg").style.display = "block";
     } else {
-      
+
       // otherwise, create the error message span
       var messageSpan = document.createElement("span");
       messageSpan.className = "errMsg"; // set the CSS class to use
@@ -39,9 +39,9 @@ function addErrorMessage(fieldId, msg){
       var inputLabel = document.getElementById(fieldId+'Label');
       console.log("inputLabel " + inputLabel);
       inputLabel.parentNode.appendChild(messageSpan);
-      
+
     }
-    
+
   }
 
  function removeErrorMessage (fieldId){
@@ -49,9 +49,9 @@ function addErrorMessage(fieldId, msg){
     {
       document.getElementById(fieldId+"Label").style.color = "black";
       document.getElementById(fieldId + "ErrMsg").style.display = "none";
-     
+
     }
-    
+
   }
 
 
@@ -61,8 +61,8 @@ function addErrorMessage(fieldId, msg){
     var err = 0;
 
 
-  // email validation 
-  
+  // email validation
+
 
   var email = document.getElementById('inputEmail'+ page).value;
 
@@ -84,9 +84,9 @@ function addErrorMessage(fieldId, msg){
   } else {
     addErrorMessage('inputFirstname' + page, 'Please complete with letters only, up to 15 characters');
     err ++;
-  } 
+  }
 
- 
+
 
   var lastname = document.getElementById('inputLastname' + page).value;
 
@@ -102,39 +102,64 @@ function addErrorMessage(fieldId, msg){
   var message = "";
 
   if (err == 0) {
+    var jsELFirstName = document.getElementById('inputFirstname' + page).value;
+    var jsELLastName = document.getElementById('inputLastname' + page).value;
+    var jsELEmail = document.getElementById('inputEmail'+ page).value;
 
-   
+    var inputArr = [jsELFirstName, jsELLastName, jsELEmail];
+    console.log ("inputArr:" + inputArr);
 
- window.location.replace("thankyou.php");
-    
+// Creating a cookie after the document is ready
+
+document.cookie = "cookieArrJoinlist=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+$(document).ready(function(){
+
+  createCookie("cookieArrJoinlist", inputArr, "10");
+
+});
+
+
+function createCookie(name, value, days){
+
+    var expires;
+
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toGMTString();
+    } else {
+      expires = "";
+    }
+
+    document.cookie = escape(name) + "=" +
+    escape(value) + expires + "; path=/";
+
+  }
+
+    window.location.href = "http://ctec4350.krk1266.uta.cloud/naf/admin_edit_join_email.php";
+
 
 
   } else {
 
 
+
   }
 
+if (evt.preventDefault)
+    {
+      evt.preventDefault();
+    } else {
+      evt.returnValue = false;
+    }
 
-
-  console.log("message: " + message);
-
-  document.getElementById('response').innerHTML = message;
-
-  if (evt.preventDefault)
-  {
-    evt.preventDefault();
-  } else {
-    evt.returnValue = false;
-  }
 
 
 }
 
 
- 
 
 
 
 window.addEventListener('load', init, false);
-
-
