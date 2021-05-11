@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
   <title> Community | Neuro Assitance Foundation</title>
-  <meta name="description" content="Learn more about the wheelchair vans donated in Dallas Texas by NAF and the people with spinal cord injuries.">
+  <meta name="description" content="Learn more about the wheelchair vans donated in Dallas Texas to NAF for people with spinal cord injuries.">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,14 +52,14 @@
                   <div class="card-body">
 
                       <img src="img/testimonials/thomas.jpg" alt="Picture of Thomas" height="200px" class="mx-auto rounded-circle d-block img-no-show">
-                      
+
                       <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Thomas</h4>
 
                       <p class="card-text text-center">
                       "You know, in today's world, so much is just crazy and beyond understanding. It's really great when I come across people and organizations that are genuinely helping to make things better, and you guys are doing that. Thanks again, and keep it up!"
                       <br><br>
                       - Thomas, 49, living with quadriplegia from mountain biking accident</p>
-                        
+
                   </div>
                 </div>
               </div>
@@ -71,14 +71,14 @@
                   <div class="card-body">
 
                       <img src="img/testimonials/travis-d.jpg" alt="Picture of Travis" height="200px" class="mx-auto rounded-circle d-block img-no-show">
-                      
+
                       <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Travis</h4>
 
                       <p class="card-text text-center">
                       "Thank you from the bottom of our hearts for your help. You have truly made our lives more bearable. Now it will not feel like Travis is a prisoner in our home."
                       <br><br>
                       - Cheryl D., Travis' mother</p>
-                        
+
                   </div>
                 </div>
               </div>
@@ -91,19 +91,19 @@
                   <div class="card-body">
 
                       <img src="img/testimonials/adrienne.jpg" alt="Picture of Adrienne" height="200px" class="mx-auto rounded-circle d-block img-no-show">
-                      
+
                       <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Adrienne</h4>
 
                       <p class="card-text text-center">
                       "Thanks a million for the standing frame! My family has been praying God would provide one for us since February! Answered prayer indeed. I appreciate Neuro Assistance Foundation more than I can explain!"
                       <br><br>
                       - Adrienne, 23, living with quadriplegia</p>
-                        
+
                   </div>
                 </div>
               </div>
             </div>
-            
+
 
             <div class="carousel-item">
               <div class="d-flex justify-content-center m-5">
@@ -111,14 +111,14 @@
                   <div class="card-body">
 
                       <img src="img/testimonials/terri-y.jpg" alt="Picture of Terri" height="200px" class="mx-auto rounded-circle d-block img-no-show">
-                      
+
                       <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Terri</h4>
 
                       <p class="card-text text-center">
                       "I never thought I'd be able to have a van like this. I feel like I have an angel on my shoulder whenever I drive it!"
                       <br><br>
                       - Terri</p>
-                        
+
                   </div>
                 </div>
               </div>
@@ -130,20 +130,20 @@
                   <div class="card-body">
 
                       <img src="img/testimonials/keith-m.jpg" alt="Picture of Keith" height="200px" class="mx-auto rounded-circle d-block img-no-show">
-                      
+
                       <h4 class="card-title text-center fw-800 text-naf-blue mt-4 mb-3">Keith</h4>
 
                       <p class="card-text text-center">
                       "A car accident in 2018 left me with a dislocated shoulder, collapsed lung, lacerated kidney, and broken ribs, hip, and pelvis. My left leg was amputated at the hip. After I woke up from a 9-day coma, I was paralyzed for the first 8 weeks. I was fitted with a basic and uncomfortable wheelchair. NAF helped with out with a "real" wheelchair and didn't ask for anything in return. Words can not express the appreciation and gratitude that I have for you."
                       <br><br>
                       - Keith, 52, Army Veteran</p>
-                        
+
                   </div>
                 </div>
               </div>
             </div>
 
-            
+
   </div>
 
 
@@ -175,7 +175,7 @@
        <p class='cover'>NAF was extremely honored to receive an adaptive minivan as a donation in December, 2010. The donor is Mrs. Jean Hancock Chernosky of Houston and the van was donated in memory of her late husband, Dr. Marvin Chernosky.</p>
 
        <div class='flex-column btn-tablet-mobile-full mt-3'>
-          <a class='events-btn-padding-right' href='giving-thanks.php'>
+          <a class='events-btn-padding-right' href='giving-thanks.php' alt='link to NAF giving thanks page'>
             <button type='button' class='btn btn-naf-primary-btn w-100'>VIEW MORE</button>
           </a>
        </div>

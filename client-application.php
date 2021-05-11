@@ -7,6 +7,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Apply for assistance with the DFW Non-profit Neuro Assistance Foundation for people who have spinal cord injuries and paralysis by providing equipment and wheelchair vans.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -103,7 +104,7 @@
 
         <!-- strat heere------------------------------------------------------------------>
 <div class="col-md-10 col-12 mx-auto mb-5">
-          
+
 <form id="clientForm" action="" method="post" class="px-4 pt-4 pb-0 shadow rounded-3">
     <h3 class="text-naf-blue">Patient/Client Info</h3>
     <div class="from-group row">
@@ -184,7 +185,7 @@
       <div class="d-flex flex-column col-sm-12">
          <label id="client_assistTypeLabel">Type of assistance requested</label>
         <div class= "row">
-       
+
             <div class="col-sm-6 mt-1">
               <input type="checkbox" name="client_assistType" value="client_assistType_home" id="client_assistType_home">
               <label for="client_assistType_home">Home Modifications</label>
@@ -320,7 +321,7 @@
         <input type="tel" class="form-control" id="inputPhoneSocialClient" placeholder="10-digit phone number">
       </div>
     </div>
-  
+
 
     <h3 class="text-naf-blue mt-5">Person Submitting Application*</h3>
     <div class="form-group row">
@@ -354,10 +355,10 @@
     <p>Please enter the contact information for the patient/client or the primary contact of the patient/client.</p>
     <div class="form-group row">
       <div class="d-flex flex-row align-item-center col-sm-12">
-          <input type="checkbox" value="yes" name="sameAsperson" id="sameAsperson" class="my-1"> 
+          <input type="checkbox" value="yes" name="sameAsperson" id="sameAsperson" class="my-1">
           <label for='sameAsperson' id="forTerms" class="pl-1 m-0">Same as person submitting</label>
       </div>
-    
+
    </div>
     <div class="form-group row">
       <div class="d-flex flex-column col-sm-6">
@@ -389,7 +390,7 @@
               <br>
           </div>
      </div>
-    
+
   </form>
 </div>
 </div>

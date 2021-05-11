@@ -64,7 +64,7 @@
 
           <div class="col-lg-6 col-md-6 mt-4 mb-3">
             <div class="mx-4 mt-md-4 p-lg-5 pt-4 p-3 bg-naf-blue row">
-              <img class="col-lg-6 col-md-6 mx-auto w-50 h-50" src="img/home-texas-flag.svg">
+              <img class="col-lg-6 col-md-6 mx-auto w-50 h-50" src="img/home-texas-flag.svg" alt="Image of Texas State silhouette">
               <div class="col-lg-6 col-md-6 d-flex align-items-center">
                   <div class="mx-auto my-3" id="home-texas-flag">
                     <h3 class="text-light text-center fs-1">12 years</h3>

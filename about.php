@@ -76,7 +76,7 @@
       <div class="row m-4 d-flex justify-content-evenly">
 
             <div class="col-lg-3 col-6 d-flex flex-column text-center mx-lg-auto">
-                <img src="img/cindi-cooperman.jpg" width="100%" class="mb-4 px-lg-0 mx-auto px-md-4 px-sm-5">
+                <img src="img/cindi-cooperman.jpg" width="100%" class="mb-4 px-lg-0 mx-auto px-md-4 px-sm-5" alt="Image of Cindi Cooperman">
                 <h4>Cindi Cooperman</h4>
                 <p>Executive Director</p>
                 <a href="contact.php?Inquiry-for-Cindi-Cooperman" alt="Contact NAF"><button class="btn btn-naf-blue w-100 mb-4">CONTACT</button></a>
@@ -99,13 +99,13 @@
      <div class="row m-4 text-center">
 
       <div class="col-lg-3 col-6">
-          <img src="img/avatar.png" width="80%" class="mb-2">
+          <img src="img/avatar.png" width="80%" class="mb-2" alt="Image of Joy Hetrick">
           <h4>Joy Hetrick</h4>
           <p>Events Manager</p>
       </div>
 
        <div class="col-lg-3 col-6">
-          <img src="img/avatar.png" width="80%" class="mb-2">
+          <img src="img/avatar.png" width="80%" class="mb-2" alt="Image of Khanh Moutafis">
           <h4>Khanh Moutafis</h4>
           <p>Operations Manager</p>
       </div>
