@@ -91,7 +91,7 @@ if ($stmt->prepare($sql)) {
        </div>");
     }}if ($stmt->num_rows == 0) {
       print ("<div class='col-md-10 mx-auto row py-4'>
-        <p class='text-center'>There are currently no upcoming events. View our <a href='events.php'>past events here</a>.</p>
+        <p class='text-center'>We have currently finished hosting all of our events for the year!. There's more to come in the future, if you'd like to stay updated on our plans you can <a href='join-email.php'join our email list</a> or view our <a href='events.php'>past events</a>.</p>
        </div>");
     }
 
