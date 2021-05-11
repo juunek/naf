@@ -1,10 +1,10 @@
-
 var page;
+
 
  function init(){
 
 
-
+  document.getElementById("inputSubjectVolunteer").value = "Im interested in volunteering for NAF";
   document.getElementById('volunteerForm').addEventListener('submit', function(e){process(e, 'Volunteer')}, false);
   
  
@@ -110,10 +110,11 @@ function addErrorMessage(fieldId, msg){
   */
 
 
-  var subject = document.getElementById('inputSubject' + page).value;
+
+ var subject = document.getElementById('inputSubject' + page).value;
 
 
-  if (namePattern.test(subject)) {
+  if (subject != "") {
     removeErrorMessage('inputSubject' + page);
   } else {
     addErrorMessage('inputSubject' + page, 'Please add a subject to your message');
@@ -149,9 +150,6 @@ function addErrorMessage(fieldId, msg){
 
 
 
-  console.log("message: " + message);
-
-  document.getElementById('response').innerHTML = message;
 
   if (evt.preventDefault)
   {

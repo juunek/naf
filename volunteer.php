@@ -100,7 +100,7 @@
                 <div class="form-group row">
                     <div class="col-sm-12">
                         <label for="inputSubjectVolunteer" id="inputSubjectVolunteerLabel">Subject*</label>
-                        <input type="text" class="form-control" id="inputSubjectVolunteer" value="I'm interested in volunteering for NAF">
+                        <input type="text" class="form-control" id="inputSubjectVolunteer">
                     </div>
 
                 </div>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12 pt-4">
-                     <button type="submit" name="submit" value="Submit" id="submitVolunteer" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-naf-blue rounded-2 btn-block py-2 fs-5">SEND MESSAGE</button>
+                     <button type="submit" name="submit" value="Submit" id="submitVolunteer" class="btn-naf-blue rounded-2 btn-block py-2 fs-5">SEND MESSAGE</button>
                      <br>
                    </div>
                 </div>
