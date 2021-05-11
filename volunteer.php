@@ -53,8 +53,8 @@
         </div>
 
         <div class="row">
-            <div class="col-md-10 mx-auto">
-              <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-md-10 mt-5 mx-auto">
+              <div class="row d-flex justify-content-center">
                     <div class="col-2 mx-1">
                       <i class="fas fa-quote-left" id="volunteer-quote-img"></i>
                     </div>
