@@ -21,7 +21,7 @@ function confirmDel(FirstName, EID) {
 // javascript function to ask for deletion confirmation
 
     url = "eventsDelete.php?EID="+EID;
-    var agree = confirm("Are you sure you want to delete this " + FirstName + " ? ");
+    var agree = confirm("Are you sure you want to delete " + FirstName + " ? ");
     if (agree) {
         // redirect to the deletion script
         location.href = url;
@@ -50,7 +50,7 @@ $total_pages_sql = "SELECT COUNT(*) FROM Events";
         $total_pages = ceil($total_rows / $no_of_records_per_page);
 
 
-    $sql = "SELECT  FROM Events ORDER BY EDate DESC LIMIT $offset, $no_of_records_per_page";
+    $sql = "SELECT EID, EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, FullDescription, ELinks, RegisterEvtBtn, DetailsHeader1, Details1, DetailsHeader2, Details2, DonateBtn, VolunteerBtn, SponsorBtn FROM Events ORDER BY EDate ASC LIMIT $offset, $no_of_records_per_page";
 
  $res_data = mysqli_query($conn,$sql);
 
@@ -58,12 +58,12 @@ $total_pages_sql = "SELECT COUNT(*) FROM Events";
 
 <div class="container-fluid">
     <div class='flexboxContainer'>
-      <div><a href="eventsForm.php"><span class='button'> + </span> Add a new item</a></div>
+      <div><a href="eventsForm.php"><span class='button'> + </span> Add a new event</a></div>
       <div>
         <table class='table adminTable'>
             <thead class='table-head'>
-                <tr><th scope='col'>Resources Type</th><th scope='col'>Image</th><th scope='col'>Title</th><th scope='col'>Lead</th><th scope='col'>Description</th><th scope = 'col'>Link
-                </th><th scope = 'col'>Options</th></tr>
+                <tr><th scope='col'>Image Preview</th><th scope='col'>Event Name</th><th scope='col'>Event Time, Location, and Date</th><th scope='col'>Description Preview</th><th scope='col'>Full Description</th><th scope = 'col'>Information Blurb 1</th><th scope = 'col'>Information Blurb 2</th>
+                <th scope = 'col'>Event Links</th><th scope = 'col'>Options</th></tr>
             </thead>
             <tbody>
 
@@ -74,27 +74,45 @@ $total_pages_sql = "SELECT COUNT(*) FROM Events";
     ?>
 
     <?php
-           $EventsImg = $row["Img"];
+           $EventsImg = $row["EImagePreview"];
+           $EName = $row["EName"];
+           $EDate = date('l\,\ F jS\,\ Y', strtotime($row["EDate"]));
+           $EStart = date('g:i A', strtotime($row["EStart"]));
+           $EEnd = date('g:i A', strtotime($row["EEnd"]));
+           $ELocation = $row["ELocation"];
+           $DetailsHeader1 = $row["DetailsHeader1"];
+           $Details1 = $row["Details1"];
+           $DetailsHeader2 = $row["DetailsHeader2"];
+           $Details2 = $row["Details2"];
+           $ELinks = $row["ELinks"];
+           $RegisterEvtBtn = $row["RegisterEvtBtn"];
+           $DonateBtn = $row["DonateBtn"];
+           $VolunteerBtn = $row["VolunteerBtn"];
+           $SponsorBtn = $row["SponsorBtn"];
 
     ?>
 
             <tr>
-                <td><?php echo $row["ResourcesType"]; ?></td>
-                <td><?php echo "<img class='img-fluid' src=img/resources/$EventsImg>";?></td>
-                <td><?php echo $row["Title"]; ?></td>
-                <td><?php echo $row["Lead"]; ?></td>
-                <td><?php echo $row["Description"]; ?></td>
-                <td><?php echo $row["Link"]; ?></td>
+                <td><?php echo "<img class='img-fluid' src=img/$EventsImg>";?></td>
+                <td><?php echo "$EName";?></td>
+                <td><?php echo "$EStart - $EEnd on $EDate at $ELocation"; ?></td>
+                <td><?php echo $row["EDescriptionPreview"]; ?></td>
+                <td><?php echo $row["FullDescription"]; ?></td>
+                <td><?php echo "<b>$DetailsHeader1</b><br><br>$Details1"; ?></td>
+                <td><?php echo "<b>$DetailsHeader2</b><br><br>$Details2"; ?></td>
+                <td><?php echo "<b>Event page link:</b> $ELinks<br><br>
+                                <b>Registration link:</b> $RegisterEvtBtn<br><br>
+                                <b>Donation link:</b> $DonateBtn<br><br>
+                                <b>Volunteer link:</b> $VolunteerBtn<br><br>
+                                <b>Sponsor link:</b> $SponsorBtn<br><br>"; ?></td>
 
                    <?php
-                  $ResourceType = $row["ResourcesType"];
-                  $Title = $row["Title"];
-                  $deleteInfo = "$ResourceType - $Title";
+                  $deleteInfo = "$EName";
    	              $Delete_js = htmlspecialchars($deleteInfo, ENT_QUOTES);
 
                 $EID = $row['EID'];
 
-                 echo "<td><a href='resourcesForm.php?EID=$EID'>Edit</a> | <a href='javascript:confirmDel(\"$Delete_js\",$EID)'>Delete</a></td>"
+                 echo "<td> <a href='eventsForm.php?EID=$EID'>Edit</a> | <a href='javascript:confirmDel(\"$Delete_js\",$EID)'>Delete</a></td>"
                  ?>
             </tr>
 

@@ -12,19 +12,19 @@ if (isset($_POST['Submit'])) {
 	// ==========================
 
 	// define constant for upload folder
-	  define('UPLOAD_DIR', '/home/krk1266/ctec4350.krk1266.uta.cloud/naf/img/resources/');
+	  define('UPLOAD_DIR', '/home/krk1266/ctec4350.krk1266.uta.cloud/naf/img/');
 
 	  $allowedTypes = array(IMAGETYPE_PNG, IMAGETYPE_JPEG, IMAGETYPE_GIF, IMAGETYPE_TIFF_II, IMAGETYPE_TIFF_MM);
-	  $detectedType =exif_imagetype($_FILES['Img']['tmp_name']);
+	  $detectedType =exif_imagetype($_FILES['EImagePreview']['tmp_name']);
 
 	  if (in_array($detectedType, $allowedTypes))  {
 
-	    trim($_FILES['Img']['name']);
-	    $_FILES['Img']['name']= str_replace(" ", "_", $_FILES['Img']['name']);
+	    trim($_FILES['EImagePreview']['name']);
+	    $_FILES['EImagePreview']['name']= str_replace(" ", "_", $_FILES['EImagePreview']['name']);
 	    // move the file to the upload folder and rename it
-	    if (move_uploaded_file($_FILES['Img']['tmp_name'], UPLOAD_DIR.$_FILES['Img']['name'])){
+	    if (move_uploaded_file($_FILES['EImagePreview']['tmp_name'], UPLOAD_DIR.$_FILES['EImagePreview']['name'])){
 
-	        $Img = $_FILES['Img']['name'];
+	        $EImagePreview = $_FILES['EImagePreview']['name'];
 
 	        //$message = "The selected file has been successfully uploaded. <br>
 	       // <a href='/upload/uploadassignment/storage/$fileName'>Click to see your uploaded file.</a>";
@@ -38,23 +38,24 @@ if (isset($_POST['Submit'])) {
 	    $uploadMessage = "<p>You cannot upload that file type! Accepted file types are .TIFF, .PNG, .JPEG, and .GIF.</p>";
 		}
 		if (!empty($uploadMessage)) {
-			if($_POST['LogoExists'] == 'No'){
-				$uploadMessage = "<ul><li>Resource Logo File $uploadMessage</li></ul>";
+			if($_POST['PreviewExists'] == 'No'){
+				$uploadMessage = "<ul><li>Events Image Preview File $uploadMessage</li></ul>";
 			}else {
-				$Img = $_POST['LogoExists'];
+				$EImagePreview = $_POST['PreviewExists'];
 				$uploadMessage = "";
 			}
 		}
 	//validate user input
 
 	// set up the required array
-	$required = array("Title", "Lead", "Description", "Link", "RID"); // note that, in this array, the spelling of each item should match the form field names
+	$required = array("EName", "EDate", "EStart", "EEnd", "ELocation", "EDescriptionPreview", "FullDescription", "ELinks", "RegisterEvtBtn", "DonateBtn", "VolunteerBtn", "SponsorBtn"); // note that, in this array, the spelling of each item should match the form field names
 
 	// set up the expected array
-	$expected = array("ResID", "Title", "Lead", "Description", "Link", "RID", "LogoExists"); // again, the spelling of each item should match the form field names
+	$expected = array("EID", "EName", "EDate", "EStart", "EEnd", "ELocation", "EDescriptionPreview", "FullDescription", "ELinks", "RegisterEvtBtn", "DetailsHeader1", "Details1", "DetailsHeader2", "Details2","DonateBtn", "VolunteerBtn", "SponsorBtn", "PreviewExists"); // again, the spelling of each item should match the form field names
 
     // set up a label array, use the field name as the key and label as the value
-  $label = array ("ResID" => "Resource ID (ResID)", 'Img'=>'Image', "Title"=>'Title', "Lead"=>'Lead', "Description"=>'Description', "Link"=>'Resource Link', "RID"=>'Resource Category ID (RID)', "LogoExists"=>'Logo Exists');
+  $label = array ("EID" => "Event ID (EID)", 'EImagePreview'=>'Image Preview', "EName"=>'Event Name', "EDate"=>'Event Date',"EStart"=>'Start Time', "EEnd"=>'End Time', "ELocation"=>'Location', "EDescriptionPreview"=>'Description Preview', "FullDescription"=>'Full Description',  "ELinks"=>'Event Page Link',
+	"RegisterEvtBtn"=>'Registration Link', "DetailsHeader1"=>'Blurb 1: Heading', "Details1"=>'Blurb 1: Details', "DetailsHeader2"=>'Blurb 2: Heading', "Details2"=>'Blurb 2: Details', "DonateBtn"=>'Donate Link', "VolunteerBtn"=>'Volunteer Link', "SponsorBtn"=>'Sponsor Link', "PreviewExists"=>'Preview Image Exists');
 
 
 	$missing = array();
@@ -102,30 +103,31 @@ if (isset($_POST['Submit'])) {
 
 		// compose a query: Insert or Update? Depending on whether there is a $pid.
 
-		if ($ResID != "") {
+		if ($EID != "") {
 			/* there is an existing pid ==> need to deal with an existing reocrd ==> use an update query */
 
 			// Ensure $pid contains an integer.
-			$ResID = intval($ResID);
+			$EID = intval($EID);
+			  $sql = "SELECT EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, FullDescription, ELinks, RegisterEvtBtn, DetailsHeader1, Details1, DetailsHeader2, Details2, DonateBtn, VolunteerBtn, SponsorBtn FROM Events ";
 
-			$sql = "Update Resources SET Img = ?, Title = ?, Lead = ?, Description = ?, Link = ?, RID = ? WHERE ResID = ?";
+			$sql = "Update Events SET EImagePreview = ?, EName = ?, EDate = ?, EStart = ?, EEnd = ?, ELocation = ?, EDescriptionPreview = ?, FullDescription = ?, ELinks = ?, RegisterEvtBtn = ?, DetailsHeader1 = ?, Details1 = ?, DetailsHeader2 = ?, Details2 = ?, DonateBtn = ?, VolunteerBtn = ?, SponsorBtn = ? WHERE EID = ?";
 
 			if($stmt->prepare($sql)){
 
 				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
-				$stmt->bind_param('sssssii',$Img, $Title, $Lead, $Description, $Link, $RID, $ResID);
+				$stmt->bind_param('sssssssssssssssssi', $EImagePreview, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $FullDescription, $ELinks, $RegisterEvtBtn, $DetailsHeader1, $Details1, $DetailsHeader2, $Details2, $DonateBtn, $VolunteerBtn, $SponsorBtn, $EID);
 				$stmt_prepared = 1;// set up a variable to signal that the query statement is successfully prepared.
 			}
 
 		} else {
 			// no existing pid ==> this means no existing record to deal with, then it must be a new record ==> use an insert query
-			$sql = "Insert Into Resources (Img, Title, Lead, Description, Link, RID) values (?, ?, ?, ?, ?, ?)";
+			$sql = "Insert Into Events (EImagePreview, EName, EDate, EStart, EEnd, ELocation, EDescriptionPreview, FullDescription, ELinks, RegisterEvtBtn, DetailsHeader1, Details1, DetailsHeader2, Details2, DonateBtn, VolunteerBtn, SponsorBtn) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 			if($stmt->prepare($sql)){
 
 				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
 
-				$stmt->bind_param('sssssi',$Img, $Title, $Lead, $Description, $Link, $RID);
+				$stmt->bind_param('sssssssssssssssss', $EImagePreview, $EName, $EDate, $EStart, $EEnd, $ELocation, $EDescriptionPreview, $FullDescription, $ELinks, $RegisterEvtBtn, $DetailsHeader1, $Details1, $DetailsHeader2, $Details2, $DonateBtn, $VolunteerBtn, $SponsorBtn);
 				$stmt_prepared = 1; // set up a variable to signal that the query statement is successfully prepared.
 			}
 		}
@@ -137,14 +139,14 @@ if (isset($_POST['Submit'])) {
 
 				$output = "<h2 class='text-center text-success my-5'>Success!</h2><p>The following information has been saved in the database:</p>";
 				foreach($expected as $key){
-					if ($key == "LogoExists") {
-						$v = $Img;
+					if ($key == "PreviewExists") {
+						$v = $EImagePreview;
 					}else {
 						$v = ${$key};
 					}
 					$output .= "<p><b class= 'text-naf-blue'>{$label[$key]}:</b>  $v</p>";
 				}
-				$output .= "<p><a href='resourcesShow.php'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE RESOURCES MANAGEMENT PAGE</button></a></p>";
+				$output .= "<p><a href='eventsShow.php'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE EVENTS MANAGEMENT PAGE</button></a></p>";
 			} else {
 				//$stmt->execute() failed.
 				$output = "<h2 class='text-center text-danger my-5'>Error</h2><p class='text-center'>Database operation failed.  Please contact the webmaster.</p>";
@@ -162,16 +164,16 @@ if (isset($_POST['Submit'])) {
 			$output .= "<li class='text-naf-blue'>{$label[$m]}\n";
 		}
 		$output .=" <p>$uploadMessage</p>\n";
-		if ($ResID != "") {
-			$output .= "</ul><a href='resourcesForm.php?ResID=$ResID'> <p>$uploadMessage</p>\n <button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE RESOURCES FORM PAGE</button></a></div>\n";
+		if ($EID != "") {
+			$output .= "</ul><a href='eventsForm.php?EID=$EID'> <p>$uploadMessage</p>\n <button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE EVENTS FORM PAGE</button></a></div>\n";
 		}else {
-			$output .= "</ul><a href='resourcesForm.php'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE RESOURCES FORM PAGE</button></a></div>\n";
+			$output .= "</ul><a href='eventsForm.php'><button class='btn btn-naf-blue w-100 mt-5'>BACK TO THE EVENTS FORM PAGE</button></a></div>\n";
 		}
 	}
 }
 
 } else {
-	$output = "<h2 class='text-center text-danger my-5'>Invalid Request</h2><p class='text-center'>Please begin your donation managment operation from the <a href='resourcesShow.php'>Resources Page</a>.</p>";
+	$output = "<h2 class='text-center text-danger my-5'>Invalid Request</h2><p class='text-center'>Please begin your donation managment operation from the <a href='eventsShow.php'>Events Page</a>.</p>";
 }
 
 
