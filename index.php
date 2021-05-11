@@ -131,7 +131,7 @@
              </div>");
           }}if ($stmt->num_rows == 0) {
             print ("<div class='col-md-10 mx-auto row py-4'>
-              <p class='text-center'>We have currently finished hosting all of our events for the year!. There's more to come in the future, if you'd like to stay updated on our plans you can <a href='join-email.php'join our email list</a> or view our <a href='events.php'>past events</a>.</p>
+              <p class='text-center'>We are working on more events! If you'd like to stay updated on our plans, <a href='join-email.php''>join our email list</a>. View our <a href='events.php'>past events here</a>.</p>
              </div>");
           }
       print("</div>");
@@ -216,7 +216,7 @@
             <a href="volunteer.php" alt="Application to Voulenteer with NAF" class="btn btn-same-size clear-bg m-2  fw-800">Volunteer Opportunities</a>
           </div>
           <div class="col-lg-4 col-md-6 text-center">
-            <a href="donate.php" alt="Donate to NAF" class="btn clear-bg btn-same-size  m-2 fw-800">Donate</a>
+            <a href="donate.php" alt="Donate to NAF" class="btn clear-bg btn-same-size  m-2 fw-800">Donate Equipment</a>
           </div>
        </div>
 
