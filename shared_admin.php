@@ -26,12 +26,13 @@ $HTMLHeader = "
             <!-- Sidebar-->
             <div class='bg-light border-right' id='sidebar-wrapper'>
                 <div class='sidebar-heading'>
-                  <a href ='index.php'><img src='img/naf-logo.png' alt='' height='40rem'></a>
+                  <a href ='index.php' target='_blank'><img src='img/naf-logo.png' alt='' height='40rem'></a>
                 </div>
 
                 <div class='list-group list-group-flush'>
                     <a class='list-group-item list-group-item-action bg-light' href='adminMain.php'>Dashboard</a>
                     <a class='list-group-item list-group-item-action bg-light' href='donationShow.php'>Donation</a>
+                    <a class='list-group-item list-group-item-action bg-light' href='contactShow.php'>Contact Us</a>
                     <a class='list-group-item list-group-item-action bg-light' href='eventsShow.php'>Events</a>
                     <a class='list-group-item list-group-item-action bg-light' href='emaillistShow.php'>Email List</a>
                     <a class='list-group-item list-group-item-action bg-light' href='resourcesShow.php'>Resources</a>
@@ -43,8 +44,9 @@ $HTMLHeader = "
             <!-- Page Content-->
             <div id='page-content-wrapper'>
                 <nav class='navbar navbar-expand-lg navbar-light bg-light border-bottom'>
-                    <button class='btn btn-naf-blue' id='menu-toggle'>Menu</button>
+                    <button class='btn btn-admin-menu' id='menu-toggle'>MENU</button>
                     <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'><span class='navbar-toggler-icon'></span></button>
+                    <h5 class='ml-4 pt-2'>NAF Administration</h5>
 
                 </nav>
 ";
