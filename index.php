@@ -216,7 +216,7 @@
             <a href="volunteer.php" alt="Application to Voulenteer with NAF" class="btn btn-same-size clear-bg m-2  fw-800">Volunteer Opportunities</a>
           </div>
           <div class="col-lg-4 col-md-6 text-center">
-            <a href="donate.php" alt="Donate to NAF" class="btn clear-bg btn-same-size  m-2 fw-800">Donate</a>
+            <a href="donate.php" alt="Donate to NAF" class="btn clear-bg btn-same-size  m-2 fw-800">Donate Equipment</a>
           </div>
        </div>
 
