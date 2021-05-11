@@ -32,10 +32,11 @@ $HTMLHeader = "
                 <div class='list-group list-group-flush'>
                     <a class='list-group-item list-group-item-action bg-light' href='adminMain.php'>Dashboard</a>
                     <a class='list-group-item list-group-item-action bg-light' href='donationShow.php'>Donation</a>
-                    <a class='list-group-item list-group-item-action bg-light' href='#!'>Overview</a>
                     <a class='list-group-item list-group-item-action bg-light' href='eventsShow.php'>Events</a>
                     <a class='list-group-item list-group-item-action bg-light' href='emaillistShow.php'>Email List</a>
                     <a class='list-group-item list-group-item-action bg-light' href='resourcesShow.php'>Resources</a>
+                    <a class='list-group-item list-group-item-action bg-light' href='testimonialsShow.php'>Testimonials</a>
+                    <a class='list-group-item list-group-item-action bg-light' href='giving-thanksShow.php'>Giving Thanks</a>
                     <a class='list-group-item list-group-item-action bg-light' href='logout.php'>Log out</a>
                 </div>
             </div>

@@ -65,35 +65,35 @@ if (isset($_GET['KEYID'])) {
 
 // function to create the options for the category drop-down list.
 //  -- the value of parameter $selectedCID comes from the function call
-/*function CategoryOptionList($selectedG){
+function CategoryOptionList($selectedDonID){
 
 	$list = ""; //placeholder for the CD category option list
 
 	global $conn;
 	// retrieve category info from the database to compose a drop down list
-	$sql = "SELECT GID, Genre FROM GenreCategory order by Genre";
+	$sql = "SELECT DonID, DonationType FROM DonationCategory order by DonID";
 
 	$stmt = $conn->stmt_init();
 
 	if ($stmt->prepare($sql)){
 
 		$stmt->execute();
-		$stmt->bind_result($GID, $Genre);
+		$stmt->bind_result($DonID, $DonationType);
 
 		while ($stmt->fetch()) {
 			// while going through the rows in the results, check if the category id of the current row matches the parameter ($CID) provided by the function call
-			if ($GID == $selectedGID){
+			if ($DonationType == $selectedDonID){
 				$selected = "Selected";
 			} else {
 				$selected = "";
 			}
 			// create an option based on the current row
-			$list = $list."<option value='$GID' $selected>$Genre</option>";
+			$list = $list."<option value='$DonationType' $selected>$DonationType</option>";
 		}
 	}
 	$stmt->close();
 	return $list;
-}*/
+}
 ?>
 <?php
 	print $HTMLHeader;
@@ -117,20 +117,8 @@ if (isset($_GET['KEYID'])) {
 					<tr><th class='pr-4'>Last Name*:</th><td><input class="form-control mb-1" type="text" name="LastName" size="45" value="<?= htmlentities($LastName) ?>"></td></tr>
 					<tr><th class='pr-4'>Email*:</th><td><input class="form-control mb-1" type="email" name="Email" size="45" value="<?= htmlentities($Email) ?>"></td></tr>
 					<tr><th class='pr-4'>Phone Number*:</th><td><input class="form-control mb-1" type="text" name="PhoneNumber" size="45" value="<?= htmlentities($PhoneNumber) ?>"></td></tr>
-					<tr><th class='pr-4'>Vehicle/Equipment Type*:</th><td>
-							<select class="form-control mb-1" id="DonationType" name="DonationType">
-								 <option value="none">Pick an option</option>
-								 <option value="Shower Chair">Shower Chair</option>
-								 <option value="Tub Transfer Bench">Tub Transfer Bench</option>
-								 <option value="Hospital Bed">Hospital Bed</option>
-								 <option value="Patient Lift">Patient Lift</option>
-								 <option value="Wheelchair - Manual">Wheelchair - Manual</option>
-								 <option value="Wheelchair - Power">Wheelchair - Power</option>
-								 <option value="Other">Other</option>
-							</select>
-					</td></tr>
+					<tr><th>Category*:</th><td><select class='form-control' name="DonationType"><?=CategoryOptionList($DonationType)?></select></td></tr>
 					<tr><th class='pr-4'>Donation Detail*:</th><td><input class="form-control mb-1" type="text" name="DonationDetail" size="45" value="<?= htmlentities($DonationDetail) ?>"></td></tr>
-					<!--<tr><th>Category*:</th><td><select class='selectcustom' name="GID">CategoryOptionList($GID)?></select></td></tr>-->
 					<tr><td colspan=2><input class='btn btn-naf-blue w-100 mt-5' type=submit name="Submit" value="SUBMIT DONATION INFORMATION"></td></tr>
 				</table>
 			</form>
