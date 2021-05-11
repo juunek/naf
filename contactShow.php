@@ -12,7 +12,7 @@ $conn = dbConnect();
 <?php
 
 print $HTMLHeader;
-print("<h2 class='text-center my-5 text-naf-blue'>Manage Contact Inquiries</h2>");
+print("<h2 class='text-center my-5 text-naf-blue'>Contact Inquiries</h2>");
 
 ?>
 
